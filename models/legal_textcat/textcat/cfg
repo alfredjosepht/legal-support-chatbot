@@ -1,0 +1,20 @@
+{
+  "labels":[
+    "threats",
+    "ragging",
+    "sexual_harassment",
+    "cyber_harassment",
+    "physical_assault",
+    "verbal_abuse",
+    "privacy_violation",
+    "stalking",
+    "blackmail",
+    "extortion",
+    "discrimination",
+    "defamation",
+    "cheating_fraud",
+    "label"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}
