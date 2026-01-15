@@ -1,0 +1,82 @@
+{
+  "cybercrime": {
+    "common_situations": [
+      "Online account hacking",
+      "Misuse of personal data",
+      "Online financial fraud"
+    ],
+    "how_people_commonly_proceed": [
+      "They may preserve screenshots and digital evidence",
+      "They often report the issue on the cyber crime portal",
+      "Some approach the local police station for assistance"
+    ],
+    "precautions": [
+      "Avoid sharing OTPs or passwords",
+      "Use strong and unique passwords",
+      "Enable two-factor authentication"
+    ]
+  },
+
+  "harassment": {
+    "common_situations": [
+      "Verbal harassment",
+      "Online abuse",
+      "Unwanted physical conduct"
+    ],
+    "how_people_commonly_proceed": [
+      "They may document the incidents",
+      "They often inform a trusted authority",
+      "Some approach law enforcement for support"
+    ],
+    "precautions": [
+      "Avoid engaging with the harasser",
+      "Preserve messages or call records",
+      "Seek support from trusted individuals"
+    ]
+  },
+
+  "fraud": {
+    "common_situations": [
+      "Online shopping scams",
+      "Money taken without delivering goods"
+    ],
+    "how_people_commonly_proceed": [
+      "They may keep transaction records",
+      "They often report the issue to relevant authorities"
+    ],
+    "precautions": [
+      "Verify sellers before making payments",
+      "Avoid sharing financial details"
+    ]
+  },
+
+  "theft": {
+    "common_situations": [
+      "Mobile phone theft",
+      "Laptop theft in hostel or public places"
+    ],
+    "how_people_commonly_proceed": [
+      "They may report the incident to the police",
+      "They often provide details of stolen items"
+    ],
+    "precautions": [
+      "Keep personal belongings secure",
+      "Avoid leaving valuables unattended"
+    ]
+  },
+
+  "academic_issue": {
+    "common_situations": [
+      "Unfair internal assessment",
+      "Delay in result publication"
+    ],
+    "how_people_commonly_proceed": [
+      "They may approach college grievance cells",
+      "They often submit written complaints"
+    ],
+    "precautions": [
+      "Maintain academic records",
+      "Follow official communication channels"
+    ]
+  }
+}

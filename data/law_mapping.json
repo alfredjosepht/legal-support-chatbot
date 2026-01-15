@@ -1,0 +1,61 @@
+{
+  "cybercrime": {
+    "laws": [
+      {
+        "act": "Information Technology Act",
+        "section": "66C",
+        "description": "This section commonly relates to identity theft involving misuse of personal information."
+      },
+      {
+        "act": "Information Technology Act",
+        "section": "66D",
+        "description": "This section is commonly associated with online cheating and fraud through digital means."
+      }
+    ]
+  },
+
+  "harassment": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "354A",
+        "description": "This section relates to unwelcome physical or verbal conduct of a sexual nature."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "509",
+        "description": "This section deals with words or gestures intended to insult the modesty of a woman."
+      }
+    ]
+  },
+
+  "fraud": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "420",
+        "description": "This section commonly relates to cheating and dishonestly inducing delivery of property."
+      }
+    ]
+  },
+
+  "theft": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "378",
+        "description": "This section defines theft involving dishonest taking of movable property."
+      }
+    ]
+  },
+
+  "academic_issue": {
+    "laws": [
+      {
+        "act": "UGC Guidelines",
+        "section": "Academic Regulations",
+        "description": "These guidelines outline student rights and grievance redressal mechanisms in educational institutions."
+      }
+    ]
+  }
+}
