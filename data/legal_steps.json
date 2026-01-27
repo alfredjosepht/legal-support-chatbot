@@ -1,94 +1,232 @@
 {
-  "cybercrime": {
+  "threats": {
     "common_situations": [
-      "Social media account hacking",
-      "Online impersonation",
-      "Digital payment fraud",
-      "Misuse of personal photos or data"
+      "Threatening messages or calls",
+      "Threats to harm or intimidate",
+      "Threats to leak personal information"
     ],
     "how_people_commonly_proceed": [
-      "They may preserve screenshots and digital evidence",
-      "They often report the issue on the cyber crime reporting portal",
-      "Some approach the local police station for assistance"
+      "They usually preserve call logs or message screenshots",
+      "They may report the issue to local police M or cyber cell",
+      "Some inform college authorities if it involves students"
     ],
     "precautions": [
-      "Avoid sharing passwords or OTPs",
-      "Enable two-factor authentication",
-      "Regularly update privacy settings"
+      "Do not engage with the person threatening",
+      "Preserve all evidence safely",
+      "Inform trusted authorities early"
     ]
   },
 
-  "harassment": {
+  "ragging": {
     "common_situations": [
-      "Verbal harassment",
-      "Online abuse or threats",
+      "Forced humiliating tasks by seniors",
+      "Mental or physical torture in hostel or campus",
+      "Threats or violence during ragging"
+    ],
+    "how_people_commonly_proceed": [
+      "They may report to college anti-ragging committee",
+      "Some inform hostel wardens or faculty",
+      "Serious cases may be reported to police"
+    ],
+    "precautions": [
+      "Avoid isolation with unknown seniors",
+      "Know anti-ragging helpline numbers",
+      "Report incidents early"
+    ]
+  },
+
+  "sexual_harassment": {
+    "common_situations": [
       "Unwanted physical contact",
-      "Repeated unwanted messages"
+      "Sexual comments or gestures",
+      "Online sexual harassment"
     ],
     "how_people_commonly_proceed": [
-      "They may document messages or incidents",
-      "They often inform a trusted authority or institution",
-      "Some seek support from law enforcement agencies"
+      "They may document incidents or messages",
+      "They often approach Internal Complaints Committee (ICC)",
+      "Some report to police or cyber cell"
     ],
     "precautions": [
-      "Avoid responding to harassing messages",
-      "Preserve communication records",
-      "Seek emotional and institutional support"
+      "Preserve evidence immediately",
+      "Avoid private confrontation",
+      "Seek institutional support"
     ]
   },
 
-  "fraud": {
+  "cyber_harassment": {
     "common_situations": [
-      "Online shopping scams",
-      "Money taken without delivering goods",
-      "Fake job or internship offers"
+      "Harassment through fake social media accounts",
+      "Threatening or abusive messages online",
+      "Stalking through digital platforms"
     ],
     "how_people_commonly_proceed": [
-      "They may keep transaction receipts or proof",
-      "They often report the matter to appropriate authorities",
+      "They may take screenshots as evidence",
+      "They often report via cyber crime portal",
+      "Some block and report abusive accounts"
+    ],
+    "precautions": [
+      "Use strong privacy settings",
+      "Avoid sharing personal details online",
+      "Report suspicious activity early"
+    ]
+  },
+
+  "physical_assault": {
+    "common_situations": [
+      "Beating or physical attack",
+      "Violence during arguments or protests",
+      "Assault by students or staff"
+    ],
+    "how_people_commonly_proceed": [
+      "They may seek immediate medical help",
+      "They often report to the police",
+      "Some inform college authorities"
+    ],
+    "precautions": [
+      "Avoid unsafe confrontations",
+      "Seek help immediately after injury",
+      "Document injuries if possible"
+    ]
+  },
+
+  "verbal_abuse": {
+    "common_situations": [
+      "Public humiliation",
+      "Use of insulting or abusive language",
+      "Mental harassment through words"
+    ],
+    "how_people_commonly_proceed": [
+      "They may document repeated incidents",
+      "They often inform institutional authorities",
+      "Some seek counseling support"
+    ],
+    "precautions": [
+      "Avoid retaliating verbally",
+      "Maintain records of abuse",
+      "Seek emotional support"
+    ]
+  },
+
+  "stalking": {
+    "common_situations": [
+      "Following someone repeatedly",
+      "Repeated unwanted calls or messages",
+      "Monitoring movements or activities"
+    ],
+    "how_people_commonly_proceed": [
+      "They may keep records of stalking behavior",
+      "They often inform police or college authorities",
+      "Some seek protection or safety measures"
+    ],
+    "precautions": [
+      "Avoid sharing location publicly",
+      "Inform trusted people",
+      "Seek help early"
+    ]
+  },
+
+  "blackmail": {
+    "common_situations": [
+      "Threats using private photos or chats",
+      "Demanding favors or money using threats"
+    ],
+    "how_people_commonly_proceed": [
+      "They may preserve evidence carefully",
+      "They often report to cyber cell or police",
+      "Some seek legal guidance"
+    ],
+    "precautions": [
+      "Do not give in to demands",
+      "Preserve evidence securely",
+      "Avoid sharing sensitive content"
+    ]
+  },
+
+  "extortion": {
+    "common_situations": [
+      "Demanding money using threats",
+      "Withholding documents for money",
+      "Forced payments"
+    ],
+    "how_people_commonly_proceed": [
+      "They may collect proof of demands",
+      "They often report to police",
+      "Some escalate through legal channels"
+    ],
+    "precautions": [
+      "Avoid informal payments",
+      "Preserve communication records",
+      "Report coercion early"
+    ]
+  },
+
+  "privacy_violation": {
+    "common_situations": [
+      "Sharing personal photos without consent",
+      "Leaking personal data or messages",
+      "Unauthorized recording"
+    ],
+    "how_people_commonly_proceed": [
+      "They may collect proof of misuse",
+      "They often report to cyber cell",
+      "Some request content takedown"
+    ],
+    "precautions": [
+      "Limit sharing of personal content",
+      "Use privacy controls",
+      "Be cautious with permissions"
+    ]
+  },
+
+  "discrimination": {
+    "common_situations": [
+      "Unfair treatment based on caste, religion, or gender",
+      "Bias in evaluation or opportunities"
+    ],
+    "how_people_commonly_proceed": [
+      "They may report to grievance cells",
+      "They often document discriminatory actions",
+      "Some escalate to higher authorities"
+    ],
+    "precautions": [
+      "Maintain records of incidents",
+      "Use official complaint channels",
+      "Seek support groups"
+    ]
+  },
+
+  "defamation": {
+    "common_situations": [
+      "Spreading false rumors",
+      "Posting false allegations online"
+    ],
+    "how_people_commonly_proceed": [
+      "They may preserve defamatory content",
+      "They often seek institutional or legal support",
+      "Some request content removal"
+    ],
+    "precautions": [
+      "Avoid public retaliation",
+      "Document false statements",
+      "Seek guidance early"
+    ]
+  },
+
+  "cheating_fraud": {
+    "common_situations": [
+      "Financial scams",
+      "Fake promises or false commitments",
+      "Money taken without service"
+    ],
+    "how_people_commonly_proceed": [
+      "They may preserve transaction proof",
+      "They often report to police or cyber cell",
       "Some notify banks or payment platforms"
     ],
     "precautions": [
-      "Verify sellers or offers before payment",
+      "Verify before paying money",
       "Avoid sharing financial details",
       "Be cautious of unrealistic offers"
-    ]
-  },
-
-  "theft": {
-    "common_situations": [
-      "Mobile phone theft",
-      "Laptop theft in hostel or library",
-      "Loss of personal belongings in public places"
-    ],
-    "how_people_commonly_proceed": [
-      "They may report the incident to the local police",
-      "They often provide details of the stolen items",
-      "Some inform their institution if the theft occurred on campus"
-    ],
-    "precautions": [
-      "Keep valuables secure",
-      "Avoid leaving belongings unattended",
-      "Use tracking features for electronic devices"
-    ]
-  },
-
-  "academic_issue": {
-    "common_situations": [
-      "Unfair internal assessment",
-      "Delay in result publication",
-      "Issues related to ragging",
-      "Administrative grievances"
-    ],
-    "how_people_commonly_proceed": [
-      "They may approach the college grievance cell",
-      "They often submit written complaints through official channels",
-      "Some escalate issues to university-level authorities"
-    ],
-    "precautions": [
-      "Maintain copies of academic records",
-      "Follow institutional grievance procedures",
-      "Use official communication channels"
     ]
   }
 }

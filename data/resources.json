@@ -1,0 +1,83 @@
+{
+  "threats": {
+    "police_support": [
+      {
+        "name": "Local Police Station",
+        "contact": "112",
+        "note": "Emergency police assistance number in India"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Emergency Helpline",
+        "number": "112",
+        "purpose": "Immediate help in threatening situations"
+      }
+    ]
+  },
+
+  "cyber_harassment": {
+    "cyber_cell": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "website": "https://cybercrime.gov.in",
+        "note": "Online portal to report cyber crimes in India"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Cyber Crime Helpline",
+        "number": "1930",
+        "purpose": "Reporting online financial and cyber crimes"
+      }
+    ]
+  },
+
+  "sexual_harassment": {
+    "institutional_support": [
+      {
+        "name": "Internal Complaints Committee (ICC)",
+        "note": "Committee available in colleges under POSH Act"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Women Helpline",
+        "number": "181",
+        "purpose": "Support for women facing harassment"
+      }
+    ]
+  },
+
+  "ragging": {
+    "institutional_support": [
+      {
+        "name": "Anti-Ragging Committee",
+        "note": "College-level committee to address ragging complaints"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "UGC Anti-Ragging Helpline",
+        "number": "1800-180-5522",
+        "purpose": "National helpline for ragging complaints"
+      }
+    ]
+  },
+
+  "general_support": {
+    "legal_aid": [
+      {
+        "name": "District Legal Services Authority (DLSA)",
+        "note": "Provides free legal aid to eligible citizens"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Legal Aid Helpline",
+        "number": "1516",
+        "purpose": "Free legal assistance and guidance"
+      }
+    ]
+  }
+}
