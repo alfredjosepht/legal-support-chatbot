@@ -39,13 +39,15 @@ class ChatRequest(BaseModel):
 
 
 class ChatResponse(BaseModel):
-    category: str
+    category: str                  # primary
     confidence: float
     reason: str
+    matched_categories: list       # 👈 NEW
     laws: list
     steps: list
     resources: list
     case_references: list
+
 
 
 @app.post("/chat", response_model=ChatResponse)
@@ -58,6 +60,7 @@ def chat(user_input: ChatRequest):
             "category": "unknown",
             "confidence": 0.0,
             "reason": "empty_input",
+            "matched_categories": [],
             "laws": [],
             "steps": [],
             "resources": [],
@@ -66,36 +69,40 @@ def chat(user_input: ChatRequest):
 
     doc = nlp(text)
 
-    # Default safe values
-    category = "unknown"
-    confidence = 0.0
-    reason = "model_not_available"
+    matched_categories = []
 
     if doc.cats:
-        category = max(doc.cats, key=doc.cats.get)
-        confidence = float(doc.cats[category])
-        reason = "low_confidence"
+        matched_categories = [
+            {
+                "category": k,
+                "confidence": round(float(v), 3)
+            }
+            for k, v in doc.cats.items()
+            if v >= CONFIDENCE_THRESHOLD
+        ]
 
-        if confidence >= CONFIDENCE_THRESHOLD:
-            reason = "classified"
-        else:
-            category = "unknown"
+        matched_categories.sort(
+            key=lambda x: x["confidence"],
+            reverse=True
+        )
+
+    if matched_categories:
+        primary = matched_categories[0]
+        category = primary["category"]
+        confidence = primary["confidence"]
+        reason = "classified"
+    else:
+        category = "unknown"
+        confidence = 0.0
+        reason = "low_confidence"
 
     return {
         "category": category,
-        "confidence": round(confidence, 3),
+        "confidence": confidence,
         "reason": reason,
+        "matched_categories": matched_categories,
         "laws": law_mapping.get(category, []),
         "steps": legal_steps.get(category, []),
         "resources": resources.get(category, []),
         "case_references": case_laws.get(category, [])
     }
-
-@app.get("/health")
-def health():
-    return {
-        "status": "ok",
-        "model_loaded": bool(nlp),
-        "confidence_threshold": CONFIDENCE_THRESHOLD
-    }
-
