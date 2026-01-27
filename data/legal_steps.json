@@ -1,0 +1,94 @@
+{
+  "cybercrime": {
+    "common_situations": [
+      "Social media account hacking",
+      "Online impersonation",
+      "Digital payment fraud",
+      "Misuse of personal photos or data"
+    ],
+    "how_people_commonly_proceed": [
+      "They may preserve screenshots and digital evidence",
+      "They often report the issue on the cyber crime reporting portal",
+      "Some approach the local police station for assistance"
+    ],
+    "precautions": [
+      "Avoid sharing passwords or OTPs",
+      "Enable two-factor authentication",
+      "Regularly update privacy settings"
+    ]
+  },
+
+  "harassment": {
+    "common_situations": [
+      "Verbal harassment",
+      "Online abuse or threats",
+      "Unwanted physical contact",
+      "Repeated unwanted messages"
+    ],
+    "how_people_commonly_proceed": [
+      "They may document messages or incidents",
+      "They often inform a trusted authority or institution",
+      "Some seek support from law enforcement agencies"
+    ],
+    "precautions": [
+      "Avoid responding to harassing messages",
+      "Preserve communication records",
+      "Seek emotional and institutional support"
+    ]
+  },
+
+  "fraud": {
+    "common_situations": [
+      "Online shopping scams",
+      "Money taken without delivering goods",
+      "Fake job or internship offers"
+    ],
+    "how_people_commonly_proceed": [
+      "They may keep transaction receipts or proof",
+      "They often report the matter to appropriate authorities",
+      "Some notify banks or payment platforms"
+    ],
+    "precautions": [
+      "Verify sellers or offers before payment",
+      "Avoid sharing financial details",
+      "Be cautious of unrealistic offers"
+    ]
+  },
+
+  "theft": {
+    "common_situations": [
+      "Mobile phone theft",
+      "Laptop theft in hostel or library",
+      "Loss of personal belongings in public places"
+    ],
+    "how_people_commonly_proceed": [
+      "They may report the incident to the local police",
+      "They often provide details of the stolen items",
+      "Some inform their institution if the theft occurred on campus"
+    ],
+    "precautions": [
+      "Keep valuables secure",
+      "Avoid leaving belongings unattended",
+      "Use tracking features for electronic devices"
+    ]
+  },
+
+  "academic_issue": {
+    "common_situations": [
+      "Unfair internal assessment",
+      "Delay in result publication",
+      "Issues related to ragging",
+      "Administrative grievances"
+    ],
+    "how_people_commonly_proceed": [
+      "They may approach the college grievance cell",
+      "They often submit written complaints through official channels",
+      "Some escalate issues to university-level authorities"
+    ],
+    "precautions": [
+      "Maintain copies of academic records",
+      "Follow institutional grievance procedures",
+      "Use official communication channels"
+    ]
+  }
+}
