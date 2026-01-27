@@ -129,35 +129,54 @@ async function handleSendMessage() {
 
     // Artificial delay to feel natural
     const delay = Math.random() * 1000 + 1500;
-    setTimeout(() => {
-        hideTypingIndicator();
-        const response = getAIResponse(text);
-        addMessage(response, 'ai');
-    }, delay);
+    try {
+    const res = await fetch("http://127.0.0.1:8000/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: text })
+    });
+
+    const data = await res.json();
+    hideTypingIndicator();
+
+    let reply = `📌 Category: ${data.category}\n`;
+    reply += `📊 Confidence: ${data.confidence}\n\n`;
+
+    if (data.laws.length > 0) {
+        reply += "⚖️ Applicable Laws:\n";
+        data.laws.forEach(law => {
+            reply += `• ${law.act} (Section ${law.section}) – ${law.description}\n`;
+        });
+        reply += "\n";
+    }
+
+    if (data.steps.length > 0) {
+        reply += "📝 Recommended Steps:\n";
+        data.steps.forEach(step => {
+            reply += `• ${step}\n`;
+        });
+        reply += "\n";
+    }
+
+    if (data.resources.length > 0) {
+        reply += "📞 Resources:\n";
+        data.resources.forEach(r => {
+            reply += `• ${r.name} – ${r.number || r.website}\n`;
+        });
+    }
+
+    addMessage(reply, 'ai');
+
+} catch (err) {
+    hideTypingIndicator();
+    addMessage("⚠️ Unable to reach legal backend. Please try again.", "ai");
 }
 
-function getAIResponse(query) {
-    const lowerQuery = query.toLowerCase();
-
-    if (lowerQuery.includes('contract')) {
-        return "I can help you analyze the legal implications of this contract. Would you like me to look for specific clauses like 'termination', 'indemnity', or 'governing law'?";
-    }
-    if (lowerQuery.includes('hello') || lowerQuery.includes('hi')) {
-        return "Greetings. I am Judi, your AI legal advisor. How may I assist you with your legal research or documentation today?";
-    }
-    if (lowerQuery.includes('divorce') || lowerQuery.includes('family')) {
-        return "Family law matters are sensitive. While I can provide information on general procedures and common requirements, I recommend consulting with a family law specialist for your specific regional jurisdiction.";
-    }
-
-    const genericResponses = [
-        "That's a complex legal question. Let me break down the standard legal framework for this situation...",
-        "Based on common legal precedents, here is how such cases are typically handled...",
-        "I've processed your query. To give you the most accurate guidance, I'll need to know which jurisdiction applies here.",
-        "Under current statutes, this particular matter falls under civil liability. Let me explain the key elements required to prove such a claim."
-    ];
-
-    return genericResponses[Math.floor(Math.random() * genericResponses.length)];
 }
+
+
 
 /**
  * File Handling
