@@ -1,1 +1,62 @@
-{}
+{
+  "ragging": {
+    "police_stations": [
+      {
+        "name": "Local Police Station",
+        "location": "Jurisdiction of the educational institution",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "UGC Anti-Ragging Helpline",
+        "description": "National helpline to report ragging incidents",
+        "contact": "1800-180-5522",
+        "link": "https://www.antiragging.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "College Anti-Ragging Committee",
+        "description": "Institution-level grievance redressal committee"
+      }
+    ]
+  },
+
+  "cybercrime": {
+    "cyber_cells": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "police_stations": [
+      {
+        "name": "Cyber Police Station",
+        "location": "District Cyber Cell",
+        "contact": "1930"
+      }
+    ]
+  },
+
+  "harassment": {
+    "legal_aid": [
+      {
+        "name": "National Commission for Women",
+        "description": "Handles complaints related to harassment and abuse",
+        "contact": "7827170170",
+        "link": "https://ncw.nic.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Women Helpline",
+        "contact": "181",
+        "description": "24x7 women safety helpline"
+      }
+    ]
+  
+  }
+}
