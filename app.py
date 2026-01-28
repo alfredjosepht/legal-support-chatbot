@@ -95,14 +95,40 @@ def chat(user_input: ChatRequest):
         category = "unknown"
         confidence = 0.0
         reason = "low_confidence"
+    raw_laws = law_mapping.get(category, {})
+    raw_steps = legal_steps.get(category, {})
+    raw_resources = resources.get(category, {})
+
 
     return {
         "category": category,
         "confidence": confidence,
         "reason": reason,
         "matched_categories": matched_categories,
-        "laws": law_mapping.get(category, []),
-        "steps": legal_steps.get(category, []),
-        "resources": resources.get(category, []),
+
+    # ✅ FIXED: always lists
+        "laws": (
+            raw_laws.get("laws", [])
+            if isinstance(raw_laws, dict)
+            else raw_laws
+        ),
+
+        "steps": (
+           raw_steps.get("common_situations", [])
+           + raw_steps.get("how_people_commonly_proceed", [])
+           + raw_steps.get("precautions", [])
+           if isinstance(raw_steps, dict)
+           else raw_steps
+        ),
+
+        "resources": (
+            raw_resources.get("police_stations", [])
+            + raw_resources.get("helplines", [])
+            + raw_resources.get("legal_aid", [])
+            if isinstance(raw_resources, dict)
+            else raw_resources
+        ),
+
         "case_references": case_laws.get(category, [])
-    }
+}
+
