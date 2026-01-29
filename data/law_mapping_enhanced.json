@@ -1,0 +1,549 @@
+{
+  "physical_assault": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "323",
+        "title": "Voluntarily causing hurt",
+        "description": "Whoever, except in the case provided by law, voluntarily causes hurt shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five hundred rupees, or with both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "324",
+        "title": "Voluntarily causing hurt by means of poison, etc.",
+        "description": "Whoever, except in the case provided by law, by means of poison or any harmful substance attempts to cause, or knowing that he is likely thereby to cause, hurt to any person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five hundred rupees, or with both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "325",
+        "title": "Voluntarily causing grievous hurt",
+        "description": "Whoever, except in the case provided by law, voluntarily causes grievous hurt shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to one thousand rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "336",
+        "title": "Act endangering life or personal safety",
+        "description": "Whoever does any act so rashly or negligently as to endanger human life or the personal safety of others, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to two hundred and fifty rupees, or with both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "341",
+        "title": "Wrongful restraint",
+        "description": "Whoever wrongfully restrains any person shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to two hundred and fifty rupees, or with both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "342",
+        "title": "Wrongful confinement",
+        "description": "Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both."
+      }
+    ],
+    "filing_procedure": [
+      "File First Information Report (FIR) at nearest police station",
+      "Provide detailed description of the assault incident",
+      "Mention date, time, location, and witnesses present",
+      "Get medical examination done immediately (within 24 hours ideally)",
+      "Collect medical certificates and photographs of injuries",
+      "File complaint before Magistrate if police refuses to file FIR",
+      "Preserve evidence (torn clothes, weapons used, etc.)",
+      "Get written FIR acknowledgement",
+      "Follow up with investigating officer regularly"
+    ]
+  },
+  "sexual_assault": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "375",
+        "title": "Rape",
+        "description": "A man is said to commit 'rape' if he penetrates his penis into the vagina, mouth, anus or urethra of a woman or makes her do so, by coercion, abuse of authority or when she is incapable of giving consent."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "376",
+        "title": "Punishment for rape",
+        "description": "Rigorous imprisonment of not less than 7 years but which may be for life, and also liable to fine and/or death penalty in case of aggravated rape."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "376A",
+        "title": "Rape by husband on wife during separation",
+        "description": "When a man commits rape on his wife who is living separate from him, he shall be punished with imprisonment of not less than 2 years."
+      },
+      {
+        "act": "Protection of Children from Sexual Offences Act, 2012",
+        "section": "3",
+        "title": "Punishment for penetrative sexual assault on a child",
+        "description": "For a child below 16 years: Rigorous imprisonment for not less than 7 years and fine up to 1 lakh rupees. For 16-18 years: Rigorous imprisonment for not less than 5 years."
+      },
+      {
+        "act": "Protection of Children from Sexual Offences Act, 2012",
+        "section": "5",
+        "title": "Punishment for aggravated penetrative sexual assault",
+        "description": "Rigorous imprisonment for not less than 10 years or life imprisonment and fine up to 1 lakh rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "228A",
+        "title": "Disclosure of identity of victim of rape",
+        "description": "No information shall be published in any form which discloses or tends to disclose the identity of a victim of rape."
+      }
+    ],
+    "filing_procedure": [
+      "Go to nearest police station or emergency services immediately",
+      "Report to female police officer if available (women can request this)",
+      "File FIR and get copy within 30 minutes",
+      "Do NOT bathe or change clothes before medical examination",
+      "Get medical examination at government hospital within 24 hours",
+      "Collect detailed medical report documenting injury, semen, DNA",
+      "Obtain photographs of all injuries",
+      "Provide complete statement to investigating officer",
+      "Inform police about any CCTV footage or witnesses",
+      "Request police to preserve all physical evidence",
+      "Apply for victim compensation under Victim Compensation Scheme",
+      "Request counseling support from NGOs",
+      "File anticipatory bail application if threatened by accused",
+      "Intimate court about threats or pressure to withdraw complaint"
+    ]
+  },
+  "sexual_harassment": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "294",
+        "title": "Obscene acts and songs",
+        "description": "Outraging modesty through words, sounds, gestures intended to be seen by woman is punishable with imprisonment up to 3 months or fine up to 200 rupees or both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "509",
+        "title": "Word, gesture or act intended to insult the modesty of a woman",
+        "description": "First offence: Imprisonment up to 3 months or fine up to 200 rupees or both. Subsequent offence: Imprisonment up to 6 months or fine up to 500 rupees or both."
+      },
+      {
+        "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+        "section": "2",
+        "title": "Definition of sexual harassment at workplace",
+        "description": "Includes unwelcome verbal, non-verbal or physical conduct of sexual nature affecting dignity of woman at work."
+      },
+      {
+        "act": "Protection of Children from Sexual Offences Act, 2012",
+        "section": "7",
+        "title": "Punishment for sexual harassment of a child",
+        "description": "Imprisonment of up to 5 years and fine up to 50,000 rupees for a child below 16, and 3 years and 25,000 rupees for child 16-18 years."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Punishment for publishing obscene material in electronic form",
+        "description": "Punishment up to 5 years imprisonment and fine up to 10 lakh rupees."
+      }
+    ],
+    "filing_procedure": [
+      "File written complaint with employer/institution",
+      "Complaint should contain specific dates, times, and nature of harassment",
+      "Request Internal Complaints Committee (ICC) action within 7 days",
+      "Simultaneously file police complaint if harassment involves threats",
+      "File police FIR under IPC Section 509 or 294",
+      "Preserve all evidence: messages, emails, letters, recordings (legal)",
+      "Get statements from witnesses in writing",
+      "Request police for interim protective order",
+      "Apply for restraining order against harasser",
+      "Keep copies of all formal communication",
+      "Follow up with ICC regularly (max 90 days for resolution)",
+      "Appeal to external agency if not satisfied with ICC decision",
+      "File complaint with District Commission if institutional response inadequate"
+    ]
+  },
+  "caste_discrimination": {
+    "laws": [
+      {
+        "act": "Constitution of India",
+        "section": "Article 17",
+        "title": "Abolition of Untouchability",
+        "description": "Untouchability is abolished and its practice in any form is forbidden. The enforcement of any disability arising out of untouchability is made a punishable offence."
+      },
+      {
+        "act": "Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989",
+        "section": "3",
+        "title": "Punishment for atrocities",
+        "description": "Various offences listed including causing hurt, denial of access to water, denial of common passage, desecration of symbols. Punishment ranges from 6 months to 5 years imprisonment."
+      },
+      {
+        "act": "Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989",
+        "section": "3(1)(vi)",
+        "title": "Offence of insulting caste",
+        "description": "Using words, signs or representations that insult or suggest inferiority because of caste. Punishment: Not less than 6 months and up to 5 years imprisonment, and fine up to 5000 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "153A",
+        "title": "Promoting enmity between different groups on grounds of caste",
+        "description": "Punishment up to 3 years imprisonment and fine up to 500 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "295",
+        "title": "Injuring or defiling place of worship",
+        "description": "Defiling caste symbols or sacred objects. Punishment up to 2 years imprisonment and fine up to 1000 rupees."
+      }
+    ],
+    "filing_procedure": [
+      "Immediately report to police with detailed complaint",
+      "Provide evidence: audio/video recordings, photographs, messages",
+      "Get statements from all witnesses in writing",
+      "Register police complaint under SC/ST Prevention of Atrocities Act",
+      "Request police to invoke provisions of Prevention of Atrocities Act (stricter than regular IPC)",
+      "File complaint with District Magistrate if police refuses",
+      "Approach National Commission for Scheduled Castes (NCSC)",
+      "File complaint with Human Rights Commission if institutional response inadequate",
+      "Collect medical certificates if physical assault involved",
+      "Apply for victim compensation immediately",
+      "Request anticipatory bail if threatened with counter-cases",
+      "Engage with legal aid organization for representation",
+      "Keep media informed to create public awareness (if safe to do so)"
+    ]
+  },
+  "racism": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "153",
+        "title": "Wantonly provoking any class by insults, &c.",
+        "description": "Acts intended or knowing to provoke breach of peace by insulting a person or class based on race/place of birth. Punishment up to 1 year imprisonment and fine up to 1000 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "153A",
+        "title": "Promoting enmity between different groups on grounds of caste, race",
+        "description": "Punishment up to 3 years imprisonment and fine up to 500 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "295",
+        "title": "Injuring or defiling place of worship",
+        "description": "If symbols are defiled. Punishment up to 2 years and fine up to 1000 rupees."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66D",
+        "title": "Punishment for impersonation using computer resource",
+        "description": "If racist content posted using fake identity. Punishment up to 3 years and fine up to 1 lakh rupees."
+      }
+    ],
+    "filing_procedure": [
+      "File detailed police complaint with specific racist statements/incidents",
+      "Provide evidence: screenshots, messages, videos, recordings",
+      "Get witness statements",
+      "Request police to register case under IPC Section 153A",
+      "For online racism: Report to cyber police cell with URLs/screenshots",
+      "File complaint with Human Rights Commission",
+      "Contact National Commission for Minorities if applicable",
+      "Collect evidence of psychological impact (mental health records)",
+      "Apply for restraining order/injunction",
+      "Request police protection if threatened",
+      "Escalate to senior police officer if local police unresponsive"
+    ]
+  },
+  "ragging": {
+    "laws": [
+      {
+        "act": "Anti-Ragging Act, UGC Regulations",
+        "section": "Central Government Prohibition of Ragging Bill, 1998",
+        "title": "Definition and prohibition of ragging",
+        "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "336-338",
+        "title": "Act endangering life or personal safety",
+        "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "341-348",
+        "title": "Criminal force, wrongful restraint, confinement",
+        "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "375-376",
+        "title": "Rape and sexual assault",
+        "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+      },
+      {
+        "act": "Protection of Children from Sexual Offences Act, 2012",
+        "section": "3-7",
+        "title": "If ragging involves children",
+        "description": "Punishment up to 5-10 years for sexual offences against children."
+      }
+    ],
+    "filing_procedure": [
+      "Report immediately to college/institution anti-ragging committee",
+      "File written complaint with specific names, dates, and descriptions",
+      "Request protection measures before investigation",
+      "Simultaneously file police complaint if police intervention needed",
+      "File FIR under Anti-Ragging Act provisions",
+      "Collect medical certificates if physical injury occurred",
+      "Get witness statements from fellow students",
+      "Preserve evidence: messages, videos, photographs",
+      "Request interim protective measures (relocation, changed schedule)",
+      "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+      "Seek legal aid for representation",
+      "Request academic safeguards while complaint is pending",
+      "Escalate to principal/management if committee is biased",
+      "Contact National Human Rights Commission if state authorities unresponsive"
+    ]
+  },
+  "threats": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "503",
+        "title": "Criminal intimidation",
+        "description": "Whoever intentionally puts any person in fear of any injury commits criminal intimidation. Punishment up to 2 years imprisonment, fine up to 500 rupees, or both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "504",
+        "title": "Insult with intent to provoke breach of peace",
+        "description": "Intentional insult intending to provoke breach of peace. Punishment up to 2 years imprisonment and fine up to 500 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "506",
+        "title": "Criminal intimidation by anonymous communication or rumor",
+        "description": "Threatening another with injury. Punishment up to 6 months imprisonment and fine up to 300 rupees (simple intimidation) or up to 2 years and fine up to 1000 rupees (aggravated)."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66C",
+        "title": "Identity theft",
+        "description": "If threatening through fake accounts. Punishment up to 3 years and fine up to 1 lakh rupees."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Publishing obscene material in electronic form",
+        "description": "If threats include obscene content. Punishment up to 5 years and fine up to 10 lakh rupees."
+      }
+    ],
+    "filing_procedure": [
+      "Immediately file police complaint with FIR",
+      "Provide all threatening communications: messages, emails, calls, letters",
+      "Get written statements from witnesses who heard/saw threats",
+      "Request police protection (if life is in imminent danger)",
+      "Request anticipatory bail if threatened with false cases",
+      "Preserve all evidence in original format (do not edit)",
+      "File for restraining order/injunction from court",
+      "Request recording of phone threats (if made over call)",
+      "File cyber complaint if threats made online",
+      "Report to social media platform if threats posted publicly",
+      "Keep police informed of any escalation",
+      "Apply for ex-parte injunction if threat is immediate",
+      "Request witness protection order"
+    ]
+  },
+  "cyber_harassment": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "503-506",
+        "title": "Criminal intimidation and threats",
+        "description": "Online threats and intimidation. Punishment up to 2 years imprisonment and fine up to 500-1000 rupees."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66A",
+        "title": "Punishment for sending offensive messages through communication service",
+        "description": "Sending grossly offensive or menacing messages with intent to cause annoyance. Punishment up to 3 years imprisonment and fine up to 5 lakh rupees. (Note: Section 66A was partially struck down by SC in 2015)"
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66C",
+        "title": "Identity theft",
+        "description": "Fraudulently or dishonestly uses electronic signature of another person. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66D",
+        "title": "Punishment for impersonation using computer resource",
+        "description": "Impersonating through electronic means. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
+      }
+    ],
+    "filing_procedure": [
+      "File complaint with local police cybercrime cell (can file online on police website)",
+      "Provide screenshot/documentation of all harassing messages",
+      "Include URL/links and timestamps of posts if on public platform",
+      "Provide account details of person sending harassment",
+      "Report to social media platform: Facebook, Twitter, Instagram, etc.",
+      "Use platform's built-in reporting feature for blocking and escalation",
+      "Request police to preserve evidence from ISP/platform",
+      "File separate complaints if harassment on multiple platforms",
+      "Apply for blocking order: ask platform to block harasser's account",
+      "Keep records of all communication with police and platform",
+      "Request privacy settings review on personal accounts",
+      "Apply for anticipatory bail if threatened with legal action",
+      "Seek victim protection in online harassment cases"
+    ]
+  },
+  "institutional_misconduct": {
+    "laws": [
+      {
+        "act": "Constitution of India",
+        "section": "Articles 14, 21, 32",
+        "title": "Right to equality, personal liberty, constitutional remedies",
+        "description": "Right to equal treatment and protection against institutional discrimination. Violations can be challenged in High Court."
+      },
+      {
+        "act": "National Commission for Protection of Child Rights Act, 2005",
+        "section": "13",
+        "title": "Powers to inquire into violations",
+        "description": "NCPCR can inquire into cases of institutional child abuse and misconduct."
+      },
+      {
+        "act": "All India Council for Technical Education (AICTE) Regulations",
+        "section": "Regulations on Student Rights",
+        "title": "Student protection and grievance redressal",
+        "description": "Institutions must follow due process, provide fair investigation, and student representation in disciplinary committees."
+      }
+    ],
+    "filing_procedure": [
+      "File formal written complaint with institution's grievance cell",
+      "Provide detailed evidence: documents, communications, witness statements",
+      "Request written acknowledgement of complaint filing",
+      "File Right to Information (RTI) request for institutional policies",
+      "Request meeting with ombudsman/grievance officer",
+      "Request interim protective measures pending investigation",
+      "Escalate to affiliating university if institution is unresponsive",
+      "File complaint with state education department",
+      "Contact National Commission for Protection of Child Rights (if applicable)",
+      "File public interest litigation in High Court if serious violations",
+      "Approach media and student organizations for pressure and publicity",
+      "Seek legal aid for representation in cases",
+      "Document all institutional responses for future legal proceedings"
+    ]
+  },
+  "blackmail_extortion": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "383",
+        "title": "Extortion",
+        "description": "Putting any person in fear of any injury and thereby dishonestly inducing that person to deliver property. Punishment up to 3 years imprisonment and fine up to 500 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "384",
+        "title": "Punishment for extortion",
+        "description": "Rigorous imprisonment of up to 3 years and fine up to 5000 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "387-389",
+        "title": "Dacoity and dacoity with attempt to cause death or grievous hurt",
+        "description": "Organized extortion. Punishment up to 10 years imprisonment."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66E",
+        "title": "Violation of privacy",
+        "description": "Publishing private images without consent. Punishment up to 3 years imprisonment and fine up to 4 lakh rupees."
+      }
+    ],
+    "filing_procedure": [
+      "File police complaint immediately with FIR",
+      "Provide all blackmail communications: messages, emails, calls",
+      "Include demands made and threats given",
+      "Report to cyber cell if extortion is online",
+      "Request police protection immediately",
+      "Do NOT pay any money to extortionist",
+      "Preserve all evidence in original format",
+      "Request anticipatory bail if threatened with exposure",
+      "Apply for restraining order/injunction",
+      "Report to social media platforms if threats posted publicly",
+      "File separate cyber complaint for privacy violation if applicable",
+      "Inform bank if financial extortion involved",
+      "Request witness protection if others are also being targeted"
+    ]
+  },
+  "defamation_privacy_fraud": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "499",
+        "title": "Defamation",
+        "description": "Publishing or speaking false information that harms reputation. Punishment up to 2 years imprisonment, fine up to 5000 rupees, or both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "500",
+        "title": "Punishment for defamation",
+        "description": "Imprisonment up to 6 months and fine up to 500 rupees."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66E",
+        "title": "Violation of privacy",
+        "description": "Capturing, publishing, or transmitting intimate image without consent. Punishment up to 3 years and fine up to 4 lakh rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "420",
+        "title": "Cheating and dishonestly inducing delivery of property",
+        "description": "Fraud and deception for obtaining property. Imprisonment up to 7 years and fine up to 1 lakh rupees."
+      }
+    ],
+    "filing_procedure": [
+      "File civil defamation suit in District Court",
+      "Provide evidence: screenshots, documents, false statements published",
+      "Request immediate injunction to stop publishing false information",
+      "Simultaneously file police complaint for criminal defamation",
+      "Publish correction notice in same medium where defamation occurred",
+      "Send cease and desist letter through lawyer",
+      "File complaint with social media platforms",
+      "Request removal of defamatory content with timeline",
+      "Document all harm suffered (professional, personal, financial)",
+      "Claim damages in civil suit (actual, special, exemplary)",
+      "File cyber complaint if defamation online",
+      "Request court order for disclosure of anonymous poster's identity",
+      "Apply for temporary injunction ex-parte if urgency"
+    ]
+  },
+  "general_discrimination": {
+    "laws": [
+      {
+        "act": "Constitution of India",
+        "section": "Article 14",
+        "title": "Right to equality",
+        "description": "State shall not deny any person equality before law or equal protection. Violation can be challenged."
+      },
+      {
+        "act": "Constitution of India",
+        "section": "Article 15",
+        "title": "Prohibition of discrimination on grounds of religion, race, caste, sex, place of birth",
+        "description": "State shall not discriminate against citizens on certain grounds. Applicable to educational institutions."
+      },
+      {
+        "act": "Persons with Disabilities Act, 1995",
+        "section": "Rights of persons with disabilities",
+        "title": "Protection against discrimination based on disability",
+        "description": "Institutions must provide reasonable accommodation for persons with disabilities."
+      }
+    ],
+    "filing_procedure": [
+      "Document all instances of discrimination with dates and details",
+      "File formal complaint with institution/organization",
+      "Request written response within stipulated time",
+      "File complaint with appropriate commission (SC/ST, Women, Minorities, Disability)",
+      "Apply for interim protective measures",
+      "File RTI request for relevant policies and practices",
+      "Seek legal aid for representation",
+      "File public interest litigation if systemic discrimination",
+      "Approach media for awareness and pressure",
+      "Contact relevant NGOs working on discrimination",
+      "Escalate to state-level authorities if institution unresponsive",
+      "Document all retaliatory actions taken against complainant"
+    ]
+  }
+}

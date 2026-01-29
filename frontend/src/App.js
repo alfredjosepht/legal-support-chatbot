@@ -8,6 +8,8 @@ function App() {
   const [inputValue, setInputValue] = useState('');
   const [attachedFiles, setAttachedFiles] = useState([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [expandedMessage, setExpandedMessage] = useState(null);
+  const [conversationHistory, setConversationHistory] = useState([]);
 
   const viewportRef = useRef(null);
   const fileInputRef = useRef(null);
@@ -49,34 +51,125 @@ function App() {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    const messageToSend = inputValue;
     setInputValue('');
     setAttachedFiles([]);
     setIsTyping(true);
 
-    // Simulate AI response
-    setTimeout(() => {
+    try {
+      const response = await fetch('http://localhost:8000/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: messageToSend })
+      });
+
+      if (!response.ok) {
+        throw new Error('API response error');
+      }
+
+      const data = await response.json();
       setIsTyping(false);
-      const aiResponse = getAIResponse(inputValue);
+
+      // Format AI response from backend
+      const aiResponse = formatBackendResponse(data);
       setMessages(prev => [...prev, {
         id: Date.now() + 1,
         text: aiResponse,
         role: 'ai',
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        data: data  // Store full response data for reference
+      }]);
+    } catch (error) {
+      setIsTyping(false);
+      console.error('Error:', error);
+      setMessages(prev => [...prev, {
+        id: Date.now() + 1,
+        text: `Error: Unable to connect to backend. ${error.message}`,
+        role: 'ai',
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }]);
-    }, 1500 + Math.random() * 1000);
+    }
   };
 
-  const getAIResponse = (query) => {
-    const lowerQuery = query.toLowerCase();
-    if (lowerQuery.includes('contract')) return "I can help you analyze the legal implications of this contract. Would you like me to look for specific clauses like 'termination' or 'governing law'?";
-    if (lowerQuery.includes('hello') || lowerQuery.includes('hi')) return "Greetings. I am Judi, your AI legal advisor. How may I assist you with your legal research today?";
+  const formatBackendResponse = (data) => {
+    const { category, confidence, matched_categories, legal_frameworks, laws, steps, resources, warnings, context } = data;
+    
+    let response = ``;
+    
+    // Primary Category with confidence
+    response += `🏷️ **Case Category:** ${category.replace(/_/g, ' ').toUpperCase()}\n`;
+    response += `📊 **Confidence:** ${(confidence * 100).toFixed(1)}%\n`;
+    
+    // Age-based POCSO notice
+    if (context && context.legal_framework === 'POCSO' && context.age_indicator) {
+      response += `\n⚠️ **IMPORTANT:** POCSO Framework Applicable - Minor victim detected. Additional protections under Protection of Children from Sexual Offences Act, 2012 apply.\n`;
+    }
+    
+    // Matched Categories
+    if (matched_categories && matched_categories.length > 1) {
+      response += `\n🔍 **Other Possible Issues:**\n`;
+      matched_categories.slice(1, 3).forEach(cat => {
+        response += `   • ${cat.category.replace(/_/g, ' ')} (${(cat.confidence * 100).toFixed(1)}%)\n`;
+      });
+    }
 
-    const responses = [
-      "That's a complex legal question. Let me break down the standard legal framework for this situation...",
-      "Based on common legal precedents, here is how such cases are typically handled...",
-      "Under current statutes, this particular matter falls under civil liability. Let me explain the key elements."
-    ];
-    return responses[Math.floor(Math.random() * responses.length)];
+    // Legal Frameworks
+    if (legal_frameworks && legal_frameworks.length > 0) {
+      response += `\n⚖️ **Applicable Legal Frameworks:**\n`;
+      legal_frameworks.forEach(fw => {
+        response += `   • ${fw}\n`;
+      });
+    }
+
+    // Laws and Sections
+    if (laws && laws.length > 0) {
+      response += `\n📜 **Applicable Laws & Sections:**\n`;
+      laws.slice(0, 5).forEach(law => {
+        response += `   • **${law.section}** (${law.act}): ${law.title}\n`;
+      });
+      if (laws.length > 5) {
+        response += `   ... and ${laws.length - 5} more laws\n`;
+      }
+    }
+
+    // Procedural Steps
+    if (steps && steps.length > 0) {
+      response += `\n📋 **Steps to File Case (${steps.length} steps total):**\n`;
+      steps.slice(0, 8).forEach((step, idx) => {
+        response += `   ${idx + 1}. ${step}\n`;
+      });
+      if (steps.length > 8) {
+        response += `   ... and ${steps.length - 8} more steps\n`;
+      }
+    }
+
+    // Resources
+    if (resources && resources.length > 0) {
+      response += `\n📞 **Support Resources:**\n`;
+      resources.slice(0, 4).forEach(res => {
+        const resText = typeof res === 'string' ? res : (res.name || res);
+        response += `   • ${resText}\n`;
+      });
+    }
+
+    // Authority Context
+    if (context && context.authority) {
+      response += `\n👤 **Perpetrator Profile:** ${context.authority.replace(/_/g, ' ')}\n`;
+    }
+
+    // Warnings
+    if (warnings && warnings.length > 0) {
+      response += `\n⚠️ **Important Notes:**\n`;
+      warnings.forEach(warning => {
+        response += `   • ${warning}\n`;
+      });
+    }
+
+    response += `\n✅ **Next Steps:** Contact local police station or legal aid organization for formal case filing.\n`;
+
+    return response;
   };
 
   const handleKeyDown = (e) => {
@@ -84,6 +177,92 @@ function App() {
       e.preventDefault();
       handleSendMessage();
     }
+  };
+
+  const toggleMessageExpand = (messageId) => {
+    setExpandedMessage(expandedMessage === messageId ? null : messageId);
+  };
+
+  const renderMessage = (msg) => {
+    return (
+      <div key={msg.id} className={`message ${msg.role}`}>
+        <div className="msg-avatar">{msg.role === 'ai' ? '⚖️' : '👤'}</div>
+        <div className="msg-content">
+          <div className="bubble">
+            {msg.files && msg.files.map((file, i) => (
+              <div key={i} className="msg-attachment" style={{ marginBottom: msg.text ? '10px' : '0' }}>
+                {file.type.startsWith('image/') ? (
+                  <img src={URL.createObjectURL(file)} alt="upload" style={{ maxWidth: '100%', borderRadius: '8px' }} />
+                ) : (
+                  <div className="file-box" style={{ padding: '10px', background: 'rgba(0,0,0,0.05)', borderRadius: '8px', fontSize: '14px' }}>📄 {file.name}</div>
+                )}
+              </div>
+            ))}
+            {msg.text && (
+              <div className="text">
+                {msg.text.split('\n').map((line, i) => {
+                  if (line.startsWith('   •')) {
+                    return <div key={i} style={{ marginLeft: '20px', marginBottom: '4px' }}>{line}</div>;
+                  }
+                  if (line.startsWith('   ')) {
+                    return <div key={i} style={{ marginLeft: '16px', marginBottom: '4px', fontFamily: 'monospace' }}>{line}</div>;
+                  }
+                  if (line.startsWith('**') && line.endsWith('**')) {
+                    return <div key={i} style={{ fontWeight: 'bold', marginTop: '10px', marginBottom: '4px', fontSize: '0.95em' }}>{line}</div>;
+                  }
+                  return <div key={i} style={{ marginBottom: '2px' }}>{line}</div>;
+                })}
+              </div>
+            )}
+          </div>
+          <div className="msg-info">
+            {msg.role === 'ai' ? 'Judi' : 'You'} • {msg.time}
+            {msg.data && msg.role === 'ai' && (
+              <button 
+                className="expand-btn"
+                onClick={() => toggleMessageExpand(msg.id)}
+                style={{ marginLeft: '10px', fontSize: '12px', color: '#666', cursor: 'pointer' }}
+              >
+                {expandedMessage === msg.id ? '▼ Hide Details' : '▶ Show Full Details'}
+              </button>
+            )}
+          </div>
+          {expandedMessage === msg.id && msg.data && (
+            <div className="expanded-details" style={{ marginTop: '12px', padding: '12px', background: 'rgba(0,0,0,0.03)', borderRadius: '6px', fontSize: '13px' }}>
+              {msg.data.laws && msg.data.laws.length > 0 && (
+                <div style={{ marginBottom: '12px' }}>
+                  <strong>📜 All Applicable Laws ({msg.data.laws.length}):</strong>
+                  {msg.data.laws.map((law, idx) => (
+                    <div key={idx} style={{ marginTop: '6px', paddingLeft: '12px', borderLeft: '2px solid #007BFF' }}>
+                      <strong>Section {law.section}</strong> - {law.title}
+                      <div style={{ fontSize: '12px', color: '#666', marginTop: '2px' }}>{law.description}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {msg.data.steps && msg.data.steps.length > 0 && (
+                <div style={{ marginBottom: '12px' }}>
+                  <strong>📋 All Procedural Steps ({msg.data.steps.length}):</strong>
+                  <ol style={{ marginTop: '6px', paddingLeft: '16px' }}>
+                    {msg.data.steps.map((step, idx) => (
+                      <li key={idx} style={{ marginTop: '4px' }}>{step}</li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+              {msg.data.case_references && msg.data.case_references.length > 0 && (
+                <div>
+                  <strong>🏛️ Relevant Case Laws:</strong>
+                  {msg.data.case_references.slice(0, 3).map((caseRef, idx) => (
+                    <div key={idx} style={{ marginTop: '4px', fontSize: '12px' }}>• {caseRef}</div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -173,26 +352,7 @@ function App() {
               </div>
             )}
 
-            {messages.map(msg => (
-              <div key={msg.id} className={`message ${msg.role}`}>
-                <div className="msg-avatar">{msg.role === 'ai' ? '⚖️' : '👤'}</div>
-                <div className="msg-content">
-                  <div className="bubble">
-                    {msg.files && msg.files.map((file, i) => (
-                      <div key={i} className="msg-attachment" style={{ marginBottom: msg.text ? '10px' : '0' }}>
-                        {file.type.startsWith('image/') ? (
-                          <img src={URL.createObjectURL(file)} alt="upload" style={{ maxWidth: '100%', borderRadius: '8px' }} />
-                        ) : (
-                          <div className="file-box" style={{ padding: '10px', background: 'rgba(0,0,0,0.05)', borderRadius: '8px', fontSize: '14px' }}>📄 {file.name}</div>
-                        )}
-                      </div>
-                    ))}
-                    {msg.text && <div className="text">{msg.text}</div>}
-                  </div>
-                  <div className="msg-info">{msg.role === 'ai' ? 'Judi' : 'You'} • {msg.time}</div>
-                </div>
-              </div>
-            ))}
+            {messages.map(msg => renderMessage(msg))}
 
             {isTyping && (
               <div className="message ai">

@@ -1,0 +1,1201 @@
+text,label
+My senior punched me in the face,physical_assault
+A boy hit me with a stick,physical_assault
+They kicked me during a fight,physical_assault
+Someone beat me up behind the hostel,physical_assault
+A group attacked me and I got injured,physical_assault
+He slapped me hard across the face,physical_assault
+They threw me against the wall,physical_assault
+Multiple people assaulted me in the bathroom,physical_assault
+A teacher pushed me and I fell,physical_assault
+My senior punched my stomach repeatedly,physical_assault
+Someone attacked me with an iron rod,physical_assault
+They beat me with a cricket bat,physical_assault
+A gang of students beat me up,physical_assault
+I got physically hurt by a senior,physical_assault
+Someone threw me down the stairs,physical_assault
+A person hit me with a water bottle,physical_assault
+I was beaten up by multiple attackers,physical_assault
+My hostel senior kicked me repeatedly,physical_assault
+Someone struck me with a shoe,physical_assault
+A teacher physically abused me,physical_assault
+They punched me during an argument,physical_assault
+I got struck with a wooden plank,physical_assault
+My arm was twisted violently,physical_assault
+Someone choked me during a fight,physical_assault
+A senior broke my phone and hit me,physical_assault
+A senior touched me inappropriately without consent,sexual_assault
+Someone forced me into a private room and touched me,sexual_assault
+I was raped by someone at a party,sexual_assault
+A teacher touched me sexually,sexual_assault
+Someone tried to remove my clothes forcefully,sexual_assault
+I was sexually assaulted by multiple people,sexual_assault
+A senior coerced me into sexual activity,sexual_assault
+Someone grabbed me inappropriately in the hostel,sexual_assault
+I was sexually abused by a family friend,sexual_assault
+A stranger tried to rape me,sexual_assault
+Someone penetrated me against my will,sexual_assault
+I was sexually harassed and then assaulted,sexual_assault
+A person forced me to perform sexual acts,sexual_assault
+I was molested by someone I trusted,sexual_assault
+Someone forced me into a non-consensual sexual situation,sexual_assault
+My professor keeps making sexual comments to me,sexual_harassment
+A colleague touches me inappropriately on the shoulder,sexual_harassment
+Someone sends me unwanted sexual messages,sexual_harassment
+I get asked inappropriate sexual questions constantly,sexual_harassment
+A senior makes sexual jokes about me in public,sexual_harassment
+Someone stares at me in a sexual way,sexual_harassment
+A teacher calls me for extra classes with sexual innuendo,sexual_harassment
+My hostel warden makes sexual comments about my body,sexual_harassment
+A person keeps trying to hug me inappropriately,sexual_harassment
+Someone asks me to do sexual favors for grades,sexual_harassment
+A colleague makes explicit comments about me,sexual_harassment
+Someone keeps trying to kiss me without permission,sexual_harassment
+A person asks for intimate photos,sexual_harassment
+Someone sends me explicit videos unsolicited,sexual_harassment
+My senior asks me out with sexual undertones,sexual_harassment
+A person makes comments about my body constantly,sexual_harassment
+Someone tries to grab me inappropriately,sexual_harassment
+A friend keeps trying to kiss me despite saying no,sexual_harassment
+Someone sends me unwanted romantic proposals,sexual_harassment
+A teacher makes inappropriate eye contact and comments,sexual_harassment
+My professor said Dalits are naturally inferior,caste_discrimination
+A senior called me an untouchable as abuse,caste_discrimination
+They do not let me sit with them because of my caste,caste_discrimination
+I was denied admission because of my caste,caste_discrimination
+A teacher made casteist jokes about my surname,caste_discrimination
+Someone said I do not deserve to be in this college,caste_discrimination
+A hostel roommate refused to touch things I used,caste_discrimination
+My classmates avoid me because I am from a lower caste,caste_discrimination
+A senior said people of my caste are servants,caste_discrimination
+I was excluded from a group because of my caste,caste_discrimination
+Someone called me by a casteist slur repeatedly,caste_discrimination
+A professor gave me lower marks because of my caste,caste_discrimination
+My colleagues refuse to eat with me due to caste,caste_discrimination
+A person said my family is impure because of caste,caste_discrimination
+Someone made degrading comments about my caste,caste_discrimination
+I was told not to touch the water can because of my caste,caste_discrimination
+A person said I am too dirty because of my caste,caste_discrimination
+My roommate refuses to share utensils with me,caste_discrimination
+A senior excluded me from activities due to my caste,caste_discrimination
+Someone said casteist remarks about my occupation,caste_discrimination
+People discriminate against me because I am from Northeast,racism
+A teacher made racist jokes about my region,racism
+Someone called me a foreigner and kicked me out,racism
+My classmates do not include me because of my race,racism
+A person said all people from my region are terrorists,racism
+I was denied entry to a club because of my appearance,racism
+Someone said my accent makes me inferior,racism
+A senior called me by a racist slur,racism
+People assume I am poor because of my ethnicity,racism
+Someone made racist comments about my skin color,racism
+I was targeted for being from a tribal community,racism
+A teacher made demeaning comments about my region,racism
+Someone said I do not belong in India,racism
+A person excluded me for being from Northeast India,racism
+My colleagues made stereotypical jokes about my region,racism
+Someone refused to sit with me due to my race,racism
+A person said my community is backward,racism
+I was bullied for having a regional accent,racism
+Someone made comments about my facial features,racism
+A senior said people from my region are uneducated,racism
+A professor made derogatory comments about my religion,religious_discrimination
+I was forced to participate in religious practices not my own,religious_discrimination
+A roommate refused to share space with me due to my religion,religious_discrimination
+Someone said people of my faith are terrorists,religious_discrimination
+I was denied hostel accommodation because of my religion,religious_discrimination
+A teacher prevented me from leaving class for prayer,religious_discrimination
+Someone tried to force-feed me non-halal meat,religious_discrimination
+My classmates excluded me from events due to my religion,religious_discrimination
+A person said my religious beliefs are wrong,religious_discrimination
+I was prevented from wearing my religious attire,religious_discrimination
+A senior made fun of my religious practices,religious_discrimination
+Someone threatened me for my religious beliefs,religious_discrimination
+I was told to convert to another religion,religious_discrimination
+A person vandalized my religious symbols,religious_discrimination
+A teacher discriminated against me in grades due to religion,religious_discrimination
+Someone said my religion promotes violence,religious_discrimination
+I was excluded from meals because of my religion,religious_discrimination
+A senior made derogatory comments about my faith,religious_discrimination
+Someone forced me to remove my religious jewelry,religious_discrimination
+A person said I do not deserve respect due to my religion,religious_discrimination
+A professor said girls are naturally bad at technical subjects,gender_discrimination
+I am given lower grade than boys for the same work,gender_discrimination
+A teacher told me women should not pursue engineering,gender_discrimination
+My family will not let me out because I am a woman,gender_discrimination
+A colleague said women are too emotional for leadership,gender_discrimination
+I am denied opportunities because I am male and stereotyped,gender_discrimination
+A person said I should focus on cooking instead of studies,gender_discrimination
+Someone told me to act more feminine or masculine,gender_discrimination
+A teacher assigns less important projects to girls,gender_discrimination
+A person assumes I am weak because of my gender,gender_discrimination
+I am paid less than colleagues for the same work,gender_discrimination
+A senior said women should not be out late,gender_discrimination
+Someone questioned my capability because of my gender,gender_discrimination
+A professor called on girls less in class,gender_discrimination
+I was told I am too pretty to be taken seriously,gender_discrimination
+A person made assumptions about my abilities due to gender,gender_discrimination
+I face different rules than opposite gender,gender_discrimination
+Someone said my gender makes me unsuitable for the job,gender_discrimination
+A teacher gives better grades to boys,gender_discrimination
+A person underestimated me based on gender,gender_discrimination
+My seniors forced me to do humiliating dares,ragging
+I was made to crawl and do push-ups as punishment,ragging
+Seniors humiliated me in front of the entire batch,ragging
+I was forced to perform degrading acts by seniors,ragging
+A senior made me sing dirty songs in public,ragging
+I was pressured to drink beyond my limits,ragging
+Seniors locked me in a room and abused me,ragging
+I was forced to reveal my secrets publicly,ragging
+A senior made me do push-ups at 2 AM,ragging
+I was thrown water balloons and abused verbally,ragging
+Seniors forced me to dance like they ordered,ragging
+I was made to do degrading physical exercises,ragging
+A senior forced me to call him with abusive names,ragging
+I was publicly shamed by a group of seniors,ragging
+Seniors forced me to perform humiliating tasks,ragging
+I was forced to beg for money from juniors,ragging
+A senior made me pledge to follow ridiculous rules,ragging
+I was forced to stay awake all night,ragging
+Seniors made me do their assignments,ragging
+I was threatened with worse treatment if I complained,ragging
+Someone threatened to kill me if I report them,threats
+A person said they will destroy my family,threats
+I received death threats on social media,threats
+Someone threatened to rape me if I tell anyone,threats
+A person said they know where I live and will harm me,threats
+I got threatened with exposure if I do not comply,threats
+Someone threatened to throw acid on me,threats
+A person threatened to post my intimate photos,threats
+I was threatened with dire consequences,threats
+A person said they will hurt my family members,threats
+Someone threatened to break my bones,threats
+I received anonymous threats on my phone,threats
+A person threatened to implicate me in a false case,threats
+Someone threatened to ruin my career,threats
+I was threatened with suspension if I report,threats
+A person threatened to harm my friends,threats
+Someone threatened me with violence repeatedly,threats
+I received threats of self-harm implications,threats
+A person threatened to publicize my secrets,threats
+Someone threatened to follow me home,threats
+A person follows me everywhere I go,stalking
+Someone constantly watches me from a distance,stalking
+A person waits for me outside my hostel daily,stalking
+I keep seeing the same person near my class,stalking
+Someone follows me even when I change routes,stalking
+A person obsessively tracks my social media,stalking
+I am being followed to my home repeatedly,stalking
+A person watches me through my hostel window,stalking
+Someone stalks me every time I go out,stalking
+A person follows me even to isolated places,stalking
+I keep finding the same person wherever I go,stalking
+Someone constantly monitors my movements,stalking
+A person knows my daily schedule and appears,stalking
+I am being followed by someone in a car,stalking
+A person obsessively takes photos of me,stalking
+Someone follows me despite multiple complaints,stalking
+I see the same person every time I leave hostel,stalking
+A person waits for me at recurring locations,stalking
+Someone follows me persistently for months,stalking
+A person appears whenever I am alone,stalking
+Someone sends me abusive messages on WhatsApp daily,cyber_harassment
+I am getting harassed through repeated emails,cyber_harassment
+A person keeps messaging me with insults,cyber_harassment
+Someone sends me threatening messages online,cyber_harassment
+I am being harassed through Instagram DMs,cyber_harassment
+A person keeps calling me with abusive language,cyber_harassment
+I receive hate messages from multiple accounts,cyber_harassment
+Someone keeps tagging me in abusive posts,cyber_harassment
+I am getting harassed through Telegram,cyber_harassment
+A person sends me harassing messages at odd hours,cyber_harassment
+I receive repeated threats through SMS,cyber_harassment
+Someone keeps commenting abusive things on my posts,cyber_harassment
+I am being harassed through anonymous accounts,cyber_harassment
+A person keeps forwarding my messages to embarrass me,cyber_harassment
+I receive harassing messages despite blocking,cyber_harassment
+Someone creates accounts to message me abusively,cyber_harassment
+I am getting cyberbullied in group chats,cyber_harassment
+A person keeps texting me with threats,cyber_harassment
+I am being harassed through online gaming platforms,cyber_harassment
+Someone keeps sending me abusive voice messages,cyber_harassment
+Someone posted hateful videos about my religion online,online_hate_speech
+I see posts calling for violence against my community,online_hate_speech
+A person made anti-Dalit posts targeting me,online_hate_speech
+Someone posted racist content about Northeast Indians,online_hate_speech
+I am targeted by online hate speech about my caste,online_hate_speech
+A person shared hateful comments about women,online_hate_speech
+I see organized hate posts about my community,online_hate_speech
+Someone posted misogynistic content targeting me,online_hate_speech
+A person shared Islamophobic content online,online_hate_speech
+I am targeted by coordinated hate campaigns,online_hate_speech
+Someone posted dehumanizing content about my group,online_hate_speech
+A person made threats wrapped in hate speech,online_hate_speech
+I see online communities organizing hate against my kind,online_hate_speech
+Someone posted to incite violence against my community,online_hate_speech
+A person shared content portraying my religion negatively,online_hate_speech
+I am targeted by casteist hate speech online,online_hate_speech
+Someone posted xenophobic content about my region,online_hate_speech
+A person shared homophobic hate speech targeting me,online_hate_speech
+I see content calling for discrimination against my group,online_hate_speech
+Someone organized hate speech against my community,online_hate_speech
+Someone created a fake account pretending to be me,impersonation_doxxing
+A person posted my personal information online,impersonation_doxxing
+Someone leaked my home address on social media,impersonation_doxxing
+I found my intimate photos shared without permission,impersonation_doxxing
+A person shared my phone number publicly online,impersonation_doxxing
+Someone impersonated me to damage my reputation,impersonation_doxxing
+I found deepfake videos of me online,impersonation_doxxing
+A person shared my family addresses,impersonation_doxxing
+Someone used my photos to create fake accounts,impersonation_doxxing
+I found my location tracked and shared,impersonation_doxxing
+A person leaked my workplace information,impersonation_doxxing
+Someone created videos with my face,impersonation_doxxing
+I found my personal details posted on forums,impersonation_doxxing
+A person hacked my account and impersonated me,impersonation_doxxing
+Someone shared screenshots of my private conversations,impersonation_doxxing
+I found my intimate images morphed and shared,impersonation_doxxing
+A person created a fake profile to impersonate me,impersonation_doxxing
+Someone shared my educational details publicly,impersonation_doxxing
+I found myself being impersonated in multiple forums,impersonation_doxxing
+A person shared my contact information for harassment,impersonation_doxxing
+Someone created morphed sexual videos of me,cyber_sexual_crime
+I am being sextorted - someone demands money for intimate photos,cyber_sexual_crime
+A person sent me non-consensual intimate images,cyber_sexual_crime
+Someone threatens to leak my intimate photos,cyber_sexual_crime
+I am being threatened with exposure of intimate content,cyber_sexual_crime
+A person demands sexual favors with threat of exposure,cyber_sexual_crime
+Someone created fake nude images of me,cyber_sexual_crime
+I am receiving unsolicited explicit videos,cyber_sexual_crime
+A person threatens to post my intimate videos,cyber_sexual_crime
+Someone demands intimate photos with threats,cyber_sexual_crime
+I am being blackmailed with intimate images,cyber_sexual_crime
+A person created and shared my deepfake porn,cyber_sexual_crime
+Someone sends unwanted explicit content to my family,cyber_sexual_crime
+I am being coerced for intimate content online,cyber_sexual_crime
+A person threatens my family with leaked intimate photos,cyber_sexual_crime
+Someone shares my intimate content in group chats,cyber_sexual_crime
+I am being harassed with AI-generated sexual content,cyber_sexual_crime
+A person demands money for not leaking intimate photos,cyber_sexual_crime
+Someone threatens my career with intimate content,cyber_sexual_crime
+I am being sexually exploited through online blackmail,cyber_sexual_crime
+Someone demands money or they will expose my secrets,blackmail_extortion
+A person threatens to hurt me if I do not pay,blackmail_extortion
+I am being blackmailed with intimate photos,blackmail_extortion
+Someone demands money threatening to tell my family,blackmail_extortion
+A person extorts money with threats of violence,blackmail_extortion
+Someone blackmails me with academic information,blackmail_extortion
+I am forced to pay money to stop harassment,blackmail_extortion
+A person demands money with threats of exposure,blackmail_extortion
+Someone extorts money threatening legal complaints,blackmail_extortion
+I am being blackmailed with false accusations,blackmail_extortion
+A person demands money or they will harm my family,blackmail_extortion
+Someone blackmails me with my past mistakes,blackmail_extortion
+I am forced to pay to avoid physical harm,blackmail_extortion
+A person demands money threatening my career,blackmail_extortion
+Someone extorts money with threats to my reputation,blackmail_extortion
+I am blackmailed with workplace information,blackmail_extortion
+A person demands money threatening social exposure,blackmail_extortion
+Someone extorts money threatening to contact police,blackmail_extortion
+I am forced to pay to avoid false accusations,blackmail_extortion
+A person blackmails me with recorded conversations,blackmail_extortion
+Someone spread false rumors about me ruining my reputation,defamation_privacy_fraud
+A person posted lies about me on social media,defamation_privacy_fraud
+Someone made false accusations to damage me,defamation_privacy_fraud
+I am being defamed through false posts,defamation_privacy_fraud
+A person spread fake stories about my character,defamation_privacy_fraud
+Someone violated my privacy by sharing personal info,defamation_privacy_fraud
+I found my private messages shared publicly,defamation_privacy_fraud
+A person committed fraud in my name,defamation_privacy_fraud
+Someone created a fake resume pretending to be me,defamation_privacy_fraud
+I am accused of cheating with someone else work,defamation_privacy_fraud
+A person defames me with false allegations,defamation_privacy_fraud
+Someone leaked my confidential information,defamation_privacy_fraud
+I am suffering financial fraud in my name,defamation_privacy_fraud
+A person spread false rumors about my family,defamation_privacy_fraud
+Someone violated my privacy with hidden recordings,defamation_privacy_fraud
+I found false information spread about my sexuality,defamation_privacy_fraud
+A person committed identity fraud using my details,defamation_privacy_fraud
+Someone spread lies about my academic performance,defamation_privacy_fraud
+I am being defamed with fabricated stories,defamation_privacy_fraud
+A person violated my privacy through surveillance,defamation_privacy_fraud
+My college is blocking my TC because I complained,institutional_misconduct
+A professor is retaliating against me for reporting abuse,institutional_misconduct
+The college will not investigate harassment complaints,institutional_misconduct
+A teacher is giving me bad marks for reporting them,institutional_misconduct
+The administration is covering up abuse cases,institutional_misconduct
+I am being threatened with expulsion for complaining,institutional_misconduct
+A college official is demanding money for favors,institutional_misconduct
+The college is illegally holding my original documents,institutional_misconduct
+A teacher is sexually harassing me and administration ignores,institutional_misconduct
+I am facing institutional retaliation for speaking up,institutional_misconduct
+The college is biased against me for my caste,institutional_misconduct
+An administrator abused me and there is no investigation,institutional_misconduct
+The college administration is ignoring rape complaints,institutional_misconduct
+A faculty member is abusing power over my grades,institutional_misconduct
+The institution is enabling serial abusers,institutional_misconduct
+I am being punished for reporting misconduct,institutional_misconduct
+The college will not let me change my hostel after abuse,institutional_misconduct
+An official is extorting money for college favors,institutional_misconduct
+The administration is covering up a crime,institutional_misconduct
+I am facing administrative punishment for reporting harassment,institutional_misconduct
+My college is illegally holding my original certificates,administrative_violation
+I am forced to sign an illegal bond against my will,administrative_violation
+The college will not give me my TC even after graduation,administrative_violation
+They are forcing me to sign an undertaking to stay quiet,administrative_violation
+The college is illegally blocking my migration certificate,administrative_violation
+I am forced to pay extra fees for my documents,administrative_violation
+The college will not release my degree certificate,administrative_violation
+They are threatening me with certificate blocking,administrative_violation
+The college is violating my right to education,administrative_violation
+I cannot transfer because they will not issue my TC,administrative_violation
+The college forced me to sign illegal terms,administrative_violation
+They are making illegal financial demands,administrative_violation
+The administration is violating my document rights,administrative_violation
+I am blocked from leaving because of illegal bonds,administrative_violation
+The college is illegally holding my academic records,administrative_violation
+They are forcing impossible conditions for my certificate,administrative_violation
+The college is unlawfully restricting my freedom,administrative_violation
+I cannot pursue higher education due to illegal blockade,administrative_violation
+The administration is making extortion-like demands,administrative_violation
+They are violating my constitutional right to freedom,administrative_violation
+I am treated unfairly because I am from a poor family,general_discrimination
+A person discriminates against me based on my appearance,general_discrimination
+I face discrimination due to my disability,general_discrimination
+A person treats me differently because of my family background,general_discrimination
+I am excluded due to my economic status,general_discrimination
+A person discriminates against me based on age,general_discrimination
+I face unfair treatment due to my occupation,general_discrimination
+A person treats me poorly due to where I am from,general_discrimination
+I am discriminated against due to my accent,general_discrimination
+A person excludes me due to my beliefs,general_discrimination
+I face discrimination at work due to my background,general_discrimination
+A person treats me poorly due to my lifestyle,general_discrimination
+I am excluded from activities due to my status,general_discrimination
+A person discriminates based on my education level,general_discrimination
+I face unfair treatment due to my family structure,general_discrimination
+A person treats me poorly due to my social status,general_discrimination
+I am discriminated against due to my orientation,general_discrimination
+A person excludes me based on stereotypes,general_discrimination
+I face bias due to my cultural background,general_discrimination
+A person treats me unfairly due to my social circle,general_discrimination
+A person constantly insults and abuses me verbally,verbal_abuse
+Someone calls me degrading names regularly,verbal_abuse
+I am verbally abused for making mistakes,verbal_abuse
+A person yells and uses foul language at me,verbal_abuse
+I am insulted and belittled in front of others,verbal_abuse
+A person uses harsh words to hurt me daily,verbal_abuse
+I am verbally assaulted with derogatory comments,verbal_abuse
+A person abuses me with offensive language,verbal_abuse
+I am constantly criticized in a demeaning way,verbal_abuse
+A person uses verbal aggression against me,verbal_abuse
+I am insulted with personal attacks,verbal_abuse
+A person verbally demeans me in public,verbal_abuse
+I am hurt by harsh and cruel verbal comments,verbal_abuse
+A person uses abusive language when I disagree,verbal_abuse
+I am verbally attacked for my opinions,verbal_abuse
+A person insults my intelligence and abilities,verbal_abuse
+I am verbally abused for my appearance,verbal_abuse
+A person uses demeaning language toward me,verbal_abuse
+I am hurt by constant criticism and name-calling,verbal_abuse
+A person verbally attacks my character,verbal_abuse
+My senior punched me in the face,physical_assault
+My senior punched me in the face (This is happening to me regularly),physical_assault
+A boy hit me with a stick,physical_assault
+A boy hit me with a stick (This is happening to me regularly),physical_assault
+They kicked me during a fight,physical_assault
+They kicked me during a fight (This is happening to me regularly),physical_assault
+Someone beat me up behind the hostel,physical_assault
+Someone beat me up behind the hostel (This is happening to me regularly),physical_assault
+A group attacked me and I got injured,physical_assault
+A group attacked me and I got injured (This is happening to me regularly),physical_assault
+He slapped me hard across the face,physical_assault
+He slapped me hard across the face (This is happening to me regularly),physical_assault
+They threw me against the wall,physical_assault
+They threw me against the wall (This is happening to me regularly),physical_assault
+Multiple people assaulted me in the bathroom,physical_assault
+Multiple people assaulted me in the bathroom (This is happening to me regularly),physical_assault
+A teacher pushed me and I fell,physical_assault
+A teacher pushed me and I fell (This is happening to me regularly),physical_assault
+My senior punched my stomach repeatedly,physical_assault
+My senior punched my stomach repeatedly (This is happening to me regularly),physical_assault
+Someone attacked me with an iron rod,physical_assault
+Someone attacked me with an iron rod (This is happening to me regularly),physical_assault
+They beat me with a cricket bat,physical_assault
+They beat me with a cricket bat (This is happening to me regularly),physical_assault
+A gang of students beat me up,physical_assault
+A gang of students beat me up (This is happening to me regularly),physical_assault
+I got physically hurt by a senior,physical_assault
+I got physically hurt by a senior (This is happening to me regularly),physical_assault
+Someone threw me down the stairs,physical_assault
+Someone threw me down the stairs (This is happening to me regularly),physical_assault
+A person hit me with a water bottle,physical_assault
+A person hit me with a water bottle (This is happening to me regularly),physical_assault
+I was beaten up by multiple attackers,physical_assault
+I was beaten up by multiple attackers (This is happening to me regularly),physical_assault
+My hostel senior kicked me repeatedly,physical_assault
+My hostel senior kicked me repeatedly (This is happening to me regularly),physical_assault
+Someone struck me with a shoe,physical_assault
+Someone struck me with a shoe (This is happening to me regularly),physical_assault
+A teacher physically abused me,physical_assault
+A teacher physically abused me (This is happening to me regularly),physical_assault
+They punched me during an argument,physical_assault
+They punched me during an argument (This is happening to me regularly),physical_assault
+I got struck with a wooden plank,physical_assault
+I got struck with a wooden plank (This is happening to me regularly),physical_assault
+My arm was twisted violently,physical_assault
+My arm was twisted violently (This is happening to me regularly),physical_assault
+Someone choked me during a fight,physical_assault
+Someone choked me during a fight (This is happening to me regularly),physical_assault
+A senior broke my phone and hit me,physical_assault
+A senior broke my phone and hit me (This is happening to me regularly),physical_assault
+A senior touched me inappropriately without consent,sexual_assault
+A senior touched me inappropriately without consent (This is happening to me regularly),sexual_assault
+Someone forced me into a private room and touched me,sexual_assault
+Someone forced me into a private room and touched me (This is happening to me regularly),sexual_assault
+I was raped by someone at a party,sexual_assault
+I was raped by someone at a party (This is happening to me regularly),sexual_assault
+A teacher touched me sexually,sexual_assault
+A teacher touched me sexually (This is happening to me regularly),sexual_assault
+Someone tried to remove my clothes forcefully,sexual_assault
+Someone tried to remove my clothes forcefully (This is happening to me regularly),sexual_assault
+I was sexually assaulted by multiple people,sexual_assault
+I was sexually assaulted by multiple people (This is happening to me regularly),sexual_assault
+A senior coerced me into sexual activity,sexual_assault
+A senior coerced me into sexual activity (This is happening to me regularly),sexual_assault
+Someone grabbed me inappropriately in the hostel,sexual_assault
+Someone grabbed me inappropriately in the hostel (This is happening to me regularly),sexual_assault
+I was sexually abused by a family friend,sexual_assault
+I was sexually abused by a family friend (This is happening to me regularly),sexual_assault
+A stranger tried to rape me,sexual_assault
+A stranger tried to rape me (This is happening to me regularly),sexual_assault
+Someone penetrated me against my will,sexual_assault
+Someone penetrated me against my will (This is happening to me regularly),sexual_assault
+I was sexually harassed and then assaulted,sexual_assault
+I was sexually harassed and then assaulted (This is happening to me regularly),sexual_assault
+A person forced me to perform sexual acts,sexual_assault
+A person forced me to perform sexual acts (This is happening to me regularly),sexual_assault
+I was molested by someone I trusted,sexual_assault
+I was molested by someone I trusted (This is happening to me regularly),sexual_assault
+Someone forced me into a non-consensual sexual situation,sexual_assault
+Someone forced me into a non-consensual sexual situation (This is happening to me regularly),sexual_assault
+My professor keeps making sexual comments to me,sexual_harassment
+My professor keeps making sexual comments to me (This is happening to me regularly),sexual_harassment
+A colleague touches me inappropriately on the shoulder,sexual_harassment
+A colleague touches me inappropriately on the shoulder (This is happening to me regularly),sexual_harassment
+Someone sends me unwanted sexual messages,sexual_harassment
+Someone sends me unwanted sexual messages (This is happening to me regularly),sexual_harassment
+I get asked inappropriate sexual questions constantly,sexual_harassment
+I get asked inappropriate sexual questions constantly (This is happening to me regularly),sexual_harassment
+A senior makes sexual jokes about me in public,sexual_harassment
+A senior makes sexual jokes about me in public (This is happening to me regularly),sexual_harassment
+Someone stares at me in a sexual way,sexual_harassment
+Someone stares at me in a sexual way (This is happening to me regularly),sexual_harassment
+A teacher calls me for extra classes with sexual innuendo,sexual_harassment
+A teacher calls me for extra classes with sexual innuendo (This is happening to me regularly),sexual_harassment
+My hostel warden makes sexual comments about my body,sexual_harassment
+My hostel warden makes sexual comments about my body (This is happening to me regularly),sexual_harassment
+A person keeps trying to hug me inappropriately,sexual_harassment
+A person keeps trying to hug me inappropriately (This is happening to me regularly),sexual_harassment
+Someone asks me to do sexual favors for grades,sexual_harassment
+Someone asks me to do sexual favors for grades (This is happening to me regularly),sexual_harassment
+A colleague makes explicit comments about me,sexual_harassment
+A colleague makes explicit comments about me (This is happening to me regularly),sexual_harassment
+Someone keeps trying to kiss me without permission,sexual_harassment
+Someone keeps trying to kiss me without permission (This is happening to me regularly),sexual_harassment
+A person asks for intimate photos,sexual_harassment
+A person asks for intimate photos (This is happening to me regularly),sexual_harassment
+Someone sends me explicit videos unsolicited,sexual_harassment
+Someone sends me explicit videos unsolicited (This is happening to me regularly),sexual_harassment
+My senior asks me out with sexual undertones,sexual_harassment
+My senior asks me out with sexual undertones (This is happening to me regularly),sexual_harassment
+A person makes comments about my body constantly,sexual_harassment
+A person makes comments about my body constantly (This is happening to me regularly),sexual_harassment
+Someone tries to grab me inappropriately,sexual_harassment
+Someone tries to grab me inappropriately (This is happening to me regularly),sexual_harassment
+A friend keeps trying to kiss me despite saying no,sexual_harassment
+A friend keeps trying to kiss me despite saying no (This is happening to me regularly),sexual_harassment
+Someone sends me unwanted romantic proposals,sexual_harassment
+Someone sends me unwanted romantic proposals (This is happening to me regularly),sexual_harassment
+A teacher makes inappropriate eye contact and comments,sexual_harassment
+A teacher makes inappropriate eye contact and comments (This is happening to me regularly),sexual_harassment
+My professor said Dalits are naturally inferior,caste_discrimination
+My professor said Dalits are naturally inferior (This is happening to me regularly),caste_discrimination
+A senior called me an untouchable as abuse,caste_discrimination
+A senior called me an untouchable as abuse (This is happening to me regularly),caste_discrimination
+They do not let me sit with them because of my caste,caste_discrimination
+They do not let me sit with them because of my caste (This is happening to me regularly),caste_discrimination
+I was denied admission because of my caste,caste_discrimination
+I was denied admission because of my caste (This is happening to me regularly),caste_discrimination
+A teacher made casteist jokes about my surname,caste_discrimination
+A teacher made casteist jokes about my surname (This is happening to me regularly),caste_discrimination
+Someone said I do not deserve to be in this college,caste_discrimination
+Someone said I do not deserve to be in this college (This is happening to me regularly),caste_discrimination
+A hostel roommate refused to touch things I used,caste_discrimination
+A hostel roommate refused to touch things I used (This is happening to me regularly),caste_discrimination
+My classmates avoid me because I am from a lower caste,caste_discrimination
+My classmates avoid me because I am from a lower caste (This is happening to me regularly),caste_discrimination
+A senior said people of my caste are servants,caste_discrimination
+A senior said people of my caste are servants (This is happening to me regularly),caste_discrimination
+I was excluded from a group because of my caste,caste_discrimination
+I was excluded from a group because of my caste (This is happening to me regularly),caste_discrimination
+Someone called me by a casteist slur repeatedly,caste_discrimination
+Someone called me by a casteist slur repeatedly (This is happening to me regularly),caste_discrimination
+A professor gave me lower marks because of my caste,caste_discrimination
+A professor gave me lower marks because of my caste (This is happening to me regularly),caste_discrimination
+My colleagues refuse to eat with me due to caste,caste_discrimination
+My colleagues refuse to eat with me due to caste (This is happening to me regularly),caste_discrimination
+A person said my family is impure because of caste,caste_discrimination
+A person said my family is impure because of caste (This is happening to me regularly),caste_discrimination
+Someone made degrading comments about my caste,caste_discrimination
+Someone made degrading comments about my caste (This is happening to me regularly),caste_discrimination
+I was told not to touch the water can because of my caste,caste_discrimination
+I was told not to touch the water can because of my caste (This is happening to me regularly),caste_discrimination
+A person said I am too dirty because of my caste,caste_discrimination
+A person said I am too dirty because of my caste (This is happening to me regularly),caste_discrimination
+My roommate refuses to share utensils with me,caste_discrimination
+My roommate refuses to share utensils with me (This is happening to me regularly),caste_discrimination
+A senior excluded me from activities due to my caste,caste_discrimination
+A senior excluded me from activities due to my caste (This is happening to me regularly),caste_discrimination
+Someone said casteist remarks about my occupation,caste_discrimination
+Someone said casteist remarks about my occupation (This is happening to me regularly),caste_discrimination
+People discriminate against me because I am from Northeast,racism
+People discriminate against me because I am from Northeast (This is happening to me regularly),racism
+A teacher made racist jokes about my region,racism
+A teacher made racist jokes about my region (This is happening to me regularly),racism
+Someone called me a foreigner and kicked me out,racism
+Someone called me a foreigner and kicked me out (This is happening to me regularly),racism
+My classmates do not include me because of my race,racism
+My classmates do not include me because of my race (This is happening to me regularly),racism
+A person said all people from my region are terrorists,racism
+A person said all people from my region are terrorists (This is happening to me regularly),racism
+I was denied entry to a club because of my appearance,racism
+I was denied entry to a club because of my appearance (This is happening to me regularly),racism
+Someone said my accent makes me inferior,racism
+Someone said my accent makes me inferior (This is happening to me regularly),racism
+A senior called me by a racist slur,racism
+A senior called me by a racist slur (This is happening to me regularly),racism
+People assume I am poor because of my ethnicity,racism
+People assume I am poor because of my ethnicity (This is happening to me regularly),racism
+Someone made racist comments about my skin color,racism
+Someone made racist comments about my skin color (This is happening to me regularly),racism
+I was targeted for being from a tribal community,racism
+I was targeted for being from a tribal community (This is happening to me regularly),racism
+A teacher made demeaning comments about my region,racism
+A teacher made demeaning comments about my region (This is happening to me regularly),racism
+Someone said I do not belong in India,racism
+Someone said I do not belong in India (This is happening to me regularly),racism
+A person excluded me for being from Northeast India,racism
+A person excluded me for being from Northeast India (This is happening to me regularly),racism
+My colleagues made stereotypical jokes about my region,racism
+My colleagues made stereotypical jokes about my region (This is happening to me regularly),racism
+Someone refused to sit with me due to my race,racism
+Someone refused to sit with me due to my race (This is happening to me regularly),racism
+A person said my community is backward,racism
+A person said my community is backward (This is happening to me regularly),racism
+I was bullied for having a regional accent,racism
+I was bullied for having a regional accent (This is happening to me regularly),racism
+Someone made comments about my facial features,racism
+Someone made comments about my facial features (This is happening to me regularly),racism
+A senior said people from my region are uneducated,racism
+A senior said people from my region are uneducated (This is happening to me regularly),racism
+A professor made derogatory comments about my religion,religious_discrimination
+A professor made derogatory comments about my religion (This is happening to me regularly),religious_discrimination
+I was forced to participate in religious practices not my own,religious_discrimination
+I was forced to participate in religious practices not my own (This is happening to me regularly),religious_discrimination
+A roommate refused to share space with me due to my religion,religious_discrimination
+A roommate refused to share space with me due to my religion (This is happening to me regularly),religious_discrimination
+Someone said people of my faith are terrorists,religious_discrimination
+Someone said people of my faith are terrorists (This is happening to me regularly),religious_discrimination
+I was denied hostel accommodation because of my religion,religious_discrimination
+I was denied hostel accommodation because of my religion (This is happening to me regularly),religious_discrimination
+A teacher prevented me from leaving class for prayer,religious_discrimination
+A teacher prevented me from leaving class for prayer (This is happening to me regularly),religious_discrimination
+Someone tried to force-feed me non-halal meat,religious_discrimination
+Someone tried to force-feed me non-halal meat (This is happening to me regularly),religious_discrimination
+My classmates excluded me from events due to my religion,religious_discrimination
+My classmates excluded me from events due to my religion (This is happening to me regularly),religious_discrimination
+A person said my religious beliefs are wrong,religious_discrimination
+A person said my religious beliefs are wrong (This is happening to me regularly),religious_discrimination
+I was prevented from wearing my religious attire,religious_discrimination
+I was prevented from wearing my religious attire (This is happening to me regularly),religious_discrimination
+A senior made fun of my religious practices,religious_discrimination
+A senior made fun of my religious practices (This is happening to me regularly),religious_discrimination
+Someone threatened me for my religious beliefs,religious_discrimination
+Someone threatened me for my religious beliefs (This is happening to me regularly),religious_discrimination
+I was told to convert to another religion,religious_discrimination
+I was told to convert to another religion (This is happening to me regularly),religious_discrimination
+A person vandalized my religious symbols,religious_discrimination
+A person vandalized my religious symbols (This is happening to me regularly),religious_discrimination
+A teacher discriminated against me in grades due to religion,religious_discrimination
+A teacher discriminated against me in grades due to religion (This is happening to me regularly),religious_discrimination
+Someone said my religion promotes violence,religious_discrimination
+Someone said my religion promotes violence (This is happening to me regularly),religious_discrimination
+I was excluded from meals because of my religion,religious_discrimination
+I was excluded from meals because of my religion (This is happening to me regularly),religious_discrimination
+A senior made derogatory comments about my faith,religious_discrimination
+A senior made derogatory comments about my faith (This is happening to me regularly),religious_discrimination
+Someone forced me to remove my religious jewelry,religious_discrimination
+Someone forced me to remove my religious jewelry (This is happening to me regularly),religious_discrimination
+A person said I do not deserve respect due to my religion,religious_discrimination
+A person said I do not deserve respect due to my religion (This is happening to me regularly),religious_discrimination
+A professor said girls are naturally bad at technical subjects,gender_discrimination
+A professor said girls are naturally bad at technical subjects (This is happening to me regularly),gender_discrimination
+I am given lower grade than boys for the same work,gender_discrimination
+I am given lower grade than boys for the same work (This is happening to me regularly),gender_discrimination
+A teacher told me women should not pursue engineering,gender_discrimination
+A teacher told me women should not pursue engineering (This is happening to me regularly),gender_discrimination
+My family will not let me out because I am a woman,gender_discrimination
+My family will not let me out because I am a woman (This is happening to me regularly),gender_discrimination
+A colleague said women are too emotional for leadership,gender_discrimination
+A colleague said women are too emotional for leadership (This is happening to me regularly),gender_discrimination
+I am denied opportunities because I am male and stereotyped,gender_discrimination
+I am denied opportunities because I am male and stereotyped (This is happening to me regularly),gender_discrimination
+A person said I should focus on cooking instead of studies,gender_discrimination
+A person said I should focus on cooking instead of studies (This is happening to me regularly),gender_discrimination
+Someone told me to act more feminine or masculine,gender_discrimination
+Someone told me to act more feminine or masculine (This is happening to me regularly),gender_discrimination
+A teacher assigns less important projects to girls,gender_discrimination
+A teacher assigns less important projects to girls (This is happening to me regularly),gender_discrimination
+A person assumes I am weak because of my gender,gender_discrimination
+A person assumes I am weak because of my gender (This is happening to me regularly),gender_discrimination
+I am paid less than colleagues for the same work,gender_discrimination
+I am paid less than colleagues for the same work (This is happening to me regularly),gender_discrimination
+A senior said women should not be out late,gender_discrimination
+A senior said women should not be out late (This is happening to me regularly),gender_discrimination
+Someone questioned my capability because of my gender,gender_discrimination
+Someone questioned my capability because of my gender (This is happening to me regularly),gender_discrimination
+A professor called on girls less in class,gender_discrimination
+A professor called on girls less in class (This is happening to me regularly),gender_discrimination
+I was told I am too pretty to be taken seriously,gender_discrimination
+I was told I am too pretty to be taken seriously (This is happening to me regularly),gender_discrimination
+A person made assumptions about my abilities due to gender,gender_discrimination
+A person made assumptions about my abilities due to gender (This is happening to me regularly),gender_discrimination
+I face different rules than opposite gender,gender_discrimination
+I face different rules than opposite gender (This is happening to me regularly),gender_discrimination
+Someone said my gender makes me unsuitable for the job,gender_discrimination
+Someone said my gender makes me unsuitable for the job (This is happening to me regularly),gender_discrimination
+A teacher gives better grades to boys,gender_discrimination
+A teacher gives better grades to boys (This is happening to me regularly),gender_discrimination
+A person underestimated me based on gender,gender_discrimination
+A person underestimated me based on gender (This is happening to me regularly),gender_discrimination
+My seniors forced me to do humiliating dares,ragging
+My seniors forced me to do humiliating dares (This is happening to me regularly),ragging
+I was made to crawl and do push-ups as punishment,ragging
+I was made to crawl and do push-ups as punishment (This is happening to me regularly),ragging
+Seniors humiliated me in front of the entire batch,ragging
+Seniors humiliated me in front of the entire batch (This is happening to me regularly),ragging
+I was forced to perform degrading acts by seniors,ragging
+I was forced to perform degrading acts by seniors (This is happening to me regularly),ragging
+A senior made me sing dirty songs in public,ragging
+A senior made me sing dirty songs in public (This is happening to me regularly),ragging
+I was pressured to drink beyond my limits,ragging
+I was pressured to drink beyond my limits (This is happening to me regularly),ragging
+Seniors locked me in a room and abused me,ragging
+Seniors locked me in a room and abused me (This is happening to me regularly),ragging
+I was forced to reveal my secrets publicly,ragging
+I was forced to reveal my secrets publicly (This is happening to me regularly),ragging
+A senior made me do push-ups at 2 AM,ragging
+A senior made me do push-ups at 2 AM (This is happening to me regularly),ragging
+I was thrown water balloons and abused verbally,ragging
+I was thrown water balloons and abused verbally (This is happening to me regularly),ragging
+Seniors forced me to dance like they ordered,ragging
+Seniors forced me to dance like they ordered (This is happening to me regularly),ragging
+I was made to do degrading physical exercises,ragging
+I was made to do degrading physical exercises (This is happening to me regularly),ragging
+A senior forced me to call him with abusive names,ragging
+A senior forced me to call him with abusive names (This is happening to me regularly),ragging
+I was publicly shamed by a group of seniors,ragging
+I was publicly shamed by a group of seniors (This is happening to me regularly),ragging
+Seniors forced me to perform humiliating tasks,ragging
+Seniors forced me to perform humiliating tasks (This is happening to me regularly),ragging
+I was forced to beg for money from juniors,ragging
+I was forced to beg for money from juniors (This is happening to me regularly),ragging
+A senior made me pledge to follow ridiculous rules,ragging
+A senior made me pledge to follow ridiculous rules (This is happening to me regularly),ragging
+I was forced to stay awake all night,ragging
+I was forced to stay awake all night (This is happening to me regularly),ragging
+Seniors made me do their assignments,ragging
+Seniors made me do their assignments (This is happening to me regularly),ragging
+I was threatened with worse treatment if I complained,ragging
+I was threatened with worse treatment if I complained (This is happening to me regularly),ragging
+Someone threatened to kill me if I report them,threats
+Someone threatened to kill me if I report them (This is happening to me regularly),threats
+A person said they will destroy my family,threats
+A person said they will destroy my family (This is happening to me regularly),threats
+I received death threats on social media,threats
+I received death threats on social media (This is happening to me regularly),threats
+Someone threatened to rape me if I tell anyone,threats
+Someone threatened to rape me if I tell anyone (This is happening to me regularly),threats
+A person said they know where I live and will harm me,threats
+A person said they know where I live and will harm me (This is happening to me regularly),threats
+I got threatened with exposure if I do not comply,threats
+I got threatened with exposure if I do not comply (This is happening to me regularly),threats
+Someone threatened to throw acid on me,threats
+Someone threatened to throw acid on me (This is happening to me regularly),threats
+A person threatened to post my intimate photos,threats
+A person threatened to post my intimate photos (This is happening to me regularly),threats
+I was threatened with dire consequences,threats
+I was threatened with dire consequences (This is happening to me regularly),threats
+A person said they will hurt my family members,threats
+A person said they will hurt my family members (This is happening to me regularly),threats
+Someone threatened to break my bones,threats
+Someone threatened to break my bones (This is happening to me regularly),threats
+I received anonymous threats on my phone,threats
+I received anonymous threats on my phone (This is happening to me regularly),threats
+A person threatened to implicate me in a false case,threats
+A person threatened to implicate me in a false case (This is happening to me regularly),threats
+Someone threatened to ruin my career,threats
+Someone threatened to ruin my career (This is happening to me regularly),threats
+I was threatened with suspension if I report,threats
+I was threatened with suspension if I report (This is happening to me regularly),threats
+A person threatened to harm my friends,threats
+A person threatened to harm my friends (This is happening to me regularly),threats
+Someone threatened me with violence repeatedly,threats
+Someone threatened me with violence repeatedly (This is happening to me regularly),threats
+I received threats of self-harm implications,threats
+I received threats of self-harm implications (This is happening to me regularly),threats
+A person threatened to publicize my secrets,threats
+A person threatened to publicize my secrets (This is happening to me regularly),threats
+Someone threatened to follow me home,threats
+Someone threatened to follow me home (This is happening to me regularly),threats
+A person follows me everywhere I go,stalking
+A person follows me everywhere I go (This is happening to me regularly),stalking
+Someone constantly watches me from a distance,stalking
+Someone constantly watches me from a distance (This is happening to me regularly),stalking
+A person waits for me outside my hostel daily,stalking
+A person waits for me outside my hostel daily (This is happening to me regularly),stalking
+I keep seeing the same person near my class,stalking
+I keep seeing the same person near my class (This is happening to me regularly),stalking
+Someone follows me even when I change routes,stalking
+Someone follows me even when I change routes (This is happening to me regularly),stalking
+A person obsessively tracks my social media,stalking
+A person obsessively tracks my social media (This is happening to me regularly),stalking
+I am being followed to my home repeatedly,stalking
+I am being followed to my home repeatedly (This is happening to me regularly),stalking
+A person watches me through my hostel window,stalking
+A person watches me through my hostel window (This is happening to me regularly),stalking
+Someone stalks me every time I go out,stalking
+Someone stalks me every time I go out (This is happening to me regularly),stalking
+A person follows me even to isolated places,stalking
+A person follows me even to isolated places (This is happening to me regularly),stalking
+I keep finding the same person wherever I go,stalking
+I keep finding the same person wherever I go (This is happening to me regularly),stalking
+Someone constantly monitors my movements,stalking
+Someone constantly monitors my movements (This is happening to me regularly),stalking
+A person knows my daily schedule and appears,stalking
+A person knows my daily schedule and appears (This is happening to me regularly),stalking
+I am being followed by someone in a car,stalking
+I am being followed by someone in a car (This is happening to me regularly),stalking
+A person obsessively takes photos of me,stalking
+A person obsessively takes photos of me (This is happening to me regularly),stalking
+Someone follows me despite multiple complaints,stalking
+Someone follows me despite multiple complaints (This is happening to me regularly),stalking
+I see the same person every time I leave hostel,stalking
+I see the same person every time I leave hostel (This is happening to me regularly),stalking
+A person waits for me at recurring locations,stalking
+A person waits for me at recurring locations (This is happening to me regularly),stalking
+Someone follows me persistently for months,stalking
+Someone follows me persistently for months (This is happening to me regularly),stalking
+A person appears whenever I am alone,stalking
+A person appears whenever I am alone (This is happening to me regularly),stalking
+Someone sends me abusive messages on WhatsApp daily,cyber_harassment
+Someone sends me abusive messages on WhatsApp daily (This is happening to me regularly),cyber_harassment
+I am getting harassed through repeated emails,cyber_harassment
+I am getting harassed through repeated emails (This is happening to me regularly),cyber_harassment
+A person keeps messaging me with insults,cyber_harassment
+A person keeps messaging me with insults (This is happening to me regularly),cyber_harassment
+Someone sends me threatening messages online,cyber_harassment
+Someone sends me threatening messages online (This is happening to me regularly),cyber_harassment
+I am being harassed through Instagram DMs,cyber_harassment
+I am being harassed through Instagram DMs (This is happening to me regularly),cyber_harassment
+A person keeps calling me with abusive language,cyber_harassment
+A person keeps calling me with abusive language (This is happening to me regularly),cyber_harassment
+I receive hate messages from multiple accounts,cyber_harassment
+I receive hate messages from multiple accounts (This is happening to me regularly),cyber_harassment
+Someone keeps tagging me in abusive posts,cyber_harassment
+Someone keeps tagging me in abusive posts (This is happening to me regularly),cyber_harassment
+I am getting harassed through Telegram,cyber_harassment
+I am getting harassed through Telegram (This is happening to me regularly),cyber_harassment
+A person sends me harassing messages at odd hours,cyber_harassment
+A person sends me harassing messages at odd hours (This is happening to me regularly),cyber_harassment
+I receive repeated threats through SMS,cyber_harassment
+I receive repeated threats through SMS (This is happening to me regularly),cyber_harassment
+Someone keeps commenting abusive things on my posts,cyber_harassment
+Someone keeps commenting abusive things on my posts (This is happening to me regularly),cyber_harassment
+I am being harassed through anonymous accounts,cyber_harassment
+I am being harassed through anonymous accounts (This is happening to me regularly),cyber_harassment
+A person keeps forwarding my messages to embarrass me,cyber_harassment
+A person keeps forwarding my messages to embarrass me (This is happening to me regularly),cyber_harassment
+I receive harassing messages despite blocking,cyber_harassment
+I receive harassing messages despite blocking (This is happening to me regularly),cyber_harassment
+Someone creates accounts to message me abusively,cyber_harassment
+Someone creates accounts to message me abusively (This is happening to me regularly),cyber_harassment
+I am getting cyberbullied in group chats,cyber_harassment
+I am getting cyberbullied in group chats (This is happening to me regularly),cyber_harassment
+A person keeps texting me with threats,cyber_harassment
+A person keeps texting me with threats (This is happening to me regularly),cyber_harassment
+I am being harassed through online gaming platforms,cyber_harassment
+I am being harassed through online gaming platforms (This is happening to me regularly),cyber_harassment
+Someone keeps sending me abusive voice messages,cyber_harassment
+Someone keeps sending me abusive voice messages (This is happening to me regularly),cyber_harassment
+Someone posted hateful videos about my religion online,online_hate_speech
+Someone posted hateful videos about my religion online (This is happening to me regularly),online_hate_speech
+I see posts calling for violence against my community,online_hate_speech
+I see posts calling for violence against my community (This is happening to me regularly),online_hate_speech
+A person made anti-Dalit posts targeting me,online_hate_speech
+A person made anti-Dalit posts targeting me (This is happening to me regularly),online_hate_speech
+Someone posted racist content about Northeast Indians,online_hate_speech
+Someone posted racist content about Northeast Indians (This is happening to me regularly),online_hate_speech
+I am targeted by online hate speech about my caste,online_hate_speech
+I am targeted by online hate speech about my caste (This is happening to me regularly),online_hate_speech
+A person shared hateful comments about women,online_hate_speech
+A person shared hateful comments about women (This is happening to me regularly),online_hate_speech
+I see organized hate posts about my community,online_hate_speech
+I see organized hate posts about my community (This is happening to me regularly),online_hate_speech
+Someone posted misogynistic content targeting me,online_hate_speech
+Someone posted misogynistic content targeting me (This is happening to me regularly),online_hate_speech
+A person shared Islamophobic content online,online_hate_speech
+A person shared Islamophobic content online (This is happening to me regularly),online_hate_speech
+I am targeted by coordinated hate campaigns,online_hate_speech
+I am targeted by coordinated hate campaigns (This is happening to me regularly),online_hate_speech
+Someone posted dehumanizing content about my group,online_hate_speech
+Someone posted dehumanizing content about my group (This is happening to me regularly),online_hate_speech
+A person made threats wrapped in hate speech,online_hate_speech
+A person made threats wrapped in hate speech (This is happening to me regularly),online_hate_speech
+I see online communities organizing hate against my kind,online_hate_speech
+I see online communities organizing hate against my kind (This is happening to me regularly),online_hate_speech
+Someone posted to incite violence against my community,online_hate_speech
+Someone posted to incite violence against my community (This is happening to me regularly),online_hate_speech
+A person shared content portraying my religion negatively,online_hate_speech
+A person shared content portraying my religion negatively (This is happening to me regularly),online_hate_speech
+I am targeted by casteist hate speech online,online_hate_speech
+I am targeted by casteist hate speech online (This is happening to me regularly),online_hate_speech
+Someone posted xenophobic content about my region,online_hate_speech
+Someone posted xenophobic content about my region (This is happening to me regularly),online_hate_speech
+A person shared homophobic hate speech targeting me,online_hate_speech
+A person shared homophobic hate speech targeting me (This is happening to me regularly),online_hate_speech
+I see content calling for discrimination against my group,online_hate_speech
+I see content calling for discrimination against my group (This is happening to me regularly),online_hate_speech
+Someone organized hate speech against my community,online_hate_speech
+Someone organized hate speech against my community (This is happening to me regularly),online_hate_speech
+Someone created a fake account pretending to be me,impersonation_doxxing
+Someone created a fake account pretending to be me (This is happening to me regularly),impersonation_doxxing
+A person posted my personal information online,impersonation_doxxing
+A person posted my personal information online (This is happening to me regularly),impersonation_doxxing
+Someone leaked my home address on social media,impersonation_doxxing
+Someone leaked my home address on social media (This is happening to me regularly),impersonation_doxxing
+I found my intimate photos shared without permission,impersonation_doxxing
+I found my intimate photos shared without permission (This is happening to me regularly),impersonation_doxxing
+A person shared my phone number publicly online,impersonation_doxxing
+A person shared my phone number publicly online (This is happening to me regularly),impersonation_doxxing
+Someone impersonated me to damage my reputation,impersonation_doxxing
+Someone impersonated me to damage my reputation (This is happening to me regularly),impersonation_doxxing
+I found deepfake videos of me online,impersonation_doxxing
+I found deepfake videos of me online (This is happening to me regularly),impersonation_doxxing
+A person shared my family addresses,impersonation_doxxing
+A person shared my family addresses (This is happening to me regularly),impersonation_doxxing
+Someone used my photos to create fake accounts,impersonation_doxxing
+Someone used my photos to create fake accounts (This is happening to me regularly),impersonation_doxxing
+I found my location tracked and shared,impersonation_doxxing
+I found my location tracked and shared (This is happening to me regularly),impersonation_doxxing
+A person leaked my workplace information,impersonation_doxxing
+A person leaked my workplace information (This is happening to me regularly),impersonation_doxxing
+Someone created videos with my face,impersonation_doxxing
+Someone created videos with my face (This is happening to me regularly),impersonation_doxxing
+I found my personal details posted on forums,impersonation_doxxing
+I found my personal details posted on forums (This is happening to me regularly),impersonation_doxxing
+A person hacked my account and impersonated me,impersonation_doxxing
+A person hacked my account and impersonated me (This is happening to me regularly),impersonation_doxxing
+Someone shared screenshots of my private conversations,impersonation_doxxing
+Someone shared screenshots of my private conversations (This is happening to me regularly),impersonation_doxxing
+I found my intimate images morphed and shared,impersonation_doxxing
+I found my intimate images morphed and shared (This is happening to me regularly),impersonation_doxxing
+A person created a fake profile to impersonate me,impersonation_doxxing
+A person created a fake profile to impersonate me (This is happening to me regularly),impersonation_doxxing
+Someone shared my educational details publicly,impersonation_doxxing
+Someone shared my educational details publicly (This is happening to me regularly),impersonation_doxxing
+I found myself being impersonated in multiple forums,impersonation_doxxing
+I found myself being impersonated in multiple forums (This is happening to me regularly),impersonation_doxxing
+A person shared my contact information for harassment,impersonation_doxxing
+A person shared my contact information for harassment (This is happening to me regularly),impersonation_doxxing
+Someone created morphed sexual videos of me,cyber_sexual_crime
+Someone created morphed sexual videos of me (This is happening to me regularly),cyber_sexual_crime
+I am being sextorted - someone demands money for intimate photos,cyber_sexual_crime
+I am being sextorted - someone demands money for intimate photos (This is happening to me regularly),cyber_sexual_crime
+A person sent me non-consensual intimate images,cyber_sexual_crime
+A person sent me non-consensual intimate images (This is happening to me regularly),cyber_sexual_crime
+Someone threatens to leak my intimate photos,cyber_sexual_crime
+Someone threatens to leak my intimate photos (This is happening to me regularly),cyber_sexual_crime
+I am being threatened with exposure of intimate content,cyber_sexual_crime
+I am being threatened with exposure of intimate content (This is happening to me regularly),cyber_sexual_crime
+A person demands sexual favors with threat of exposure,cyber_sexual_crime
+A person demands sexual favors with threat of exposure (This is happening to me regularly),cyber_sexual_crime
+Someone created fake nude images of me,cyber_sexual_crime
+Someone created fake nude images of me (This is happening to me regularly),cyber_sexual_crime
+I am receiving unsolicited explicit videos,cyber_sexual_crime
+I am receiving unsolicited explicit videos (This is happening to me regularly),cyber_sexual_crime
+A person threatens to post my intimate videos,cyber_sexual_crime
+A person threatens to post my intimate videos (This is happening to me regularly),cyber_sexual_crime
+Someone demands intimate photos with threats,cyber_sexual_crime
+Someone demands intimate photos with threats (This is happening to me regularly),cyber_sexual_crime
+I am being blackmailed with intimate images,cyber_sexual_crime
+I am being blackmailed with intimate images (This is happening to me regularly),cyber_sexual_crime
+A person created and shared my deepfake porn,cyber_sexual_crime
+A person created and shared my deepfake porn (This is happening to me regularly),cyber_sexual_crime
+Someone sends unwanted explicit content to my family,cyber_sexual_crime
+Someone sends unwanted explicit content to my family (This is happening to me regularly),cyber_sexual_crime
+I am being coerced for intimate content online,cyber_sexual_crime
+I am being coerced for intimate content online (This is happening to me regularly),cyber_sexual_crime
+A person threatens my family with leaked intimate photos,cyber_sexual_crime
+A person threatens my family with leaked intimate photos (This is happening to me regularly),cyber_sexual_crime
+Someone shares my intimate content in group chats,cyber_sexual_crime
+Someone shares my intimate content in group chats (This is happening to me regularly),cyber_sexual_crime
+I am being harassed with AI-generated sexual content,cyber_sexual_crime
+I am being harassed with AI-generated sexual content (This is happening to me regularly),cyber_sexual_crime
+A person demands money for not leaking intimate photos,cyber_sexual_crime
+A person demands money for not leaking intimate photos (This is happening to me regularly),cyber_sexual_crime
+Someone threatens my career with intimate content,cyber_sexual_crime
+Someone threatens my career with intimate content (This is happening to me regularly),cyber_sexual_crime
+I am being sexually exploited through online blackmail,cyber_sexual_crime
+I am being sexually exploited through online blackmail (This is happening to me regularly),cyber_sexual_crime
+Someone demands money or they will expose my secrets,blackmail_extortion
+Someone demands money or they will expose my secrets (This is happening to me regularly),blackmail_extortion
+A person threatens to hurt me if I do not pay,blackmail_extortion
+A person threatens to hurt me if I do not pay (This is happening to me regularly),blackmail_extortion
+I am being blackmailed with intimate photos,blackmail_extortion
+I am being blackmailed with intimate photos (This is happening to me regularly),blackmail_extortion
+Someone demands money threatening to tell my family,blackmail_extortion
+Someone demands money threatening to tell my family (This is happening to me regularly),blackmail_extortion
+A person extorts money with threats of violence,blackmail_extortion
+A person extorts money with threats of violence (This is happening to me regularly),blackmail_extortion
+Someone blackmails me with academic information,blackmail_extortion
+Someone blackmails me with academic information (This is happening to me regularly),blackmail_extortion
+I am forced to pay money to stop harassment,blackmail_extortion
+I am forced to pay money to stop harassment (This is happening to me regularly),blackmail_extortion
+A person demands money with threats of exposure,blackmail_extortion
+A person demands money with threats of exposure (This is happening to me regularly),blackmail_extortion
+Someone extorts money threatening legal complaints,blackmail_extortion
+Someone extorts money threatening legal complaints (This is happening to me regularly),blackmail_extortion
+I am being blackmailed with false accusations,blackmail_extortion
+I am being blackmailed with false accusations (This is happening to me regularly),blackmail_extortion
+A person demands money or they will harm my family,blackmail_extortion
+A person demands money or they will harm my family (This is happening to me regularly),blackmail_extortion
+Someone blackmails me with my past mistakes,blackmail_extortion
+Someone blackmails me with my past mistakes (This is happening to me regularly),blackmail_extortion
+I am forced to pay to avoid physical harm,blackmail_extortion
+I am forced to pay to avoid physical harm (This is happening to me regularly),blackmail_extortion
+A person demands money threatening my career,blackmail_extortion
+A person demands money threatening my career (This is happening to me regularly),blackmail_extortion
+Someone extorts money with threats to my reputation,blackmail_extortion
+Someone extorts money with threats to my reputation (This is happening to me regularly),blackmail_extortion
+I am blackmailed with workplace information,blackmail_extortion
+I am blackmailed with workplace information (This is happening to me regularly),blackmail_extortion
+A person demands money threatening social exposure,blackmail_extortion
+A person demands money threatening social exposure (This is happening to me regularly),blackmail_extortion
+Someone extorts money threatening to contact police,blackmail_extortion
+Someone extorts money threatening to contact police (This is happening to me regularly),blackmail_extortion
+I am forced to pay to avoid false accusations,blackmail_extortion
+I am forced to pay to avoid false accusations (This is happening to me regularly),blackmail_extortion
+A person blackmails me with recorded conversations,blackmail_extortion
+A person blackmails me with recorded conversations (This is happening to me regularly),blackmail_extortion
+Someone spread false rumors about me ruining my reputation,defamation_privacy_fraud
+Someone spread false rumors about me ruining my reputation (This is happening to me regularly),defamation_privacy_fraud
+A person posted lies about me on social media,defamation_privacy_fraud
+A person posted lies about me on social media (This is happening to me regularly),defamation_privacy_fraud
+Someone made false accusations to damage me,defamation_privacy_fraud
+Someone made false accusations to damage me (This is happening to me regularly),defamation_privacy_fraud
+I am being defamed through false posts,defamation_privacy_fraud
+I am being defamed through false posts (This is happening to me regularly),defamation_privacy_fraud
+A person spread fake stories about my character,defamation_privacy_fraud
+A person spread fake stories about my character (This is happening to me regularly),defamation_privacy_fraud
+Someone violated my privacy by sharing personal info,defamation_privacy_fraud
+Someone violated my privacy by sharing personal info (This is happening to me regularly),defamation_privacy_fraud
+I found my private messages shared publicly,defamation_privacy_fraud
+I found my private messages shared publicly (This is happening to me regularly),defamation_privacy_fraud
+A person committed fraud in my name,defamation_privacy_fraud
+A person committed fraud in my name (This is happening to me regularly),defamation_privacy_fraud
+Someone created a fake resume pretending to be me,defamation_privacy_fraud
+Someone created a fake resume pretending to be me (This is happening to me regularly),defamation_privacy_fraud
+I am accused of cheating with someone else work,defamation_privacy_fraud
+I am accused of cheating with someone else work (This is happening to me regularly),defamation_privacy_fraud
+A person defames me with false allegations,defamation_privacy_fraud
+A person defames me with false allegations (This is happening to me regularly),defamation_privacy_fraud
+Someone leaked my confidential information,defamation_privacy_fraud
+Someone leaked my confidential information (This is happening to me regularly),defamation_privacy_fraud
+I am suffering financial fraud in my name,defamation_privacy_fraud
+I am suffering financial fraud in my name (This is happening to me regularly),defamation_privacy_fraud
+A person spread false rumors about my family,defamation_privacy_fraud
+A person spread false rumors about my family (This is happening to me regularly),defamation_privacy_fraud
+Someone violated my privacy with hidden recordings,defamation_privacy_fraud
+Someone violated my privacy with hidden recordings (This is happening to me regularly),defamation_privacy_fraud
+I found false information spread about my sexuality,defamation_privacy_fraud
+I found false information spread about my sexuality (This is happening to me regularly),defamation_privacy_fraud
+A person committed identity fraud using my details,defamation_privacy_fraud
+A person committed identity fraud using my details (This is happening to me regularly),defamation_privacy_fraud
+Someone spread lies about my academic performance,defamation_privacy_fraud
+Someone spread lies about my academic performance (This is happening to me regularly),defamation_privacy_fraud
+I am being defamed with fabricated stories,defamation_privacy_fraud
+I am being defamed with fabricated stories (This is happening to me regularly),defamation_privacy_fraud
+A person violated my privacy through surveillance,defamation_privacy_fraud
+A person violated my privacy through surveillance (This is happening to me regularly),defamation_privacy_fraud
+My college is blocking my TC because I complained,institutional_misconduct
+My college is blocking my TC because I complained (This is happening to me regularly),institutional_misconduct
+A professor is retaliating against me for reporting abuse,institutional_misconduct
+A professor is retaliating against me for reporting abuse (This is happening to me regularly),institutional_misconduct
+The college will not investigate harassment complaints,institutional_misconduct
+The college will not investigate harassment complaints (This is happening to me regularly),institutional_misconduct
+A teacher is giving me bad marks for reporting them,institutional_misconduct
+A teacher is giving me bad marks for reporting them (This is happening to me regularly),institutional_misconduct
+The administration is covering up abuse cases,institutional_misconduct
+The administration is covering up abuse cases (This is happening to me regularly),institutional_misconduct
+I am being threatened with expulsion for complaining,institutional_misconduct
+I am being threatened with expulsion for complaining (This is happening to me regularly),institutional_misconduct
+A college official is demanding money for favors,institutional_misconduct
+A college official is demanding money for favors (This is happening to me regularly),institutional_misconduct
+The college is illegally holding my original documents,institutional_misconduct
+The college is illegally holding my original documents (This is happening to me regularly),institutional_misconduct
+A teacher is sexually harassing me and administration ignores,institutional_misconduct
+A teacher is sexually harassing me and administration ignores (This is happening to me regularly),institutional_misconduct
+I am facing institutional retaliation for speaking up,institutional_misconduct
+I am facing institutional retaliation for speaking up (This is happening to me regularly),institutional_misconduct
+The college is biased against me for my caste,institutional_misconduct
+The college is biased against me for my caste (This is happening to me regularly),institutional_misconduct
+An administrator abused me and there is no investigation,institutional_misconduct
+An administrator abused me and there is no investigation (This is happening to me regularly),institutional_misconduct
+The college administration is ignoring rape complaints,institutional_misconduct
+The college administration is ignoring rape complaints (This is happening to me regularly),institutional_misconduct
+A faculty member is abusing power over my grades,institutional_misconduct
+A faculty member is abusing power over my grades (This is happening to me regularly),institutional_misconduct
+The institution is enabling serial abusers,institutional_misconduct
+The institution is enabling serial abusers (This is happening to me regularly),institutional_misconduct
+I am being punished for reporting misconduct,institutional_misconduct
+I am being punished for reporting misconduct (This is happening to me regularly),institutional_misconduct
+The college will not let me change my hostel after abuse,institutional_misconduct
+The college will not let me change my hostel after abuse (This is happening to me regularly),institutional_misconduct
+An official is extorting money for college favors,institutional_misconduct
+An official is extorting money for college favors (This is happening to me regularly),institutional_misconduct
+The administration is covering up a crime,institutional_misconduct
+The administration is covering up a crime (This is happening to me regularly),institutional_misconduct
+I am facing administrative punishment for reporting harassment,institutional_misconduct
+I am facing administrative punishment for reporting harassment (This is happening to me regularly),institutional_misconduct
+My college is illegally holding my original certificates,administrative_violation
+My college is illegally holding my original certificates (This is happening to me regularly),administrative_violation
+I am forced to sign an illegal bond against my will,administrative_violation
+I am forced to sign an illegal bond against my will (This is happening to me regularly),administrative_violation
+The college will not give me my TC even after graduation,administrative_violation
+The college will not give me my TC even after graduation (This is happening to me regularly),administrative_violation
+They are forcing me to sign an undertaking to stay quiet,administrative_violation
+They are forcing me to sign an undertaking to stay quiet (This is happening to me regularly),administrative_violation
+The college is illegally blocking my migration certificate,administrative_violation
+The college is illegally blocking my migration certificate (This is happening to me regularly),administrative_violation
+I am forced to pay extra fees for my documents,administrative_violation
+I am forced to pay extra fees for my documents (This is happening to me regularly),administrative_violation
+The college will not release my degree certificate,administrative_violation
+The college will not release my degree certificate (This is happening to me regularly),administrative_violation
+They are threatening me with certificate blocking,administrative_violation
+They are threatening me with certificate blocking (This is happening to me regularly),administrative_violation
+The college is violating my right to education,administrative_violation
+The college is violating my right to education (This is happening to me regularly),administrative_violation
+I cannot transfer because they will not issue my TC,administrative_violation
+I cannot transfer because they will not issue my TC (This is happening to me regularly),administrative_violation
+The college forced me to sign illegal terms,administrative_violation
+The college forced me to sign illegal terms (This is happening to me regularly),administrative_violation
+They are making illegal financial demands,administrative_violation
+They are making illegal financial demands (This is happening to me regularly),administrative_violation
+The administration is violating my document rights,administrative_violation
+The administration is violating my document rights (This is happening to me regularly),administrative_violation
+I am blocked from leaving because of illegal bonds,administrative_violation
+I am blocked from leaving because of illegal bonds (This is happening to me regularly),administrative_violation
+The college is illegally holding my academic records,administrative_violation
+The college is illegally holding my academic records (This is happening to me regularly),administrative_violation
+They are forcing impossible conditions for my certificate,administrative_violation
+They are forcing impossible conditions for my certificate (This is happening to me regularly),administrative_violation
+The college is unlawfully restricting my freedom,administrative_violation
+The college is unlawfully restricting my freedom (This is happening to me regularly),administrative_violation
+I cannot pursue higher education due to illegal blockade,administrative_violation
+I cannot pursue higher education due to illegal blockade (This is happening to me regularly),administrative_violation
+The administration is making extortion-like demands,administrative_violation
+The administration is making extortion-like demands (This is happening to me regularly),administrative_violation
+They are violating my constitutional right to freedom,administrative_violation
+They are violating my constitutional right to freedom (This is happening to me regularly),administrative_violation
+I am treated unfairly because I am from a poor family,general_discrimination
+I am treated unfairly because I am from a poor family (This is happening to me regularly),general_discrimination
+A person discriminates against me based on my appearance,general_discrimination
+A person discriminates against me based on my appearance (This is happening to me regularly),general_discrimination
+I face discrimination due to my disability,general_discrimination
+I face discrimination due to my disability (This is happening to me regularly),general_discrimination
+A person treats me differently because of my family background,general_discrimination
+A person treats me differently because of my family background (This is happening to me regularly),general_discrimination
+I am excluded due to my economic status,general_discrimination
+I am excluded due to my economic status (This is happening to me regularly),general_discrimination
+A person discriminates against me based on age,general_discrimination
+A person discriminates against me based on age (This is happening to me regularly),general_discrimination
+I face unfair treatment due to my occupation,general_discrimination
+I face unfair treatment due to my occupation (This is happening to me regularly),general_discrimination
+A person treats me poorly due to where I am from,general_discrimination
+A person treats me poorly due to where I am from (This is happening to me regularly),general_discrimination
+I am discriminated against due to my accent,general_discrimination
+I am discriminated against due to my accent (This is happening to me regularly),general_discrimination
+A person excludes me due to my beliefs,general_discrimination
+A person excludes me due to my beliefs (This is happening to me regularly),general_discrimination
+I face discrimination at work due to my background,general_discrimination
+I face discrimination at work due to my background (This is happening to me regularly),general_discrimination
+A person treats me poorly due to my lifestyle,general_discrimination
+A person treats me poorly due to my lifestyle (This is happening to me regularly),general_discrimination
+I am excluded from activities due to my status,general_discrimination
+I am excluded from activities due to my status (This is happening to me regularly),general_discrimination
+A person discriminates based on my education level,general_discrimination
+A person discriminates based on my education level (This is happening to me regularly),general_discrimination
+I face unfair treatment due to my family structure,general_discrimination
+I face unfair treatment due to my family structure (This is happening to me regularly),general_discrimination
+A person treats me poorly due to my social status,general_discrimination
+A person treats me poorly due to my social status (This is happening to me regularly),general_discrimination
+I am discriminated against due to my orientation,general_discrimination
+I am discriminated against due to my orientation (This is happening to me regularly),general_discrimination
+A person excludes me based on stereotypes,general_discrimination
+A person excludes me based on stereotypes (This is happening to me regularly),general_discrimination
+I face bias due to my cultural background,general_discrimination
+I face bias due to my cultural background (This is happening to me regularly),general_discrimination
+A person treats me unfairly due to my social circle,general_discrimination
+A person treats me unfairly due to my social circle (This is happening to me regularly),general_discrimination
+A person constantly insults and abuses me verbally,verbal_abuse
+A person constantly insults and abuses me verbally (This is happening to me regularly),verbal_abuse
+Someone calls me degrading names regularly,verbal_abuse
+Someone calls me degrading names regularly (This is happening to me regularly),verbal_abuse
+I am verbally abused for making mistakes,verbal_abuse
+I am verbally abused for making mistakes (This is happening to me regularly),verbal_abuse
+A person yells and uses foul language at me,verbal_abuse
+A person yells and uses foul language at me (This is happening to me regularly),verbal_abuse
+I am insulted and belittled in front of others,verbal_abuse
+I am insulted and belittled in front of others (This is happening to me regularly),verbal_abuse
+A person uses harsh words to hurt me daily,verbal_abuse
+A person uses harsh words to hurt me daily (This is happening to me regularly),verbal_abuse
+I am verbally assaulted with derogatory comments,verbal_abuse
+I am verbally assaulted with derogatory comments (This is happening to me regularly),verbal_abuse
+A person abuses me with offensive language,verbal_abuse
+A person abuses me with offensive language (This is happening to me regularly),verbal_abuse
+I am constantly criticized in a demeaning way,verbal_abuse
+I am constantly criticized in a demeaning way (This is happening to me regularly),verbal_abuse
+A person uses verbal aggression against me,verbal_abuse
+A person uses verbal aggression against me (This is happening to me regularly),verbal_abuse
+I am insulted with personal attacks,verbal_abuse
+I am insulted with personal attacks (This is happening to me regularly),verbal_abuse
+A person verbally demeans me in public,verbal_abuse
+A person verbally demeans me in public (This is happening to me regularly),verbal_abuse
+I am hurt by harsh and cruel verbal comments,verbal_abuse
+I am hurt by harsh and cruel verbal comments (This is happening to me regularly),verbal_abuse
+A person uses abusive language when I disagree,verbal_abuse
+A person uses abusive language when I disagree (This is happening to me regularly),verbal_abuse
+I am verbally attacked for my opinions,verbal_abuse
+I am verbally attacked for my opinions (This is happening to me regularly),verbal_abuse
+A person insults my intelligence and abilities,verbal_abuse
+A person insults my intelligence and abilities (This is happening to me regularly),verbal_abuse
+I am verbally abused for my appearance,verbal_abuse
+I am verbally abused for my appearance (This is happening to me regularly),verbal_abuse
+A person uses demeaning language toward me,verbal_abuse
+A person uses demeaning language toward me (This is happening to me regularly),verbal_abuse
+I am hurt by constant criticism and name-calling,verbal_abuse
+I am hurt by constant criticism and name-calling (This is happening to me regularly),verbal_abuse
+A person verbally attacks my character,verbal_abuse
+A person verbally attacks my character (This is happening to me regularly),verbal_abuse
