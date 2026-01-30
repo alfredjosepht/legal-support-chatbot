@@ -24,8 +24,6 @@ nlp = spacy.load("models/legal_textcat")
 with open("data/law_mapping_enhanced.json", encoding="utf-8") as f:
     law_mapping = json.load(f)
 
-with open("data/legal_steps.json", encoding="utf-8") as f:
-    legal_steps = json.load(f)
 
 with open("data/resources.json", encoding="utf-8") as f:
     resources = json.load(f)
@@ -126,19 +124,9 @@ def chat(user_input: ChatRequest):
     
     # Get procedural steps (filing_procedure from enhanced mapping)
     procedural_steps = raw_laws.get("filing_procedure", []) if isinstance(raw_laws, dict) else []
-    
-    raw_steps = legal_steps.get(category, {})
     raw_resources = resources.get(category, {})
-    additional_steps = (
-       raw_steps.get("common_situations", [])
-       + raw_steps.get("how_people_commonly_proceed", [])
-       + raw_steps.get("precautions", [])
-       if isinstance(raw_steps, dict)
-       else raw_steps
-    )
     
     # Combine procedural steps with general steps
-    all_steps = procedural_steps + additional_steps
 
     return {
         "category": category,
@@ -154,7 +142,7 @@ def chat(user_input: ChatRequest):
         },
         "legal_frameworks": legal_frameworks,
         "laws": laws_to_return,
-        "steps": all_steps,
+        "steps":procedural_steps,
         "resources": (
             raw_resources.get("police_stations", [])
             + raw_resources.get("helplines", [])
