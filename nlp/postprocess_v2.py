@@ -202,6 +202,16 @@ def postprocess_categories(text, raw_cats):
         if 'cyber_sexual_crime' in raw_cats and raw_cats['cyber_sexual_crime'] >= 0.10:
             final_cats['cyber_sexual_crime'] = raw_cats['cyber_sexual_crime']
             context['legal_framework'] = 'POCSO'
+
+    # ========== RULE: Authority / College context favors Ragging ==========
+    # If user mentions 'senior', campus keywords, or the word 'ragg',
+    # increase priority for `ragging` category so it isn't shadowed by
+    # fallback categories like `physical_assault`.
+    if authority == 'senior_student' or any(kw in text_lower for kw in COLLEGE_KEYWORDS) or 'ragg' in text_lower:
+        if 'ragging' in raw_cats:
+            # Boost ragging confidence to ensure it appears in final_cats
+            boosted = max(raw_cats.get('ragging', 0), 0.22)
+            final_cats['ragging'] = boosted
     
     elif age_indicator == 'adult':
         # For adults: Lower threshold for sexual crimes

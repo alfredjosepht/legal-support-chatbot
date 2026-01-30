@@ -1,0 +1,170 @@
+[
+  {
+    "label": "label",
+    "text": "text",
+    "predicted": "gender_discrimination",
+    "confidence": 0.126,
+    "laws_count": 5,
+    "steps_count": 21
+  },
+  {
+    "label": "physical_assault",
+    "text": "My senior punched me in the face",
+    "predicted": "physical_assault",
+    "confidence": 0.272,
+    "laws_count": 6,
+    "steps_count": 18
+  },
+  {
+    "label": "sexual_assault",
+    "text": "A senior touched me inappropriately without consent",
+    "predicted": "sexual_assault",
+    "confidence": 0.224,
+    "laws_count": 6,
+    "steps_count": 23
+  },
+  {
+    "label": "sexual_harassment",
+    "text": "My professor keeps making sexual comments to me",
+    "predicted": "ragging",
+    "confidence": 0.22,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "caste_discrimination",
+    "text": "My professor said Dalits are naturally inferior",
+    "predicted": "ragging",
+    "confidence": 0.22,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "racism",
+    "text": "People discriminate against me because I am from Northeast",
+    "predicted": "racism",
+    "confidence": 0.161,
+    "laws_count": 4,
+    "steps_count": 20
+  },
+  {
+    "label": "religious_discrimination",
+    "text": "A professor made derogatory comments about my religion",
+    "predicted": "ragging",
+    "confidence": 0.22,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "gender_discrimination",
+    "text": "A professor said girls are naturally bad at technical subjects",
+    "predicted": "ragging",
+    "confidence": 0.22,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "ragging",
+    "text": "My seniors forced me to do humiliating dares",
+    "predicted": "ragging",
+    "confidence": 0.192,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "threats",
+    "text": "Someone threatened to kill me if I report them",
+    "predicted": "threats",
+    "confidence": 0.406,
+    "laws_count": 5,
+    "steps_count": 22
+  },
+  {
+    "label": "stalking",
+    "text": "A person follows me everywhere I go",
+    "predicted": "stalking",
+    "confidence": 0.277,
+    "laws_count": 6,
+    "steps_count": 21
+  },
+  {
+    "label": "cyber_harassment",
+    "text": "Someone sends me abusive messages on WhatsApp daily",
+    "predicted": "cyber_harassment",
+    "confidence": 0.168,
+    "laws_count": 4,
+    "steps_count": 22
+  },
+  {
+    "label": "online_hate_speech",
+    "text": "Someone posted hateful videos about my religion online",
+    "predicted": "online_hate_speech",
+    "confidence": 0.17,
+    "laws_count": 6,
+    "steps_count": 21
+  },
+  {
+    "label": "impersonation_doxxing",
+    "text": "Someone created a fake account pretending to be me",
+    "predicted": "impersonation_doxxing",
+    "confidence": 0.206,
+    "laws_count": 6,
+    "steps_count": 21
+  },
+  {
+    "label": "cyber_sexual_crime",
+    "text": "Someone created morphed sexual videos of me",
+    "predicted": "cyber_sexual_crime",
+    "confidence": 0.145,
+    "laws_count": 6,
+    "steps_count": 21
+  },
+  {
+    "label": "blackmail_extortion",
+    "text": "Someone demands money or they will expose my secrets",
+    "predicted": "blackmail_extortion",
+    "confidence": 0.292,
+    "laws_count": 4,
+    "steps_count": 22
+  },
+  {
+    "label": "defamation_privacy_fraud",
+    "text": "Someone spread false rumors about me ruining my reputation",
+    "predicted": "defamation_privacy_fraud",
+    "confidence": 0.161,
+    "laws_count": 4,
+    "steps_count": 22
+  },
+  {
+    "label": "institutional_misconduct",
+    "text": "My college is blocking my TC because I complained",
+    "predicted": "ragging",
+    "confidence": 0.22,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "administrative_violation",
+    "text": "My college is illegally holding my original certificates",
+    "predicted": "ragging",
+    "confidence": 0.22,
+    "laws_count": 5,
+    "steps_count": 23
+  },
+  {
+    "label": "general_discrimination",
+    "text": "I am treated unfairly because I am from a poor family",
+    "predicted": "general_discrimination",
+    "confidence": 0.12,
+    "laws_count": 3,
+    "steps_count": 21
+  },
+  {
+    "label": "verbal_abuse",
+    "text": "A person constantly insults and abuses me verbally",
+    "predicted": "verbal_abuse",
+    "confidence": 0.211,
+    "laws_count": 6,
+    "steps_count": 21
+  }
+]

@@ -7,7 +7,8 @@ import sys
 sys.path.insert(0, "nlp")
 from postprocess_v2 import postprocess_categories, get_legal_framework
 
-CONFIDENCE_THRESHOLD = 0.05  # Lowered to catch all crime types with improved training data
+# Updated with complete law mappings for all 20 crime types
+CONFIDENCE_THRESHOLD = 0.05  # Lowered to catch all crime types with improved training data. Model retrained.
 app = FastAPI(title="Legal Support Chatbot")
 app.add_middleware(
     CORSMiddleware,

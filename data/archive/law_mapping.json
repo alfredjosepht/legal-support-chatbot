@@ -1,0 +1,130 @@
+{
+  "threats": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "503", "description": "Criminal intimidation by threatening injury to person, reputation or property."},
+      {"act": "Indian Penal Code", "section": "506", "description": "Punishment for criminal intimidation."},
+      {"act": "Information Technology Act, 2000", "section": "66D", "description": "Threats made using electronic communication."}
+    ]
+  },
+  "ragging": {
+    "laws": [
+      {"act": "UGC Regulations", "section": "Anti-Ragging Regulations, 2009", "description": "Prohibits ragging in educational institutions and provides punishment."},
+      {"act": "Indian Penal Code", "section": "323", "description": "Punishment for causing physical harm during ragging."},
+      {"act": "Indian Penal Code", "section": "506", "description": "Criminal intimidation during ragging."}
+    ]
+  },
+  "sexual_assault": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "375", "description": "Definition of rape and non-consensual sexual intercourse."},
+      {"act": "Indian Penal Code", "section": "376", "description": "Punishment for rape and related sexual offences."},
+      {"act": "Protection of Children from Sexual Offences (POCSO) Act, 2012", "section": "Relevant Sections", "description": "Special provisions for sexual offences against minors."}
+    ]
+  },
+  "sexual_harassment": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "354A", "description": "Sexual harassment including unwelcome physical contact and remarks."},
+      {"act": "Indian Penal Code", "section": "509", "description": "Words or gestures intended to insult the modesty of a woman."},
+      {"act": "POSH Act, 2013", "section": "Internal Complaints Committee", "description": "Redressal mechanism for sexual harassment in institutions."}
+    ]
+  },
+  "impersonation_doxxing": {
+    "laws": [
+      {"act": "Information Technology Act, 2000", "section": "66C", "description": "Identity theft or fraudulent use of digital credentials."},
+      {"act": "Information Technology Act, 2000", "section": "66D", "description": "Cheating and offences by personation using electronic communication."},
+      {"act": "Indian Penal Code", "section": "499", "description": "Offences relating to reputation and impersonation if defamatory content is published."}
+    ]
+  },
+  "cyber_harassment": {
+    "laws": [
+      {"act": "Information Technology Act, 2000", "section": "66C", "description": "Identity theft through misuse of digital credentials."},
+      {"act": "Information Technology Act, 2000", "section": "66D", "description": "Online harassment and cheating by impersonation."},
+      {"act": "Indian Penal Code", "section": "354D", "description": "Online stalking and harassment."}
+    ]
+  },
+  "online_hate_speech": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "153A", "description": "Promoting enmity between different groups on grounds of religion, race, place of birth, residence, language, etc."},
+      {"act": "Indian Penal Code", "section": "295A", "description": "Deliberate and malicious acts intended to outrage religious feelings."},
+      {"act": "Information Technology Act, 2000", "section": "66A", "description": "Offensive or menacing electronic communications."}
+    ]
+  },
+  "physical_assault": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "323", "description": "Punishment for voluntarily causing hurt."},
+      {"act": "Indian Penal Code", "section": "324", "description": "Causing hurt using dangerous weapons."},
+      {"act": "Indian Penal Code", "section": "341", "description": "Wrongful restraint."}
+    ]
+  },
+  "cyber_sexual_crime": {
+    "laws": [
+      {"act": "Information Technology Act, 2000", "section": "66E", "description": "Violation of privacy by capturing or sharing private images electronically."},
+      {"act": "Indian Penal Code", "section": "354C", "description": "Voyeurism and misuse of private images."},
+      {"act": "Information Technology Act, 2000", "section": "Relevant provisions", "description": "Offences involving distribution of intimate images, deepfakes and sextortion."}
+    ]
+  },
+  "verbal_abuse": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "504", "description": "Intentional insult with intent to provoke breach of peace."},
+      {"act": "Indian Penal Code", "section": "294", "description": "Obscene acts or words in public."}
+    ]
+  },
+  "stalking": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "354D", "description": "Following or contacting a person repeatedly despite disinterest."}
+    ]
+  },
+  "blackmail_extortion": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "383", "description": "Extortion by putting a person in fear of injury or exposure."},
+      {"act": "Indian Penal Code", "section": "384", "description": "Punishment for extortion."},
+      {"act": "Information Technology Act, 2000", "section": "Relevant provisions", "description": "Electronic blackmail, sextortion and demands made using digital platforms."}
+    ]
+  },
+  "defamation_privacy_fraud": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "499", "description": "Making false statements harming a person's reputation (defamation)."},
+      {"act": "Indian Penal Code", "section": "500", "description": "Punishment for defamation."},
+      {"act": "Information Technology Act, 2000", "section": "Relevant provisions", "description": "Unauthorized publication of private information and misuse of data."},
+      {"act": "Indian Penal Code", "section": "420", "description": "Cheating and dishonestly inducing delivery of property (fraud)."}
+    ]
+  },
+  "caste_discrimination": {
+    "laws": [
+      {"act": "Indian Constitution", "section": "Article 15", "description": "Prohibition of discrimination on grounds of caste."},
+      {"act": "Prevention of Atrocities Act", "section": "Relevant sections", "description": "Special protections and penalties for caste-based atrocities."}
+    ]
+  },
+  "racism": {
+    "laws": [
+      {"act": "Indian Penal Code", "section": "153A", "description": "Promoting enmity between different groups on grounds of race or place of birth."}
+    ]
+  },
+  "religious_discrimination": {
+    "laws": [
+      {"act": "Indian Constitution", "section": "Article 25-28", "description": "Protections for freedom of religion and associated rights."},
+      {"act": "Indian Penal Code", "section": "295A", "description": "Deliberate and malicious acts intended to outrage religious feelings."}
+    ]
+  },
+  "gender_discrimination": {
+    "laws": [
+      {"act": "Indian Constitution", "section": "Article 15", "description": "Prohibition of discrimination on grounds of gender."},
+      {"act": "POSH Act, 2013", "section": "Internal Complaints Committee", "description": "Mechanism to address workplace sexual harassment and related gender discrimination."}
+    ]
+  },
+  "institutional_misconduct": {
+    "laws": [
+      {"act": "UGC / Institutional Regulations", "section": "Relevant institutional rules", "description": "Procedures and duties of institutions to investigate and address misconduct."},
+      {"act": "POSH Act, 2013", "section": "Internal Complaints Committee", "description": "When institutions fail to act on sexual harassment complaints."}
+    ]
+  },
+  "administrative_violation": {
+    "laws": [
+      {"act": "Administrative / Statutory Remedies", "section": "Relevant rules", "description": "Administrative remedies for illegal bonds, withholding certificates or other violations by institutions."}
+    ]
+  },
+  "general_discrimination": {
+    "laws": [
+      {"act": "Indian Constitution", "section": "Article 15", "description": "General prohibition of discrimination on various grounds."}
+    ]
+  }
+}

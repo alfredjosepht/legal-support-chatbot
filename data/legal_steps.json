@@ -1,232 +1,122 @@
 {
   "threats": {
-    "common_situations": [
-      "Threatening messages or calls",
-      "Threats to harm or intimidate",
-      "Threats to leak personal information"
-    ],
-    "how_people_commonly_proceed": [
-      "They usually preserve call logs or message screenshots",
-      "They may report the issue to local police M or cyber cell",
-      "Some inform college authorities if it involves students"
-    ],
-    "precautions": [
-      "Do not engage with the person threatening",
-      "Preserve all evidence safely",
-      "Inform trusted authorities early"
-    ]
+    "common_situations": ["Threatening messages or calls", "Threats to harm or intimidate", "Threats to leak personal information"],
+    "how_people_commonly_proceed": ["They usually preserve call logs or message screenshots", "They may report the issue to local police or cyber cell", "Some inform college authorities if it involves students"],
+    "precautions": ["Do not engage with the person threatening", "Preserve all evidence safely", "Inform trusted authorities early"]
   },
-
   "ragging": {
-    "common_situations": [
-      "Forced humiliating tasks by seniors",
-      "Mental or physical torture in hostel or campus",
-      "Threats or violence during ragging"
-    ],
-    "how_people_commonly_proceed": [
-      "They may report to college anti-ragging committee",
-      "Some inform hostel wardens or faculty",
-      "Serious cases may be reported to police"
-    ],
-    "precautions": [
-      "Avoid isolation with unknown seniors",
-      "Know anti-ragging helpline numbers",
-      "Report incidents early"
-    ]
+    "common_situations": ["Forced humiliating tasks by seniors", "Mental or physical torture in hostel or campus", "Threats or violence during ragging"],
+    "how_people_commonly_proceed": ["They may report to college anti-ragging committee", "Some inform hostel wardens or faculty", "Serious cases may be reported to police"],
+    "precautions": ["Avoid isolation with unknown seniors", "Know anti-ragging helpline numbers", "Report incidents early"]
   },
-
+  "sexual_assault": {
+    "common_situations": ["Non-consensual physical sexual contact", "Rape or forced sexual activity", "Sexual abuse by someone in position of trust"],
+    "how_people_commonly_proceed": ["They may seek immediate medical help and collect evidence", "They often report to police and file FIR", "Some approach ICC or college authorities"],
+    "precautions": ["Seek immediate medical examination", "Preserve all evidence", "Report to authorities as soon as possible"]
+  },
   "sexual_harassment": {
-    "common_situations": [
-      "Unwanted physical contact",
-      "Sexual comments or gestures",
-      "Online sexual harassment"
-    ],
-    "how_people_commonly_proceed": [
-      "They may document incidents or messages",
-      "They often approach Internal Complaints Committee (ICC)",
-      "Some report to police or cyber cell"
-    ],
-    "precautions": [
-      "Preserve evidence immediately",
-      "Avoid private confrontation",
-      "Seek institutional support"
-    ]
+    "common_situations": ["Unwanted physical contact", "Sexual comments or gestures", "Online sexual harassment"],
+    "how_people_commonly_proceed": ["They may document incidents or messages", "They often approach Internal Complaints Committee (ICC)", "Some report to police or cyber cell"],
+    "precautions": ["Preserve evidence immediately", "Avoid private confrontation", "Seek institutional support"]
   },
-
+  "impersonation_doxxing": {
+    "common_situations": ["Fake accounts created in their name", "Personal information leaked online", "Deepfakes or morphed content shared"],
+    "how_people_commonly_proceed": ["They may collect screenshots as evidence", "They often report to cyber cell or platform", "Some seek legal action for identity theft"],
+    "precautions": ["Monitor social media regularly", "Use strong passwords and 2FA", "Report impersonation immediately"]
+  },
   "cyber_harassment": {
+    "common_situations": ["Harassment through fake social media accounts", "Threatening or abusive messages online", "Stalking through digital platforms"],
+    "how_people_commonly_proceed": ["They may take screenshots as evidence", "They often report via cyber crime portal", "Some block and report abusive accounts"],
+    "precautions": ["Use strong privacy settings", "Avoid sharing personal details online", "Report suspicious activity early"]
+  },
+  "cyber_bullying": {
     "common_situations": [
-      "Harassment through fake social media accounts",
-      "Threatening or abusive messages online",
-      "Stalking through digital platforms"
+      "Receiving insulting or abusive messages repeatedly",
+      "Peers creating groups or fake profiles to mock someone",
+      "Private photos or messages shared publicly to shame a person",
+      "Mass-tagging and public humiliation on social platforms"
     ],
     "how_people_commonly_proceed": [
-      "They may take screenshots as evidence",
-      "They often report via cyber crime portal",
-      "Some block and report abusive accounts"
+      "They preserve screenshots, URLs and message headers as evidence",
+      "They report abusive accounts to the social media platform and request takedown",
+      "They file a complaint with local police cyber cell or file online",
+      "Some send legal notices or request civil remedies for defamation or privacy breaches"
     ],
     "precautions": [
-      "Use strong privacy settings",
-      "Avoid sharing personal details online",
-      "Report suspicious activity early"
+      "Do not delete original messages; preserve metadata and timestamps",
+      "Use privacy settings and block abusers; restrict account visibility",
+      "Avoid engaging publicly with bullies; inform trusted people",
+      "Seek legal advice for takedown notices and avoid paying extortion demands"
     ]
   },
-
+  "online_hate_speech": {
+    "common_situations": ["Posts targeting religion, caste, or ethnicity", "Dehumanizing or hateful content about identity", "Organized hate campaigns on social media"],
+    "how_people_commonly_proceed": ["They may preserve screenshots and report to platforms", "They often report to cyber cell for FIR", "Some escalate to higher authorities"],
+    "precautions": ["Document all hate speech carefully", "Report to platform and authorities", "Connect with affected communities for support"]
+  },
   "physical_assault": {
-    "common_situations": [
-      "Beating or physical attack",
-      "Violence during arguments or protests",
-      "Assault by students or staff"
-    ],
-    "how_people_commonly_proceed": [
-      "They may seek immediate medical help",
-      "They often report to the police",
-      "Some inform college authorities"
-    ],
-    "precautions": [
-      "Avoid unsafe confrontations",
-      "Seek help immediately after injury",
-      "Document injuries if possible"
-    ]
+    "common_situations": ["Beating or physical attack", "Violence during arguments or protests", "Assault by students or staff"],
+    "how_people_commonly_proceed": ["They may seek immediate medical help", "They often report to the police", "Some inform college authorities"],
+    "precautions": ["Avoid unsafe confrontations", "Seek help immediately after injury", "Document injuries if possible"]
   },
-
+  "cyber_sexual_crime": {
+    "common_situations": ["Non-consensual intimate images shared", "Sextortion demands for money", "Deepfake sexual content created"],
+    "how_people_commonly_proceed": ["They may seek emergency help from cyber cell", "They often file FIR against perpetrator", "Some approach ICC and college authorities"],
+    "precautions": ["Never send intimate content to unknown persons", "Use secure communication apps", "Report immediately if threatened with exposure"]
+  },
   "verbal_abuse": {
-    "common_situations": [
-      "Public humiliation",
-      "Use of insulting or abusive language",
-      "Mental harassment through words"
-    ],
-    "how_people_commonly_proceed": [
-      "They may document repeated incidents",
-      "They often inform institutional authorities",
-      "Some seek counseling support"
-    ],
-    "precautions": [
-      "Avoid retaliating verbally",
-      "Maintain records of abuse",
-      "Seek emotional support"
-    ]
+    "common_situations": ["Public humiliation", "Use of insulting or abusive language", "Mental harassment through words"],
+    "how_people_commonly_proceed": ["They may document repeated incidents", "They often inform institutional authorities", "Some seek counseling support"],
+    "precautions": ["Avoid retaliating verbally", "Maintain records of abuse", "Seek emotional support"]
   },
-
   "stalking": {
-    "common_situations": [
-      "Following someone repeatedly",
-      "Repeated unwanted calls or messages",
-      "Monitoring movements or activities"
-    ],
-    "how_people_commonly_proceed": [
-      "They may keep records of stalking behavior",
-      "They often inform police or college authorities",
-      "Some seek protection or safety measures"
-    ],
-    "precautions": [
-      "Avoid sharing location publicly",
-      "Inform trusted people",
-      "Seek help early"
-    ]
+    "common_situations": ["Following someone repeatedly", "Repeated unwanted calls or messages", "Monitoring movements or activities"],
+    "how_people_commonly_proceed": ["They may keep records of stalking behavior", "They often inform police or college authorities", "Some seek protection or safety measures"],
+    "precautions": ["Avoid sharing location publicly", "Inform trusted people", "Seek help early"]
   },
-
-  "blackmail": {
-    "common_situations": [
-      "Threats using private photos or chats",
-      "Demanding favors or money using threats"
-    ],
-    "how_people_commonly_proceed": [
-      "They may preserve evidence carefully",
-      "They often report to cyber cell or police",
-      "Some seek legal guidance"
-    ],
-    "precautions": [
-      "Do not give in to demands",
-      "Preserve evidence securely",
-      "Avoid sharing sensitive content"
-    ]
+  "blackmail_extortion": {
+    "common_situations": ["Threats using private photos or chats", "Demanding money or favors using threats", "Threatening exposure of personal information"],
+    "how_people_commonly_proceed": ["They may preserve evidence carefully", "They often report to cyber cell or police", "Some seek legal guidance immediately"],
+    "precautions": ["Do not give in to demands", "Preserve evidence securely", "Avoid sharing sensitive content"]
   },
-
-  "extortion": {
-    "common_situations": [
-      "Demanding money using threats",
-      "Withholding documents for money",
-      "Forced payments"
-    ],
-    "how_people_commonly_proceed": [
-      "They may collect proof of demands",
-      "They often report to police",
-      "Some escalate through legal channels"
-    ],
-    "precautions": [
-      "Avoid informal payments",
-      "Preserve communication records",
-      "Report coercion early"
-    ]
+  "defamation_privacy_fraud": {
+    "common_situations": ["Spreading false rumors about character", "Posting false allegations online", "Privacy violation through unauthorized information sharing"],
+    "how_people_commonly_proceed": ["They may preserve defamatory content", "They often seek institutional or legal support", "Some request content removal from platforms"],
+    "precautions": ["Avoid public retaliation", "Document false statements", "Seek guidance early from authorities"]
   },
-
-  "privacy_violation": {
-    "common_situations": [
-      "Sharing personal photos without consent",
-      "Leaking personal data or messages",
-      "Unauthorized recording"
-    ],
-    "how_people_commonly_proceed": [
-      "They may collect proof of misuse",
-      "They often report to cyber cell",
-      "Some request content takedown"
-    ],
-    "precautions": [
-      "Limit sharing of personal content",
-      "Use privacy controls",
-      "Be cautious with permissions"
-    ]
+  "caste_discrimination": {
+    "common_situations": ["Casteist slurs or derogatory comments", "Denial of opportunities due to caste", "Exclusion from social or academic activities"],
+    "how_people_commonly_proceed": ["They may report to grievance cells", "They often document incidents carefully", "Some escalate to anti-discrimination authorities"],
+    "precautions": ["Maintain records of all incidents", "Seek support from caste-based support organizations", "Report to college anti-discrimination committee"]
   },
-
-  "discrimination": {
-    "common_situations": [
-      "Unfair treatment based on caste, religion, or gender",
-      "Bias in evaluation or opportunities"
-    ],
-    "how_people_commonly_proceed": [
-      "They may report to grievance cells",
-      "They often document discriminatory actions",
-      "Some escalate to higher authorities"
-    ],
-    "precautions": [
-      "Maintain records of incidents",
-      "Use official complaint channels",
-      "Seek support groups"
-    ]
+  "racism": {
+    "common_situations": ["Racist comments about origin or ethnicity", "Exclusion based on regional background", "Stereotyping or dehumanizing remarks"],
+    "how_people_commonly_proceed": ["They may report to college authorities", "They often document racist incidents", "Some seek support from community organizations"],
+    "precautions": ["Record incidents with dates and witnesses", "Avoid isolation", "Seek community and institutional support"]
   },
-
-  "defamation": {
-    "common_situations": [
-      "Spreading false rumors",
-      "Posting false allegations online"
-    ],
-    "how_people_commonly_proceed": [
-      "They may preserve defamatory content",
-      "They often seek institutional or legal support",
-      "Some request content removal"
-    ],
-    "precautions": [
-      "Avoid public retaliation",
-      "Document false statements",
-      "Seek guidance early"
-    ]
+  "religious_discrimination": {
+    "common_situations": ["Forced participation in unwanted religious practices", "Discrimination in opportunities due to religion", "Disrespect toward religious beliefs or practices"],
+    "how_people_commonly_proceed": ["They may report to college authorities", "They often document discrimination incidents", "Some escalate to higher educational authorities"],
+    "precautions": ["Assert your right to religious freedom", "Document all discriminatory incidents", "Seek support from religious or community groups"]
   },
-
-  "cheating_fraud": {
-    "common_situations": [
-      "Financial scams",
-      "Fake promises or false commitments",
-      "Money taken without service"
-    ],
-    "how_people_commonly_proceed": [
-      "They may preserve transaction proof",
-      "They often report to police or cyber cell",
-      "Some notify banks or payment platforms"
-    ],
-    "precautions": [
-      "Verify before paying money",
-      "Avoid sharing financial details",
-      "Be cautious of unrealistic offers"
-    ]
+  "gender_discrimination": {
+    "common_situations": ["Unequal treatment due to gender", "Bias in grades or opportunities", "Gender-based exclusion or stereotyping"],
+    "how_people_commonly_proceed": ["They may report to ICC or grievance cell", "They often document discriminatory treatment", "Some seek external support from women's groups"],
+    "precautions": ["Maintain records of discriminatory incidents", "Know your rights under equality laws", "Seek support from institutional committees"]
+  },
+  "institutional_misconduct": {
+    "common_situations": ["Abuse of authority by staff", "Ignoring complaints or covering up crimes", "Retaliatory action against complainants"],
+    "how_people_commonly_proceed": ["They may file complaints with anti-ragging committee", "They often escalate to UGC or higher authorities", "Some seek legal intervention"],
+    "precautions": ["Document all misconduct carefully", "Report through official channels", "Seek support from oversight bodies"]
+  },
+  "administrative_violation": {
+    "common_situations": ["Illegal bonds or undertakings", "Withholding certificates or documents", "Violating student rights to education"],
+    "how_people_commonly_proceed": ["They may seek legal advice immediately", "They often file complaints with higher education authorities", "Some approach consumer courts"],
+    "precautions": ["Never sign illegal bonds", "Know your right to documents", "Seek legal guidance early"]
+  },
+  "general_discrimination": {
+    "common_situations": ["Unfair treatment based on disability, appearance, or background", "Bias in opportunities or evaluation", "Social exclusion or bullying"],
+    "how_people_commonly_proceed": ["They may report to grievance cells", "They often document discriminatory incidents", "Some seek institutional support"],
+    "precautions": ["Maintain records of incidents", "Use official complaint channels", "Seek support from institutional authorities"]
   }
 }

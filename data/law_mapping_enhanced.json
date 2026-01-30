@@ -387,6 +387,52 @@
       "Seek victim protection in online harassment cases"
     ]
   },
+  "cyber_bullying": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "499",
+        "title": "Defamation",
+        "description": "Making or publishing any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "503-506",
+        "title": "Criminal intimidation and threats",
+        "description": "Threats or intimidation causing fear; online threats and harassment may attract punishment under these provisions."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66E",
+        "title": "Violation of privacy",
+        "description": "Punishment for capturing, publishing or transmitting the image of a private area of any person without his or her consent."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "509",
+        "title": "Word, gesture or act intended to insult the modesty of a woman",
+        "description": "Insulting the modesty of a person by words, gestures or acts, which may apply when online messages target a person's dignity."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Publishing or transmitting obscene material in electronic form",
+        "description": "Punishment for publishing obscene content online which may be used to shame or harass victims."
+      }
+    ],
+    "filing_procedure": [
+      "Collect and preserve screenshots, URLs, timestamps and message headers of abusive content",
+      "File complaint with local police cybercrime cell or file online on state police cyber portals",
+      "Provide links to social media posts and request takedown from the platform",
+      "File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable",
+      "Request police to obtain subscriber information and preserve evidence from the platform/ISP",
+      "Request interim protection orders or blocking orders against harassers",
+      "Report abusive accounts to the social media platform and follow up for escalation",
+      "Seek civil remedies for defamation or privacy violations (send notice to platform/accused)",
+      "Obtain legal advice for takedown notices and cease-and-desist communications",
+      "Keep record of all communications with police and platform; seek victim support services if needed"
+    ]
+  },
   "institutional_misconduct": {
     "laws": [
       {
@@ -544,6 +590,420 @@
       "Contact relevant NGOs working on discrimination",
       "Escalate to state-level authorities if institution unresponsive",
       "Document all retaliatory actions taken against complainant"
+    ]
+  },
+  "impersonation_doxxing": {
+    "laws": [
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66C",
+        "title": "Identity theft",
+        "description": "Whoever fraudulently or dishonestly makes use of the electronic signature, password or any other unique identification feature of any other person, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to rupees one lakh."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66D",
+        "title": "Cheating by personation by using computer resource",
+        "description": "Whoever by means of computer resource or communications device cheats by personation, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to rupees one lakh."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "499",
+        "title": "Defamation",
+        "description": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm his reputation or knowing it to be likely to harm his reputation, commits defamation."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "500",
+        "title": "Punishment for defamation",
+        "description": "Whoever defames another shall be punished with simple imprisonment for a term which may extend to two years, or with fine which may extend to five hundred rupees, or with both."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "406",
+        "title": "Punishment for criminal breach of trust",
+        "description": "Whoever, being in any manner entrusted with property, or with any dominion over property in his capacity of a public servant or by virtue of any law for the time being in force, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Punishment for publishing obscene material in electronic form",
+        "description": "Applies if personal images are shared without consent along with impersonation."
+      }
+    ],
+    "filing_procedure": [
+      "Screenshot and document fake profile/account with all posts and comments",
+      "Report fake account to social media platform immediately with evidence",
+      "Request platform to remove profile and block impersonator",
+      "File police complaint under IT Act 66C/66D at cyber crime cell",
+      "Provide all screenshots, profile links, and evidence of impersonation",
+      "Get case reference number from police",
+      "File defamation case in civil court if reputation damaged",
+      "Send legal notice to impersonator demanding removal of fake profile",
+      "Request platform to disclose IP address and user information to police",
+      "Monitor for continued impersonation activity",
+      "Claim damages in civil court for mental harassment and reputation loss",
+      "Register complaint on National Cyber Crime Reporting Portal (cybercrime.gov.in)"
+    ]
+  },
+  "cyber_sexual_crime": {
+    "laws": [
+      {
+        "act": "Protection of Children from Sexual Offences Act, 2012",
+        "section": "Section 13, 14, 15",
+        "title": "Punishment for producing, distributing, or transmitting child sexual abuse material",
+        "description": "Criminal offense with imprisonment up to 5 years for online sexual abuse of minors."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66E",
+        "title": "Punishment for violation of privacy",
+        "description": "Whoever intentionally or knowingly captures, publishes or transmits the private area of any person without his/her consent shall be punished with imprisonment of either description for a term which may extend to three years or with fine which may extend to rupees two lakh, or with both."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Punishment for publishing obscene material in electronic form",
+        "description": "Whoever publishes or transmits obscene material in electronic form shall be punished with imprisonment which may extend to five years and fine which may extend to ten lakh rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "354A",
+        "title": "Sexual harassment",
+        "description": "Physical contact, advances, demand or request for sexual favors, showing pornography, making sexually colored remarks."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "354D",
+        "title": "Stalking",
+        "description": "Follows a woman and contacts in any form with intent to harm her privacy, causes alarm."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "376",
+        "title": "Punishment for rape",
+        "description": "Includes online sexual assault and coercion through cyber medium."
+      }
+    ],
+    "filing_procedure": [
+      "Document all evidence - screenshots, messages, video links, profile names",
+      "Stop all communication with perpetrator immediately",
+      "Do not forward or share the material with anyone",
+      "Report to the online platform immediately",
+      "File complaint with Cyber Crime Cell / Police",
+      "Provide all evidence including IP addresses and device information",
+      "If minor involved, inform parents/guardians immediately",
+      "Request urgency in case of minor victim",
+      "Contact NCMEC (National Center for Missing & Exploited Children) equivalent",
+      "File on cyber crime portal (cybercrime.gov.in)",
+      "Keep emotional support person available",
+      "Seek counseling from trained professionals"
+    ]
+  },
+  "online_hate_speech": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "153",
+        "title": "Wantonly provoking or insulting intended to cause breach of peace",
+        "description": "Punishment for promoting enmity between different groups on grounds of religion, race, caste, etc."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "153A",
+        "title": "Promoting enmity between different groups on grounds of religion, race, place of birth, residence, language, etc.",
+        "description": "Imprisonment up to 3 years and fine up to 2,000 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "295",
+        "title": "Injuring or defiling place of worship with intent to insult religion",
+        "description": "Punishment for contempt of religion through online posts."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "298",
+        "title": "Uttering words with deliberate intent to wound religious feelings",
+        "description": "Simple imprisonment up to 6 months or fine up to 250 rupees."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66A",
+        "title": "Punishment for sending offensive message through communication device",
+        "description": "Imprisonment up to 3 years and fine up to 5 lakh rupees (Note: largely struck down but sections 153 IPC applicable)."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Punishment for publishing obscene material in electronic form",
+        "description": "If hate speech contains obscene content."
+      }
+    ],
+    "filing_procedure": [
+      "Screenshot the hate speech post/video with timestamp and user details",
+      "Note the platform (Twitter, Facebook, YouTube, Instagram, etc.)",
+      "Report to platform's abuse/hate speech reporting mechanism",
+      "Request urgent removal citing harm caused",
+      "File complaint with local cyber crime cell",
+      "File complaint with National Cyber Crime Reporting Portal",
+      "Include evidence of impact on targeted group or individual",
+      "File FIR under IPC sections 153/153A/295/298 as applicable",
+      "Provide account information of person posting hate speech",
+      "Request legal action against account creator",
+      "Contact civil rights organizations for support",
+      "Approach media if widespread hate campaign"
+    ]
+  },
+  "stalking": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "354D",
+        "title": "Stalking",
+        "description": "Follows a woman, attempts to contact without consent, monitoring through electronic surveillance, internet communication with intent to harm her privacy or cause alarm - punishable with imprisonment up to 3 years or fine up to 10,000 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "498A",
+        "title": "Cruelty by husband or his relatives",
+        "description": "If stalking is by spouse or relative with intent to cause harm."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "67",
+        "title": "Publishing material with intent to harass",
+        "description": "If stalking involves online harassment through obscene or threatening messages."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66D",
+        "title": "Cheating by personation by using computer resource",
+        "description": "If stalker creates fake profiles to track victim."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66E",
+        "title": "Punishment for violation of privacy",
+        "description": "If stalker captures or transmits victim's private activities."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "504",
+        "title": "Intentional insult with knowledge that will provoke breach of peace",
+        "description": "If stalking involves threatening messages."
+      }
+    ],
+    "filing_procedure": [
+      "Document all instances of stalking with date, time, location, witnesses",
+      "Keep records of all communication attempts (messages, calls, visits)",
+      "File police complaint immediately with all evidence",
+      "Request for action under IPC 354D for stalking",
+      "Provide phone records and social media messages as evidence",
+      "If online stalking, report to cyber crime cell",
+      "Apply for protective order or restraining order from court",
+      "Get anticipatory bail if threatened with arrest",
+      "Register complaint on cyber crime portal if online harassment",
+      "Contact domestic violence cell if perpetrator is known person",
+      "Seek interim protection measures from police",
+      "File civil case for damages if needed"
+    ]
+  },
+  "gender_discrimination": {
+    "laws": [
+      {
+        "act": "Constitution of India",
+        "section": "Article 14",
+        "title": "Right to equality",
+        "description": "Equal protection under law regardless of gender."
+      },
+      {
+        "act": "Constitution of India",
+        "section": "Article 15",
+        "title": "Prohibition of discrimination on grounds of sex",
+        "description": "State shall not discriminate on grounds of sex."
+      },
+      {
+        "act": "Equal Remuneration Act, 1976",
+        "section": "Sections 2-5",
+        "title": "Equal pay for equal work",
+        "description": "Employers cannot discriminate in wages based on sex for same work."
+      },
+      {
+        "act": "Maternity Benefit Act, 1961",
+        "section": "Protection of maternity",
+        "title": "Protection during pregnancy and child birth",
+        "description": "Employees cannot be dismissed or demoted on grounds of pregnancy."
+      },
+      {
+        "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+        "section": "Comprehensive coverage",
+        "title": "Prevention of sexual harassment at workplace",
+        "description": "Creates mechanism for prevention, prohibition and redressal of sexual harassment of women at workplace."
+      }
+    ],
+    "filing_procedure": [
+      "Document instances of gender discrimination with dates, witnesses, impact",
+      "Approach internal complaints committee (ICC) if in workplace/college",
+      "File formal written complaint with HR or administration",
+      "Request written acknowledgement of complaint filing",
+      "Request time-bound investigation",
+      "File complaint with District Commission for Women if no action",
+      "Approach State Women's Commission for support",
+      "File case under Equal Remuneration Act if wage discrimination",
+      "Seek legal representation from women's legal aid",
+      "File RTI for relevant policies and past complaints",
+      "Contact women's rights organizations for support",
+      "Approach higher authorities if institution unresponsive"
+    ]
+  },
+  "religious_discrimination": {
+    "laws": [
+      {
+        "act": "Constitution of India",
+        "section": "Article 15",
+        "title": "Prohibition of discrimination on grounds of religion",
+        "description": "State shall not discriminate against citizens on grounds of religion."
+      },
+      {
+        "act": "Constitution of India",
+        "section": "Article 25-28",
+        "title": "Right to freedom of religion",
+        "description": "Every person has right to freely profess, practice and propagate religion."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "295",
+        "title": "Injuring or defiling place of worship with intent to insult religion",
+        "description": "Punishment for desecrating religious sites."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "295A",
+        "title": "Deliberate and malicious acts intended to outrage religious feelings",
+        "description": "Imprisonment up to 3 years and fine up to 2,000 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "298",
+        "title": "Uttering words with deliberate intent to wound religious feelings",
+        "description": "Simple imprisonment or fine for religious insults."
+      }
+    ],
+    "filing_procedure": [
+      "Document instances of religious discrimination with specific dates and details",
+      "Gather evidence of discriminatory behavior or statements",
+      "File complaint with institution/organization administration",
+      "Request written response within specific timeframe",
+      "File complaint with District Commission for Minorities",
+      "Approach State Minorities Commission if needed",
+      "File police complaint if violence or threat involved",
+      "Request protection against retaliation",
+      "Seek support from religious/community organizations",
+      "File RTI for institutional policies on minority rights",
+      "Contact legal aid organization for representation",
+      "File civil case if reputation or property damaged"
+    ]
+  },
+  "administrative_violation": {
+    "laws": [
+      {
+        "act": "Right to Information Act, 2005",
+        "section": "RTI provisions",
+        "title": "Right to access information from public authorities",
+        "description": "Citizens have right to information from government institutions."
+      },
+      {
+        "act": "Constitution of India",
+        "section": "Article 226",
+        "title": "Writ of Mandamus",
+        "description": "High Court can issue mandamus to compel public officials to perform duties."
+      },
+      {
+        "act": "Constitution of India",
+        "section": "Article 32",
+        "title": "Constitutional remedy for violation of rights",
+        "description": "Citizens can approach Supreme Court for enforcement of fundamental rights."
+      },
+      {
+        "act": "Protection of Human Rights Act, 1993",
+        "section": "Complaint mechanism",
+        "title": "Right to file complaint against violation of human rights",
+        "description": "Human Rights Commission can investigate violation of rights by public officials."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "166",
+        "title": "Public servant disobeying law with intent to cause injury",
+        "description": "Punishment for government employee acting in violation of legal obligations."
+      }
+    ],
+    "filing_procedure": [
+      "Gather all relevant documents and records",
+      "Request written explanation from institution for action taken",
+      "File formal written complaint with institution head",
+      "Keep copy of complaint for records",
+      "File RTI application for relevant policies and procedures",
+      "File complaint with ombudsman or public grievance cell if applicable",
+      "Approach Human Rights Commission with evidence",
+      "File writ petition in High Court if fundamental rights violated",
+      "Seek legal aid from government legal services authority",
+      "Contact relevant regulatory body (UGC for colleges, etc.)",
+      "Approach media for public awareness if issue is serious",
+      "Document all steps taken for legal proceedings"
+    ]
+  },
+  "verbal_abuse": {
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "504",
+        "title": "Intentional insult with knowledge that will provoke breach of peace",
+        "description": "Punishment with simple imprisonment up to two months or fine up to 250 rupees."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "505",
+        "title": "Statements conducing to public mischief",
+        "description": "Making or publishing statement known to be false with intent to cause public alarm."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "499",
+        "title": "Defamation",
+        "description": "Making false statements that harm reputation."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "509",
+        "title": "Word, gesture or act intended to insult the modesty of a woman",
+        "description": "If verbal abuse has sexual connotation or directed at woman, imprisonment up to 3 years."
+      },
+      {
+        "act": "Information Technology Act, 2000",
+        "section": "66A",
+        "title": "Sending offensive message through communication device",
+        "description": "If verbal abuse through online medium (Note: largely struck down)."
+      },
+      {
+        "act": "Indian Penal Code",
+        "section": "294",
+        "title": "Obscene acts and songs",
+        "description": "For using obscene language in public place."
+      }
+    ],
+    "filing_procedure": [
+      "Document exact words used and context of verbal abuse",
+      "Note date, time, location, and witnesses present",
+      "Preserve any written records (messages, emails, posts)",
+      "File police complaint immediately with full details",
+      "Provide list of potential witnesses who heard the abuse",
+      "If online abuse, report to platform and cyber crime cell",
+      "Request FIR under IPC 504/505/509 as applicable",
+      "Keep medical certificate if verbal abuse caused mental trauma",
+      "File defamation case if false accusations made",
+      "Seek restraining order from court if ongoing threats",
+      "Contact domestic violence cell if abuser is known person",
+      "Approach legal aid for representation in proceedings"
     ]
   }
 }
