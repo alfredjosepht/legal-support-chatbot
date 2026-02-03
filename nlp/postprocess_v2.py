@@ -47,6 +47,15 @@ THREAT_KEYWORDS = ["threat", "will kill", "kill you", "will hurt", "will beat", 
                    "threat to life", "will harm", "will damage", "will expose", "suicide",
                    "blackmail", "will tell", "or else", "if you don't"]
 
+CYBERBULLYING_KEYWORDS = ["bullying", "bully", "bullied", "mock", "mocking", "mocked", "taunt", "taunting",
+                          "insult", "insulting", "insulted", "humiliate", "humiliation", "humiliating",
+                          "shame", "shaming", "shamed", "embarrass", "embarrassing", "embarrassed",
+                          "ridicule", "ridiculing", "ridiculous", "tease", "teasing", "teased",
+                          "spread rumors", "rumour", "spreading lies", "fake account", "fake profile",
+                          "mass tagging", "meme", "edited photo", "private messages exposed", "viral",
+                          "exclude", "excluding", "excluded", "group exclusion", "mean messages", "mean comments",
+                          "abusive messages", "abusive comments", "cruel", "cruelty", "nasty", "vicious"]
+
 AGE_KEYWORDS_MINOR = ["class 10", "class 11", "class 12", "10th", "11th", "12th",
                       "school", "16 years", "17 years", "18 years", "minor", "underage",
                       "below 18", "u-18", "teenager", "kid", "child", "year old"]
@@ -221,6 +230,16 @@ def postprocess_categories(text, raw_cats):
         if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.09:
             final_cats['sexual_assault'] = raw_cats['sexual_assault']
     
+    # ========== RULE: Sexual Crimes (General - Age Unknown) ==========
+    # Critical: If age is unknown but sexual crime keywords present, detect it
+    if age_indicator is None:
+        # Sexual assault/harassment should be detected even without explicit age
+        if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.07:
+            final_cats['sexual_assault'] = raw_cats['sexual_assault']
+        
+        if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.10:
+            final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
+    
     # ========== RULE: Context Validation (Online/Offline) ==========
     
     if 'cyber_harassment' in raw_cats:
@@ -245,6 +264,28 @@ def postprocess_categories(text, raw_cats):
         if medium in ['online', 'mixed']:
             if raw_cats['impersonation_doxxing'] >= 0.18:
                 final_cats['impersonation_doxxing'] = raw_cats['impersonation_doxxing']
+    
+    # ========== RULE: Cyberbullying Validation (Online) ==========
+    # PRIORITY: Cyberbullying with keywords should suppress low-confidence false positives
+    
+    if 'cyber_bullying' in raw_cats:
+        # Explicit cyberbullying term ("cyberbullying", "cyberbullied", "cyberbully")
+        # OR online medium + bullying keywords
+        has_explicit_cyber = any(term in text_lower for term in ['cyberbullying', 'cyberbullied', 'cyberbully'])
+        has_online_context = medium in ['online', 'mixed'] or any(kw in text_lower for kw in ONLINE_KEYWORDS)
+        has_bullying_keywords = any(kw in text_lower for kw in CYBERBULLYING_KEYWORDS)
+        
+        if has_explicit_cyber or (has_online_context and has_bullying_keywords):
+            # Boost cyberbullying confidence when keywords are present
+            boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.15)
+            final_cats['cyber_bullying'] = boosted_cyber
+            
+            # When cyberbullying is clearly detected, suppress sexual crime false positives
+            # (low-confidence sexual assault/harassment are often misclassifications)
+            if raw_cats.get('sexual_assault', 0) < 0.30:
+                raw_cats['sexual_assault'] = 0  # Suppress
+            if raw_cats.get('sexual_harassment', 0) < 0.30:
+                raw_cats['sexual_harassment'] = 0  # Suppress
     
     # ========== RULE: Physical Action Validation ==========
     
@@ -358,7 +399,7 @@ def get_legal_framework(category, context):
         frameworks.append('Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013')
     
     # Cyber crimes - IT Act
-    if category in ['cyber_harassment', 'cyber_sexual_crime', 'impersonation_doxxing', 'online_hate_speech']:
+    if category in ['cyber_harassment', 'cyber_sexual_crime', 'impersonation_doxxing', 'online_hate_speech', 'cyber_bullying']:
         frameworks.append('Information Technology (IT) Act, 2000 (Cyber Crime)')
     
     # Caste Discrimination

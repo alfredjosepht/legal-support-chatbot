@@ -19,7 +19,8 @@
     "institutional_misconduct",
     "administrative_violation",
     "general_discrimination",
-    "verbal_abuse"
+    "verbal_abuse",
+    "cyber_bullying"
   ],
   "threshold":0.0,
   "positive_label":null
