@@ -8,7 +8,9 @@ import re
 ONLINE_KEYWORDS = ["online", "whatsapp", "instagram", "facebook", "message", "dm", "email", 
                    "twitter", "telegram", "snapchat", "tiktok", "video call", "phone call",
                    "chat", "text", "posted", "shared", "screenshot", "website", "forum",
-                   "comment", "post", "profile", "account"]
+                   "comment", "post", "profile", "account", "cyber", "cyberbully", "social media",
+                   "app", "application", "discord", "gaming", "game", "hack", "hacked",
+                   "upload", "uploaded", "video", "photo", "image", "internet"]
 
 PHYSICAL_KEYWORDS = ["hit", "beaten", "assault", "injured", "kicked", "slapped", "attacked",
                      "punched", "pushed", "threw", "beat", "strike", "punch", "bleed",
@@ -54,7 +56,11 @@ CYBERBULLYING_KEYWORDS = ["bullying", "bully", "bullied", "mock", "mocking", "mo
                           "spread rumors", "rumour", "spreading lies", "fake account", "fake profile",
                           "mass tagging", "meme", "edited photo", "private messages exposed", "viral",
                           "exclude", "excluding", "excluded", "group exclusion", "mean messages", "mean comments",
-                          "abusive messages", "abusive comments", "cruel", "cruelty", "nasty", "vicious"]
+                          "abusive messages", "abusive comments", "cruel", "cruelty", "nasty", "vicious",
+                          "cyber", "cyberbully", "cyberbullying", "cyberbullied", "harass", "harassment",
+                          "stalk", "stalking", "threatening", "blackmail", "coerce", "coercion",
+                          "revenge porn", "intimate images", "leaked photos", "leaked videos", "leaked messages",
+                          "doxing", "doxx", "personal information", "leak", "leaked", "exposed"]
 
 AGE_KEYWORDS_MINOR = ["class 10", "class 11", "class 12", "10th", "11th", "12th",
                       "school", "16 years", "17 years", "18 years", "minor", "underage",
@@ -290,15 +296,36 @@ def postprocess_categories(text, raw_cats):
     if 'cyber_bullying' in raw_cats:
         # Explicit cyberbullying term ("cyberbullying", "cyberbullied", "cyberbully")
         # OR online medium + bullying keywords
+        # OR online/cyber indicators with related low-confidence categories (defamation, blackmail, impersonation, hate)
         has_explicit_cyber = any(term in text_lower for term in ['cyberbullying', 'cyberbullied', 'cyberbully'])
         has_online_context = medium in ['online', 'mixed'] or any(kw in text_lower for kw in ONLINE_KEYWORDS)
         has_bullying_keywords = any(kw in text_lower for kw in CYBERBULLYING_KEYWORDS)
-        
-        if has_explicit_cyber or (has_online_context and has_bullying_keywords):
-            # Boost cyberbullying confidence when keywords are present
-            boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.15)
+        has_cyber_keywords = any(kw in text_lower for kw in ['cyber', 'online', 'social media', 'whatsapp', 'facebook', 'instagram'])
+
+        # Categories that should map to cyber context when online indicators are present
+        cyber_related_cats = ['defamation_privacy_fraud', 'blackmail_extortion', 'impersonation_doxxing', 'online_hate_speech']
+        has_related_low_confidence = any(raw_cats.get(c, 0) >= 0.05 for c in cyber_related_cats)
+
+        # Trigger cyberbullying if:
+        # 1. Explicit cyber term OR
+        # 2. (Online context AND bullying keywords) OR
+        # 3. (Cyber keywords AND bullying keywords) OR
+        # 4. (Online context AND a related low-confidence category detected)
+        if (
+            has_explicit_cyber
+            or (has_online_context and has_bullying_keywords)
+            or (has_cyber_keywords and has_bullying_keywords)
+            or (has_online_context and has_related_low_confidence)
+        ):
+            # Boost cyberbullying confidence when keywords or related categories are present
+            # Higher boost if cyber keywords are explicitly present
+            if has_cyber_keywords or has_related_low_confidence:
+                boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.20)
+            else:
+                boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.15)
+
             final_cats['cyber_bullying'] = boosted_cyber
-            
+
             # When cyberbullying is clearly detected, suppress sexual crime false positives
             # (low-confidence sexual assault/harassment are often misclassifications)
             if raw_cats.get('sexual_assault', 0) < 0.30:
