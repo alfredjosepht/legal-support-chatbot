@@ -227,8 +227,8 @@ function App() {
 
     // Procedural Steps
     if (steps && steps.length > 0) {
-      response += `\n#### � ACTIONABLE PROCEDURES\n`;
-      steps.slice(0, 8).forEach((step, idx) => {
+      response += `\n#### 📝 ACTIONABLE PROCEDURES\n`;
+      steps.forEach((step, idx) => {
         response += `${idx + 1}. ${step}\n`;
       });
     }
@@ -304,7 +304,7 @@ function App() {
             )}
           </div>
           <div className="msg-info">
-            {msg.role === 'ai' ? 'Juris Guide' : 'You'} • {msg.time}
+            {msg.role === 'ai' ? 'Judi' : 'You'} • {msg.time}
             {msg.data && msg.role === 'ai' && (
               <button
                 className="expand-btn"
@@ -361,7 +361,7 @@ function App() {
           <div className="sidebar-header">
             <div className="logo">
               <div className="logo-icon">⚖️</div>
-              <span className="logo-text">Juris Guide</span>
+              <span className="logo-text">Judi</span>
             </div>
             <button className="mobile-close" onClick={() => setSidebarOpen(false)}>×</button>
           </div>
@@ -414,7 +414,7 @@ function App() {
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
               </button>
               <div className="current-chat-info">
-                <h2>{activeConsultation ? activeConsultation.title : 'Juris Guide'}</h2>
+                <h2>{activeConsultation ? activeConsultation.title : 'Judi'}</h2>
                 <span className="status-indicator">● Online</span>
               </div>
             </div>
@@ -515,7 +515,7 @@ function App() {
                 </button>
               </div>
             </div>
-            <p className="disclaimer">Juris Guide is an AI assistant and does not provide binding legal advice.</p>
+            <p className="disclaimer">Judi is an AI assistant and does not provide binding legal advice.</p>
           </footer>
         </main>
       </div>
