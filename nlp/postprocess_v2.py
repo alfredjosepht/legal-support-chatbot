@@ -217,8 +217,27 @@ def postprocess_categories(text, raw_cats):
     # increase priority for `ragging` category so it isn't shadowed by
     # fallback categories like `physical_assault`.
     if authority == 'senior_student' or any(kw in text_lower for kw in COLLEGE_KEYWORDS) or 'ragg' in text_lower:
-        if 'ragging' in raw_cats:
+        # Check if this is actually ragging or administrative violation
+        has_ragging_keywords = 'ragg' in text_lower or any(kw in text_lower for kw in 
+                                                           ['senior', 'juniors', 'initiation', 'ritualistic'])
+        has_admin_keywords = any(kw in text_lower for kw in ['certificate', 'documents', 'TC', 'migration', 
+                                                              'hold', 'withhold', 'deny', 'refuse', 'fees', 
+                                                              'bond', 'undertaking', 'admin', 'office'])
+        
+        if has_ragging_keywords and 'ragging' in raw_cats:
             # Boost ragging confidence to ensure it appears in final_cats
+            boosted = max(raw_cats.get('ragging', 0), 0.22)
+            final_cats['ragging'] = boosted
+        elif has_admin_keywords and 'administrative_violation' in raw_cats:
+            # Boost administrative violation instead
+            boosted = max(raw_cats.get('administrative_violation', 0), 0.20)
+            final_cats['administrative_violation'] = boosted
+        elif has_admin_keywords and 'institutional_misconduct' in raw_cats:
+            # Or institutional misconduct
+            boosted = max(raw_cats.get('institutional_misconduct', 0), 0.20)
+            final_cats['institutional_misconduct'] = boosted
+        elif 'ragging' in raw_cats:
+            # Default to ragging if college context but no specific keywords
             boosted = max(raw_cats.get('ragging', 0), 0.22)
             final_cats['ragging'] = boosted
     
