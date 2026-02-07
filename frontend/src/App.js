@@ -241,9 +241,17 @@ function App() {
 
     if (resources && resources.length > 0) {
       response += `\n#### 📞 CONTACT & SUPPORT\n`;
-      resources.slice(0, 4).forEach(res => {
-        const resText = typeof res === 'string' ? res : (res.name || res);
-        response += `* ${resText}\n`;
+      resources.forEach(res => {
+        if (typeof res === 'string') {
+          response += `* ${res}\n`;
+        } else if (typeof res === 'object') {
+          response += `* ${res.name || 'Resource'}\n`;
+          if (res.location) response += `  📍 ${res.location}\n`;
+          if (res.description) response += `  ℹ️ ${res.description}\n`;
+          if (res.contact) response += `  ☎️ ${res.contact}\n`;
+          if (res.link) response += `  🔗 ${res.link}\n`;
+          response += `\n`;
+        }
       });
     }
 
@@ -292,11 +300,17 @@ function App() {
                   if (line.startsWith('* ')) {
                     return <div key={i} className="res-list-item"><span>•</span> {line.replace('* ', '')}</div>;
                   }
+                  if (line.startsWith('  ')) {
+                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{line.trim()}</div>;
+                  }
                   if (/^\d+\. /.test(line)) {
                     return <div key={i} className="res-step-item">{line}</div>;
                   }
                   if (line === '---') {
                     return <hr key={i} className="res-divider" />;
+                  }
+                  if (line.trim() === '') {
+                    return <div key={i} style={{ marginBottom: '8px' }}></div>;
                   }
                   return <p key={i} style={{ marginBottom: '8px' }}>{line}</p>;
                 })}
