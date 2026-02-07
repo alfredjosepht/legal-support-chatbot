@@ -1,4 +1,123 @@
 {
+  "physical_assault": {
+    "police_stations": [
+      {
+        "name": "Local Police Station",
+        "location": "Nearest police station in your jurisdiction",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      },
+      {
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Emergency Helpline",
+        "description": "For immediate assistance in case of physical assault",
+        "contact": "112",
+        "link": "https://www.emergencymanagement.in"
+      },
+      {
+        "name": "AASRA Helpline",
+        "description": "Emotional support for assault victims",
+        "contact": "9820466726",
+        "link": "https://www.aasra.info"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "National Legal Services Authority (NALSA)",
+        "description": "Free legal aid for assault cases",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      },
+      {
+        "name": "State Legal Aid Board",
+        "description": "Provides legal representation in assault cases"
+      }
+    ]
+  },
+
+  "sexual_assault": {
+    "police_stations": [
+      {
+        "name": "Women's Police Station / Special Cell",
+        "location": "District police headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      },
+      {
+        "name": "Cyber Crime Cell (for online evidence)",
+        "location": "District headquarters",
+        "contact": "1930"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Women's Helpline",
+        "description": "24x7 support for sexual assault victims",
+        "contact": "181",
+        "link": "https://wcd.nic.in"
+      },
+      {
+        "name": "RAINN (Rape, Abuse & Incest National Network equivalent)",
+        "description": "Confidential support for survivors",
+        "contact": "9999911007",
+        "link": "https://www.aasra.info"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "National Commission for Women",
+        "description": "Handles sexual assault complaints and investigations",
+        "contact": "011-24363497",
+        "link": "https://ncw.nic.in"
+      },
+      {
+        "name": "Specialized Sexual Assault Units",
+        "description": "Dedicated units in district police for sexual crime investigations"
+      }
+    ]
+  },
+
+  "sexual_harassment": {
+    "police_stations": [
+      {
+        "name": "Women's Police Station",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Commission for Women Helpline",
+        "description": "For sexual harassment complaints",
+        "contact": "7827170170",
+        "link": "https://ncw.nic.in"
+      },
+      {
+        "name": "Women Helpline",
+        "contact": "181",
+        "description": "24x7 women safety helpline"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Internal Complaints Committee (ICC)",
+        "description": "Institution-level mechanism under POSH Act for workplace/institution sexual harassment"
+      },
+      {
+        "name": "POSH Act Legal Aid",
+        "description": "Legal representation for sexual harassment under POSH Act 2013",
+        "link": "https://www.meity.gov.in"
+      }
+    ]
+  },
+
   "ragging": {
     "police_stations": [
       {
@@ -24,39 +143,498 @@
     ]
   },
 
-  "cybercrime": {
-    "cyber_cells": [
-      {
-        "name": "National Cyber Crime Reporting Portal",
-        "contact": "1930",
-        "link": "https://cybercrime.gov.in"
-      }
-    ],
+  "caste_discrimination": {
     "police_stations": [
       {
-        "name": "Cyber Police Station",
-        "location": "District Cyber Cell",
-        "contact": "1930"
-      }
-    ]
-  },
-
-  "harassment": {
-    "legal_aid": [
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      },
       {
-        "name": "National Commission for Women",
-        "description": "Handles complaints related to harassment and abuse",
-        "contact": "7827170170",
-        "link": "https://ncw.nic.in"
+        "name": "Police Station (Under SC/ST Act)",
+        "location": "Nearest police station",
+        "contact": "112"
       }
     ],
     "helplines": [
       {
-        "name": "Women Helpline",
-        "contact": "181",
-        "description": "24x7 women safety helpline"
+        "name": "National Commission for SC/ST",
+        "description": "Handles caste discrimination and atrocity cases",
+        "contact": "011-24617949",
+        "link": "https://ncst.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Prevention of Atrocities (SC/ST) Act Legal Support",
+        "description": "Special legal framework and aid for caste-based atrocities",
+        "link": "https://ncst.nic.in"
+      },
+      {
+        "name": "Dr. Ambedkar Legal Cell",
+        "description": "Organizations providing free legal support for caste discrimination victims"
       }
     ]
-  
+  },
+
+  "racism": {
+    "police_stations": [
+      {
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Commission for Minorities",
+        "description": "Handles complaints related to racial discrimination",
+        "contact": "011-23022651",
+        "link": "https://ncm.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "NALSA Legal Aid",
+        "description": "Free legal aid for racial discrimination cases",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "religious_discrimination": {
+    "police_stations": [
+      {
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Commission for Minorities Helpline",
+        "description": "For religious discrimination and communal violence complaints",
+        "contact": "011-23022651",
+        "link": "https://ncm.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Religious Freedom Legal Support",
+        "description": "Organizations providing legal support for religious discrimination cases",
+        "link": "https://ncm.nic.in"
+      }
+    ]
+  },
+
+  "gender_discrimination": {
+    "police_stations": [
+      {
+        "name": "Women's Police Station",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Commission for Women",
+        "description": "Handles gender discrimination complaints",
+        "contact": "7827170170",
+        "link": "https://ncw.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Gender Equality Legal Cell",
+        "description": "Free legal aid for gender discrimination cases",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "threats": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Local Police Station",
+        "location": "Nearest police station",
+        "contact": "112"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Emergency Helpline",
+        "description": "For threats and immediate safety concerns",
+        "contact": "112",
+        "link": "https://www.emergencymanagement.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Criminal Intimidation Legal Aid",
+        "description": "Legal support under IPC Section 503-506",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "stalking": {
+    "police_stations": [
+      {
+        "name": "Women's Police Station / Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Local Police Station",
+        "location": "Nearest police station",
+        "contact": "112"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Women's Helpline",
+        "description": "For stalking and safety concerns",
+        "contact": "181",
+        "link": "https://wcd.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Stalking Legal Support",
+        "description": "Legal aid under IPC Section 354D (stalking and harassment)",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "blackmail_extortion": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Economic Offences Wing",
+        "location": "District police headquarters",
+        "contact": "112"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report online extortion and blackmail",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Economic Crime Legal Support",
+        "description": "Legal aid for extortion and blackmail cases (IPC 383-384)",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "impersonation_doxxing": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report identity theft and doxxing",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Cyber Crime Legal Support",
+        "description": "Legal aid under IT Act 2000 (Sections 66C, 66D)",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "cyber_sexual_crime": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell - Special Unit",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Women's Police Station",
+        "location": "District headquarters",
+        "contact": "112"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Women's Helpline",
+        "description": "For online sexual exploitation",
+        "contact": "181",
+        "link": "https://wcd.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Cyber Sexual Crime Support",
+        "description": "Legal aid under IT Act 2000 (Sections 66E) and IPC",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "cyber_harassment": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report online harassment and cyberbullying",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Cyber Harassment Legal Support",
+        "description": "Legal aid under IT Act 2000 and IPC",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "cyber_bullying": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report cyberbullying incidents",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "iCall Helpline",
+        "description": "Psychological support for cyberbullying victims",
+        "contact": "9999666555",
+        "link": "https://www.icallhelpline.org"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Cyberbullying Legal Support",
+        "description": "Legal aid for cyberbullying cases",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "online_hate_speech": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report online hate speech",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Hate Speech Legal Support",
+        "description": "Legal aid under IPC (Sections 153A, 295A) and IT Act",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "defamation_privacy_fraud": {
+    "police_stations": [
+      {
+        "name": "Cyber Crime Cell / Economic Offences Wing",
+        "location": "District headquarters",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report defamation and privacy violations",
+        "contact": "1930",
+        "link": "https://cybercrime.gov.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Defamation & Fraud Legal Support",
+        "description": "Legal aid under IPC (Sections 499-500, 420) and IT Act",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "verbal_abuse": {
+    "police_stations": [
+      {
+        "name": "Local Police Station",
+        "location": "Nearest police station",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Women's Helpline (if gender-based abuse)",
+        "contact": "181",
+        "link": "https://wcd.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Verbal Abuse Legal Support",
+        "description": "Legal aid under IPC (Sections 504, 294)",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "institutional_misconduct": {
+    "police_stations": [
+      {
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Education Ministry Helpline",
+        "description": "For institutional misconduct complaints",
+        "contact": "1800-180-5522",
+        "link": "https://www.antiragging.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Institutional Grievance Redressal Cell",
+        "description": "College-level committee to address institutional misconduct"
+      },
+      {
+        "name": "UGC Compliance Helpline",
+        "description": "For UGC regulation violations",
+        "contact": "1800-180-5522",
+        "link": "https://www.ugc.ac.in"
+      }
+    ]
+  },
+
+  "administrative_violation": {
+    "police_stations": [
+      {
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Higher Education Regulatory Authority",
+        "description": "For administrative violations in educational institutions",
+        "contact": "1800-180-5522",
+        "link": "https://www.ugc.ac.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Administrative Law Support",
+        "description": "Legal aid for challenging illegal administrative actions",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
+  },
+
+  "general_discrimination": {
+    "police_stations": [
+      {
+        "name": "District Police Headquarters",
+        "location": "District headquarters",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "National Commission for Minorities",
+        "description": "For discrimination complaints",
+        "contact": "011-23022651",
+        "link": "https://ncm.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Anti-Discrimination Legal Support",
+        "description": "Legal aid under Constitutional provisions (Articles 14, 15)",
+        "contact": "1800-180-7779",
+        "link": "https://nalsa.gov.in"
+      }
+    ]
   }
 }
