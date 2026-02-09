@@ -1,4 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+import hashlib
+import secrets
+import os
 import spacy
 import json
 from fastapi.middleware.cors import CORSMiddleware
@@ -40,6 +43,83 @@ class ChatRequest(BaseModel):
     message: str
 
 
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+
+def hash_password(password: str, salt: str | None = None) -> str:
+    if salt is None:
+        salt = secrets.token_hex(16)
+    digest = hashlib.sha256((salt + password).encode("utf-8")).hexdigest()
+    return f"{salt}${digest}"
+
+
+def load_users() -> dict:
+    users_file = os.path.join("data", "users.json")
+    os.makedirs(os.path.dirname(users_file), exist_ok=True)
+    users = {}
+    if os.path.exists(users_file):
+        try:
+            with open(users_file, encoding="utf-8") as f:
+                users = json.load(f)
+        except Exception:
+            users = {}
+    return users
+
+
+def save_users(users: dict):
+    users_file = os.path.join("data", "users.json")
+    os.makedirs(os.path.dirname(users_file), exist_ok=True)
+    with open(users_file, "w", encoding="utf-8") as f:
+        json.dump(users, f, indent=2, ensure_ascii=False)
+
+
+def verify_password(stored: str, password: str) -> bool:
+    try:
+        salt, digest = stored.split("$", 1)
+    except Exception:
+        return False
+    check = hashlib.sha256((salt + password).encode("utf-8")).hexdigest()
+    return secrets.compare_digest(check, digest)
+
+
+@app.post('/signup')
+def signup(payload: LoginRequest):
+    username = payload.username.strip()
+    password = payload.password
+    if not username or not password:
+        raise HTTPException(status_code=400, detail="username and password required")
+
+    users = load_users()
+    if username in users:
+        raise HTTPException(status_code=400, detail="username already exists")
+
+    users[username] = {"password": hash_password(password)}
+    save_users(users)
+    return {"status": "ok", "user": username}
+
+
+@app.post('/login')
+def login(payload: LoginRequest):
+    username = payload.username.strip()
+    password = payload.password
+
+    if not username or not password:
+        raise HTTPException(status_code=400, detail="username and password required")
+
+    users = load_users()
+    entry = users.get(username)
+    if not entry:
+        raise HTTPException(status_code=401, detail="invalid credentials")
+
+    stored = entry.get('password')
+    if not stored or not verify_password(stored, password):
+        raise HTTPException(status_code=401, detail="invalid credentials")
+
+    return {"status": "ok", "user": username}
+
+
 class ChatResponse(BaseModel):
     category: str                  # primary
     confidence: float
@@ -52,6 +132,57 @@ class ChatResponse(BaseModel):
     resources: list
     case_references: list
     warnings: list                 # NEW: safety flags or additional notes
+
+
+
+class Message(BaseModel):
+    id: int
+    text: str | None = None
+    role: str
+    time: str | None = None
+    files: list | None = None
+    data: dict | None = None
+
+
+class Consultation(BaseModel):
+    id: str
+    title: str | None = None
+    messages: list[Message] | None = []
+    timestamp: str | None = None
+
+
+class ConsultationsPayload(BaseModel):
+    consultations: list[Consultation]
+    activeConsultationId: str | None = None
+
+
+def consultations_path_for(username: str) -> str:
+    path = os.path.join('data', 'consultations')
+    os.makedirs(path, exist_ok=True)
+    return os.path.join(path, f"{username}.json")
+
+
+@app.get('/consultations/{username}')
+def get_consultations(username: str):
+    p = consultations_path_for(username)
+    if os.path.exists(p):
+        try:
+            with open(p, encoding='utf-8') as f:
+                return json.load(f)
+        except Exception:
+            return {"consultations": [], "activeConsultationId": None}
+    return {"consultations": [], "activeConsultationId": None}
+
+
+@app.post('/consultations/{username}')
+def save_consultations(username: str, payload: ConsultationsPayload):
+    p = consultations_path_for(username)
+    try:
+        with open(p, 'w', encoding='utf-8') as f:
+            json.dump({"consultations": [c.dict() for c in payload.consultations], "activeConsultationId": payload.activeConsultationId}, f, indent=2, ensure_ascii=False)
+        return {"status": "ok"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 

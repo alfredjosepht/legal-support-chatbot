@@ -3,12 +3,29 @@ import './App.css';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  // Consultations are stored per-user under key `consultations_<username>`.
   const [consultations, setConsultations] = useState(() => {
-    const saved = localStorage.getItem('consultations');
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const savedUser = localStorage.getItem('user');
+      const username = savedUser ? JSON.parse(savedUser).username : null;
+      const key = username ? `consultations_${username}` : 'consultations';
+      const saved = localStorage.getItem(key);
+      return saved ? JSON.parse(saved) : [];
+    } catch (err) {
+      return [];
+    }
   });
+
   const [activeConsultationId, setActiveConsultationId] = useState(() => {
-    return localStorage.getItem('activeConsultationId') || null;
+    try {
+      const savedUser = localStorage.getItem('user');
+      const username = savedUser ? JSON.parse(savedUser).username : null;
+      const key = username ? `activeConsultationId_${username}` : 'activeConsultationId';
+      return localStorage.getItem(key) || null;
+    } catch (err) {
+      return null;
+    }
   });
 
   const [isTyping, setIsTyping] = useState(false);
@@ -16,6 +33,17 @@ function App() {
   const [attachedFiles, setAttachedFiles] = useState([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [expandedMessage, setExpandedMessage] = useState(null);
+
+  // User / Login state
+  const [user, setUser] = useState(() => {
+    const saved = localStorage.getItem('user');
+    return saved ? JSON.parse(saved) : null;
+  });
+  const [loginUsername, setLoginUsername] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
+  const [loginError, setLoginError] = useState(null);
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+  const [isSignup, setIsSignup] = useState(false);
 
   const viewportRef = useRef(null);
   const fileInputRef = useRef(null);
@@ -26,19 +54,69 @@ function App() {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  // Sync consultations to localStorage
+  // Sync consultations to per-user localStorage key
   useEffect(() => {
-    localStorage.setItem('consultations', JSON.stringify(consultations));
+    try {
+      const savedUser = localStorage.getItem('user');
+      const username = savedUser ? JSON.parse(savedUser).username : null;
+      const key = username ? `consultations_${username}` : 'consultations';
+      localStorage.setItem(key, JSON.stringify(consultations));
+    } catch (err) {
+      // ignore
+    }
   }, [consultations]);
 
-  // Sync activeConsultationId to localStorage
+  // Sync consultations to backend for the logged-in user
   useEffect(() => {
-    if (activeConsultationId) {
-      localStorage.setItem('activeConsultationId', activeConsultationId);
-    } else {
-      localStorage.removeItem('activeConsultationId');
+    const saveToServer = async () => {
+      try {
+        const savedUser = localStorage.getItem('user');
+        const username = savedUser ? JSON.parse(savedUser).username : null;
+        if (!username) return;
+        await fetch(`http://localhost:8000/consultations/${encodeURIComponent(username)}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ consultations, activeConsultationId })
+        });
+      } catch (err) {
+        // ignore server save errors for now
+      }
+    };
+    saveToServer();
+  }, [consultations, activeConsultationId, user]);
+
+  // Sync activeConsultationId to per-user localStorage key
+  useEffect(() => {
+    try {
+      const savedUser = localStorage.getItem('user');
+      const username = savedUser ? JSON.parse(savedUser).username : null;
+      const key = username ? `activeConsultationId_${username}` : 'activeConsultationId';
+      if (activeConsultationId) {
+        localStorage.setItem(key, activeConsultationId);
+      } else {
+        localStorage.removeItem(key);
+      }
+    } catch (err) {
+      // ignore
     }
   }, [activeConsultationId]);
+
+  // When the logged-in user changes, load their consultations
+  useEffect(() => {
+    try {
+      const savedUser = localStorage.getItem('user');
+      const username = savedUser ? JSON.parse(savedUser).username : null;
+      const consultKey = username ? `consultations_${username}` : 'consultations';
+      const activeKey = username ? `activeConsultationId_${username}` : 'activeConsultationId';
+      const savedConsults = localStorage.getItem(consultKey);
+      setConsultations(savedConsults ? JSON.parse(savedConsults) : []);
+      const savedActive = localStorage.getItem(activeKey);
+      setActiveConsultationId(savedActive || null);
+    } catch (err) {
+      setConsultations([]);
+      setActiveConsultationId(null);
+    }
+  }, [/* run when `user` changes */ user]);
 
   // Auto-scroll to bottom when messages change or typing starts
   const activeConsultation = consultations.find(c => c.id === activeConsultationId);
@@ -270,6 +348,50 @@ function App() {
     setExpandedMessage(expandedMessage === messageId ? null : messageId);
   };
 
+  const handleLogin = async () => {
+    setIsLoggingIn(true);
+    setLoginError(null);
+    try {
+      const endpoint = isSignup ? 'http://localhost:8000/signup' : 'http://localhost:8000/login';
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: loginUsername, password: loginPassword })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.detail || data.error || 'Login failed');
+      }
+      const userObj = { username: data.user };
+      setUser(userObj);
+      localStorage.setItem('user', JSON.stringify(userObj));
+      // Load consultations for this user from backend
+      try {
+        const resp = await fetch(`http://localhost:8000/consultations/${encodeURIComponent(userObj.username)}`);
+        if (resp.ok) {
+          const cdata = await resp.json();
+          if (cdata && Array.isArray(cdata.consultations)) {
+            setConsultations(cdata.consultations);
+            setActiveConsultationId(cdata.activeConsultationId || null);
+          }
+        }
+      } catch (err) {
+        // ignore load errors
+      }
+    } catch (err) {
+      setLoginError(err.message || 'Login failed');
+    }
+    setIsLoggingIn(false);
+  };
+
+  const handleLogout = () => {
+    // Clear UI state but keep stored consultations for the user in localStorage
+    setUser(null);
+    localStorage.removeItem('user');
+    setConsultations([]);
+    setActiveConsultationId(null);
+  };
+
   const renderMessage = (msg) => {
     return (
       <div key={msg.id} className={`message ${msg.role}`}>
@@ -367,6 +489,43 @@ function App() {
     );
   };
 
+  if (!user) {
+    return (
+      <div className={`App ${theme}-theme`}>
+        <div className="auth-wrapper">
+          <div className="auth-card">
+            <div className="auth-header">
+              <h2>{isSignup ? 'Create an account' : 'Login to Judi'}</h2>
+              <div className="auth-sub">Securely access your consultations and history.</div>
+            </div>
+
+            <div className="auth-field">
+              <label>Username</label>
+              <input className="auth-input" value={loginUsername} onChange={(e) => setLoginUsername(e.target.value)} />
+            </div>
+
+            <div className="auth-field">
+              <label>Password</label>
+              <input className="auth-input" type="password" value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} />
+            </div>
+
+            <div className="auth-actions">
+              <button className="auth-btn auth-btn-primary" onClick={handleLogin} disabled={isLoggingIn || !loginUsername.trim() || !loginPassword}>{isLoggingIn ? (isSignup ? 'Creating...' : 'Logging in...') : (isSignup ? 'Sign up' : 'Login')}</button>
+              <button className="auth-btn auth-btn-ghost" onClick={() => { setLoginUsername(''); setLoginPassword(''); setLoginError(null); }}>Clear</button>
+            </div>
+
+            <div className="auth-toggle">
+              <div className="auth-small-note">{isSignup ? 'Already have an account?' : "Don't have an account?"}</div>
+              <button onClick={() => { setIsSignup(prev => !prev); setLoginError(null); }} style={{ background: 'transparent', border: 'none', color: 'var(--accent-color)', cursor: 'pointer' }}>{isSignup ? 'Login' : 'Create account'}</button>
+            </div>
+
+            {loginError && <div className="auth-error">{loginError}</div>}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={`App ${theme}-theme`}>
       <div className="app-container">
@@ -437,6 +596,12 @@ function App() {
               <button className="theme-toggle-btn" onClick={toggleTheme} title="Change Theme">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
               </button>
+              {user && (
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginLeft: '12px' }}>
+                  <div style={{ fontSize: '14px', color: '#333' }}>{user.username}</div>
+                  <button onClick={handleLogout} title="Sign out" style={{ padding: '6px 10px', borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', background: 'transparent', cursor: 'pointer' }}>Logout</button>
+                </div>
+              )}
             </div>
           </header>
 

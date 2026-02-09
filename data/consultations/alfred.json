@@ -1,0 +1,124 @@
+{
+  "consultations": [
+    {
+      "id": "1770643510334",
+      "title": "cyberbullying",
+      "messages": [
+        {
+          "id": 1770643510334,
+          "text": "cyberbullying",
+          "role": "user",
+          "time": "18:55",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1770643510349,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** CYBER BULLYING\n* **Confidence Level:** 20.0%\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section 499** (Indian Penal Code): Defamation\n* **Section 503-506** (Indian Penal Code): Criminal intimidation and threats\n* **Section 66E** (Information Technology Act, 2000): Violation of privacy\n* **Section 509** (Indian Penal Code): Word, gesture or act intended to insult the modesty of a woman\n* **Section 67** (Information Technology Act, 2000): Publishing or transmitting obscene material in electronic form\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Collect and preserve screenshots, URLs, timestamps and message headers of abusive content\n2. File complaint with local police cybercrime cell or file online on state police cyber portals\n3. Provide links to social media posts and request takedown from the platform\n4. File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable\n5. Request police to obtain subscriber information and preserve evidence from the platform/ISP\n6. Request interim protection orders or blocking orders against harassers\n7. Report abusive accounts to the social media platform and follow up for escalation\n8. Seek civil remedies for defamation or privacy violations (send notice to platform/accused)\n9. Obtain legal advice for takedown notices and cease-and-desist communications\n10. Keep record of all communications with police and platform; seek victim support services if needed\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report cyberbullying incidents\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* iCall Helpline\n  ℹ️ Psychological support for cyberbullying victims\n  ☎️ 9999666555\n  🔗 https://www.icallhelpline.org\n\n* Cyberbullying Legal Support\n  ℹ️ Legal aid for cyberbullying cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "18:55",
+          "files": null,
+          "data": {
+            "category": "cyber_bullying",
+            "confidence": 0.2,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "cyber_bullying",
+                "confidence": 0.2
+              },
+              {
+                "category": "impersonation_doxxing",
+                "confidence": 0.103
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": "online",
+              "discrimination_types": [],
+              "legal_framework": null
+            },
+            "legal_frameworks": [
+              "Information Technology (IT) Act, 2000 (Cyber Crime)"
+            ],
+            "laws": [
+              {
+                "act": "Indian Penal Code",
+                "section": "499",
+                "title": "Defamation",
+                "description": "Making or publishing any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "503-506",
+                "title": "Criminal intimidation and threats",
+                "description": "Threats or intimidation causing fear; online threats and harassment may attract punishment under these provisions."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66E",
+                "title": "Violation of privacy",
+                "description": "Punishment for capturing, publishing or transmitting the image of a private area of any person without his or her consent."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "509",
+                "title": "Word, gesture or act intended to insult the modesty of a woman",
+                "description": "Insulting the modesty of a person by words, gestures or acts, which may apply when online messages target a person's dignity."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "67",
+                "title": "Publishing or transmitting obscene material in electronic form",
+                "description": "Punishment for publishing obscene content online which may be used to shame or harass victims."
+              }
+            ],
+            "steps": [
+              "Collect and preserve screenshots, URLs, timestamps and message headers of abusive content",
+              "File complaint with local police cybercrime cell or file online on state police cyber portals",
+              "Provide links to social media posts and request takedown from the platform",
+              "File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable",
+              "Request police to obtain subscriber information and preserve evidence from the platform/ISP",
+              "Request interim protection orders or blocking orders against harassers",
+              "Report abusive accounts to the social media platform and follow up for escalation",
+              "Seek civil remedies for defamation or privacy violations (send notice to platform/accused)",
+              "Obtain legal advice for takedown notices and cease-and-desist communications",
+              "Keep record of all communications with police and platform; seek victim support services if needed"
+            ],
+            "resources": [
+              {
+                "name": "Cyber Crime Cell",
+                "location": "District headquarters",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "National Cyber Crime Reporting Portal",
+                "description": "Report cyberbullying incidents",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "iCall Helpline",
+                "description": "Psychological support for cyberbullying victims",
+                "contact": "9999666555",
+                "link": "https://www.icallhelpline.org"
+              },
+              {
+                "name": "Cyberbullying Legal Support",
+                "description": "Legal aid for cyberbullying cases",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        }
+      ],
+      "timestamp": "2026-02-09T13:25:10.334Z"
+    }
+  ],
+  "activeConsultationId": "1770643510334"
+}
