@@ -301,6 +301,25 @@ button {
   gap: 0.75rem;
 }
 
+.location-select {
+  height: 40px;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 14px;
+  outline: none;
+  min-width: 140px;
+}
+.location-select:hover {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+}
+.location-select option {
+  color: var(--text-primary);
+}
+
 .action-btn,
 .theme-toggle-btn {
   width: 40px;

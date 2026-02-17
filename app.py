@@ -31,6 +31,11 @@ with open("data/law_mapping_enhanced.json", encoding="utf-8") as f:
 with open("data/resources.json", encoding="utf-8") as f:
     resources = json.load(f)
 
+# Local, location-specific contact numbers (overrides / additions for returned resources)
+# Stored in `data/local_numbers.json` and exposed via /locations
+with open("data/local_numbers.json", encoding="utf-8") as f:
+    local_numbers = json.load(f)
+
 with open("data/case_laws.json", encoding="utf-8") as f:
     case_laws = json.load(f)
 
@@ -41,6 +46,8 @@ def root():
 
 class ChatRequest(BaseModel):
     message: str
+    # optional location chosen by frontend (e.g. "Kerala", "Mumbai")
+    location: str | None = None
 
 
 class LoginRequest(BaseModel):
@@ -174,6 +181,16 @@ def get_consultations(username: str):
     return {"consultations": [], "activeConsultationId": None}
 
 
+@app.get('/locations')
+def get_locations():
+    """Return available location choices (read from data/local_numbers.json).
+    Frontend uses this to populate the location selector."""
+    try:
+        # include a default 'National' option on the frontend
+        return {"locations": ["National"] + sorted(list(local_numbers.keys()))}
+    except Exception:
+        return {"locations": ["National"]}
+
 @app.post('/consultations/{username}')
 def save_consultations(username: str, payload: ConsultationsPayload):
     p = consultations_path_for(username)
@@ -256,7 +273,11 @@ def chat(user_input: ChatRequest):
     # Get procedural steps (filing_procedure from enhanced mapping)
     procedural_steps = raw_laws.get("filing_procedure", []) if isinstance(raw_laws, dict) else []
     raw_resources = resources.get(category, {})
-    
+
+    # If the frontend supplied a `location`, append any location-specific contacts
+    location = user_input.location or None
+    loc_contacts = local_numbers.get(location, {}) if location else {}
+
     # Combine procedural steps with general steps
 
     return {
@@ -269,17 +290,20 @@ def chat(user_input: ChatRequest):
             "authority": context.get('authority'),
             "medium": context.get('medium'),
             "discrimination_types": context.get('discrimination_types', []),
-            "legal_framework": context.get('legal_framework')
+            "legal_framework": context.get('legal_framework'),
+            "location": location
         },
         "legal_frameworks": legal_frameworks,
         "laws": laws_to_return,
         "steps":procedural_steps,
         "resources": (
-            raw_resources.get("police_stations", [])
-            + raw_resources.get("helplines", [])
-            + raw_resources.get("legal_aid", [])
-            if isinstance(raw_resources, dict)
-            else raw_resources
+            # base resources for the category, plus any matching local numbers (police/helplines/legal_aid)
+            (raw_resources.get("police_stations", []) if isinstance(raw_resources, dict) else [])
+            + (loc_contacts.get("police_stations", []) if isinstance(loc_contacts, dict) else [])
+            + (raw_resources.get("helplines", []) if isinstance(raw_resources, dict) else [])
+            + (loc_contacts.get("helplines", []) if isinstance(loc_contacts, dict) else [])
+            + (raw_resources.get("legal_aid", []) if isinstance(raw_resources, dict) else [])
+            + (loc_contacts.get("legal_aid", []) if isinstance(loc_contacts, dict) else [])
         ),
         "case_references": case_laws.get(category, []),
         "warnings": warnings

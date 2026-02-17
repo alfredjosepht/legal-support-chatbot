@@ -34,6 +34,10 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [expandedMessage, setExpandedMessage] = useState(null);
 
+  // Location selector state (used to show local resource numbers)
+  const [locations, setLocations] = useState(['National']);
+  const [selectedLocation, setSelectedLocation] = useState(localStorage.getItem('selectedLocation') || 'National');
+
   // User / Login state
   const [user, setUser] = useState(() => {
     const saved = localStorage.getItem('user');
@@ -117,6 +121,34 @@ function App() {
       setActiveConsultationId(null);
     }
   }, [/* run when `user` changes */ user]);
+
+  // fetch available locations (read from backend) and persist selection
+  useEffect(() => {
+    const fetchLocations = async () => {
+      try {
+        const res = await fetch('http://localhost:8000/locations');
+        if (!res.ok) return;
+        const payload = await res.json();
+        if (payload && Array.isArray(payload.locations)) {
+          setLocations(payload.locations);
+          const stored = localStorage.getItem('selectedLocation') || 'National';
+          if (!payload.locations.includes(stored)) {
+            const pick = payload.locations[0] || 'National';
+            setSelectedLocation(pick);
+            localStorage.setItem('selectedLocation', pick);
+          }
+        }
+      } catch (err) {
+        // ignore network errors
+      }
+    };
+    fetchLocations();
+  }, []);
+
+  // persist selected location to localStorage
+  useEffect(() => {
+    localStorage.setItem('selectedLocation', selectedLocation);
+  }, [selectedLocation]);
 
   // Auto-scroll to bottom when messages change or typing starts
   const activeConsultation = consultations.find(c => c.id === activeConsultationId);
@@ -216,7 +248,7 @@ function App() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: messageText })
+        body: JSON.stringify({ message: messageText, location: selectedLocation === 'National' ? null : selectedLocation })
       });
 
       if (!response.ok) {
@@ -593,6 +625,15 @@ function App() {
             </div>
 
             <div className="header-actions">
+              <select
+                className="location-select"
+                value={selectedLocation}
+                onChange={(e) => setSelectedLocation(e.target.value)}
+                title="Select location for local resources"
+                aria-label="Location selector"
+              >
+                {locations.map(loc => <option key={loc} value={loc}>{loc}</option>)}
+              </select>
               <button className="theme-toggle-btn" onClick={toggleTheme} title="Change Theme">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
               </button>

@@ -1,0 +1,77 @@
+{
+  "Kerala": {
+    "police_stations": [
+      {
+        "name": "Thiruvananthapuram Local Police Station",
+        "location": "Thiruvananthapuram, Kerala",
+        "contact": "0471-2330000",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Kerala Women's Helpline",
+        "description": "State women protection & counselling",
+        "contact": "181",
+        "link": "https://wcd.nic.in"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Kerala State Legal Aid",
+        "description": "State-level free legal assistance",
+        "contact": "0484-1234567"
+      }
+    ]
+  },
+
+  "Mumbai": {
+    "police_stations": [
+      {
+        "name": "Mumbai Police Control Room",
+        "location": "Mumbai, Maharashtra",
+        "contact": "022-22622500",
+        "link": "https://mumbaipolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Mumbai Women's Helpline",
+        "description": "City helpline for immediate support",
+        "contact": "022-12345678"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Mumbai District Legal Aid",
+        "description": "Free legal assistance in Mumbai",
+        "contact": "022-87654321"
+      }
+    ]
+  },
+
+  "Delhi": {
+    "police_stations": [
+      {
+        "name": "Delhi Police Control Room",
+        "location": "New Delhi, NCT",
+        "contact": "011-100",
+        "link": "https://delhipolice.gov.in"
+      }
+    ],
+    "helplines": [
+      {
+        "name": "Delhi Women's Helpline",
+        "description": "State support line",
+        "contact": "1091"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Delhi Legal Aid Services",
+        "description": "Legal aid and counselling",
+        "contact": "011-55551234"
+      }
+    ]
+  }
+}
