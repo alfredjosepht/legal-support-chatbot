@@ -1,0 +1,700 @@
+{
+  "consultations": [
+    {
+      "id": "1772513830258",
+      "title": "my senior ragged me",
+      "messages": [
+        {
+          "id": 1772513830259,
+          "text": "my senior ragged me",
+          "role": "user",
+          "time": "10:27 am",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1772513830661,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** RAGGING\n* **Confidence Level:** 22.0%\n* **Involved Party Type:** senior student\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* UGC (Promotion of Ragging Prevention) Regulations, 2009\n* Anti-Ragging Act & National Anti-Ragging Rules\n\n**Key Legal Provisions:**\n* **Section Central Government Prohibition of Ragging Bill, 1998** (Anti-Ragging Act, UGC Regulations): Definition and prohibition of ragging\n* **Section 336-338** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341-348** (Indian Penal Code): Criminal force, wrongful restraint, confinement\n* **Section 375-376** (Indian Penal Code): Rape and sexual assault\n* **Section 3-7** (Protection of Children from Sexual Offences Act, 2012): If ragging involves children\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Report immediately to college/institution anti-ragging committee\n2. File written complaint with specific names, dates, and descriptions\n3. Request protection measures before investigation\n4. Simultaneously file police complaint if police intervention needed\n5. File FIR under Anti-Ragging Act provisions\n6. Collect medical certificates if physical injury occurred\n7. Get witness statements from fellow students\n8. Preserve evidence: messages, videos, photographs\n9. Request interim protective measures (relocation, changed schedule)\n10. File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)\n11. Seek legal aid for representation\n12. Request academic safeguards while complaint is pending\n13. Escalate to principal/management if committee is biased\n14. Contact National Human Rights Commission if state authorities unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Jurisdiction of the educational institution\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* UGC Anti-Ragging Helpline\n  ℹ️ National helpline to report ragging incidents\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* College Anti-Ragging Committee\n  ℹ️ Institution-level grievance redressal committee\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "10:27 am",
+          "files": null,
+          "data": {
+            "category": "ragging",
+            "confidence": 0.22,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "ragging",
+                "confidence": 0.22
+              },
+              {
+                "category": "sexual_assault",
+                "confidence": 0.149
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": "senior_student",
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "UGC (Promotion of Ragging Prevention) Regulations, 2009",
+              "Anti-Ragging Act & National Anti-Ragging Rules"
+            ],
+            "laws": [
+              {
+                "act": "Anti-Ragging Act, UGC Regulations",
+                "section": "Central Government Prohibition of Ragging Bill, 1998",
+                "title": "Definition and prohibition of ragging",
+                "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336-338",
+                "title": "Act endangering life or personal safety",
+                "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341-348",
+                "title": "Criminal force, wrongful restraint, confinement",
+                "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "375-376",
+                "title": "Rape and sexual assault",
+                "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3-7",
+                "title": "If ragging involves children",
+                "description": "Punishment up to 5-10 years for sexual offences against children."
+              }
+            ],
+            "steps": [
+              "Report immediately to college/institution anti-ragging committee",
+              "File written complaint with specific names, dates, and descriptions",
+              "Request protection measures before investigation",
+              "Simultaneously file police complaint if police intervention needed",
+              "File FIR under Anti-Ragging Act provisions",
+              "Collect medical certificates if physical injury occurred",
+              "Get witness statements from fellow students",
+              "Preserve evidence: messages, videos, photographs",
+              "Request interim protective measures (relocation, changed schedule)",
+              "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+              "Seek legal aid for representation",
+              "Request academic safeguards while complaint is pending",
+              "Escalate to principal/management if committee is biased",
+              "Contact National Human Rights Commission if state authorities unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Jurisdiction of the educational institution",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "UGC Anti-Ragging Helpline",
+                "description": "National helpline to report ragging incidents",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": "College Anti-Ragging Committee",
+                "description": "Institution-level grievance redressal committee"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1772514471524,
+          "text": "ragging",
+          "role": "user",
+          "time": "10:37 am",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1772514471885,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** RAGGING\n* **Confidence Level:** 22.0%\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Anti-Ragging Act & National Anti-Ragging Rules\n* UGC (Promotion of Ragging Prevention) Regulations, 2009\n\n**Key Legal Provisions:**\n* **Section Central Government Prohibition of Ragging Bill, 1998** (Anti-Ragging Act, UGC Regulations): Definition and prohibition of ragging\n* **Section 336-338** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341-348** (Indian Penal Code): Criminal force, wrongful restraint, confinement\n* **Section 375-376** (Indian Penal Code): Rape and sexual assault\n* **Section 3-7** (Protection of Children from Sexual Offences Act, 2012): If ragging involves children\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Report immediately to college/institution anti-ragging committee\n2. File written complaint with specific names, dates, and descriptions\n3. Request protection measures before investigation\n4. Simultaneously file police complaint if police intervention needed\n5. File FIR under Anti-Ragging Act provisions\n6. Collect medical certificates if physical injury occurred\n7. Get witness statements from fellow students\n8. Preserve evidence: messages, videos, photographs\n9. Request interim protective measures (relocation, changed schedule)\n10. File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)\n11. Seek legal aid for representation\n12. Request academic safeguards while complaint is pending\n13. Escalate to principal/management if committee is biased\n14. Contact National Human Rights Commission if state authorities unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Jurisdiction of the educational institution\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* UGC Anti-Ragging Helpline\n  ℹ️ National helpline to report ragging incidents\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* College Anti-Ragging Committee\n  ℹ️ Institution-level grievance redressal committee\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "10:37 am",
+          "files": null,
+          "data": {
+            "category": "ragging",
+            "confidence": 0.22,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "ragging",
+                "confidence": 0.22
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Mankara"
+            },
+            "legal_frameworks": [
+              "Anti-Ragging Act & National Anti-Ragging Rules",
+              "UGC (Promotion of Ragging Prevention) Regulations, 2009"
+            ],
+            "laws": [
+              {
+                "act": "Anti-Ragging Act, UGC Regulations",
+                "section": "Central Government Prohibition of Ragging Bill, 1998",
+                "title": "Definition and prohibition of ragging",
+                "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336-338",
+                "title": "Act endangering life or personal safety",
+                "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341-348",
+                "title": "Criminal force, wrongful restraint, confinement",
+                "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "375-376",
+                "title": "Rape and sexual assault",
+                "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3-7",
+                "title": "If ragging involves children",
+                "description": "Punishment up to 5-10 years for sexual offences against children."
+              }
+            ],
+            "steps": [
+              "Report immediately to college/institution anti-ragging committee",
+              "File written complaint with specific names, dates, and descriptions",
+              "Request protection measures before investigation",
+              "Simultaneously file police complaint if police intervention needed",
+              "File FIR under Anti-Ragging Act provisions",
+              "Collect medical certificates if physical injury occurred",
+              "Get witness statements from fellow students",
+              "Preserve evidence: messages, videos, photographs",
+              "Request interim protective measures (relocation, changed schedule)",
+              "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+              "Seek legal aid for representation",
+              "Request academic safeguards while complaint is pending",
+              "Escalate to principal/management if committee is biased",
+              "Contact National Human Rights Commission if state authorities unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Jurisdiction of the educational institution",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "UGC Anti-Ragging Helpline",
+                "description": "National helpline to report ragging incidents",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": "College Anti-Ragging Committee",
+                "description": "Institution-level grievance redressal committee"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1772514865683,
+          "text": "ragging",
+          "role": "user",
+          "time": "10:44 am",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1772514866286,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** RAGGING\n* **Confidence Level:** 22.0%\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Anti-Ragging Act & National Anti-Ragging Rules\n* UGC (Promotion of Ragging Prevention) Regulations, 2009\n\n**Key Legal Provisions:**\n* **Section Central Government Prohibition of Ragging Bill, 1998** (Anti-Ragging Act, UGC Regulations): Definition and prohibition of ragging\n* **Section 336-338** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341-348** (Indian Penal Code): Criminal force, wrongful restraint, confinement\n* **Section 375-376** (Indian Penal Code): Rape and sexual assault\n* **Section 3-7** (Protection of Children from Sexual Offences Act, 2012): If ragging involves children\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Report immediately to college/institution anti-ragging committee\n2. File written complaint with specific names, dates, and descriptions\n3. Request protection measures before investigation\n4. Simultaneously file police complaint if police intervention needed\n5. File FIR under Anti-Ragging Act provisions\n6. Collect medical certificates if physical injury occurred\n7. Get witness statements from fellow students\n8. Preserve evidence: messages, videos, photographs\n9. Request interim protective measures (relocation, changed schedule)\n10. File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)\n11. Seek legal aid for representation\n12. Request academic safeguards while complaint is pending\n13. Escalate to principal/management if committee is biased\n14. Contact National Human Rights Commission if state authorities unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Jurisdiction of the educational institution\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* UGC Anti-Ragging Helpline\n  ℹ️ National helpline to report ragging incidents\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* College Anti-Ragging Committee\n  ℹ️ Institution-level grievance redressal committee\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "10:44 am",
+          "files": null,
+          "data": {
+            "category": "ragging",
+            "confidence": 0.22,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "ragging",
+                "confidence": 0.22
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Palakkad North"
+            },
+            "legal_frameworks": [
+              "Anti-Ragging Act & National Anti-Ragging Rules",
+              "UGC (Promotion of Ragging Prevention) Regulations, 2009"
+            ],
+            "laws": [
+              {
+                "act": "Anti-Ragging Act, UGC Regulations",
+                "section": "Central Government Prohibition of Ragging Bill, 1998",
+                "title": "Definition and prohibition of ragging",
+                "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336-338",
+                "title": "Act endangering life or personal safety",
+                "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341-348",
+                "title": "Criminal force, wrongful restraint, confinement",
+                "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "375-376",
+                "title": "Rape and sexual assault",
+                "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3-7",
+                "title": "If ragging involves children",
+                "description": "Punishment up to 5-10 years for sexual offences against children."
+              }
+            ],
+            "steps": [
+              "Report immediately to college/institution anti-ragging committee",
+              "File written complaint with specific names, dates, and descriptions",
+              "Request protection measures before investigation",
+              "Simultaneously file police complaint if police intervention needed",
+              "File FIR under Anti-Ragging Act provisions",
+              "Collect medical certificates if physical injury occurred",
+              "Get witness statements from fellow students",
+              "Preserve evidence: messages, videos, photographs",
+              "Request interim protective measures (relocation, changed schedule)",
+              "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+              "Seek legal aid for representation",
+              "Request academic safeguards while complaint is pending",
+              "Escalate to principal/management if committee is biased",
+              "Contact National Human Rights Commission if state authorities unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Jurisdiction of the educational institution",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "UGC Anti-Ragging Helpline",
+                "description": "National helpline to report ragging incidents",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": "College Anti-Ragging Committee",
+                "description": "Institution-level grievance redressal committee"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1772515793549,
+          "text": "ragging",
+          "role": "user",
+          "time": "10:59 am",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1772515794434,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** RAGGING\n* **Confidence Level:** 22.0%\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* UGC (Promotion of Ragging Prevention) Regulations, 2009\n* Anti-Ragging Act & National Anti-Ragging Rules\n\n**Key Legal Provisions:**\n* **Section Central Government Prohibition of Ragging Bill, 1998** (Anti-Ragging Act, UGC Regulations): Definition and prohibition of ragging\n* **Section 336-338** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341-348** (Indian Penal Code): Criminal force, wrongful restraint, confinement\n* **Section 375-376** (Indian Penal Code): Rape and sexual assault\n* **Section 3-7** (Protection of Children from Sexual Offences Act, 2012): If ragging involves children\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Report immediately to college/institution anti-ragging committee\n2. File written complaint with specific names, dates, and descriptions\n3. Request protection measures before investigation\n4. Simultaneously file police complaint if police intervention needed\n5. File FIR under Anti-Ragging Act provisions\n6. Collect medical certificates if physical injury occurred\n7. Get witness statements from fellow students\n8. Preserve evidence: messages, videos, photographs\n9. Request interim protective measures (relocation, changed schedule)\n10. File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)\n11. Seek legal aid for representation\n12. Request academic safeguards while complaint is pending\n13. Escalate to principal/management if committee is biased\n14. Contact National Human Rights Commission if state authorities unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Jurisdiction of the educational institution\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Palakkad Traffic PS\n  📍 Palakkad Town, Palakkad – 678001\n  ☎️ 0491-2501250\n\n* UGC Anti-Ragging Helpline\n  ℹ️ National helpline to report ragging incidents\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* Resource\n\n* College Anti-Ragging Committee\n  ℹ️ Institution-level grievance redressal committee\n\n* Resource\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "10:59 am",
+          "files": null,
+          "data": {
+            "category": "ragging",
+            "confidence": 0.22,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "ragging",
+                "confidence": 0.22
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Palakkad Town"
+            },
+            "legal_frameworks": [
+              "UGC (Promotion of Ragging Prevention) Regulations, 2009",
+              "Anti-Ragging Act & National Anti-Ragging Rules"
+            ],
+            "laws": [
+              {
+                "act": "Anti-Ragging Act, UGC Regulations",
+                "section": "Central Government Prohibition of Ragging Bill, 1998",
+                "title": "Definition and prohibition of ragging",
+                "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336-338",
+                "title": "Act endangering life or personal safety",
+                "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341-348",
+                "title": "Criminal force, wrongful restraint, confinement",
+                "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "375-376",
+                "title": "Rape and sexual assault",
+                "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3-7",
+                "title": "If ragging involves children",
+                "description": "Punishment up to 5-10 years for sexual offences against children."
+              }
+            ],
+            "steps": [
+              "Report immediately to college/institution anti-ragging committee",
+              "File written complaint with specific names, dates, and descriptions",
+              "Request protection measures before investigation",
+              "Simultaneously file police complaint if police intervention needed",
+              "File FIR under Anti-Ragging Act provisions",
+              "Collect medical certificates if physical injury occurred",
+              "Get witness statements from fellow students",
+              "Preserve evidence: messages, videos, photographs",
+              "Request interim protective measures (relocation, changed schedule)",
+              "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+              "Seek legal aid for representation",
+              "Request academic safeguards while complaint is pending",
+              "Escalate to principal/management if committee is biased",
+              "Contact National Human Rights Commission if state authorities unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Jurisdiction of the educational institution",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Palakkad Traffic PS",
+                "location": "Palakkad Town, Palakkad – 678001",
+                "contact": "0491-2501250",
+                "link": null
+              },
+              {
+                "name": "UGC Anti-Ragging Helpline",
+                "description": "National helpline to report ragging incidents",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": null,
+                "description": null,
+                "contact": null
+              },
+              {
+                "name": "College Anti-Ragging Committee",
+                "description": "Institution-level grievance redressal committee"
+              },
+              {
+                "name": null,
+                "description": null,
+                "contact": null
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1772515816920,
+          "text": "ragging",
+          "role": "user",
+          "time": "11:00 am",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1772515817287,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** RAGGING\n* **Confidence Level:** 22.0%\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* UGC (Promotion of Ragging Prevention) Regulations, 2009\n* Anti-Ragging Act & National Anti-Ragging Rules\n\n**Key Legal Provisions:**\n* **Section Central Government Prohibition of Ragging Bill, 1998** (Anti-Ragging Act, UGC Regulations): Definition and prohibition of ragging\n* **Section 336-338** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341-348** (Indian Penal Code): Criminal force, wrongful restraint, confinement\n* **Section 375-376** (Indian Penal Code): Rape and sexual assault\n* **Section 3-7** (Protection of Children from Sexual Offences Act, 2012): If ragging involves children\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Report immediately to college/institution anti-ragging committee\n2. File written complaint with specific names, dates, and descriptions\n3. Request protection measures before investigation\n4. Simultaneously file police complaint if police intervention needed\n5. File FIR under Anti-Ragging Act provisions\n6. Collect medical certificates if physical injury occurred\n7. Get witness statements from fellow students\n8. Preserve evidence: messages, videos, photographs\n9. Request interim protective measures (relocation, changed schedule)\n10. File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)\n11. Seek legal aid for representation\n12. Request academic safeguards while complaint is pending\n13. Escalate to principal/management if committee is biased\n14. Contact National Human Rights Commission if state authorities unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Jurisdiction of the educational institution\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Kongad PS\n  📍 Kongad, Palakkad – 678631\n  ☎️ 0491-2845230\n\n* UGC Anti-Ragging Helpline\n  ℹ️ National helpline to report ragging incidents\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* Resource\n\n* College Anti-Ragging Committee\n  ℹ️ Institution-level grievance redressal committee\n\n* Resource\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "11:00 am",
+          "files": null,
+          "data": {
+            "category": "ragging",
+            "confidence": 0.22,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "ragging",
+                "confidence": 0.22
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Kongad"
+            },
+            "legal_frameworks": [
+              "UGC (Promotion of Ragging Prevention) Regulations, 2009",
+              "Anti-Ragging Act & National Anti-Ragging Rules"
+            ],
+            "laws": [
+              {
+                "act": "Anti-Ragging Act, UGC Regulations",
+                "section": "Central Government Prohibition of Ragging Bill, 1998",
+                "title": "Definition and prohibition of ragging",
+                "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336-338",
+                "title": "Act endangering life or personal safety",
+                "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341-348",
+                "title": "Criminal force, wrongful restraint, confinement",
+                "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "375-376",
+                "title": "Rape and sexual assault",
+                "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3-7",
+                "title": "If ragging involves children",
+                "description": "Punishment up to 5-10 years for sexual offences against children."
+              }
+            ],
+            "steps": [
+              "Report immediately to college/institution anti-ragging committee",
+              "File written complaint with specific names, dates, and descriptions",
+              "Request protection measures before investigation",
+              "Simultaneously file police complaint if police intervention needed",
+              "File FIR under Anti-Ragging Act provisions",
+              "Collect medical certificates if physical injury occurred",
+              "Get witness statements from fellow students",
+              "Preserve evidence: messages, videos, photographs",
+              "Request interim protective measures (relocation, changed schedule)",
+              "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+              "Seek legal aid for representation",
+              "Request academic safeguards while complaint is pending",
+              "Escalate to principal/management if committee is biased",
+              "Contact National Human Rights Commission if state authorities unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Jurisdiction of the educational institution",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Kongad PS",
+                "location": "Kongad, Palakkad – 678631",
+                "contact": "0491-2845230",
+                "link": null
+              },
+              {
+                "name": "UGC Anti-Ragging Helpline",
+                "description": "National helpline to report ragging incidents",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": null,
+                "description": null,
+                "contact": null
+              },
+              {
+                "name": "College Anti-Ragging Committee",
+                "description": "Institution-level grievance redressal committee"
+              },
+              {
+                "name": null,
+                "description": null,
+                "contact": null
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1772515852365,
+          "text": "ragging",
+          "role": "user",
+          "time": "11:00 am",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1772515852688,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Primary Category:** RAGGING\n* **Confidence Level:** 22.0%\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* UGC (Promotion of Ragging Prevention) Regulations, 2009\n* Anti-Ragging Act & National Anti-Ragging Rules\n\n**Key Legal Provisions:**\n* **Section Central Government Prohibition of Ragging Bill, 1998** (Anti-Ragging Act, UGC Regulations): Definition and prohibition of ragging\n* **Section 336-338** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341-348** (Indian Penal Code): Criminal force, wrongful restraint, confinement\n* **Section 375-376** (Indian Penal Code): Rape and sexual assault\n* **Section 3-7** (Protection of Children from Sexual Offences Act, 2012): If ragging involves children\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Report immediately to college/institution anti-ragging committee\n2. File written complaint with specific names, dates, and descriptions\n3. Request protection measures before investigation\n4. Simultaneously file police complaint if police intervention needed\n5. File FIR under Anti-Ragging Act provisions\n6. Collect medical certificates if physical injury occurred\n7. Get witness statements from fellow students\n8. Preserve evidence: messages, videos, photographs\n9. Request interim protective measures (relocation, changed schedule)\n10. File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)\n11. Seek legal aid for representation\n12. Request academic safeguards while complaint is pending\n13. Escalate to principal/management if committee is biased\n14. Contact National Human Rights Commission if state authorities unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Jurisdiction of the educational institution\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Vadakkenchery PS\n  📍 Vadakkenchery, Palakkad – 678683\n  ☎️ 04922-255100\n\n* UGC Anti-Ragging Helpline\n  ℹ️ National helpline to report ragging incidents\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* Resource\n\n* College Anti-Ragging Committee\n  ℹ️ Institution-level grievance redressal committee\n\n* Resource\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "11:00 am",
+          "files": null,
+          "data": {
+            "category": "ragging",
+            "confidence": 0.22,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "ragging",
+                "confidence": 0.22
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Vadakkenchery"
+            },
+            "legal_frameworks": [
+              "UGC (Promotion of Ragging Prevention) Regulations, 2009",
+              "Anti-Ragging Act & National Anti-Ragging Rules"
+            ],
+            "laws": [
+              {
+                "act": "Anti-Ragging Act, UGC Regulations",
+                "section": "Central Government Prohibition of Ragging Bill, 1998",
+                "title": "Definition and prohibition of ragging",
+                "description": "Ragging is banned in all educational institutions. Various forms including physical abuse, psychological harassment, sexual abuse, and violations of dignity."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336-338",
+                "title": "Act endangering life or personal safety",
+                "description": "Rash or negligent acts endangering life. Punishment up to 3 months imprisonment and fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341-348",
+                "title": "Criminal force, wrongful restraint, confinement",
+                "description": "Unlawful restraint and confinement. Punishment ranging from 1 month to 1 year."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "375-376",
+                "title": "Rape and sexual assault",
+                "description": "If ragging involves sexual abuse. Rigorous imprisonment of 7 years to life."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3-7",
+                "title": "If ragging involves children",
+                "description": "Punishment up to 5-10 years for sexual offences against children."
+              }
+            ],
+            "steps": [
+              "Report immediately to college/institution anti-ragging committee",
+              "File written complaint with specific names, dates, and descriptions",
+              "Request protection measures before investigation",
+              "Simultaneously file police complaint if police intervention needed",
+              "File FIR under Anti-Ragging Act provisions",
+              "Collect medical certificates if physical injury occurred",
+              "Get witness statements from fellow students",
+              "Preserve evidence: messages, videos, photographs",
+              "Request interim protective measures (relocation, changed schedule)",
+              "File complaint with UGC Anti-Ragging Cell (ragging.uchd.ac.in)",
+              "Seek legal aid for representation",
+              "Request academic safeguards while complaint is pending",
+              "Escalate to principal/management if committee is biased",
+              "Contact National Human Rights Commission if state authorities unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Jurisdiction of the educational institution",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Vadakkenchery PS",
+                "location": "Vadakkenchery, Palakkad – 678683",
+                "contact": "04922-255100",
+                "link": null
+              },
+              {
+                "name": "UGC Anti-Ragging Helpline",
+                "description": "National helpline to report ragging incidents",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": null,
+                "description": null,
+                "contact": null
+              },
+              {
+                "name": "College Anti-Ragging Committee",
+                "description": "Institution-level grievance redressal committee"
+              },
+              {
+                "name": null,
+                "description": null,
+                "contact": null
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        }
+      ],
+      "timestamp": "2026-03-03T04:57:10.259Z"
+    }
+  ],
+  "activeConsultationId": "1772513830258"
+}

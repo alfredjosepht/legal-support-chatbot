@@ -187,9 +187,9 @@ def get_locations():
     Frontend uses this to populate the location selector."""
     try:
         # include a default 'National' option on the frontend
-        return {"locations": ["National"] + sorted(list(local_numbers.keys()))}
+        return {"locations": ["national"] + sorted(list(local_numbers.keys()))}
     except Exception:
-        return {"locations": ["National"]}
+        return {"locations": ["national"]}
 
 @app.post('/consultations/{username}')
 def save_consultations(username: str, payload: ConsultationsPayload):

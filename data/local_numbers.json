@@ -1,77 +1,404 @@
 {
-  "Kerala": {
+  "Palakkad Town North": {
     "police_stations": [
       {
-        "name": "Thiruvananthapuram Local Police Station",
-        "location": "Thiruvananthapuram, Kerala",
-        "contact": "0471-2330000",
-        "link": "https://www.keralapolice.gov.in"
+        "name": "Palakkad Town North PS",
+        "location": "Big Bazaar, City Post, Palakkad – 678004",
+        "contact": "0491-2502375",
+        "link": null
       }
     ],
     "helplines": [
-      {
-        "name": "Kerala Women's Helpline",
-        "description": "State women protection & counselling",
-        "contact": "181",
-        "link": "https://wcd.nic.in"
-      }
+      { "name": null, "description": null, "contact": null }
     ],
     "legal_aid": [
-      {
-        "name": "Kerala State Legal Aid",
-        "description": "State-level free legal assistance",
-        "contact": "0484-1234567"
-      }
+      { "name": null, "description": null, "contact": null }
     ]
   },
-
-  "Mumbai": {
+  "Kunnathurmedu": {
     "police_stations": [
       {
-        "name": "Mumbai Police Control Room",
-        "location": "Mumbai, Maharashtra",
-        "contact": "022-22622500",
-        "link": "https://mumbaipolice.gov.in"
+        "name": "Palakkad Town South PS",
+        "location": "Kunnathurmedu, Palakkad – 678013",
+        "contact": "0491-2537368",
+        "link": null
       }
     ],
-    "helplines": [
-      {
-        "name": "Mumbai Women's Helpline",
-        "description": "City helpline for immediate support",
-        "contact": "022-12345678"
-      }
-    ],
-    "legal_aid": [
-      {
-        "name": "Mumbai District Legal Aid",
-        "description": "Free legal assistance in Mumbai",
-        "contact": "022-87654321"
-      }
-    ]
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
   },
-
-  "Delhi": {
+  "Palakkad Town": {
     "police_stations": [
       {
-        "name": "Delhi Police Control Room",
-        "location": "New Delhi, NCT",
-        "contact": "011-100",
-        "link": "https://delhipolice.gov.in"
+        "name": "Palakkad Traffic PS",
+        "location": "Palakkad Town, Palakkad – 678001",
+        "contact": "0491-2501250",
+        "link": null
       }
     ],
-    "helplines": [
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Pudussery": {
+    "police_stations": [
       {
-        "name": "Delhi Women's Helpline",
-        "description": "State support line",
-        "contact": "1091"
+        "name": "Kasaba PS",
+        "location": "Pudussery, Palakkad – 678623",
+        "contact": "0491-2566148",
+        "link": null
       }
     ],
-    "legal_aid": [
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Walayar": {
+    "police_stations": [
       {
-        "name": "Delhi Legal Aid Services",
-        "description": "Legal aid and counselling",
-        "contact": "011-55551234"
+        "name": "Walayar PS",
+        "location": "Walayar, Palakkad – 678624",
+        "contact": "0491-2862264",
+        "link": null
       }
-    ]
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Hemambika Nagar": {
+    "police_stations": [
+      {
+        "name": "Hemambika Nagar PS",
+        "location": "Hemambika Nagar, Palakkad – 678009",
+        "contact": "0491-2555208",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Alathur": {
+    "police_stations": [
+      {
+        "name": "Alathur PS",
+        "location": "Alathur, Palakkad – 678541",
+        "contact": "04922-222323",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Vadakkenchery": {
+    "police_stations": [
+      {
+        "name": "Vadakkenchery PS",
+        "location": "Vadakkenchery, Palakkad – 678683",
+        "contact": "04922-255100",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Kottayi": {
+    "police_stations": [
+      {
+        "name": "Kottayi PS",
+        "location": "Kottayi, Palakkad – 678572",
+        "contact": "04922-285501",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Kuzhalmannam": {
+    "police_stations": [
+      {
+        "name": "Kuzhalmannam PS",
+        "location": "Kuzhalmannam, Palakkad – 678702",
+        "contact": "04922-272032",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Pudunagaram": {
+    "police_stations": [
+      {
+        "name": "Pudunagaram PS",
+        "location": "Pudunagaram, Palakkad – 678503",
+        "contact": "04923-252255",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Mangalam Dam": {
+    "police_stations": [
+      {
+        "name": "Mangalam Dam PS",
+        "location": "Mangalam Dam, Palakkad – 678706",
+        "contact": "04922-262100",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Chittur": {
+    "police_stations": [
+      {
+        "name": "Chittur PS",
+        "location": "Chittur, Palakkad – 678101",
+        "contact": "04923-222338",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Kozhinjampara": {
+    "police_stations": [
+      {
+        "name": "Kozhinjampara PS",
+        "location": "Kozhinjampara, Palakkad – 678555",
+        "contact": "04923-272224",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Meenakshipuram": {
+    "police_stations": [
+      {
+        "name": "Meenakshipuram PS",
+        "location": "Meenakshipuram, Palakkad – 678533",
+        "contact": "04923-234100",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Kollengode": {
+    "police_stations": [
+      {
+        "name": "Kollengode PS",
+        "location": "Kollengode, Palakkad – 678506",
+        "contact": "04923-262329",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Nemmara": {
+    "police_stations": [
+      {
+        "name": "Nemmara PS",
+        "location": "Nemmara, Palakkad – 678508",
+        "contact": "04923-243399",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Padagiri": {
+    "police_stations": [
+      {
+        "name": "Padagiri PS",
+        "location": "Padagiri, Palakkad – 678508",
+        "contact": "04923-246237",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Shornur": {
+    "police_stations": [
+      {
+        "name": "Shornur PS",
+        "location": "Shornur, Palakkad – 679121",
+        "contact": "0466-2222406",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, 
+        "contact": null } ]
+  },
+  "Ottapalam": {
+    "police_stations": [
+      {
+        "name": "Ottapalam PS",
+        "location": "Ottapalam, Palakkad – 679101",
+        "contact": "0466-2244325",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Pattambi": {
+    "police_stations": [
+      {
+        "name": "Pattambi PS",
+        "location": "Pattambi, Palakkad – 679303",
+        "contact": "0466-2212224",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Thrithala": {
+    "police_stations": [
+      {
+        "name": "Thrithala PS",
+        "location": "Thrithala, Palakkad – 679534",
+        "contact": "0466-2272004",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Chalissery": {
+    "police_stations": [
+      {
+        "name": "Chalissery PS",
+        "location": "Chalissery, Palakkad – 679536",
+        "contact": "0466-2256254",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Mannarkkad": {
+    "police_stations": [
+      {
+        "name": "Mannarkkad PS",
+        "location": "Mannarkkad, Palakkad – 678582",
+        "contact": "04924-222290",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Kalladikkode": {
+    "police_stations": [
+      {
+        "name": "Kalladikkode PS",
+        "location": "Kalladikkode, Palakkad – 678596",
+        "contact": "04924-246103",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Nattukal": {
+    "police_stations": [
+      {
+        "name": "Nattukal PS",
+        "location": "Nattukal, Palakkad – 678583",
+        "contact": "04924-236250",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Agali": {
+    "police_stations": [
+      {
+        "name": "Agali PS",
+        "location": "Agali, Attappady, Palakkad – 678581",
+        "contact": "04924-254222",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Parambikulam": {
+    "police_stations": [
+      {
+        "name": "Parambikulam PS",
+        "location": "Parambikulam, Palakkad – 678661",
+        "contact": "04923-277224",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Mannarkkad Traffic": {
+    "police_stations": [
+      {
+        "name": "Mannarkkad Traffic PS",
+        "location": "Mannarkkad, Palakkad – 678582",
+        "contact": "04924-222290",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, 
+        "contact": null } ]
+  },
+  "Kongad": {
+    "police_stations": [
+      {
+        "name": "Kongad PS",
+        "location": "Kongad, Palakkad – 678631",
+        "contact": "0491-2845230",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Mankara": {
+    "police_stations": [
+      {
+        "name": "Mankara PS",
+        "location": "Mankara, Palakkad – 678613",
+        "contact": "0491-2872222",
+        "link": null
+      }
+    ],
+    "helplines": [ { "name": null, "description": null, "contact": null } ],
+    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Cherpulassery": {
+      "police_stations": [
+        {
+          "name": "Cherpulassery PS",
+          "location": "Cherpulassery, Palakkad – 679503",
+          "contact": "0466-2282235",
+          "link": null
+        }
+      ],
+      "helplines": [ { "name": null, "description": null, "contact": null } ],
+      "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+  },
+  "Sreekrishnapuram": {
+      "police_stations": [
+        {
+          "name": "Sreekrishnapuram PS",
+          "location": "Sreekrishnapuram, Palakkad – 679513",
+          "contact": "0466-2261233",
+          "link": null
+        }
+      ],
+      "helplines": [ { "name": null, "description": null, "contact": null } ],
+      "legal_aid": [ { "name": null, "description": null, "contact": null } ]
   }
 }
