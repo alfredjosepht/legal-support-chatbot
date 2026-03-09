@@ -1,0 +1,26 @@
+{
+  "Kerala": {
+    "overrides": {
+      "Local Police Station": "0491-1234567",
+      "National Emergency Helpline": "112",
+      "AASRA Helpline": "0484-9876543",
+      "Women's Helpline": "1091"
+    }
+  },
+  "Delhi": {
+    "overrides": {
+      "Local Police Station": "011-23456789",
+      "National Emergency Helpline": "112",
+      "AASRA Helpline": "011-99990011",
+      "Women's Helpline": "181"
+    }
+  },
+  "Mumbai": {
+    "overrides": {
+      "Local Police Station": "022-12345678",
+      "National Emergency Helpline": "112",
+      "AASRA Helpline": "022-99887766",
+      "Women's Helpline": "1091"
+    }
+  }
+}

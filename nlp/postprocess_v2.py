@@ -185,7 +185,7 @@ def postprocess_categories(text, raw_cats):
     Apply comprehensive rule-based filtering with context awareness.
     """
     text_lower = text.lower()
-    final_cats = {}
+    final_cats: dict[str, float] = {}
     
     # Extract context
     age_indicator = extract_age_indicator(text)
@@ -230,10 +230,21 @@ def postprocess_categories(text, raw_cats):
                                                               'hold', 'withhold', 'deny', 'refuse', 'fees', 
                                                               'bond', 'undertaking', 'admin', 'office'])
         
+        # Check for presence of explicit sexual keywords to prevent false positive suppression
+        has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
+
         if has_ragging_keywords and 'ragging' in raw_cats:
             # Boost ragging confidence to ensure it appears in final_cats
             boosted = max(raw_cats.get('ragging', 0), 0.22)
             final_cats['ragging'] = boosted
+
+            # Suppress sexual crimes if no explicit sexual keywords are present, to fix false positives like "my senior ragged me"
+            if not has_sexual_keywords:
+                if 'sexual_assault' in raw_cats:
+                    raw_cats['sexual_assault'] = 0
+                if 'sexual_harassment' in raw_cats:
+                    raw_cats['sexual_harassment'] = 0
+
         elif has_admin_keywords and 'administrative_violation' in raw_cats:
             # Boost administrative violation instead
             boosted = max(raw_cats.get('administrative_violation', 0), 0.20)
@@ -248,22 +259,26 @@ def postprocess_categories(text, raw_cats):
             final_cats['ragging'] = boosted
     
     elif age_indicator == 'adult':
-        # For adults: Lower threshold for sexual crimes
-        if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.12:
-            final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
-        
-        if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.09:
-            final_cats['sexual_assault'] = raw_cats['sexual_assault']
+        has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
+        if has_sexual_keywords:
+            # For adults: Lower threshold for sexual crimes
+            if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.12:
+                final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
+            
+            if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.09:
+                final_cats['sexual_assault'] = raw_cats['sexual_assault']
     
     # ========== RULE: Sexual Crimes (General - Age Unknown) ==========
     # Critical: If age is unknown but sexual crime keywords present, detect it
     if age_indicator is None:
-        # Sexual assault/harassment should be detected even without explicit age
-        if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.07:
-            final_cats['sexual_assault'] = raw_cats['sexual_assault']
-        
-        if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.10:
-            final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
+        has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
+        if has_sexual_keywords:
+            # Sexual assault/harassment should be detected even without explicit age
+            if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.07:
+                final_cats['sexual_assault'] = raw_cats['sexual_assault']
+            
+            if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.10:
+                final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
     
     # ========== RULE: Context Validation (Online/Offline) ==========
     

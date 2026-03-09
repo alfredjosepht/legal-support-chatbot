@@ -235,7 +235,7 @@ def chat(user_input: ChatRequest):
         matched_categories = [
             {
                 "category": k,
-                "confidence": round(float(v), 3)
+                "confidence": float(f"{v:.3f}")
             }
             for k, v in final_cats.items()
             if v >= CONFIDENCE_THRESHOLD
@@ -263,22 +263,67 @@ def chat(user_input: ChatRequest):
     ):
         warnings.append("Age information not provided. For sexual offences, age determines legal framework (POCSO for minors).")
     
-    # Get legal frameworks
-    legal_frameworks = get_legal_framework(category, context)
-    
-    # Get comprehensive laws from enhanced mapping
-    raw_laws = law_mapping.get(category, {})
-    laws_to_return = raw_laws.get("laws", []) if isinstance(raw_laws, dict) else []
-    
-    # Get procedural steps (filing_procedure from enhanced mapping)
-    procedural_steps = raw_laws.get("filing_procedure", []) if isinstance(raw_laws, dict) else []
-    raw_resources = resources.get(category, {})
-
-    # If the frontend supplied a `location`, append any location-specific contacts
     location = user_input.location or None
     loc_contacts = local_numbers.get(location, {}) if location else {}
 
-    # Combine procedural steps with general steps
+    # Aggregate legal frameworks, laws, steps, and resources for all matched categories
+    all_legal_frameworks = []
+    all_laws = []
+    all_steps = []
+    all_resources = []
+    all_case_references = []
+    
+    cats_to_process = [c["category"] for c in matched_categories] if matched_categories else [category]
+    
+    seen_frameworks = set()
+    seen_laws = set()
+    seen_steps = set()
+    seen_case_refs = set()
+    
+    for cat in cats_to_process:
+        # Frameworks
+        fw_list = get_legal_framework(cat, context)
+        for fw in fw_list:
+            if fw not in seen_frameworks:
+                seen_frameworks.add(fw)
+                all_legal_frameworks.append(fw)
+        
+        # Laws & Steps
+        c_raw_laws = law_mapping.get(cat, {})
+        c_laws = c_raw_laws.get("laws", []) if isinstance(c_raw_laws, dict) else []
+        for law in c_laws:
+            law_key = f"{law.get('act', '')}-{law.get('section', '')}"
+            if law_key not in seen_laws:
+                seen_laws.add(law_key)
+                all_laws.append(law)
+                
+        c_steps = c_raw_laws.get("filing_procedure", []) if isinstance(c_raw_laws, dict) else []
+        for step in c_steps:
+             if step not in seen_steps:
+                 seen_steps.add(step)
+                 all_steps.append(step)
+                 
+        # Resources
+        c_resources = resources.get(cat, {})
+        if isinstance(c_resources, dict):
+            for res_list in [c_resources.get("police_stations"), c_resources.get("helplines"), c_resources.get("legal_aid")]:
+                if res_list and isinstance(res_list, list):
+                    all_resources.extend(res_list)
+            
+        # Case References
+        c_case_refs = case_laws.get(cat, [])
+        if isinstance(c_case_refs, list):
+            for ref in c_case_refs:
+                ref_id = str(ref) if isinstance(ref, dict) else ref
+                if ref_id not in seen_case_refs:
+                    seen_case_refs.add(ref_id)
+                    all_case_references.append(ref)
+
+    # Add location specific contacts
+    if isinstance(loc_contacts, dict):
+        for res_list in [loc_contacts.get("police_stations"), loc_contacts.get("helplines"), loc_contacts.get("legal_aid")]:
+            if res_list and isinstance(res_list, list):
+                all_resources.extend(res_list)
 
     return {
         "category": category,
@@ -293,19 +338,11 @@ def chat(user_input: ChatRequest):
             "legal_framework": context.get('legal_framework'),
             "location": location
         },
-        "legal_frameworks": legal_frameworks,
-        "laws": laws_to_return,
-        "steps":procedural_steps,
-        "resources": (
-            # base resources for the category, plus any matching local numbers (police/helplines/legal_aid)
-            (raw_resources.get("police_stations", []) if isinstance(raw_resources, dict) else [])
-            + (loc_contacts.get("police_stations", []) if isinstance(loc_contacts, dict) else [])
-            + (raw_resources.get("helplines", []) if isinstance(raw_resources, dict) else [])
-            + (loc_contacts.get("helplines", []) if isinstance(loc_contacts, dict) else [])
-            + (raw_resources.get("legal_aid", []) if isinstance(raw_resources, dict) else [])
-            + (loc_contacts.get("legal_aid", []) if isinstance(loc_contacts, dict) else [])
-        ),
-        "case_references": case_laws.get(category, []),
+        "legal_frameworks": all_legal_frameworks,
+        "laws": all_laws,
+        "steps": all_steps,
+        "resources": all_resources,
+        "case_references": all_case_references,
         "warnings": warnings
     }
 

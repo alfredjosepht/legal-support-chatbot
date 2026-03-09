@@ -300,14 +300,18 @@ function App() {
   };
 
   const formatBackendResponse = (data) => {
-    const { category, confidence, legal_frameworks, laws, steps, resources, warnings, context } = data;
+    const { category, matched_categories, legal_frameworks, laws, steps, resources, warnings, context } = data;
 
     let response = `### 📋 LEGAL PRELIMINARY REPORT\n\n`;
 
     // Header Section
     response += `#### 🏷️ CASE SUMMARY\n`;
-    response += `* **Primary Category:** ${category.replace(/_/g, ' ').toUpperCase()}\n`;
-    response += `* **Confidence Level:** ${(confidence * 100).toFixed(1)}%\n`;
+    if (matched_categories && matched_categories.length > 0) {
+      const categoriesList = matched_categories.map(c => c.category.replace(/_/g, ' ').toUpperCase()).join(', ');
+      response += `* **Categories:** ${categoriesList}\n`;
+    } else {
+      response += `* **Category:** ${category.replace(/_/g, ' ').toUpperCase()}\n`;
+    }
 
     if (context && context.authority) {
       response += `* **Involved Party Type:** ${context.authority.replace(/_/g, ' ')}\n`;
@@ -330,7 +334,16 @@ function App() {
       if (laws && laws.length > 0) {
         response += `\n**Key Legal Provisions:**\n`;
         laws.slice(0, 5).forEach(law => {
-          response += `* **Section ${law.section}** (${law.act}): ${law.title}\n`;
+          const sectionPart = law.section ? `**Section ${law.section}** ` : '';
+          const actPart = law.act ? `(${law.act})` : '';
+          const titlePart = law.title ? `: ${law.title}` : '';
+          
+          if (sectionPart || actPart || titlePart) {
+            response += `* ${sectionPart}${actPart}${titlePart}\n`;
+          } else {
+            // Unlikely fallback if law is just a string or completely empty object
+            response += `* ${JSON.stringify(law)}\n`;
+          }
         });
       }
     }
@@ -349,9 +362,16 @@ function App() {
       warnings.forEach(warning => response += `* ${warning}\n`);
     }
 
-    if (resources && resources.length > 0) {
+    const validResources = (resources || []).filter(res => {
+      if (!res) return false;
+      if (typeof res === 'string') return res.trim() !== '';
+      if (typeof res === 'object') return res.name || res.location || res.description || res.contact || res.link;
+      return false;
+    });
+
+    if (validResources.length > 0) {
       response += `\n#### 📞 CONTACT & SUPPORT\n`;
-      resources.forEach(res => {
+      validResources.forEach(res => {
         if (typeof res === 'string') {
           response += `* ${res}\n`;
         } else if (typeof res === 'object') {
@@ -425,6 +445,22 @@ function App() {
   };
 
   const renderMessage = (msg) => {
+    const renderTextWithLinks = (text) => {
+      const urlRegex = /(https?:\/\/[^\s]+)/g;
+      if (!urlRegex.test(text)) return text;
+      const parts = text.split(urlRegex);
+      return parts.map((part, index) => {
+        if (part.match(urlRegex)) {
+          return (
+            <a key={index} href={part} target="_blank" rel="noopener noreferrer" style={{ color: '#007BFF', textDecoration: 'underline' }}>
+              {part}
+            </a>
+          );
+        }
+        return part;
+      });
+    };
+
     return (
       <div key={msg.id} className={`message ${msg.role}`}>
         <div className="msg-avatar">{msg.role === 'ai' ? '⚖️' : '👤'}</div>
@@ -443,22 +479,22 @@ function App() {
               <div className="text structured-response">
                 {msg.text.split('\n').map((line, i) => {
                   if (line.startsWith('### ')) {
-                    return <h3 key={i} className="res-h3">{line.replace('### ', '')}</h3>;
+                    return <h3 key={i} className="res-h3">{renderTextWithLinks(line.replace('### ', ''))}</h3>;
                   }
                   if (line.startsWith('#### ')) {
-                    return <h4 key={i} className="res-h4">{line.replace('#### ', '')}</h4>;
+                    return <h4 key={i} className="res-h4">{renderTextWithLinks(line.replace('#### ', ''))}</h4>;
                   }
                   if (line.startsWith('> ')) {
-                    return <blockquote key={i} className="res-quote">{line.replace('> ', '')}</blockquote>;
+                    return <blockquote key={i} className="res-quote">{renderTextWithLinks(line.replace('> ', ''))}</blockquote>;
                   }
                   if (line.startsWith('* ')) {
-                    return <div key={i} className="res-list-item"><span>•</span> {line.replace('* ', '')}</div>;
+                    return <div key={i} className="res-list-item"><span>•</span> {renderTextWithLinks(line.replace('* ', ''))}</div>;
                   }
                   if (line.startsWith('  ')) {
-                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{line.trim()}</div>;
+                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{renderTextWithLinks(line.trim())}</div>;
                   }
                   if (/^\d+\. /.test(line)) {
-                    return <div key={i} className="res-step-item">{line}</div>;
+                    return <div key={i} className="res-step-item">{renderTextWithLinks(line)}</div>;
                   }
                   if (line === '---') {
                     return <hr key={i} className="res-divider" />;
@@ -466,7 +502,7 @@ function App() {
                   if (line.trim() === '') {
                     return <div key={i} style={{ marginBottom: '8px' }}></div>;
                   }
-                  return <p key={i} style={{ marginBottom: '8px' }}>{line}</p>;
+                  return <p key={i} style={{ marginBottom: '8px' }}>{renderTextWithLinks(line)}</p>;
                 })}
               </div>
             )}
@@ -652,23 +688,6 @@ function App() {
                 <div className="hero-logo">⚖️</div>
                 <h1 className="hero-title">How can I assist your legal research today?</h1>
                 <p className="hero-subtitle">Upload documents or ask complex legal questions to get started.</p>
-                <div className="suggestions-grid">
-                  <div className="suggestion-card" onClick={() => handleSendMessage('Review the attached NDA for risks.')}>
-                    <span className="card-icon">📄</span>
-                    <h3>Review Contract</h3>
-                    <p>Identify risks in NDAs or lease agreements.</p>
-                  </div>
-                  <div className="suggestion-card" onClick={() => handleSendMessage('What are the latest precedents on intellectual property rights?')}>
-                    <span className="card-icon">🏛️</span>
-                    <h3>Legal Research</h3>
-                    <p>Query specific case laws or statutes.</p>
-                  </div>
-                  <div className="suggestion-card" onClick={() => handleSendMessage('Draft a formal notice for a tenant dispute.')}>
-                    <span className="card-icon">✍️</span>
-                    <h3>Draft Document</h3>
-                    <p>Generate formal legal notices or letters.</p>
-                  </div>
-                </div>
               </div>
             )}
 

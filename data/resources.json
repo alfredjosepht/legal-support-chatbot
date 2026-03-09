@@ -40,7 +40,6 @@
       }
     ]
   },
-
   "sexual_assault": {
     "police_stations": [
       {
@@ -82,7 +81,6 @@
       }
     ]
   },
-
   "sexual_harassment": {
     "police_stations": [
       {
@@ -117,14 +115,13 @@
       }
     ]
   },
-
   "ragging": {
     "police_stations": [
       {
         "name": "Local Police Station",
         "location": "Jurisdiction of the educational institution",
         "contact": "112",
-        "link": "https://www.keralapolice.gov.in"
+        "link": "https://keralapolice.gov.in/"
       }
     ],
     "helplines": [
@@ -142,7 +139,6 @@
       }
     ]
   },
-
   "caste_discrimination": {
     "police_stations": [
       {
@@ -177,7 +173,6 @@
       }
     ]
   },
-
   "racism": {
     "police_stations": [
       {
@@ -204,7 +199,6 @@
       }
     ]
   },
-
   "religious_discrimination": {
     "police_stations": [
       {
@@ -230,7 +224,6 @@
       }
     ]
   },
-
   "gender_discrimination": {
     "police_stations": [
       {
@@ -257,7 +250,6 @@
       }
     ]
   },
-
   "threats": {
     "police_stations": [
       {
@@ -289,7 +281,6 @@
       }
     ]
   },
-
   "stalking": {
     "police_stations": [
       {
@@ -321,7 +312,6 @@
       }
     ]
   },
-
   "blackmail_extortion": {
     "police_stations": [
       {
@@ -353,7 +343,6 @@
       }
     ]
   },
-
   "impersonation_doxxing": {
     "police_stations": [
       {
@@ -380,7 +369,6 @@
       }
     ]
   },
-
   "cyber_sexual_crime": {
     "police_stations": [
       {
@@ -412,7 +400,6 @@
       }
     ]
   },
-
   "cyber_harassment": {
     "police_stations": [
       {
@@ -439,7 +426,6 @@
       }
     ]
   },
-
   "cyber_bullying": {
     "police_stations": [
       {
@@ -472,7 +458,6 @@
       }
     ]
   },
-
   "online_hate_speech": {
     "police_stations": [
       {
@@ -499,7 +484,6 @@
       }
     ]
   },
-
   "defamation_privacy_fraud": {
     "police_stations": [
       {
@@ -526,7 +510,6 @@
       }
     ]
   },
-
   "verbal_abuse": {
     "police_stations": [
       {
@@ -552,7 +535,6 @@
       }
     ]
   },
-
   "institutional_misconduct": {
     "police_stations": [
       {
@@ -583,7 +565,6 @@
       }
     ]
   },
-
   "administrative_violation": {
     "police_stations": [
       {
@@ -610,7 +591,6 @@
       }
     ]
   },
-
   "general_discrimination": {
     "police_stations": [
       {
