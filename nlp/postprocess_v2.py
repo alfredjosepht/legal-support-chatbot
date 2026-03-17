@@ -34,7 +34,8 @@ CASTE_KEYWORDS = ["caste", "jati", "dalit", "obc", "general", "forward", "schedu
 RACE_KEYWORDS = ["northeast", "north-east", "assam", "manipur", "nagaland", "mizoram",
                  "arunachal", "meghalaya", "tripura", "sikkim", "race", "racial",
                  "foreigner", "chinese", "african", "skin color", "skin colour",
-                 "tribal", "indigenous", "ethnicity", "ethnic", "national origin"]
+                 "tribal", "indigenous", "ethnicity", "ethnic", "national origin",
+                 "color", "colour", "dark skin"]
 
 RELIGION_KEYWORDS = ["hindu", "muslim", "christian", "sikh", "buddhist", "jain",
                      "islam", "christianity", "sikhism", "buddhism", "jainism",
@@ -61,6 +62,16 @@ CYBERBULLYING_KEYWORDS = ["bullying", "bully", "bullied", "mock", "mocking", "mo
                           "stalk", "stalking", "threatening", "blackmail", "coerce", "coercion",
                           "revenge porn", "intimate images", "leaked photos", "leaked videos", "leaked messages",
                           "doxing", "doxx", "personal information", "leak", "leaked", "exposed"]
+
+VERBAL_ABUSE_KEYWORDS = ["bad word", "bad words", "vulgar", "abuse", "abusive language",
+                         "slang", "swear", "swearing", "curse", "cursing", "profanity",
+                         "offensive language", "name calling", "slur", "verbal abuse",
+                         "foul language", "verbal", "verbally"]
+
+STALKING_KEYWORDS = ["stalk", "stalking", "stalked", "stalker"]
+
+BLACKMAIL_KEYWORDS = ["blackmail", "blackmailing", "blackmailed", "extort", 
+                      "extorting", "extortion", "ransom"]
 
 AGE_KEYWORDS_MINOR = ["class 10", "class 11", "class 12", "10th", "11th", "12th",
                       "school", "16 years", "17 years", "18 years", "minor", "underage",
@@ -282,13 +293,18 @@ def postprocess_categories(text, raw_cats):
     
     # ========== RULE: Context Validation (Online/Offline) ==========
     
+    # Global Offline Check
+    # If there are no clear online indicators, suppress cyber categories so they don't get picked up by the fallback
+    has_explicit_cyber = any(term in text_lower for term in ['cyberbullying', 'cyberbullied', 'cyberbully'])
+    if medium == 'offline' or not (medium in ['online', 'mixed'] or any(kw in text_lower for kw in ONLINE_KEYWORDS) or has_explicit_cyber):
+        for cyber_cat in ['cyber_harassment', 'cyber_bullying', 'online_hate_speech', 'cyber_sexual_crime']:
+            if cyber_cat in raw_cats:
+                raw_cats[cyber_cat] = 0.0
+                
     if 'cyber_harassment' in raw_cats:
         if medium in ['online', 'mixed'] or any(kw in text_lower for kw in ONLINE_KEYWORDS):
             if raw_cats['cyber_harassment'] >= 0.18:
                 final_cats['cyber_harassment'] = raw_cats['cyber_harassment']
-        # Remove if purely offline and no online indicators
-        elif medium == 'offline' or not any(kw in text_lower for kw in ONLINE_KEYWORDS):
-            pass
     
     if 'online_hate_speech' in raw_cats:
         if medium in ['online', 'mixed']:
@@ -365,7 +381,17 @@ def postprocess_categories(text, raw_cats):
     # ========== RULE: Stalking - Requires Persistence ==========
     
     if 'stalking' in raw_cats:
-        if any(kw in text_lower for kw in PERSISTENCE_KEYWORDS):
+        # Boost stalking if explicitly mentioned
+        if any(kw in text_lower for kw in STALKING_KEYWORDS):
+            boosted = max(raw_cats.get('stalking', 0), 0.20)
+            final_cats['stalking'] = boosted
+            # Suppress likely false positive categories for simple explicit stalking mentions
+            if 'physical_assault' in raw_cats and raw_cats['physical_assault'] < 0.20:
+                raw_cats['physical_assault'] = 0.0
+            if 'cyber_bullying' in raw_cats and raw_cats['cyber_bullying'] < 0.20:
+                raw_cats['cyber_bullying'] = 0.0
+        # Otherwise verify persistence keywords
+        elif any(kw in text_lower for kw in PERSISTENCE_KEYWORDS):
             if raw_cats['stalking'] >= 0.18:
                 final_cats['stalking'] = raw_cats['stalking']
     
@@ -375,7 +401,52 @@ def postprocess_categories(text, raw_cats):
         if any(kw in text_lower for kw in THREAT_KEYWORDS):
             if raw_cats['threats'] >= 0.20:
                 final_cats['threats'] = raw_cats['threats']
+                
+    # ========== RULE: Verbal Abuse Validation ==========
     
+    # If the text has verbal abuse keywords, we ensure it's logged.
+    if any(kw in text_lower for kw in VERBAL_ABUSE_KEYWORDS):
+        # We enforce it to at least 0.20 confidence if verbal abuse keywords are found
+        boosted = max(raw_cats.get('verbal_abuse', 0), 0.20)
+        final_cats['verbal_abuse'] = boosted
+        
+    # ========== RULE: Blackmail & Extortion Validation ==========
+    
+    if any(kw in text_lower for kw in BLACKMAIL_KEYWORDS):
+        boosted = max(raw_cats.get('blackmail_extortion', 0), 0.20)
+        final_cats['blackmail_extortion'] = boosted
+        # Suppress physical_assault false positive if it's barely above threshold
+        if 'physical_assault' in raw_cats and raw_cats['physical_assault'] < 0.20:
+            raw_cats['physical_assault'] = 0.0
+    
+    # ========== RULE: Explicit Discrimination Keywords ==========
+    
+    # Map raw_cat to its corresponding discrimination_type
+    disc_type_to_cat = {
+        'caste': 'caste_discrimination',
+        'race': 'racism',
+        'religion': 'religious_discrimination',
+        'gender': 'gender_discrimination'
+    }
+    
+    explicit_disc_cats = []
+    
+    for dt in discrimination_types:
+        cat_name = disc_type_to_cat.get(dt)
+        if cat_name in raw_cats:
+            # Boost the matching category to ensure it gets captured over fallbacks
+            boosted = max(raw_cats.get(cat_name, 0), 0.20)
+            final_cats[cat_name] = boosted
+            explicit_disc_cats.append(cat_name)
+    
+    if explicit_disc_cats:
+        # If we have explicit discrimination matches, suppress the other non-matching discrimination predictions
+        # (unless they are already very high confidence >= 0.30)
+        for disc_cat in ['caste_discrimination', 'racism', 'religious_discrimination', 'gender_discrimination']:
+            if disc_cat not in explicit_disc_cats:
+                if disc_cat in raw_cats and raw_cats[disc_cat] < 0.30:
+                    raw_cats[disc_cat] = 0.0 # Suppress to prevent fallback picking it up
+
     # ========== RULE: Discrimination with Authority ==========
     
     discrimination_categories = [
@@ -395,7 +466,7 @@ def postprocess_categories(text, raw_cats):
                         raw_cats[disc_cat] - 0.1  # Slightly lower confidence
                     )
     
-    # ========== RULE: Institutional Context Upgrade ==========
+    # ========== RULE: Institutional Context Upgrade & Pruning ==========
     
     if any(kw in text_lower for kw in COLLEGE_KEYWORDS):
         # College context → institutional possibilities higher
@@ -409,6 +480,13 @@ def postprocess_categories(text, raw_cats):
                 final_cats.get('institutional_misconduct', 0),
                 raw_cats['threats'] - 0.05
             )
+    else:
+        # If no college or authority keywords exist, suppress low-confidence institutional/administrative flags
+        if authority is None:
+            if 'institutional_misconduct' in raw_cats and raw_cats['institutional_misconduct'] < 0.20:
+                raw_cats['institutional_misconduct'] = 0.0
+            if 'administrative_violation' in raw_cats and raw_cats['administrative_violation'] < 0.20:
+                raw_cats['administrative_violation'] = 0.0
     
     # ========== RULE: Standard Thresholds ==========
     
