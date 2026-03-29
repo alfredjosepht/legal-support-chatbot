@@ -238,8 +238,9 @@ def postprocess_categories(text, raw_cats):
         has_ragging_keywords = 'ragg' in text_lower or any(kw in text_lower for kw in 
                                                            ['senior', 'juniors', 'initiation', 'ritualistic'])
         has_admin_keywords = any(kw in text_lower for kw in ['certificate', 'documents', 'TC', 'migration', 
-                                                              'hold', 'withhold', 'deny', 'refuse', 'fees', 
-                                                              'bond', 'undertaking', 'admin', 'office'])
+                                                              'hold', 'held', 'withhold', 'deny', 'refuse', 'fees', 
+                                                              'bond', 'undertaking', 'admin', 'office', 'paper', 'exam', 
+                                                              'marks', 'grade', 'assignment', 'degree', 'result'])
         
         # Check for presence of explicit sexual keywords to prevent false positive suppression
         has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
@@ -264,20 +265,26 @@ def postprocess_categories(text, raw_cats):
             # Or institutional misconduct
             boosted = max(raw_cats.get('institutional_misconduct', 0), 0.20)
             final_cats['institutional_misconduct'] = boosted
-        elif 'ragging' in raw_cats:
-            # Default to ragging if college context but no specific keywords
-            boosted = max(raw_cats.get('ragging', 0), 0.22)
-            final_cats['ragging'] = boosted
+        elif 'ragging' in raw_cats and not has_sexual_keywords:
+            # Default to ragging if college context but no specific keywords, ONLY if no sexual keywords
+            # However, if the authority is faculty or administration, it is NOT ragging, it is institutional misconduct.
+            if authority in ['faculty', 'administration']:
+                if 'institutional_misconduct' in raw_cats:
+                    boosted = max(raw_cats.get('institutional_misconduct', 0), 0.20)
+                    final_cats['institutional_misconduct'] = boosted
+            else:
+                boosted = max(raw_cats.get('ragging', 0), 0.22)
+                final_cats['ragging'] = boosted
     
-    elif age_indicator == 'adult':
+    if age_indicator == 'adult':
         has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
         if has_sexual_keywords:
             # For adults: Lower threshold for sexual crimes
             if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.12:
-                final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
+                final_cats['sexual_harassment'] = max(raw_cats['sexual_harassment'], 0.30)
             
             if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.09:
-                final_cats['sexual_assault'] = raw_cats['sexual_assault']
+                final_cats['sexual_assault'] = max(raw_cats['sexual_assault'], 0.30)
     
     # ========== RULE: Sexual Crimes (General - Age Unknown) ==========
     # Critical: If age is unknown but sexual crime keywords present, detect it
@@ -286,10 +293,10 @@ def postprocess_categories(text, raw_cats):
         if has_sexual_keywords:
             # Sexual assault/harassment should be detected even without explicit age
             if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.07:
-                final_cats['sexual_assault'] = raw_cats['sexual_assault']
+                final_cats['sexual_assault'] = max(raw_cats['sexual_assault'], 0.30)
             
             if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.10:
-                final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
+                final_cats['sexual_harassment'] = max(raw_cats['sexual_harassment'], 0.30)
     
     # ========== RULE: Context Validation (Online/Offline) ==========
     
