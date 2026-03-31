@@ -495,6 +495,23 @@ def postprocess_categories(text, raw_cats):
             if 'administrative_violation' in raw_cats and raw_cats['administrative_violation'] < 0.20:
                 raw_cats['administrative_violation'] = 0.0
     
+    # ========== RULE: False Positive Suppression ==========
+    
+    # If there are no sexual keywords, suppress low-confidence sexual assault and harassment
+    has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
+    if not has_sexual_keywords:
+        if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] < 0.25:
+            raw_cats['sexual_assault'] = 0.0
+        if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] < 0.25:
+            raw_cats['sexual_harassment'] = 0.0
+            
+    # If there are no ragging/college keywords, suppress low-confidence ragging
+    has_ragging_keywords = 'ragg' in text_lower or any(kw in text_lower for kw in ['senior', 'juniors', 'initiation', 'ritualistic'])
+    has_college_keywords = any(kw in text_lower for kw in COLLEGE_KEYWORDS)
+    if not has_ragging_keywords and not has_college_keywords:
+        if 'ragging' in raw_cats and raw_cats['ragging'] < 0.25:
+            raw_cats['ragging'] = 0.0
+    
     # ========== RULE: Standard Thresholds ==========
     
     # Categories not explicitly handled above

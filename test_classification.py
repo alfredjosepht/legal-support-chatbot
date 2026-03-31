@@ -2,7 +2,7 @@ import spacy
 from nlp.postprocess_v2 import postprocess_categories
 
 nlp_model = spacy.load("models/legal_textcat")
-text = "my classmates insulted me becuase of my caste"
+text = "my classmate threatened to kill me"
 doc = nlp_model(text)
 
 print("Raw Categories:")
