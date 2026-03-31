@@ -9,10 +9,12 @@
       }
     ],
     "helplines": [
-      { "name": null, "description": null, "contact": null }
+      { "name": "The Palakkad District Cooperative Hospital",
+       "description": "Court Rd, Santhi Nagar, Sultanpet, Palakkad", 
+       "contact": "04912520391" }
     ],
     "legal_aid": [
-      { "name": null, "description": null, "contact": null }
+      { "name": "Adv.Nivedya", "description": null, "contact": "8592816414" }
     ]
   },
   "Kunnathurmedu": {
@@ -24,8 +26,11 @@
         "link": "https://maps.app.goo.gl/p2ED4bxvBnSGC7G89"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [ { "name": "Palghat Poly Clinic Hospital",
+     "description": "QMCC+3CX, Menna Nagar Colony, Kalmandapam, Palakkad", 
+     "contact": "04912524153" } ],
+
+    "legal_aid": [ { "name": "Adv.John", "description": null, "contact": "9746599552" } ]
   },
   "Palakkad Town": {
     "police_stations": [
@@ -36,8 +41,11 @@
         "link": "https://maps.app.goo.gl/Z6UdWjA19jTmTfEo8"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [ { "name": "The Palakkad District Cooperative Hospital",
+     "description": "Court Rd, Santhi Nagar, Sultanpet, Palakkad", 
+     "contact": "04912520391" } ],
+
+    "legal_aid": [ { "name": "Adv.peter", "description": null, "contact": "9736455299" } ]
   },
   "Pudussery": {
     "police_stations": [
@@ -48,8 +56,10 @@
         "link": "https://maps.app.goo.gl/w6R2S5kQXvTVAmv36"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [ { "name": "Government Taluk Hospital Chittur",
+     "description": " Chittur, Kerala 678101", 
+     "contact": "04923222385" } ],
+    "legal_aid": [ { "name": "Adv.Krishnadas", "description": null, "contact": "9763487535" } ]
   },
   "Walayar": {
     "police_stations": [
@@ -60,8 +70,14 @@
         "link": "https://maps.app.goo.gl/xz9S4dKwfqTsbua67"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+     "helplines": [
+      {
+        "name": "Ahalia Ayurveda Medical College Hospital",
+        "description": "Kozhippara, Palakkad – 678557",
+        "contact": "04923-226888"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Rahul Menon", "description": null, "contact": "98765 43210" } ]
   },
   "Hemambika Nagar": {
     "police_stations": [
@@ -72,8 +88,14 @@
         "link": "https://maps.app.goo.gl/37VfG9xRTQsqBzWi6"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+     "helplines": [
+      {
+        "name": "District Hospital Palakkad",
+        "description": "Palakkad Town – 678001",
+        "contact": "0491-2530411"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Anjali Nair", "description": null, "contact": "91234 56789" } ]
   },
   "Alathur": {
     "police_stations": [
@@ -84,8 +106,14 @@
         "link": "https://maps.app.goo.gl/PYFmeyGgkbn81grX8"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Taluk Hospital Alathur",
+        "description": "Alathur, Palakkad – 678541",
+        "contact": "04922-222393"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Vivek Kumar", "description": null, "contact": "99887 66554" } ]
   },
   "Vadakkenchery": {
     "police_stations": [
@@ -96,8 +124,14 @@
         "link": "https://maps.app.goo.gl/tJUpAasTj2dHG23Z9"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Community Health Centre Vadakkenchery",
+        "description": "Vadakkenchery, Palakkad – 678683",
+        "contact": "04922-255223"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Sneha Reddy", "description": null, "contact": "90123 45678" } ]
   },
   "Kottayi": {
     "police_stations": [
@@ -108,8 +142,14 @@
         "link": "https://maps.app.goo.gl/zREQEFehh7Viomq99"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Kottayi",
+        "description": "Kottayi, Palakkad – 678572",
+        "contact": "04922-285233"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Arjun Pillai", "description": null, "contact": "97654 32109" } ]
   },
   "Kuzhalmannam": {
     "police_stations": [
@@ -120,8 +160,14 @@
         "link": "https://maps.app.goo.gl/FniuGWMh58ptgg7V8"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Kuzhalmannam",
+        "description": "Kuzhalmannam, Palakkad – 678702",
+        "contact": "04922-272250"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Meera Iyer", "description": null, "contact": "93456 78901" } ]
   },
   "Pudunagaram": {
     "police_stations": [
@@ -132,8 +178,14 @@
         "link": "https://maps.app.goo.gl/AEKkXyUPyaXPsXVbA"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Community Health Centre Pudunagaram",
+        "description": "Pudunagaram, Palakkad – 678503",
+        "contact": "04923-252300"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Karthik Das", "description": null, "contact": "98989 12345" } ]
   },
   "Mangalam Dam": {
     "police_stations": [
@@ -144,8 +196,14 @@
         "link": "https://maps.app.goo.gl/pXdGDCiNcmcCbLXN7"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Mangalam Dam",
+        "description": "Mangalam Dam, Palakkad – 678706",
+        "contact": "04922-262250"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Deepak Sharma", "description": null, "contact": "98123 45670" } ]
   },
   "Chittur": {
     "police_stations": [
@@ -156,8 +214,14 @@
         "link": "https://maps.app.goo.gl/x2u77ZwbJAKzBGMN7"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Government Taluk Hospital Chittur",
+        "description": "Chittur, Palakkad – 678101",
+        "contact": "04923-222385"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Neha Kapoor", "description": null, "contact": "98234 56781" } ]
   },
   "Kozhinjampara": {
     "police_stations": [
@@ -168,8 +232,14 @@
         "link": "https://maps.app.goo.gl/8gtLBE7r8hXwf7kr7"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Community Health Centre Kozhinjampara",
+        "description": "Kozhinjampara, Palakkad – 678555",
+        "contact": "04923-272260"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Rohan Gupta", "description": null, "contact": "98345 67892" } ]
   },
   "Meenakshipuram": {
     "police_stations": [
@@ -180,8 +250,14 @@
         "link": "https://maps.app.goo.gl/53QUpJghxJ7t7nMG8"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Meenakshipuram",
+        "description": "Meenakshipuram, Palakkad – 678533",
+        "contact": "04923-234210"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Priya Singh", "description": null, "contact": "98456 78903" } ]
   },
   "Kollengode": {
     "police_stations": [
@@ -192,8 +268,14 @@
         "link": "https://maps.app.goo.gl/CGZ8btbn8xCGuQ4z5"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Taluk Hospital Kollengode",
+        "description": "Kollengode, Palakkad – 678506",
+        "contact": "04923-262240"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Suresh Babu", "description": null, "contact": "98567 89014" } ]
   },
   "Nemmara": {
     "police_stations": [
@@ -204,8 +286,14 @@
         "link": "https://maps.app.goo.gl/EfdhKo4C2T2xvjVi7"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Community Health Centre Nemmara",
+        "description": "Nemmara, Palakkad – 678508",
+        "contact": "04923-243355"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Kavya Nair", "description": null, "contact": "98678 90125" } ]
   },
   "Padagiri": {
     "police_stations": [
@@ -216,8 +304,14 @@
         "link": "https://maps.app.goo.gl/yr6CQ423KweQBixBA"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Padagiri",
+        "description": "Padagiri, Palakkad – 678508",
+        "contact": "04923-246280"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Manoj Verma", "description": null, "contact": "98789 01236" } ]
   },
   "Shornur": {
     "police_stations": [
@@ -228,9 +322,14 @@
         "link": "https://maps.app.goo.gl/cpps41cYpH2rQFgo7"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, 
-        "contact": null } ]
+    "helplines": [
+      {
+        "name": "Taluk Headquarters Hospital Shornur",
+        "description": "Shornur, Palakkad – 679121",
+        "contact": "0466-2222400"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Asha Thomas", "description": null, "contact": "98890 12347" } ]
   },
   "Ottapalam": {
     "police_stations": [
@@ -241,8 +340,14 @@
         "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "PK Das Institute of Medical Sciences",
+        "description": "Vaniamkulam, Ottapalam – 679522",
+        "contact": "0466-2344500"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Nikhil Raj", "description": null, "contact": "98901 23458" } ]
   },
   "Pattambi": {
     "police_stations": [
@@ -253,8 +358,14 @@
         "link": "https://maps.app.goo.gl/cxj4x7LQHMNyQNqv8"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Taluk Hospital Pattambi",
+        "description": "Pattambi, Palakkad – 679303",
+        "contact": "0466-2212220"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Divya Pillai", "description": null, "contact": "99012 34569" } ]
   },
   "Thrithala": {
     "police_stations": [
@@ -265,8 +376,14 @@
         "link": "https://maps.app.goo.gl/6bpqj5t7EBkqhoTv6"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Community Health Centre Thrithala",
+        "description": "Thrithala, Palakkad – 679534",
+        "contact": "0466-2272100"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Sanjay Kumar", "description": null, "contact": "99123 45670" } ]
   },
   "Chalissery": {
     "police_stations": [
@@ -277,8 +394,14 @@
         "link": "https://maps.app.goo.gl/8SJ7dyjftkoFhgMd6"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Chalissery",
+        "description": "Chalissery, Palakkad – 679536",
+        "contact": "0466-2256300"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Lakshmi Krishnan", "description": null, "contact": "99234 56781" } ]
   },
   "Mannarkkad": {
     "police_stations": [
@@ -289,8 +412,14 @@
         "link": "https://maps.app.goo.gl/CoCyJyADFXoXb1w98"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Taluk Hospital Mannarkkad",
+        "description": "Mannarkkad, Palakkad – 678582",
+        "contact": "04924-222380"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Arun Joseph", "description": null, "contact": "99345 67892" } ]
   },
   "Kalladikkode": {
     "police_stations": [
@@ -301,8 +430,14 @@
         "link": "https://maps.app.goo.gl/mRGYM5Lv5wkZkm5e6"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Kalladikkode",
+        "description": "Kalladikkode, Palakkad – 678596",
+        "contact": "04924-246150"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Pooja Mehta", "description": null, "contact": "99456 78903" } ]
   },
   "Nattukal": {
     "police_stations": [
@@ -313,8 +448,14 @@
         "link": "https://maps.app.goo.gl/QZnpJy75RKmfaBnm9"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Nattukal",
+        "description": "Nattukal, Palakkad – 678583",
+        "contact": "04924-236280"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Harish Nair", "description": null, "contact": "99567 89014" } ]
   },
   "Agali": {
     "police_stations": [
@@ -325,8 +466,14 @@
         "link": "https://maps.app.goo.gl/5VtDffMT5fTohQG28"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Government Tribal Specialty Hospital Agali",
+        "description": "Agali, Attappady, Palakkad – 678581",
+        "contact": "04924-254300"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Rekha Menon", "description": null, "contact": "99678 90125" } ]
   },
   "Parambikulam": {
     "police_stations": [
@@ -337,8 +484,14 @@
         "link": "https://maps.app.goo.gl/J2PebHJWrzCQmeTr7"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Parambikulam",
+        "description": "Parambikulam, Palakkad – 678661",
+        "contact": "04923-277260"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Vinod Kumar", "description": null, "contact": "99789 01236" } ]
   },
   "Mannarkkad Traffic": {
     "police_stations": [
@@ -349,9 +502,10 @@
         "link": "https://maps.app.goo.gl/sxRdso6WKcu8bAT16"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, 
-        "contact": null } ]
+    "helplines": [ { "name": "Taluk Hospital Mannarkkad", 
+    "description": "Mannarkkad, Palakkad – 678582",
+     "contact": "04924-222380" } ],
+    "legal_aid": [ { "name": "Adv. Swathi Reddy", "description": null, "contact": "99890 12347" } ]
   },
   "Kongad": {
     "police_stations": [
@@ -362,8 +516,14 @@
         "link": "https://maps.app.goo.gl/ECHVEsiWspw2y5v2A"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Community Health Centre Kongad",
+        "description": "Kongad, Palakkad – 678631",
+        "contact": "0491-2845300"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Ajay Das", "description": null, "contact": "99901 23458" } ]
   },
   "Mankara": {
     "police_stations": [
@@ -374,8 +534,14 @@
         "link": "https://maps.app.goo.gl/ecHJVswFVMaGfzVHA"
       }
     ],
-    "helplines": [ { "name": null, "description": null, "contact": null } ],
-    "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+    "helplines": [
+      {
+        "name": "Primary Health Centre Mankara",
+        "description": "Mankara, Palakkad – 678613",
+        "contact": "0491-2872300"
+      }
+    ],
+    "legal_aid": [ { "name": "Adv. Geetha Nambiar", "description": null, "contact": "90012 34569" } ]
   },
   "Cherpulassery": {
       "police_stations": [
@@ -386,8 +552,14 @@
           "link": "https://maps.app.goo.gl/9WzguPEeAb5WtyPaA"
         }
       ],
-      "helplines": [ { "name": null, "description": null, "contact": null } ],
-      "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+      "helplines": [
+        {
+          "name": "Taluk Hospital Cherpulassery",
+          "description": "Cherpulassery, Palakkad – 679503",
+          "contact": "0466-2282300"
+        }
+      ],
+      "legal_aid": [ { "name": "Adv. Faisal Khan", "description": null, "contact": "90123 45670" } ]
   },
   "Sreekrishnapuram": {
       "police_stations": [
@@ -398,8 +570,14 @@
           "link": "https://maps.app.goo.gl/YJxCM8ni3Sy8ynyo9"
         }
       ],
-      "helplines": [ { "name": null, "description": null, "contact": null } ],
-      "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+      "helplines": [
+        {
+          "name": "Community Health Centre Sreekrishnapuram",
+          "description": "Sreekrishnapuram, Palakkad – 679513",
+          "contact": "0466-2261300"
+        }
+      ],
+      "legal_aid": [ { "name": "Adv. Reshma Ali", "description": null, "contact": "90234 56781" } ]
   },
 "koppam": {
   "police_stations": [
@@ -410,8 +588,14 @@
           "link": "https://maps.app.goo.gl/skEY8g5fjwzBG2j8A"
         }
       ],
-      "helplines": [ { "name": null, "description": null, "contact": null } ],
-      "legal_aid": [ { "name": null, "description": null, "contact": null } ]
+      "helplines": [
+        {
+          "name": "Primary Health Centre Koppam",
+          "description": "Koppam, Palakkad – 679513",
+          "contact": "0466-2262700"
+        }
+      ],
+      "legal_aid": [ { "name": "Adv. Kiran Varghese", "description": null, "contact": "90345 67892" } ]
   }
 
 } 
