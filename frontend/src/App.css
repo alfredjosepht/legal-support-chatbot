@@ -916,3 +916,167 @@ textarea {
 .dark-theme .res-quote {
   background: rgba(251, 191, 36, 0.05);
 }
+
+/* Grounded RAG Guidance Card Style */
+.judi-grounded-guidance-card {
+  background: rgba(26, 35, 126, 0.03);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.judi-grounded-guidance-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(197, 160, 89, 0.4);
+}
+
+.guidance-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.guidance-icon {
+  font-size: 1.3rem;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 1px rgba(197, 160, 89, 0.2)); }
+  50% { transform: scale(1.15); filter: drop-shadow(0 0 6px rgba(197, 160, 89, 0.8)); }
+}
+
+.guidance-title {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  font-size: 0.85rem;
+}
+
+.guidance-card-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.guidance-para {
+  margin: 0;
+  text-align: justify;
+}
+
+.guidance-h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin: 1rem 0 0.5rem;
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 3px;
+  display: inline-block;
+}
+
+.guidance-h4 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin: 1rem 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-gold);
+}
+
+.guidance-quote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: rgba(197, 160, 89, 0.06);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.guidance-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.bullet-dot {
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.bullet-text {
+  flex: 1;
+}
+
+.guidance-number-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-left: 0.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.number-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--text-user);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.number-text {
+  flex: 1;
+}
+
+.guidance-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1.25rem 0;
+}
+
+.custom-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.custom-link:hover {
+  color: var(--accent-hover);
+}
+
+/* Dark theme extensions */
+.dark-theme .judi-grounded-guidance-card {
+  background: rgba(30, 41, 59, 0.45);
+  border-color: rgba(251, 191, 36, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .judi-grounded-guidance-card:hover {
+  border-color: rgba(251, 191, 36, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .guidance-quote {
+  background: rgba(251, 191, 36, 0.03);
+}
