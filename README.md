@@ -2,44 +2,56 @@
 
 Judi is a comprehensive, production-ready AI-powered legal support system designed specifically to help students in India identify, understand, and act upon their legal rights when facing crimes, harassment, or administrative violations within educational institutions.
 
-The application combines a modern React user interface, a fast ASGI backend powered by FastAPI, and a custom **Natural Language Processing (NLP)** classification pipeline with a **rule-based postprocessing engine**. When a student describes an incident in plain text, Judi dynamically classifies the infraction, extracts the relevant context, determines governing Indian laws (including Special Acts like POCSO, POSH, and UGC regulations), and suggests actionable filing procedures alongside localized support resources.
+The application combines a modern React user interface, a fast ASGI backend powered by FastAPI, and a custom **Natural Language Processing (NLP)** classification pipeline with a **rule-based postprocessing engine** and a local **Retrieval-Augmented Generation (RAG)** pipeline. When a student describes an incident in plain text, Judi dynamically evaluates if the message represents a valid legal complaint, classifies the infraction, extracts the relevant context, determines governing Indian laws (including Special Acts like POCSO, POSH, and UGC regulations), and retrieves relevant offline grounding text to generate natural language legal guidance alongside localized support resources.
 
 ---
 
 ## 🔄 End-to-End System Workflow
 
-Judi handles user interactions through a multi-stage request-response loop that combines Machine Learning inference with rule-based legal logic and database queries.
+Judi handles user interactions through a multi-stage request-response loop that combines machine learning inference, semantic search, local LLM generation, and rule-based legal logic.
 
 ```mermaid
 graph TD
     User([User in Frontend]) -->|1. Submit Message + Location| App[App.js]
     App -->|2. POST /chat request| FastAPI[FastAPI app.py]
-    FastAPI -->|3. Run NLP Classification| SpaCyModel[spaCy TextCat Model]
-    SpaCyModel -->|4. Return Raw Probabilities| FastAPI
+    FastAPI -->|3. Validate Complaint| Validator[check_is_complaint_via_llm]
+    
+    Validator -->|3a. Non-Complaint Input| ReturnBypass[Return 'This is not complaint' & Skip Processing]
+    Validator -->|3b. Valid Complaint| SpaCyModel[spaCy TextCat Model]
+    
+    SpaCyModel -->|4. Run CNN Classification| FastAPI
     FastAPI -->|5. Apply Postprocessing Rules| PostProcessor[postprocess_v2.py]
     PostProcessor -->|Extract Age, Authority, Medium, Discrimination| Context[Context Indicators]
     PostProcessor -->|Apply POCSO / Ragging rules & Suppress False Positives| PostProcessor
     PostProcessor -->|6. Return Refined Categories & Context| FastAPI
-    FastAPI -->|7. Query Legal Database| LawDB[(law_mapping_enhanced.json)]
-    FastAPI -->|8. Query General Resources| ResourceDB[(resources.json)]
-    FastAPI -->|9. Query Location Contacts| LocationDB[(local_numbers.json)]
-    FastAPI -->|10. Fetch Case References| CaseDB[(case_laws.json)]
-    FastAPI -->|11. Compile & Return Payload| App
-    App -->|12. Render Interactive Report| User
+    
+    FastAPI -->|7. Query Databases| LawDB[(law_mapping_enhanced.json)]
+    FastAPI -->|8. Query Resources| ResourceDB[(resources.json)]
+    FastAPI -->|9. Query Locations| LocationDB[(local_numbers.json)]
+    FastAPI -->|10. Query Precedents| CaseDB[(case_laws.json)]
+    
+    FastAPI -->|11. Query Local RAG| RAG[query_grounded_answer]
+    RAG -->|12. Compute Cosine Sim & Call Qwen LLM| Ollama[(Ollama Service)]
+    Ollama -->|13. Return Grounded Response| FastAPI
+    FastAPI -->|14. Return Compiled JSON Payload| App
+    App -->|15. Render AI Counsel Card & Report Panels| User
 ```
 
 ### End-to-End Data Processing Stages:
 
 1. **User Interaction & Input Intake**:
-   - The user registers or logs in via the React client. The password is encrypted on the backend using `SHA-256` hashing with a secure unique salt.
+   - The user registers or logs in via the React client. Passwords are encrypted on the backend using `SHA-256` hashing with secure salts.
    - The user selects their local jurisdiction (e.g. `Palakkad Town North`, `Kunnathurmedu`, etc., populated dynamically from the backend's `/locations` endpoint) or keeps the default `National` setting.
    - The user submits their query (e.g. *"I am 16 and my senior touched me inappropriately in the hostel"*).
 
-2. **Backend Routing & Text Analysis**:
+2. **Off-Topic & Complaint Filtering**:
    - The client issues a `POST /chat` request containing the `message` string and optional `location`.
-   - The FastAPI backend in [app.py](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/app.py) loads the query and sends it to the custom spaCy NLP model ([models/legal_textcat](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/models/legal_textcat)) which uses a Convolutional Neural Network (CNN) to predict probability scores across 20 distinct legal violation categories.
+   - The backend passes the text to the `check_is_complaint_via_llm` validator. If it detects a general greeting, subjective mood opinion (e.g., *"i dont like my college"*), or off-topic prompt, it skips subsequent ML classification and database querying, returning `guided_response: "This is not complaint"` and clearing all legal metadata immediately.
 
-3. **Rule-Based Post-processing**:
+3. **Text Classification**:
+   - If validated as a complaint, the FastAPI backend in [app.py](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/app.py) loads the text and runs it through the custom spaCy NLP model ([models/legal_textcat](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/models/legal_textcat)). It predicts probability scores across 20 distinct legal violation categories.
+
+4. **Rule-Based Post-processing**:
    - The raw category predictions are passed to [postprocess_v2.py](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/nlp/postprocess_v2.py) along with the raw text.
    - **Context Extraction**: It runs regular expressions and keyword checks to determine context attributes:
      - **Age Group**: Determines if the user is a `minor` (under 18) or `adult` (e.g. parses *"I am 16"*, *"16 years"* or keywords like *"school"*).
@@ -52,16 +64,20 @@ graph TD
      - *Medium Checks*: Suppresses all cyber categories if no online keywords are present in the text, ensuring offline crimes don't trigger false cyber alerts.
      - *Stalking Validation*: Requires persistence keywords (e.g. *"always"*, *"keeps"*, *"every day"*) to maintain a stalking category unless stalking is explicitly stated.
 
-4. **Resource & Law Assembly**:
+5. **Resource & Law Assembly**:
    - The backend reads the refined categories list and queries:
      - [law_mapping_enhanced.json](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/data/law_mapping_enhanced.json): Retrieves matched Indian Penal Code (IPC) sections, Special Acts, and detailed filing procedures.
      - [resources.json](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/data/resources.json): Fetches emergency helpline numbers, police cells, and free legal aid options.
      - [local_numbers.json](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/data/local_numbers.json): If a local jurisdiction was provided, regional police station phone numbers, nearby clinics, and specific local legal aid counselors are loaded and appended.
      - [case_laws.json](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/data/case_laws.json): Adds landmark Supreme Court / High Court case citations for user reference.
 
-5. **Client-Side Rendering**:
-   - The client parses the JSON response containing categories, confidence scores, context keys, laws, procedures, warnings, and contacts.
-   - The frontend renders an interactive, formatted Markdown report, allowing the user to click **"Show Full Details"** to open a detailed inspection panel with complete sections, filing advice, and helplines.
+6. **Local Grounded AI Counsel (RAG)**:
+   - The query is processed by [query_rag.py](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/nlp/query_rag.py) which compares the text's vector embedding (generated via `qwen3-embedding:0.6b`) with the serialized [rag_index.json](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/data/rag_index.json) database using in-memory cosine similarity.
+   - It fetches the top-4 relevant chunks from offline legal documents (POCSO, POSH, UGC, IPC, IT Act) and builds a system prompt for the local `qwen2.5:1.5b` LLM. The model generates a conversational, structured, and action-oriented guidance report.
+
+7. **Client-Side Rendering**:
+   - The client parses the JSON response. If `guided_response` exists, it renders a custom **AI Grounded Counsel Card** with bullet formatting, numbered action items, and inline bold text (completely parsed without raw `**` or `*` asterisks).
+   - Below the card, it displays the structured database report, offering expandable tabs for Governing Acts, Key Legal Provisions, Actionable Filing Procedures, and localized Contact Contacts.
 
 ---
 
@@ -79,6 +95,7 @@ legal-support-chatbot/
 ├── TODO.md                            # Outline of implementation goals and location selector additions
 ├── test.py                            # Simple test script to verify local spaCy model loading and test classification output
 ├── test_classification.py             # CLI script to test classifier confidence scores and post-processor adjustments
+├── .env                               # Environment configurations for local Ollama and Qwen models
 │
 ├── data/                              # Data store containing JSON catalogs, training CSVs, and user sessions
 │   ├── dataset.csv                    # Final augmented text dataset (1500+ items) used to train the spaCy model
@@ -89,13 +106,17 @@ legal-support-chatbot/
 │   ├── local_numbers.json             # Location-specific police stations, hospitals, and legal counsel for Palakkad sub-wards
 │   ├── case_laws.json                 # Citatons of landmark judicial precedents mapped to categories
 │   ├── users.json                     # Local authentication database holding salted, hashed user login credentials
-│   └── consultations/                 # Directory holding conversation logs saved as JSON files per-user (e.g. student123.json)
+│   ├── rag_index.json                 # Local serialized vector database index for RAG retrieval
+│   ├── consultations/                 # Directory holding conversation logs saved as JSON files per-user (e.g. student123.json)
+│   └── legal_docs/                    # Folder containing detailed Markdown manuals of rules (UGC, POCSO, POSH, IPC, IT Act)
 │
 ├── nlp/                               # Natural Language Processing codebase and training utilities
 │   ├── train_classifier.py            # Model training script; loads dataset.csv, configures spaCy blank model, and trains textcat
 │   ├── test_classifier.py             # Basic script to run sample strings through the classifier pipeline
 │   ├── postprocess.py                 # Legacy/v1 rule-based category adjustment code
-│   └── postprocess_v2.py              # Advanced post-processing suite containing Context Extraction and legal override logic
+│   ├── postprocess_v2.py              # Advanced post-processing suite containing Context Extraction and legal override logic
+│   ├── ingest_rag.py                  # Chunking and local vector embedding generation using Ollama
+│   └── query_rag.py                   # In-memory vector similarity search and local LLM generation using Ollama
 │
 ├── models/                            # Folder holding final binary weights of the machine learning model
 │   └── legal_textcat/                 # Trained spaCy classification model (contains meta.json, vocab, config, and pipeline layers)
@@ -111,7 +132,8 @@ legal-support-chatbot/
 │       └── index.css                  # Minimal baseline styles
 │
 ├── tests/                             # Specialized testing folders
-│   └── test_cyberbullying.py          # Script containing targeted testing scenarios for cyber harassment and bullying
+│   ├── test_cyberbullying.py          # Script containing targeted testing scenarios for cyber harassment and bullying
+│   └── test_rag_offline.py            # Mock verification test suite for RAG query flow without loading spaCy models
 │
 └── dataset_augmentation_scripts/      # Python scripts to synthesize and amplify dataset training items (stored in root)
     ├── generate_dataset.py            # Generates the baseline dataset CSV from text templates
@@ -335,68 +357,170 @@ A core highlight of Judi is its rule-based correction engine in [postprocess_v2.
 ## 🚀 Setup & Execution Guide
 
 ### Prerequisites
-- **Python 3.8+**
-- **Node.js 14+** and **npm**
+- **Python 3.11+**
+- **Node.js 18+** and **npm**
+- **Ollama** (for local offline RAG grounding)
 
-### Installation
+### Installation & Environment Setup
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/legal-support-chatbot.git
-   cd legal-support-chatbot
-   ```
+#### 1. Setup Python Virtual Environment
+Initialize a clean local environment inside the workspace to keep dependencies separated:
+```powershell
+# Create the virtual environment folder 'venv'
+python -m venv venv
 
-2. **Backend Setup**
-   ```bash
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+# Activate on Windows (PowerShell)
+.\venv\Scripts\Activate.ps1
 
-3. **Frontend Setup**
-   ```bash
-   cd frontend
-   npm install
-   cd ..
-   ```
+# Activate on Windows (CMD)
+.\venv\Scripts\activate.bat
+
+# Activate on macOS/Linux
+source venv/bin/activate
+```
+
+#### 2. Install Backend Dependencies
+Ensure your shell's python pip is using the active virtual environment, then install requirements:
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Install Frontend Dependencies
+Move into the React app folder and install the locked dependency tree:
+```bash
+cd frontend
+npm install
+cd ..
+```
 
 ---
 
 ### Running the Services
 
-#### Option A: Running Manually
+To run the complete system locally, follow these steps sequentially:
 
-* **Terminal 1: Start Backend (FastAPI)**
-  ```bash
-  python -m uvicorn app:app --reload --port 8000
-  ```
-  *(Backend starts on `http://127.0.0.1:8000`)*
+#### 1. Launch Ollama & Prepare Qwen Models
+Download the semantic embedder and generative answers LLM in your local terminal:
+```bash
+# Pull the embedding model
+ollama pull qwen3-embedding:0.6b
 
-* **Terminal 2: Start Frontend (React)**
-  ```bash
-  cd frontend
-  PORT=3001 npm start
-  ```
-  *(React server runs on port 3001 and opens the browser window)*
+# Pull the conversational LLM
+ollama pull qwen2.5:1.5b
+```
 
-#### Option B: Automated Scripts (Linux/macOS)
-- Run `./setup.sh` to install both Python and npm dependencies.
-- Run `./start.sh` to clean active ports, boot the FastAPI app (logs to `/tmp/backend.log`), and launch React on port 3001 (logs to `/tmp/frontend.log`).
+#### 2. Compile the RAG Vector Database
+Ingest the legal document corpus to build your local search index:
+```bash
+python nlp/ingest_rag.py
+```
+*(This parses [legal_docs/*](file:///c:/Users/USER/Desktop/internship/legal-support-chatbot/data/legal_docs) and outputs `data/rag_index.json`)*
+
+#### 3. Start the FastAPI Backend
+With your virtual environment active, run the Uvicorn server on port 8000:
+```bash
+venv\Scripts\python.exe -m uvicorn app:app --port 8000 --reload
+```
+*(Backend service starts on `http://127.0.0.1:8000`)*
+
+#### 4. Start the React Frontend client
+Open a separate terminal shell, navigate to the React folder, and boot the development web app:
+```bash
+cd frontend
+
+# On Windows PowerShell (to use a specific port like 3001)
+$env:PORT=3001; npm start
+
+# On Windows CMD
+set PORT=3001 && npm start
+
+# On macOS/Linux
+PORT=3001 npm start
+```
+*(The browser will open automatically at the designated local port)*
 
 ---
 
 ## 🧪 Testing
 
-### 1. Test Single String
+### 1. Run Offline RAG Mock Verification
+To verify semantic search cosine similarity calculations and LLM prompt generation offline without external dependencies, run:
+```bash
+python tests/test_rag_offline.py
+```
+
+### 2. Test Single Classification
 To classify a single string and inspect raw category scores versus postprocessed adjustments, run:
 ```bash
 python test_classification.py
 ```
 
-### 2. Run Batch Test Suite
-To run a test suite verifying postprocessing capabilities on various edge case scenarios, run:
+### 3. Run Batch Rule Assertions
+To execute the suite verifying postprocessing capabilities on various edge case rules, run:
 ```bash
 python tests/test_cyberbullying.py
 ```
+
+---
+
+## 🤖 Local Retrieval-Augmented Generation (RAG)
+
+To protect user and student privacy while keeping data offline, the chatbot uses a fully local RAG pipeline powered by **Ollama** running Qwen models.
+
+```
+                  ┌──────────────────────┐
+                  │   User Legal Query   │
+                  └──────────┬───────────┘
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │  qwen3-embedding:0.6b Vector │
+              └──────────────┬──────────────┘
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │   In-Memory Cosine Search   │◄─── [data/rag_index.json]
+              └──────────────┬──────────────┘
+                             │ (Top 4 Relevant Chunks)
+                             ▼
+              ┌─────────────────────────────┐
+              │    qwen2.5:1.5b Local LLM    │◄─── System prompt with context
+              └──────────────┬──────────────┘
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │ Premium AI Guidance Card UI  │
+              └─────────────────────────────┘
+```
+
+### 1. Setup Local Models
+Ensure **Ollama** is installed and running on your local machine, then pull the target models:
+```bash
+# Pull the 600M parameter embedding model
+ollama pull qwen3-embedding:0.6b
+
+# Pull the 1.5B parameter conversational LLM
+ollama pull qwen2.5:1.5b
+```
+
+### 2. Ingest the Legal Corpus
+Build the vector embeddings database from your structured documents:
+```bash
+python nlp/ingest_rag.py
+```
+This script reads all files in `data/legal_docs/` (UGC anti-ragging, POSH rules, POCSO Act, IPC physical harm, IT Act cyber crimes) and database catalogs, requests embeddings from Ollama, and outputs them to `data/rag_index.json`.
+
+### 3. Verify Offline Flow
+Confirm the query formats, similarity calculations, and backend routes function properly using the mock tests:
+```bash
+python tests/test_rag_offline.py
+```
+
+### 4. How the UI Renders AI Counsel
+When a query matches retrieved legal text, the frontend displays a dedicated **AI Grounded Counsel Card** with:
+- A custom gradient glow left border.
+- Highlighted bullet points and interactive numbered cards.
+- **Sources & Citations** panel detailing exact documents and sections used in the retrieval.
 
 ---
 
