@@ -461,65 +461,6 @@ function App() {
       });
     };
 
-    const renderText = (text) => {
-      if (!text) return "";
-      const boldRegex = /(\*\*.*?\*\*)/g;
-      if (!boldRegex.test(text)) return renderTextWithLinks(text);
-      const parts = text.split(boldRegex);
-      return parts.map((part, index) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-          const content = part.slice(2, -2);
-          return <strong key={index}>{renderTextWithLinks(content)}</strong>;
-        }
-        return renderTextWithLinks(part);
-      });
-    };
-
-    const renderFormattedText = (text) => {
-      if (!text) return null;
-      return text.split('\n').map((line, i) => {
-        if (line.startsWith('### ')) {
-          return <h3 key={i} className="guidance-h3">{renderText(line.replace('### ', ''))}</h3>;
-        }
-        if (line.startsWith('#### ')) {
-          return <h4 key={i} className="guidance-h4">{renderText(line.replace('#### ', ''))}</h4>;
-        }
-        if (line.trim().startsWith('**') && line.trim().endsWith('**')) {
-          const content = line.trim().slice(2, -2);
-          return <h4 key={i} className="guidance-h4" style={{ textTransform: 'none', margin: '0.75rem 0 0.25rem' }}>{renderText(content)}</h4>;
-        }
-        if (line.startsWith('> ')) {
-          return <blockquote key={i} className="guidance-quote">{renderText(line.replace('> ', ''))}</blockquote>;
-        }
-        if (line.startsWith('* ') || line.startsWith('- ')) {
-          const cleaned = line.replace(/^[*–-]\s+/, '');
-          return (
-            <div key={i} className="guidance-bullet-item">
-              <span className="bullet-dot">✦</span>
-              <span className="bullet-text">{renderText(cleaned)}</span>
-            </div>
-          );
-        }
-        if (/^\d+\. /.test(line)) {
-          const number = line.match(/^(\d+)\. /)[1];
-          const cleaned = line.replace(/^\d+\.\s+/, '');
-          return (
-            <div key={i} className="guidance-number-item">
-              <span className="number-badge">{number}</span>
-              <span className="number-text">{renderText(cleaned)}</span>
-            </div>
-          );
-        }
-        if (line.trim() === '---') {
-          return <hr key={i} className="guidance-divider" />;
-        }
-        if (line.trim() === '') {
-          return <div key={i} style={{ marginBottom: '8px' }}></div>;
-        }
-        return <p key={i} className="guidance-para">{renderText(line)}</p>;
-      });
-    };
-
     return (
       <div key={msg.id} className={`message ${msg.role}`}>
         <div className="msg-avatar">{msg.role === 'ai' ? '⚖️' : '👤'}</div>
@@ -534,37 +475,26 @@ function App() {
                 )}
               </div>
             ))}
-            {msg.role === 'ai' && msg.data && msg.data.guided_response && (
-              <div className="judi-grounded-guidance-card">
-                <div className="guidance-card-header">
-                  <span className="guidance-icon">🤖</span>
-                  <span className="guidance-title">JUDI AI GROUNDED GUIDANCE</span>
-                </div>
-                <div className="guidance-card-body">
-                  {renderFormattedText(msg.data.guided_response)}
-                </div>
-              </div>
-            )}
             {msg.text && (
               <div className="text structured-response">
                 {msg.text.split('\n').map((line, i) => {
                   if (line.startsWith('### ')) {
-                    return <h3 key={i} className="res-h3">{renderText(line.replace('### ', ''))}</h3>;
+                    return <h3 key={i} className="res-h3">{renderTextWithLinks(line.replace('### ', ''))}</h3>;
                   }
                   if (line.startsWith('#### ')) {
-                    return <h4 key={i} className="res-h4">{renderText(line.replace('#### ', ''))}</h4>;
+                    return <h4 key={i} className="res-h4">{renderTextWithLinks(line.replace('#### ', ''))}</h4>;
                   }
                   if (line.startsWith('> ')) {
-                    return <blockquote key={i} className="res-quote">{renderText(line.replace('> ', ''))}</blockquote>;
+                    return <blockquote key={i} className="res-quote">{renderTextWithLinks(line.replace('> ', ''))}</blockquote>;
                   }
                   if (line.startsWith('* ')) {
-                    return <div key={i} className="res-list-item"><span>•</span> {renderText(line.replace('* ', ''))}</div>;
+                    return <div key={i} className="res-list-item"><span>•</span> {renderTextWithLinks(line.replace('* ', ''))}</div>;
                   }
                   if (line.startsWith('  ')) {
-                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{renderText(line.trim())}</div>;
+                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{renderTextWithLinks(line.trim())}</div>;
                   }
                   if (/^\d+\. /.test(line)) {
-                    return <div key={i} className="res-step-item">{renderText(line)}</div>;
+                    return <div key={i} className="res-step-item">{renderTextWithLinks(line)}</div>;
                   }
                   if (line === '---') {
                     return <hr key={i} className="res-divider" />;
@@ -572,7 +502,7 @@ function App() {
                   if (line.trim() === '') {
                     return <div key={i} style={{ marginBottom: '8px' }}></div>;
                   }
-                  return <p key={i} style={{ marginBottom: '8px' }}>{renderText(line)}</p>;
+                  return <p key={i} style={{ marginBottom: '8px' }}>{renderTextWithLinks(line)}</p>;
                 })}
               </div>
             )}

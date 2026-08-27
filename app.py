@@ -9,7 +9,6 @@ from pydantic import BaseModel
 import sys
 sys.path.insert(0, "nlp")
 from postprocess_v2 import postprocess_categories, get_legal_framework
-from query_rag import query_grounded_answer, check_is_complaint_via_llm
 
 # Updated with complete law mappings for all 20 crime types
 CONFIDENCE_THRESHOLD = 0.05  # Lowered to catch all crime types with improved training data. Model retrained.
@@ -140,7 +139,6 @@ class ChatResponse(BaseModel):
     resources: list
     case_references: list
     warnings: list                 # NEW: safety flags or additional notes
-    guided_response: str | None = None  # NEW: local RAG response from Ollama
 
 
 
@@ -223,36 +221,6 @@ def chat(user_input: ChatRequest):
             "resources": [],
             "case_references": [],
             "warnings": []
-        }
-
-    # Validate if query is a legal complaint/violation
-    is_complaint = True
-    try:
-        is_complaint = check_is_complaint_via_llm(text)
-    except Exception as e:
-        print(f"Error checking if query is complaint: {e}")
-
-    if not is_complaint:
-        return {
-            "category": "not_complaint",
-            "confidence": 1.0,
-            "reason": "not_a_complaint",
-            "matched_categories": [],
-            "context": {
-                "age_indicator": None,
-                "authority": None,
-                "medium": None,
-                "discrimination_types": [],
-                "legal_framework": None,
-                "location": user_input.location or None
-            },
-            "legal_frameworks": [],
-            "laws": [],
-            "steps": [],
-            "resources": [],
-            "case_references": [],
-            "warnings": [],
-            "guided_response": "This is not complaint"
         }
 
     doc = nlp(text)
@@ -357,13 +325,6 @@ def chat(user_input: ChatRequest):
             if res_list and isinstance(res_list, list):
                 all_resources.extend(res_list)
 
-    # Call local Ollama RAG if index and service are available
-    try:
-        guided_response = query_grounded_answer(text, category)
-    except Exception as e:
-        print(f"RAG query skipped or failed: {e}")
-        guided_response = None
-
     return {
         "category": category,
         "confidence": confidence,
@@ -382,7 +343,6 @@ def chat(user_input: ChatRequest):
         "steps": all_steps,
         "resources": all_resources,
         "case_references": all_case_references,
-        "warnings": warnings,
-        "guided_response": guided_response
+        "warnings": warnings
     }
 
