@@ -1,6 +1,8 @@
 #!/bin/bash
 # Quick start script for Legal Support Chatbot
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 echo "🚀 Starting Legal Support Chatbot..."
 echo ""
 
@@ -12,14 +14,14 @@ sleep 2
 
 # Start backend in background
 echo "Starting backend on port 8000..."
-cd /home/alfredjoseph/legal-support-chatbot
+cd "$SCRIPT_DIR"
 python -m uvicorn app:app --reload --port 8000 > /tmp/backend.log 2>&1 &
 BACKEND_PID=$!
 echo "  ✓ Backend PID: $BACKEND_PID"
 
 # Start frontend in background
 echo "Starting frontend on port 3001..."
-cd /home/alfredjoseph/legal-support-chatbot/frontend
+cd "$SCRIPT_DIR/frontend"
 PORT=3001 npm start > /tmp/frontend.log 2>&1 &
 FRONTEND_PID=$!
 echo "  ✓ Frontend PID: $FRONTEND_PID"

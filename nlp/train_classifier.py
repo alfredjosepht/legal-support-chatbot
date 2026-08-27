@@ -1,9 +1,14 @@
 import spacy
 import pandas as pd
+from pathlib import Path
 from spacy.training.example import Example
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATASET_PATH = BASE_DIR / "data" / "dataset.csv"
+MODEL_OUTPUT = BASE_DIR / "models" / "legal_textcat"
+
 # Load dataset
-df = pd.read_csv("data/dataset.csv")
+df = pd.read_csv(DATASET_PATH)
 
 # Create a blank English NLP model
 nlp = spacy.blank("en")
@@ -27,12 +32,12 @@ for _, row in df.iterrows():
 # Train the model
 optimizer = nlp.begin_training()
 
-for epoch in range(15):
+for epoch in range(20):
     losses = {}
     nlp.update(examples, sgd=optimizer, losses=losses)
     print(f"Epoch {epoch + 1} - Loss: {losses}")
 
 # Save the trained model
-nlp.to_disk("models/legal_textcat")
+nlp.to_disk(str(MODEL_OUTPUT))
 
-print("Training completed. Model saved in models/legal_textcat")
+print(f"Training completed. Model saved in {MODEL_OUTPUT}")

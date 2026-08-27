@@ -1,3 +1,4 @@
+from pathlib import Path
 from fastapi import FastAPI, HTTPException
 import hashlib
 import secrets
@@ -6,9 +7,9 @@ import spacy
 import json
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import sys
-sys.path.insert(0, "nlp")
-from postprocess_v2 import postprocess_categories, get_legal_framework
+from nlp.postprocess import postprocess_categories, get_legal_framework
+
+BASE_DIR = Path(__file__).resolve().parent
 
 # Updated with complete law mappings for all 20 crime types
 CONFIDENCE_THRESHOLD = 0.05  # Lowered to catch all crime types with improved training data. Model retrained.
@@ -22,21 +23,19 @@ app.add_middleware(
 )
 
 
-nlp = spacy.load("models/legal_textcat")
+nlp = spacy.load(str(BASE_DIR / "models" / "legal_textcat"))
 
-with open("data/law_mapping_enhanced.json", encoding="utf-8") as f:
+with open(BASE_DIR / "data" / "law_mapping_enhanced.json", encoding="utf-8") as f:
     law_mapping = json.load(f)
 
-
-with open("data/resources.json", encoding="utf-8") as f:
+with open(BASE_DIR / "data" / "resources.json", encoding="utf-8") as f:
     resources = json.load(f)
 
 # Local, location-specific contact numbers (overrides / additions for returned resources)
-# Stored in `data/local_numbers.json` and exposed via /locations
-with open("data/local_numbers.json", encoding="utf-8") as f:
+with open(BASE_DIR / "data" / "local_numbers.json", encoding="utf-8") as f:
     local_numbers = json.load(f)
 
-with open("data/case_laws.json", encoding="utf-8") as f:
+with open(BASE_DIR / "data" / "case_laws.json", encoding="utf-8") as f:
     case_laws = json.load(f)
 
 
@@ -196,7 +195,7 @@ def save_consultations(username: str, payload: ConsultationsPayload):
     p = consultations_path_for(username)
     try:
         with open(p, 'w', encoding='utf-8') as f:
-            json.dump({"consultations": [c.dict() for c in payload.consultations], "activeConsultationId": payload.activeConsultationId}, f, indent=2, ensure_ascii=False)
+            json.dump({"consultations": [c.model_dump() for c in payload.consultations], "activeConsultationId": payload.activeConsultationId}, f, indent=2, ensure_ascii=False)
         return {"status": "ok"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
