@@ -1,22 +1,1221 @@
 {
   "consultations": [
     {
-      "id": "1787830066825",
-      "title": "intimate",
+      "id": "1787902677423",
+      "title": "i am 17 and my professor touch...",
       "messages": [
         {
-          "id": 1787830066825,
-          "text": "intimate",
+          "id": 1787902677424,
+          "text": "i am 17 and my professor touched me",
           "role": "user",
-          "time": "16:57",
+          "time": "13:07",
           "files": [],
           "data": null
         },
         {
-          "id": 1787830067168,
+          "id": 1787902677757,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** SEXUAL ASSAULT\n* **Involved Party Type:** faculty\n\n> ⚠️ **CRITICAL PROTECTION NOTICE**: This case involves a minor. The **Protection of Children from Sexual Offences (POCSO) Act, 2012** is applicable, providing strict anonymity and special legal procedures.\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Protection of Children from Sexual Offences Act, 2012 (POCSO)\n\n**Key Legal Provisions:**\n* **Section 375** (Indian Penal Code): Rape\n* **Section 376** (Indian Penal Code): Punishment for rape\n* **Section 376A** (Indian Penal Code): Rape by husband on wife during separation\n* **Section 3** (Protection of Children from Sexual Offences Act, 2012): Punishment for penetrative sexual assault on a child\n* **Section 5** (Protection of Children from Sexual Offences Act, 2012): Punishment for aggravated penetrative sexual assault\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Go to nearest police station or emergency services immediately\n2. Report to female police officer if available (women can request this)\n3. File FIR and get copy within 30 minutes\n4. Do NOT bathe or change clothes before medical examination\n5. Get medical examination at government hospital within 24 hours\n6. Collect detailed medical report documenting injury, semen, DNA\n7. Obtain photographs of all injuries\n8. Provide complete statement to investigating officer\n9. Inform police about any CCTV footage or witnesses\n10. Request police to preserve all physical evidence\n11. Apply for victim compensation under Victim Compensation Scheme\n12. Request counseling support from NGOs\n13. File anticipatory bail application if threatened by accused\n14. Intimate court about threats or pressure to withdraw complaint\n\n#### 📞 CONTACT & SUPPORT\n* Women's Police Station / Special Cell\n  📍 District police headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Cyber Crime Cell (for online evidence)\n  📍 District headquarters\n  ☎️ 1930\n\n* Women's Helpline\n  ℹ️ 24x7 support for sexual assault victims\n  ☎️ 181\n  🔗 https://wcd.nic.in\n\n* RAINN (Rape, Abuse & Incest National Network equivalent)\n  ℹ️ Confidential support for survivors\n  ☎️ 9999911007\n  🔗 https://www.aasra.info\n\n* National Commission for Women\n  ℹ️ Handles sexual assault complaints and investigations\n  ☎️ 011-24363497\n  🔗 https://ncw.nic.in\n\n* Specialized Sexual Assault Units\n  ℹ️ Dedicated units in district police for sexual crime investigations\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:07",
+          "files": null,
+          "data": {
+            "category": "sexual_assault",
+            "confidence": 0.198,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "sexual_assault",
+                "confidence": 0.198
+              }
+            ],
+            "context": {
+              "age_indicator": "minor",
+              "authority": "faculty",
+              "medium": "offline",
+              "discrimination_types": [],
+              "legal_framework": "POCSO",
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Protection of Children from Sexual Offences Act, 2012 (POCSO)"
+            ],
+            "laws": [
+              {
+                "act": "Indian Penal Code",
+                "section": "375",
+                "title": "Rape",
+                "description": "A man is said to commit 'rape' if he penetrates his penis into the vagina, mouth, anus or urethra of a woman or makes her do so, by coercion, abuse of authority or when she is incapable of giving consent."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "376",
+                "title": "Punishment for rape",
+                "description": "Rigorous imprisonment of not less than 7 years but which may be for life, and also liable to fine and/or death penalty in case of aggravated rape."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "376A",
+                "title": "Rape by husband on wife during separation",
+                "description": "When a man commits rape on his wife who is living separate from him, he shall be punished with imprisonment of not less than 2 years."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "3",
+                "title": "Punishment for penetrative sexual assault on a child",
+                "description": "For a child below 16 years: Rigorous imprisonment for not less than 7 years and fine up to 1 lakh rupees. For 16-18 years: Rigorous imprisonment for not less than 5 years."
+              },
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "5",
+                "title": "Punishment for aggravated penetrative sexual assault",
+                "description": "Rigorous imprisonment for not less than 10 years or life imprisonment and fine up to 1 lakh rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "228A",
+                "title": "Disclosure of identity of victim of rape",
+                "description": "No information shall be published in any form which discloses or tends to disclose the identity of a victim of rape."
+              }
+            ],
+            "steps": [
+              "Go to nearest police station or emergency services immediately",
+              "Report to female police officer if available (women can request this)",
+              "File FIR and get copy within 30 minutes",
+              "Do NOT bathe or change clothes before medical examination",
+              "Get medical examination at government hospital within 24 hours",
+              "Collect detailed medical report documenting injury, semen, DNA",
+              "Obtain photographs of all injuries",
+              "Provide complete statement to investigating officer",
+              "Inform police about any CCTV footage or witnesses",
+              "Request police to preserve all physical evidence",
+              "Apply for victim compensation under Victim Compensation Scheme",
+              "Request counseling support from NGOs",
+              "File anticipatory bail application if threatened by accused",
+              "Intimate court about threats or pressure to withdraw complaint"
+            ],
+            "resources": [
+              {
+                "name": "Women's Police Station / Special Cell",
+                "location": "District police headquarters",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Cyber Crime Cell (for online evidence)",
+                "location": "District headquarters",
+                "contact": "1930"
+              },
+              {
+                "name": "Women's Helpline",
+                "description": "24x7 support for sexual assault victims",
+                "contact": "181",
+                "link": "https://wcd.nic.in"
+              },
+              {
+                "name": "RAINN (Rape, Abuse & Incest National Network equivalent)",
+                "description": "Confidential support for survivors",
+                "contact": "9999911007",
+                "link": "https://www.aasra.info"
+              },
+              {
+                "name": "National Commission for Women",
+                "description": "Handles sexual assault complaints and investigations",
+                "contact": "011-24363497",
+                "link": "https://ncw.nic.in"
+              },
+              {
+                "name": "Specialized Sexual Assault Units",
+                "description": "Dedicated units in district police for sexual crime investigations"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1787902707815,
+          "text": "my boyfriend leaked my private videos",
+          "role": "user",
+          "time": "13:08",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902707826,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** CYBER SEXUAL CRIME, CYBER HARASSMENT\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section Section 13, 14, 15** (Protection of Children from Sexual Offences Act, 2012): Punishment for producing, distributing, or transmitting child sexual abuse material\n* **Section 66E** (Information Technology Act, 2000): Punishment for violation of privacy\n* **Section 67** (Information Technology Act, 2000): Punishment for publishing obscene material in electronic form\n* **Section 354A** (Indian Penal Code): Sexual harassment\n* **Section 354D** (Indian Penal Code): Stalking\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Document all evidence - screenshots, messages, video links, profile names\n2. Stop all communication with perpetrator immediately\n3. Do not forward or share the material with anyone\n4. Report to the online platform immediately\n5. File complaint with Cyber Crime Cell / Police\n6. Provide all evidence including IP addresses and device information\n7. If minor involved, inform parents/guardians immediately\n8. Request urgency in case of minor victim\n9. Contact NCMEC (National Center for Missing & Exploited Children) equivalent\n10. File on cyber crime portal (cybercrime.gov.in)\n11. Keep emotional support person available\n12. Seek counseling from trained professionals\n13. File complaint with local police cybercrime cell (can file online on police website)\n14. Provide screenshot/documentation of all harassing messages\n15. Include URL/links and timestamps of posts if on public platform\n16. Provide account details of person sending harassment\n17. Report to social media platform: Facebook, Twitter, Instagram, etc.\n18. Use platform's built-in reporting feature for blocking and escalation\n19. Request police to preserve evidence from ISP/platform\n20. File separate complaints if harassment on multiple platforms\n21. Apply for blocking order: ask platform to block harasser's account\n22. Keep records of all communication with police and platform\n23. Request privacy settings review on personal accounts\n24. Apply for anticipatory bail if threatened with legal action\n25. Seek victim protection in online harassment cases\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell - Special Unit\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* Women's Police Station\n  📍 District headquarters\n  ☎️ 112\n\n* Women's Helpline\n  ℹ️ For online sexual exploitation\n  ☎️ 181\n  🔗 https://wcd.nic.in\n\n* Cyber Sexual Crime Support\n  ℹ️ Legal aid under IT Act 2000 (Sections 66E) and IPC\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report online harassment and cyberbullying\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* Cyber Harassment Legal Support\n  ℹ️ Legal aid under IT Act 2000 and IPC\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:08",
+          "files": null,
+          "data": {
+            "category": "cyber_sexual_crime",
+            "confidence": 0.25,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "cyber_sexual_crime",
+                "confidence": 0.25
+              },
+              {
+                "category": "cyber_harassment",
+                "confidence": 0.2
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Information Technology (IT) Act, 2000 (Cyber Crime)"
+            ],
+            "laws": [
+              {
+                "act": "Protection of Children from Sexual Offences Act, 2012",
+                "section": "Section 13, 14, 15",
+                "title": "Punishment for producing, distributing, or transmitting child sexual abuse material",
+                "description": "Criminal offense with imprisonment up to 5 years for online sexual abuse of minors."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66E",
+                "title": "Punishment for violation of privacy",
+                "description": "Whoever intentionally or knowingly captures, publishes or transmits the private area of any person without his/her consent shall be punished with imprisonment of either description for a term which may extend to three years or with fine which may extend to rupees two lakh, or with both."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "67",
+                "title": "Punishment for publishing obscene material in electronic form",
+                "description": "Whoever publishes or transmits obscene material in electronic form shall be punished with imprisonment which may extend to five years and fine which may extend to ten lakh rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "354A",
+                "title": "Sexual harassment",
+                "description": "Physical contact, advances, demand or request for sexual favors, showing pornography, making sexually colored remarks."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "354D",
+                "title": "Stalking",
+                "description": "Follows a woman and contacts in any form with intent to harm her privacy, causes alarm."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "376",
+                "title": "Punishment for rape",
+                "description": "Includes online sexual assault and coercion through cyber medium."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "503-506",
+                "title": "Criminal intimidation and threats",
+                "description": "Online threats and intimidation. Punishment up to 2 years imprisonment and fine up to 500-1000 rupees."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66A",
+                "title": "Punishment for sending offensive messages through communication service",
+                "description": "Sending grossly offensive or menacing messages with intent to cause annoyance. Punishment up to 3 years imprisonment and fine up to 5 lakh rupees. (Note: Section 66A was partially struck down by SC in 2015)"
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66C",
+                "title": "Identity theft",
+                "description": "Fraudulently or dishonestly uses electronic signature of another person. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66D",
+                "title": "Punishment for impersonation using computer resource",
+                "description": "Impersonating through electronic means. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
+              }
+            ],
+            "steps": [
+              "Document all evidence - screenshots, messages, video links, profile names",
+              "Stop all communication with perpetrator immediately",
+              "Do not forward or share the material with anyone",
+              "Report to the online platform immediately",
+              "File complaint with Cyber Crime Cell / Police",
+              "Provide all evidence including IP addresses and device information",
+              "If minor involved, inform parents/guardians immediately",
+              "Request urgency in case of minor victim",
+              "Contact NCMEC (National Center for Missing & Exploited Children) equivalent",
+              "File on cyber crime portal (cybercrime.gov.in)",
+              "Keep emotional support person available",
+              "Seek counseling from trained professionals",
+              "File complaint with local police cybercrime cell (can file online on police website)",
+              "Provide screenshot/documentation of all harassing messages",
+              "Include URL/links and timestamps of posts if on public platform",
+              "Provide account details of person sending harassment",
+              "Report to social media platform: Facebook, Twitter, Instagram, etc.",
+              "Use platform's built-in reporting feature for blocking and escalation",
+              "Request police to preserve evidence from ISP/platform",
+              "File separate complaints if harassment on multiple platforms",
+              "Apply for blocking order: ask platform to block harasser's account",
+              "Keep records of all communication with police and platform",
+              "Request privacy settings review on personal accounts",
+              "Apply for anticipatory bail if threatened with legal action",
+              "Seek victim protection in online harassment cases"
+            ],
+            "resources": [
+              {
+                "name": "Cyber Crime Cell - Special Unit",
+                "location": "District headquarters",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "Women's Police Station",
+                "location": "District headquarters",
+                "contact": "112"
+              },
+              {
+                "name": "Women's Helpline",
+                "description": "For online sexual exploitation",
+                "contact": "181",
+                "link": "https://wcd.nic.in"
+              },
+              {
+                "name": "Cyber Sexual Crime Support",
+                "description": "Legal aid under IT Act 2000 (Sections 66E) and IPC",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "Cyber Crime Cell",
+                "location": "District headquarters",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "National Cyber Crime Reporting Portal",
+                "description": "Report online harassment and cyberbullying",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "Cyber Harassment Legal Support",
+                "description": "Legal aid under IT Act 2000 and IPC",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1787902753637,
+          "text": "my wife beat me up with a stick",
+          "role": "user",
+          "time": "13:09",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902753956,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** PHYSICAL ASSAULT\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Indian Penal Code (IPC)\n\n**Key Legal Provisions:**\n* **Section 323** (Indian Penal Code): Voluntarily causing hurt\n* **Section 324** (Indian Penal Code): Voluntarily causing hurt by means of poison, etc.\n* **Section 325** (Indian Penal Code): Voluntarily causing grievous hurt\n* **Section 336** (Indian Penal Code): Act endangering life or personal safety\n* **Section 341** (Indian Penal Code): Wrongful restraint\n\n#### 📝 ACTIONABLE PROCEDURES\n1. File First Information Report (FIR) at nearest police station\n2. Provide detailed description of the assault incident\n3. Mention date, time, location, and witnesses present\n4. Get medical examination done immediately (within 24 hours ideally)\n5. Collect medical certificates and photographs of injuries\n6. File complaint before Magistrate if police refuses to file FIR\n7. Preserve evidence (torn clothes, weapons used, etc.)\n8. Get written FIR acknowledgement\n9. Follow up with investigating officer regularly\n\n#### 📞 CONTACT & SUPPORT\n* Local Police Station\n  📍 Nearest police station in your jurisdiction\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n\n* National Emergency Helpline\n  ℹ️ For immediate assistance in case of physical assault\n  ☎️ 112\n  🔗 https://www.emergencymanagement.in\n\n* AASRA Helpline\n  ℹ️ Emotional support for assault victims\n  ☎️ 9820466726\n  🔗 https://www.aasra.info\n\n* National Legal Services Authority (NALSA)\n  ℹ️ Free legal aid for assault cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* State Legal Aid Board\n  ℹ️ Provides legal representation in assault cases\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:09",
+          "files": null,
+          "data": {
+            "category": "physical_assault",
+            "confidence": 0.664,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "physical_assault",
+                "confidence": 0.664
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": "offline",
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Indian Penal Code (IPC)"
+            ],
+            "laws": [
+              {
+                "act": "Indian Penal Code",
+                "section": "323",
+                "title": "Voluntarily causing hurt",
+                "description": "Whoever, except in the case provided by law, voluntarily causes hurt shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five hundred rupees, or with both."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "324",
+                "title": "Voluntarily causing hurt by means of poison, etc.",
+                "description": "Whoever, except in the case provided by law, by means of poison or any harmful substance attempts to cause, or knowing that he is likely thereby to cause, hurt to any person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five hundred rupees, or with both."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "325",
+                "title": "Voluntarily causing grievous hurt",
+                "description": "Whoever, except in the case provided by law, voluntarily causes grievous hurt shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to one thousand rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "336",
+                "title": "Act endangering life or personal safety",
+                "description": "Whoever does any act so rashly or negligently as to endanger human life or the personal safety of others, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to two hundred and fifty rupees, or with both."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "341",
+                "title": "Wrongful restraint",
+                "description": "Whoever wrongfully restrains any person shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to two hundred and fifty rupees, or with both."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "342",
+                "title": "Wrongful confinement",
+                "description": "Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both."
+              }
+            ],
+            "steps": [
+              "File First Information Report (FIR) at nearest police station",
+              "Provide detailed description of the assault incident",
+              "Mention date, time, location, and witnesses present",
+              "Get medical examination done immediately (within 24 hours ideally)",
+              "Collect medical certificates and photographs of injuries",
+              "File complaint before Magistrate if police refuses to file FIR",
+              "Preserve evidence (torn clothes, weapons used, etc.)",
+              "Get written FIR acknowledgement",
+              "Follow up with investigating officer regularly"
+            ],
+            "resources": [
+              {
+                "name": "Local Police Station",
+                "location": "Nearest police station in your jurisdiction",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "District Police Headquarters",
+                "location": "District headquarters",
+                "contact": "112"
+              },
+              {
+                "name": "National Emergency Helpline",
+                "description": "For immediate assistance in case of physical assault",
+                "contact": "112",
+                "link": "https://www.emergencymanagement.in"
+              },
+              {
+                "name": "AASRA Helpline",
+                "description": "Emotional support for assault victims",
+                "contact": "9820466726",
+                "link": "https://www.aasra.info"
+              },
+              {
+                "name": "National Legal Services Authority (NALSA)",
+                "description": "Free legal aid for assault cases",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "State Legal Aid Board",
+                "description": "Provides legal representation in assault cases"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1787902778772,
+          "text": "the principal withheld my tc",
+          "role": "user",
+          "time": "13:09",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902778783,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** ADMINISTRATIVE VIOLATION, RACISM\n* **Involved Party Type:** administration\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Constitution Articles 14, 21, 32 (Right to Equality & Liberty)\n* National Council for Teacher Education (NCTE) Regulations\n* University Grants Commission (UGC) Regulations\n* Indian Penal Code (IPC) Section 153-153A (Promoting Enmity)\n\n**Key Legal Provisions:**\n* **Section RTI provisions** (Right to Information Act, 2005): Right to access information from public authorities\n* **Section Article 226** (Constitution of India): Writ of Mandamus\n* **Section Article 32** (Constitution of India): Constitutional remedy for violation of rights\n* **Section Complaint mechanism** (Protection of Human Rights Act, 1993): Right to file complaint against violation of human rights\n* **Section 166** (Indian Penal Code): Public servant disobeying law with intent to cause injury\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Gather all relevant documents and records\n2. Request written explanation from institution for action taken\n3. File formal written complaint with institution head\n4. Keep copy of complaint for records\n5. File RTI application for relevant policies and procedures\n6. File complaint with ombudsman or public grievance cell if applicable\n7. Approach Human Rights Commission with evidence\n8. File writ petition in High Court if fundamental rights violated\n9. Seek legal aid from government legal services authority\n10. Contact relevant regulatory body (UGC for colleges, etc.)\n11. Approach media for public awareness if issue is serious\n12. Document all steps taken for legal proceedings\n13. File detailed police complaint with specific racist statements/incidents\n14. Provide evidence: screenshots, messages, videos, recordings\n15. Get witness statements\n16. Request police to register case under IPC Section 153A\n17. For online racism: Report to cyber police cell with URLs/screenshots\n18. File complaint with Human Rights Commission\n19. Contact National Commission for Minorities if applicable\n20. Collect evidence of psychological impact (mental health records)\n21. Apply for restraining order/injunction\n22. Request police protection if threatened\n23. Escalate to senior police officer if local police unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Higher Education Regulatory Authority\n  ℹ️ For administrative violations in educational institutions\n  ☎️ 1800-180-5522\n  🔗 https://www.ugc.ac.in\n\n* Administrative Law Support\n  ℹ️ Legal aid for challenging illegal administrative actions\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* National Commission for Minorities\n  ℹ️ Handles complaints related to racial discrimination\n  ☎️ 011-23022651\n  🔗 https://ncm.nic.in\n\n* NALSA Legal Aid\n  ℹ️ Free legal aid for racial discrimination cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:09",
+          "files": null,
+          "data": {
+            "category": "administrative_violation",
+            "confidence": 0.524,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "administrative_violation",
+                "confidence": 0.524
+              },
+              {
+                "category": "racism",
+                "confidence": 0.293
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": "administration",
+              "medium": "offline",
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Constitution Articles 14, 21, 32 (Right to Equality & Liberty)",
+              "National Council for Teacher Education (NCTE) Regulations",
+              "University Grants Commission (UGC) Regulations",
+              "Indian Penal Code (IPC) Section 153-153A (Promoting Enmity)"
+            ],
+            "laws": [
+              {
+                "act": "Right to Information Act, 2005",
+                "section": "RTI provisions",
+                "title": "Right to access information from public authorities",
+                "description": "Citizens have right to information from government institutions."
+              },
+              {
+                "act": "Constitution of India",
+                "section": "Article 226",
+                "title": "Writ of Mandamus",
+                "description": "High Court can issue mandamus to compel public officials to perform duties."
+              },
+              {
+                "act": "Constitution of India",
+                "section": "Article 32",
+                "title": "Constitutional remedy for violation of rights",
+                "description": "Citizens can approach Supreme Court for enforcement of fundamental rights."
+              },
+              {
+                "act": "Protection of Human Rights Act, 1993",
+                "section": "Complaint mechanism",
+                "title": "Right to file complaint against violation of human rights",
+                "description": "Human Rights Commission can investigate violation of rights by public officials."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "166",
+                "title": "Public servant disobeying law with intent to cause injury",
+                "description": "Punishment for government employee acting in violation of legal obligations."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "153",
+                "title": "Wantonly provoking any class by insults, &c.",
+                "description": "Acts intended or knowing to provoke breach of peace by insulting a person or class based on race/place of birth. Punishment up to 1 year imprisonment and fine up to 1000 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "153A",
+                "title": "Promoting enmity between different groups on grounds of caste, race",
+                "description": "Punishment up to 3 years imprisonment and fine up to 500 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "295",
+                "title": "Injuring or defiling place of worship",
+                "description": "If symbols are defiled. Punishment up to 2 years and fine up to 1000 rupees."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66D",
+                "title": "Punishment for impersonation using computer resource",
+                "description": "If racist content posted using fake identity. Punishment up to 3 years and fine up to 1 lakh rupees."
+              }
+            ],
+            "steps": [
+              "Gather all relevant documents and records",
+              "Request written explanation from institution for action taken",
+              "File formal written complaint with institution head",
+              "Keep copy of complaint for records",
+              "File RTI application for relevant policies and procedures",
+              "File complaint with ombudsman or public grievance cell if applicable",
+              "Approach Human Rights Commission with evidence",
+              "File writ petition in High Court if fundamental rights violated",
+              "Seek legal aid from government legal services authority",
+              "Contact relevant regulatory body (UGC for colleges, etc.)",
+              "Approach media for public awareness if issue is serious",
+              "Document all steps taken for legal proceedings",
+              "File detailed police complaint with specific racist statements/incidents",
+              "Provide evidence: screenshots, messages, videos, recordings",
+              "Get witness statements",
+              "Request police to register case under IPC Section 153A",
+              "For online racism: Report to cyber police cell with URLs/screenshots",
+              "File complaint with Human Rights Commission",
+              "Contact National Commission for Minorities if applicable",
+              "Collect evidence of psychological impact (mental health records)",
+              "Apply for restraining order/injunction",
+              "Request police protection if threatened",
+              "Escalate to senior police officer if local police unresponsive"
+            ],
+            "resources": [
+              {
+                "name": "District Police Headquarters",
+                "location": "District headquarters",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Higher Education Regulatory Authority",
+                "description": "For administrative violations in educational institutions",
+                "contact": "1800-180-5522",
+                "link": "https://www.ugc.ac.in"
+              },
+              {
+                "name": "Administrative Law Support",
+                "description": "Legal aid for challenging illegal administrative actions",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "District Police Headquarters",
+                "location": "District headquarters",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "National Commission for Minorities",
+                "description": "Handles complaints related to racial discrimination",
+                "contact": "011-23022651",
+                "link": "https://ncm.nic.in"
+              },
+              {
+                "name": "NALSA Legal Aid",
+                "description": "Free legal aid for racial discrimination cases",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1787902799249,
+          "text": "the college withheld my tc",
+          "role": "user",
+          "time": "13:09",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902799563,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** ADMINISTRATIVE VIOLATION, INSTITUTIONAL MISCONDUCT\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Constitution Articles 14, 21, 32 (Right to Equality & Liberty)\n* National Council for Teacher Education (NCTE) Regulations\n* University Grants Commission (UGC) Regulations\n\n**Key Legal Provisions:**\n* **Section RTI provisions** (Right to Information Act, 2005): Right to access information from public authorities\n* **Section Article 226** (Constitution of India): Writ of Mandamus\n* **Section Article 32** (Constitution of India): Constitutional remedy for violation of rights\n* **Section Complaint mechanism** (Protection of Human Rights Act, 1993): Right to file complaint against violation of human rights\n* **Section 166** (Indian Penal Code): Public servant disobeying law with intent to cause injury\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Gather all relevant documents and records\n2. Request written explanation from institution for action taken\n3. File formal written complaint with institution head\n4. Keep copy of complaint for records\n5. File RTI application for relevant policies and procedures\n6. File complaint with ombudsman or public grievance cell if applicable\n7. Approach Human Rights Commission with evidence\n8. File writ petition in High Court if fundamental rights violated\n9. Seek legal aid from government legal services authority\n10. Contact relevant regulatory body (UGC for colleges, etc.)\n11. Approach media for public awareness if issue is serious\n12. Document all steps taken for legal proceedings\n13. File formal written complaint with institution's grievance cell\n14. Provide detailed evidence: documents, communications, witness statements\n15. Request written acknowledgement of complaint filing\n16. File Right to Information (RTI) request for institutional policies\n17. Request meeting with ombudsman/grievance officer\n18. Request interim protective measures pending investigation\n19. Escalate to affiliating university if institution is unresponsive\n20. File complaint with state education department\n21. Contact National Commission for Protection of Child Rights (if applicable)\n22. File public interest litigation in High Court if serious violations\n23. Approach media and student organizations for pressure and publicity\n24. Seek legal aid for representation in cases\n25. Document all institutional responses for future legal proceedings\n\n#### 📞 CONTACT & SUPPORT\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Higher Education Regulatory Authority\n  ℹ️ For administrative violations in educational institutions\n  ☎️ 1800-180-5522\n  🔗 https://www.ugc.ac.in\n\n* Administrative Law Support\n  ℹ️ Legal aid for challenging illegal administrative actions\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Education Ministry Helpline\n  ℹ️ For institutional misconduct complaints\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* Institutional Grievance Redressal Cell\n  ℹ️ College-level committee to address institutional misconduct\n\n* UGC Compliance Helpline\n  ℹ️ For UGC regulation violations\n  ☎️ 1800-180-5522\n  🔗 https://www.ugc.ac.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:09",
+          "files": null,
+          "data": {
+            "category": "administrative_violation",
+            "confidence": 0.718,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "administrative_violation",
+                "confidence": 0.718
+              },
+              {
+                "category": "institutional_misconduct",
+                "confidence": 0.3
+              }
+            ],
+            "context": {
+              "age_indicator": "adult",
+              "authority": null,
+              "medium": "offline",
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Constitution Articles 14, 21, 32 (Right to Equality & Liberty)",
+              "National Council for Teacher Education (NCTE) Regulations",
+              "University Grants Commission (UGC) Regulations"
+            ],
+            "laws": [
+              {
+                "act": "Right to Information Act, 2005",
+                "section": "RTI provisions",
+                "title": "Right to access information from public authorities",
+                "description": "Citizens have right to information from government institutions."
+              },
+              {
+                "act": "Constitution of India",
+                "section": "Article 226",
+                "title": "Writ of Mandamus",
+                "description": "High Court can issue mandamus to compel public officials to perform duties."
+              },
+              {
+                "act": "Constitution of India",
+                "section": "Article 32",
+                "title": "Constitutional remedy for violation of rights",
+                "description": "Citizens can approach Supreme Court for enforcement of fundamental rights."
+              },
+              {
+                "act": "Protection of Human Rights Act, 1993",
+                "section": "Complaint mechanism",
+                "title": "Right to file complaint against violation of human rights",
+                "description": "Human Rights Commission can investigate violation of rights by public officials."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "166",
+                "title": "Public servant disobeying law with intent to cause injury",
+                "description": "Punishment for government employee acting in violation of legal obligations."
+              },
+              {
+                "act": "Constitution of India",
+                "section": "Articles 14, 21, 32",
+                "title": "Right to equality, personal liberty, constitutional remedies",
+                "description": "Right to equal treatment and protection against institutional discrimination. Violations can be challenged in High Court."
+              },
+              {
+                "act": "National Commission for Protection of Child Rights Act, 2005",
+                "section": "13",
+                "title": "Powers to inquire into violations",
+                "description": "NCPCR can inquire into cases of institutional child abuse and misconduct."
+              },
+              {
+                "act": "All India Council for Technical Education (AICTE) Regulations",
+                "section": "Regulations on Student Rights",
+                "title": "Student protection and grievance redressal",
+                "description": "Institutions must follow due process, provide fair investigation, and student representation in disciplinary committees."
+              }
+            ],
+            "steps": [
+              "Gather all relevant documents and records",
+              "Request written explanation from institution for action taken",
+              "File formal written complaint with institution head",
+              "Keep copy of complaint for records",
+              "File RTI application for relevant policies and procedures",
+              "File complaint with ombudsman or public grievance cell if applicable",
+              "Approach Human Rights Commission with evidence",
+              "File writ petition in High Court if fundamental rights violated",
+              "Seek legal aid from government legal services authority",
+              "Contact relevant regulatory body (UGC for colleges, etc.)",
+              "Approach media for public awareness if issue is serious",
+              "Document all steps taken for legal proceedings",
+              "File formal written complaint with institution's grievance cell",
+              "Provide detailed evidence: documents, communications, witness statements",
+              "Request written acknowledgement of complaint filing",
+              "File Right to Information (RTI) request for institutional policies",
+              "Request meeting with ombudsman/grievance officer",
+              "Request interim protective measures pending investigation",
+              "Escalate to affiliating university if institution is unresponsive",
+              "File complaint with state education department",
+              "Contact National Commission for Protection of Child Rights (if applicable)",
+              "File public interest litigation in High Court if serious violations",
+              "Approach media and student organizations for pressure and publicity",
+              "Seek legal aid for representation in cases",
+              "Document all institutional responses for future legal proceedings"
+            ],
+            "resources": [
+              {
+                "name": "District Police Headquarters",
+                "location": "District headquarters",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Higher Education Regulatory Authority",
+                "description": "For administrative violations in educational institutions",
+                "contact": "1800-180-5522",
+                "link": "https://www.ugc.ac.in"
+              },
+              {
+                "name": "Administrative Law Support",
+                "description": "Legal aid for challenging illegal administrative actions",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "District Police Headquarters",
+                "location": "District headquarters",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Education Ministry Helpline",
+                "description": "For institutional misconduct complaints",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": "Institutional Grievance Redressal Cell",
+                "description": "College-level committee to address institutional misconduct"
+              },
+              {
+                "name": "UGC Compliance Helpline",
+                "description": "For UGC regulation violations",
+                "contact": "1800-180-5522",
+                "link": "https://www.ugc.ac.in"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1787902835017,
+          "text": "he defamed me in instagram",
+          "role": "user",
+          "time": "13:10",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902835032,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** DEFAMATION PRIVACY FRAUD, CYBER HARASSMENT\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Indian Penal Code (IPC)\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section 499** (Indian Penal Code): Defamation\n* **Section 500** (Indian Penal Code): Punishment for defamation\n* **Section 66E** (Information Technology Act, 2000): Violation of privacy\n* **Section 420** (Indian Penal Code): Cheating and dishonestly inducing delivery of property\n* **Section 503-506** (Indian Penal Code): Criminal intimidation and threats\n\n#### 📝 ACTIONABLE PROCEDURES\n1. File civil defamation suit in District Court\n2. Provide evidence: screenshots, documents, false statements published\n3. Request immediate injunction to stop publishing false information\n4. Simultaneously file police complaint for criminal defamation\n5. Publish correction notice in same medium where defamation occurred\n6. Send cease and desist letter through lawyer\n7. File complaint with social media platforms\n8. Request removal of defamatory content with timeline\n9. Document all harm suffered (professional, personal, financial)\n10. Claim damages in civil suit (actual, special, exemplary)\n11. File cyber complaint if defamation online\n12. Request court order for disclosure of anonymous poster's identity\n13. Apply for temporary injunction ex-parte if urgency\n14. File complaint with local police cybercrime cell (can file online on police website)\n15. Provide screenshot/documentation of all harassing messages\n16. Include URL/links and timestamps of posts if on public platform\n17. Provide account details of person sending harassment\n18. Report to social media platform: Facebook, Twitter, Instagram, etc.\n19. Use platform's built-in reporting feature for blocking and escalation\n20. Request police to preserve evidence from ISP/platform\n21. File separate complaints if harassment on multiple platforms\n22. Apply for blocking order: ask platform to block harasser's account\n23. Keep records of all communication with police and platform\n24. Request privacy settings review on personal accounts\n25. Apply for anticipatory bail if threatened with legal action\n26. Seek victim protection in online harassment cases\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell / Economic Offences Wing\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report defamation and privacy violations\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* Defamation & Fraud Legal Support\n  ℹ️ Legal aid under IPC (Sections 499-500, 420) and IT Act\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report online harassment and cyberbullying\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* Cyber Harassment Legal Support\n  ℹ️ Legal aid under IT Act 2000 and IPC\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:10",
+          "files": null,
+          "data": {
+            "category": "defamation_privacy_fraud",
+            "confidence": 0.55,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "defamation_privacy_fraud",
+                "confidence": 0.55
+              },
+              {
+                "category": "cyber_harassment",
+                "confidence": 0.18
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": "online",
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Indian Penal Code (IPC)",
+              "Information Technology (IT) Act, 2000 (Cyber Crime)"
+            ],
+            "laws": [
+              {
+                "act": "Indian Penal Code",
+                "section": "499",
+                "title": "Defamation",
+                "description": "Publishing or speaking false information that harms reputation. Punishment up to 2 years imprisonment, fine up to 5000 rupees, or both."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "500",
+                "title": "Punishment for defamation",
+                "description": "Imprisonment up to 6 months and fine up to 500 rupees."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66E",
+                "title": "Violation of privacy",
+                "description": "Capturing, publishing, or transmitting intimate image without consent. Punishment up to 3 years and fine up to 4 lakh rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "420",
+                "title": "Cheating and dishonestly inducing delivery of property",
+                "description": "Fraud and deception for obtaining property. Imprisonment up to 7 years and fine up to 1 lakh rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "503-506",
+                "title": "Criminal intimidation and threats",
+                "description": "Online threats and intimidation. Punishment up to 2 years imprisonment and fine up to 500-1000 rupees."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66A",
+                "title": "Punishment for sending offensive messages through communication service",
+                "description": "Sending grossly offensive or menacing messages with intent to cause annoyance. Punishment up to 3 years imprisonment and fine up to 5 lakh rupees. (Note: Section 66A was partially struck down by SC in 2015)"
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66C",
+                "title": "Identity theft",
+                "description": "Fraudulently or dishonestly uses electronic signature of another person. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66D",
+                "title": "Punishment for impersonation using computer resource",
+                "description": "Impersonating through electronic means. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
+              }
+            ],
+            "steps": [
+              "File civil defamation suit in District Court",
+              "Provide evidence: screenshots, documents, false statements published",
+              "Request immediate injunction to stop publishing false information",
+              "Simultaneously file police complaint for criminal defamation",
+              "Publish correction notice in same medium where defamation occurred",
+              "Send cease and desist letter through lawyer",
+              "File complaint with social media platforms",
+              "Request removal of defamatory content with timeline",
+              "Document all harm suffered (professional, personal, financial)",
+              "Claim damages in civil suit (actual, special, exemplary)",
+              "File cyber complaint if defamation online",
+              "Request court order for disclosure of anonymous poster's identity",
+              "Apply for temporary injunction ex-parte if urgency",
+              "File complaint with local police cybercrime cell (can file online on police website)",
+              "Provide screenshot/documentation of all harassing messages",
+              "Include URL/links and timestamps of posts if on public platform",
+              "Provide account details of person sending harassment",
+              "Report to social media platform: Facebook, Twitter, Instagram, etc.",
+              "Use platform's built-in reporting feature for blocking and escalation",
+              "Request police to preserve evidence from ISP/platform",
+              "File separate complaints if harassment on multiple platforms",
+              "Apply for blocking order: ask platform to block harasser's account",
+              "Keep records of all communication with police and platform",
+              "Request privacy settings review on personal accounts",
+              "Apply for anticipatory bail if threatened with legal action",
+              "Seek victim protection in online harassment cases"
+            ],
+            "resources": [
+              {
+                "name": "Cyber Crime Cell / Economic Offences Wing",
+                "location": "District headquarters",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "National Cyber Crime Reporting Portal",
+                "description": "Report defamation and privacy violations",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "Defamation & Fraud Legal Support",
+                "description": "Legal aid under IPC (Sections 499-500, 420) and IT Act",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "Cyber Crime Cell",
+                "location": "District headquarters",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "National Cyber Crime Reporting Portal",
+                "description": "Report online harassment and cyberbullying",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
+              },
+              {
+                "name": "Cyber Harassment Legal Support",
+                "description": "Legal aid under IT Act 2000 and IPC",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": []
+          }
+        },
+        {
+          "id": 1787902858195,
+          "text": "he verbally abused my community",
+          "role": "user",
+          "time": "13:10",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902858507,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** INSTITUTIONAL MISCONDUCT, VERBAL ABUSE\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Constitution Articles 14, 21, 32 (Right to Equality & Liberty)\n* National Council for Teacher Education (NCTE) Regulations\n* University Grants Commission (UGC) Regulations\n* Indian Penal Code (IPC)\n\n**Key Legal Provisions:**\n* **Section Articles 14, 21, 32** (Constitution of India): Right to equality, personal liberty, constitutional remedies\n* **Section 13** (National Commission for Protection of Child Rights Act, 2005): Powers to inquire into violations\n* **Section Regulations on Student Rights** (All India Council for Technical Education (AICTE) Regulations): Student protection and grievance redressal\n* **Section 504** (Indian Penal Code): Intentional insult with knowledge that will provoke breach of peace\n* **Section 505** (Indian Penal Code): Statements conducing to public mischief\n\n#### 📝 ACTIONABLE PROCEDURES\n1. File formal written complaint with institution's grievance cell\n2. Provide detailed evidence: documents, communications, witness statements\n3. Request written acknowledgement of complaint filing\n4. File Right to Information (RTI) request for institutional policies\n5. Request meeting with ombudsman/grievance officer\n6. Request interim protective measures pending investigation\n7. Escalate to affiliating university if institution is unresponsive\n8. File complaint with state education department\n9. Contact National Commission for Protection of Child Rights (if applicable)\n10. File public interest litigation in High Court if serious violations\n11. Approach media and student organizations for pressure and publicity\n12. Seek legal aid for representation in cases\n13. Document all institutional responses for future legal proceedings\n14. Document exact words used and context of verbal abuse\n15. Note date, time, location, and witnesses present\n16. Preserve any written records (messages, emails, posts)\n17. File police complaint immediately with full details\n18. Provide list of potential witnesses who heard the abuse\n19. If online abuse, report to platform and cyber crime cell\n20. Request FIR under IPC 504/505/509 as applicable\n21. Keep medical certificate if verbal abuse caused mental trauma\n22. File defamation case if false accusations made\n23. Seek restraining order from court if ongoing threats\n24. Contact domestic violence cell if abuser is known person\n25. Approach legal aid for representation in proceedings\n\n#### ⚠️ IMPORTANT ADVISORIES\n* Age information not provided. For sexual offences, age determines legal framework (POCSO for minors).\n\n#### 📞 CONTACT & SUPPORT\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Education Ministry Helpline\n  ℹ️ For institutional misconduct complaints\n  ☎️ 1800-180-5522\n  🔗 https://www.antiragging.in\n\n* Institutional Grievance Redressal Cell\n  ℹ️ College-level committee to address institutional misconduct\n\n* UGC Compliance Helpline\n  ℹ️ For UGC regulation violations\n  ☎️ 1800-180-5522\n  🔗 https://www.ugc.ac.in\n\n* Local Police Station\n  📍 Nearest police station\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Women's Helpline (if gender-based abuse)\n  ☎️ 181\n  🔗 https://wcd.nic.in\n\n* Verbal Abuse Legal Support\n  ℹ️ Legal aid under IPC (Sections 504, 294)\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "role": "ai",
+          "time": "13:10",
+          "files": null,
+          "data": {
+            "category": "institutional_misconduct",
+            "confidence": 0.277,
+            "reason": "classified",
+            "matched_categories": [
+              {
+                "category": "institutional_misconduct",
+                "confidence": 0.277
+              },
+              {
+                "category": "verbal_abuse",
+                "confidence": 0.205
+              }
+            ],
+            "context": {
+              "age_indicator": null,
+              "authority": null,
+              "medium": null,
+              "discrimination_types": [],
+              "legal_framework": null,
+              "location": "Ottapalam"
+            },
+            "legal_frameworks": [
+              "Constitution Articles 14, 21, 32 (Right to Equality & Liberty)",
+              "National Council for Teacher Education (NCTE) Regulations",
+              "University Grants Commission (UGC) Regulations",
+              "Indian Penal Code (IPC)"
+            ],
+            "laws": [
+              {
+                "act": "Constitution of India",
+                "section": "Articles 14, 21, 32",
+                "title": "Right to equality, personal liberty, constitutional remedies",
+                "description": "Right to equal treatment and protection against institutional discrimination. Violations can be challenged in High Court."
+              },
+              {
+                "act": "National Commission for Protection of Child Rights Act, 2005",
+                "section": "13",
+                "title": "Powers to inquire into violations",
+                "description": "NCPCR can inquire into cases of institutional child abuse and misconduct."
+              },
+              {
+                "act": "All India Council for Technical Education (AICTE) Regulations",
+                "section": "Regulations on Student Rights",
+                "title": "Student protection and grievance redressal",
+                "description": "Institutions must follow due process, provide fair investigation, and student representation in disciplinary committees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "504",
+                "title": "Intentional insult with knowledge that will provoke breach of peace",
+                "description": "Punishment with simple imprisonment up to two months or fine up to 250 rupees."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "505",
+                "title": "Statements conducing to public mischief",
+                "description": "Making or publishing statement known to be false with intent to cause public alarm."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "499",
+                "title": "Defamation",
+                "description": "Making false statements that harm reputation."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "509",
+                "title": "Word, gesture or act intended to insult the modesty of a woman",
+                "description": "If verbal abuse has sexual connotation or directed at woman, imprisonment up to 3 years."
+              },
+              {
+                "act": "Information Technology Act, 2000",
+                "section": "66A",
+                "title": "Sending offensive message through communication device",
+                "description": "If verbal abuse through online medium (Note: largely struck down)."
+              },
+              {
+                "act": "Indian Penal Code",
+                "section": "294",
+                "title": "Obscene acts and songs",
+                "description": "For using obscene language in public place."
+              }
+            ],
+            "steps": [
+              "File formal written complaint with institution's grievance cell",
+              "Provide detailed evidence: documents, communications, witness statements",
+              "Request written acknowledgement of complaint filing",
+              "File Right to Information (RTI) request for institutional policies",
+              "Request meeting with ombudsman/grievance officer",
+              "Request interim protective measures pending investigation",
+              "Escalate to affiliating university if institution is unresponsive",
+              "File complaint with state education department",
+              "Contact National Commission for Protection of Child Rights (if applicable)",
+              "File public interest litigation in High Court if serious violations",
+              "Approach media and student organizations for pressure and publicity",
+              "Seek legal aid for representation in cases",
+              "Document all institutional responses for future legal proceedings",
+              "Document exact words used and context of verbal abuse",
+              "Note date, time, location, and witnesses present",
+              "Preserve any written records (messages, emails, posts)",
+              "File police complaint immediately with full details",
+              "Provide list of potential witnesses who heard the abuse",
+              "If online abuse, report to platform and cyber crime cell",
+              "Request FIR under IPC 504/505/509 as applicable",
+              "Keep medical certificate if verbal abuse caused mental trauma",
+              "File defamation case if false accusations made",
+              "Seek restraining order from court if ongoing threats",
+              "Contact domestic violence cell if abuser is known person",
+              "Approach legal aid for representation in proceedings"
+            ],
+            "resources": [
+              {
+                "name": "District Police Headquarters",
+                "location": "District headquarters",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Education Ministry Helpline",
+                "description": "For institutional misconduct complaints",
+                "contact": "1800-180-5522",
+                "link": "https://www.antiragging.in"
+              },
+              {
+                "name": "Institutional Grievance Redressal Cell",
+                "description": "College-level committee to address institutional misconduct"
+              },
+              {
+                "name": "UGC Compliance Helpline",
+                "description": "For UGC regulation violations",
+                "contact": "1800-180-5522",
+                "link": "https://www.ugc.ac.in"
+              },
+              {
+                "name": "Local Police Station",
+                "location": "Nearest police station",
+                "contact": "112",
+                "link": "https://www.keralapolice.gov.in"
+              },
+              {
+                "name": "Women's Helpline (if gender-based abuse)",
+                "contact": "181",
+                "link": "https://wcd.nic.in"
+              },
+              {
+                "name": "Verbal Abuse Legal Support",
+                "description": "Legal aid under IPC (Sections 504, 294)",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
+              },
+              {
+                "name": "Ottapalam PS",
+                "location": "Ottapalam, Palakkad – 679101",
+                "contact": "0466-2244325",
+                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
+              },
+              {
+                "name": "PK Das Institute of Medical Sciences",
+                "description": "Vaniamkulam, Ottapalam – 679522",
+                "contact": "0466-2344500"
+              },
+              {
+                "name": "Adv. Nikhil Raj",
+                "description": null,
+                "contact": "98901 23458"
+              }
+            ],
+            "case_references": [],
+            "warnings": [
+              "Age information not provided. For sexual offences, age determines legal framework (POCSO for minors)."
+            ]
+          }
+        },
+        {
+          "id": 1787902889213,
+          "text": "he talked badly about my community",
+          "role": "user",
+          "time": "13:11",
+          "files": [],
+          "data": null
+        },
+        {
+          "id": 1787902889231,
           "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Category:** UNKNOWN\n\n#### 📞 CONTACT & SUPPORT\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
           "role": "ai",
-          "time": "16:57",
+          "time": "13:11",
           "files": null,
           "data": {
             "category": "unknown",
@@ -57,127 +1256,99 @@
           }
         },
         {
-          "id": 1787830084287,
-          "text": "my professor touched me unapprropriately",
+          "id": 1787902900239,
+          "text": "he talked badly about my community in instagram",
           "role": "user",
-          "time": "16:58",
+          "time": "13:11",
           "files": [],
           "data": null
         },
         {
-          "id": 1787830084297,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** SEXUAL ASSAULT\n* **Involved Party Type:** faculty\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Indian Penal Code (IPC) Sections 375-376 (Rape & Sexual Assault)\n\n**Key Legal Provisions:**\n* **Section 375** (Indian Penal Code): Rape\n* **Section 376** (Indian Penal Code): Punishment for rape\n* **Section 376A** (Indian Penal Code): Rape by husband on wife during separation\n* **Section 3** (Protection of Children from Sexual Offences Act, 2012): Punishment for penetrative sexual assault on a child\n* **Section 5** (Protection of Children from Sexual Offences Act, 2012): Punishment for aggravated penetrative sexual assault\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Go to nearest police station or emergency services immediately\n2. Report to female police officer if available (women can request this)\n3. File FIR and get copy within 30 minutes\n4. Do NOT bathe or change clothes before medical examination\n5. Get medical examination at government hospital within 24 hours\n6. Collect detailed medical report documenting injury, semen, DNA\n7. Obtain photographs of all injuries\n8. Provide complete statement to investigating officer\n9. Inform police about any CCTV footage or witnesses\n10. Request police to preserve all physical evidence\n11. Apply for victim compensation under Victim Compensation Scheme\n12. Request counseling support from NGOs\n13. File anticipatory bail application if threatened by accused\n14. Intimate court about threats or pressure to withdraw complaint\n\n#### 📞 CONTACT & SUPPORT\n* Women's Police Station / Special Cell\n  📍 District police headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Cyber Crime Cell (for online evidence)\n  📍 District headquarters\n  ☎️ 1930\n\n* Women's Helpline\n  ℹ️ 24x7 support for sexual assault victims\n  ☎️ 181\n  🔗 https://wcd.nic.in\n\n* RAINN (Rape, Abuse & Incest National Network equivalent)\n  ℹ️ Confidential support for survivors\n  ☎️ 9999911007\n  🔗 https://www.aasra.info\n\n* National Commission for Women\n  ℹ️ Handles sexual assault complaints and investigations\n  ☎️ 011-24363497\n  🔗 https://ncw.nic.in\n\n* Specialized Sexual Assault Units\n  ℹ️ Dedicated units in district police for sexual crime investigations\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "id": 1787902900257,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** CYBER HARASSMENT\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section 503-506** (Indian Penal Code): Criminal intimidation and threats\n* **Section 66A** (Information Technology Act, 2000): Punishment for sending offensive messages through communication service\n* **Section 66C** (Information Technology Act, 2000): Identity theft\n* **Section 66D** (Information Technology Act, 2000): Punishment for impersonation using computer resource\n\n#### 📝 ACTIONABLE PROCEDURES\n1. File complaint with local police cybercrime cell (can file online on police website)\n2. Provide screenshot/documentation of all harassing messages\n3. Include URL/links and timestamps of posts if on public platform\n4. Provide account details of person sending harassment\n5. Report to social media platform: Facebook, Twitter, Instagram, etc.\n6. Use platform's built-in reporting feature for blocking and escalation\n7. Request police to preserve evidence from ISP/platform\n8. File separate complaints if harassment on multiple platforms\n9. Apply for blocking order: ask platform to block harasser's account\n10. Keep records of all communication with police and platform\n11. Request privacy settings review on personal accounts\n12. Apply for anticipatory bail if threatened with legal action\n13. Seek victim protection in online harassment cases\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report online harassment and cyberbullying\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* Cyber Harassment Legal Support\n  ℹ️ Legal aid under IT Act 2000 and IPC\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
           "role": "ai",
-          "time": "16:58",
+          "time": "13:11",
           "files": null,
           "data": {
-            "category": "sexual_assault",
-            "confidence": 0.3,
+            "category": "cyber_harassment",
+            "confidence": 0.2,
             "reason": "classified",
             "matched_categories": [
               {
-                "category": "sexual_assault",
-                "confidence": 0.3
+                "category": "cyber_harassment",
+                "confidence": 0.2
               }
             ],
             "context": {
               "age_indicator": null,
-              "authority": "faculty",
-              "medium": "offline",
+              "authority": null,
+              "medium": "online",
               "discrimination_types": [],
               "legal_framework": null,
               "location": "Ottapalam"
             },
             "legal_frameworks": [
-              "Indian Penal Code (IPC) Sections 375-376 (Rape & Sexual Assault)"
+              "Information Technology (IT) Act, 2000 (Cyber Crime)"
             ],
             "laws": [
               {
                 "act": "Indian Penal Code",
-                "section": "375",
-                "title": "Rape",
-                "description": "A man is said to commit 'rape' if he penetrates his penis into the vagina, mouth, anus or urethra of a woman or makes her do so, by coercion, abuse of authority or when she is incapable of giving consent."
+                "section": "503-506",
+                "title": "Criminal intimidation and threats",
+                "description": "Online threats and intimidation. Punishment up to 2 years imprisonment and fine up to 500-1000 rupees."
               },
               {
-                "act": "Indian Penal Code",
-                "section": "376",
-                "title": "Punishment for rape",
-                "description": "Rigorous imprisonment of not less than 7 years but which may be for life, and also liable to fine and/or death penalty in case of aggravated rape."
+                "act": "Information Technology Act, 2000",
+                "section": "66A",
+                "title": "Punishment for sending offensive messages through communication service",
+                "description": "Sending grossly offensive or menacing messages with intent to cause annoyance. Punishment up to 3 years imprisonment and fine up to 5 lakh rupees. (Note: Section 66A was partially struck down by SC in 2015)"
               },
               {
-                "act": "Indian Penal Code",
-                "section": "376A",
-                "title": "Rape by husband on wife during separation",
-                "description": "When a man commits rape on his wife who is living separate from him, he shall be punished with imprisonment of not less than 2 years."
+                "act": "Information Technology Act, 2000",
+                "section": "66C",
+                "title": "Identity theft",
+                "description": "Fraudulently or dishonestly uses electronic signature of another person. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
               },
               {
-                "act": "Protection of Children from Sexual Offences Act, 2012",
-                "section": "3",
-                "title": "Punishment for penetrative sexual assault on a child",
-                "description": "For a child below 16 years: Rigorous imprisonment for not less than 7 years and fine up to 1 lakh rupees. For 16-18 years: Rigorous imprisonment for not less than 5 years."
-              },
-              {
-                "act": "Protection of Children from Sexual Offences Act, 2012",
-                "section": "5",
-                "title": "Punishment for aggravated penetrative sexual assault",
-                "description": "Rigorous imprisonment for not less than 10 years or life imprisonment and fine up to 1 lakh rupees."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "228A",
-                "title": "Disclosure of identity of victim of rape",
-                "description": "No information shall be published in any form which discloses or tends to disclose the identity of a victim of rape."
+                "act": "Information Technology Act, 2000",
+                "section": "66D",
+                "title": "Punishment for impersonation using computer resource",
+                "description": "Impersonating through electronic means. Punishment up to 3 years imprisonment and fine up to 1 lakh rupees."
               }
             ],
             "steps": [
-              "Go to nearest police station or emergency services immediately",
-              "Report to female police officer if available (women can request this)",
-              "File FIR and get copy within 30 minutes",
-              "Do NOT bathe or change clothes before medical examination",
-              "Get medical examination at government hospital within 24 hours",
-              "Collect detailed medical report documenting injury, semen, DNA",
-              "Obtain photographs of all injuries",
-              "Provide complete statement to investigating officer",
-              "Inform police about any CCTV footage or witnesses",
-              "Request police to preserve all physical evidence",
-              "Apply for victim compensation under Victim Compensation Scheme",
-              "Request counseling support from NGOs",
-              "File anticipatory bail application if threatened by accused",
-              "Intimate court about threats or pressure to withdraw complaint"
+              "File complaint with local police cybercrime cell (can file online on police website)",
+              "Provide screenshot/documentation of all harassing messages",
+              "Include URL/links and timestamps of posts if on public platform",
+              "Provide account details of person sending harassment",
+              "Report to social media platform: Facebook, Twitter, Instagram, etc.",
+              "Use platform's built-in reporting feature for blocking and escalation",
+              "Request police to preserve evidence from ISP/platform",
+              "File separate complaints if harassment on multiple platforms",
+              "Apply for blocking order: ask platform to block harasser's account",
+              "Keep records of all communication with police and platform",
+              "Request privacy settings review on personal accounts",
+              "Apply for anticipatory bail if threatened with legal action",
+              "Seek victim protection in online harassment cases"
             ],
             "resources": [
               {
-                "name": "Women's Police Station / Special Cell",
-                "location": "District police headquarters",
-                "contact": "112",
-                "link": "https://www.keralapolice.gov.in"
-              },
-              {
-                "name": "Cyber Crime Cell (for online evidence)",
+                "name": "Cyber Crime Cell",
                 "location": "District headquarters",
-                "contact": "1930"
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
               },
               {
-                "name": "Women's Helpline",
-                "description": "24x7 support for sexual assault victims",
-                "contact": "181",
-                "link": "https://wcd.nic.in"
+                "name": "National Cyber Crime Reporting Portal",
+                "description": "Report online harassment and cyberbullying",
+                "contact": "1930",
+                "link": "https://cybercrime.gov.in"
               },
               {
-                "name": "RAINN (Rape, Abuse & Incest National Network equivalent)",
-                "description": "Confidential support for survivors",
-                "contact": "9999911007",
-                "link": "https://www.aasra.info"
-              },
-              {
-                "name": "National Commission for Women",
-                "description": "Handles sexual assault complaints and investigations",
-                "contact": "011-24363497",
-                "link": "https://ncw.nic.in"
-              },
-              {
-                "name": "Specialized Sexual Assault Units",
-                "description": "Dedicated units in district police for sexual crime investigations"
+                "name": "Cyber Harassment Legal Support",
+                "description": "Legal aid under IT Act 2000 and IPC",
+                "contact": "1800-180-7779",
+                "link": "https://nalsa.gov.in"
               },
               {
                 "name": "Ottapalam PS",
@@ -201,27 +1372,27 @@
           }
         },
         {
-          "id": 1787830093071,
-          "text": "hindu",
+          "id": 1787905094922,
+          "text": "i am neglected by my friends becuase i am black",
           "role": "user",
-          "time": "16:58",
+          "time": "13:48",
           "files": [],
           "data": null
         },
         {
-          "id": 1787830093391,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** RELIGIOUS DISCRIMINATION\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Indian Penal Code (IPC) Sections 295-298 (Religious Offences)\n\n**Key Legal Provisions:**\n* **Section Article 15** (Constitution of India): Prohibition of discrimination on grounds of religion\n* **Section Article 25-28** (Constitution of India): Right to freedom of religion\n* **Section 295** (Indian Penal Code): Injuring or defiling place of worship with intent to insult religion\n* **Section 295A** (Indian Penal Code): Deliberate and malicious acts intended to outrage religious feelings\n* **Section 298** (Indian Penal Code): Uttering words with deliberate intent to wound religious feelings\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Document instances of religious discrimination with specific dates and details\n2. Gather evidence of discriminatory behavior or statements\n3. File complaint with institution/organization administration\n4. Request written response within specific timeframe\n5. File complaint with District Commission for Minorities\n6. Approach State Minorities Commission if needed\n7. File police complaint if violence or threat involved\n8. Request protection against retaliation\n9. Seek support from religious/community organizations\n10. File RTI for institutional policies on minority rights\n11. Contact legal aid organization for representation\n12. File civil case if reputation or property damaged\n\n#### 📞 CONTACT & SUPPORT\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* National Commission for Minorities Helpline\n  ℹ️ For religious discrimination and communal violence complaints\n  ☎️ 011-23022651\n  🔗 https://ncm.nic.in\n\n* Religious Freedom Legal Support\n  ℹ️ Organizations providing legal support for religious discrimination cases\n  🔗 https://ncm.nic.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
+          "id": 1787905094952,
+          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** RACISM\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Indian Penal Code (IPC) Section 153-153A (Promoting Enmity)\n\n**Key Legal Provisions:**\n* **Section 153** (Indian Penal Code): Wantonly provoking any class by insults, &c.\n* **Section 153A** (Indian Penal Code): Promoting enmity between different groups on grounds of caste, race\n* **Section 295** (Indian Penal Code): Injuring or defiling place of worship\n* **Section 66D** (Information Technology Act, 2000): Punishment for impersonation using computer resource\n\n#### 📝 ACTIONABLE PROCEDURES\n1. File detailed police complaint with specific racist statements/incidents\n2. Provide evidence: screenshots, messages, videos, recordings\n3. Get witness statements\n4. Request police to register case under IPC Section 153A\n5. For online racism: Report to cyber police cell with URLs/screenshots\n6. File complaint with Human Rights Commission\n7. Contact National Commission for Minorities if applicable\n8. Collect evidence of psychological impact (mental health records)\n9. Apply for restraining order/injunction\n10. Request police protection if threatened\n11. Escalate to senior police officer if local police unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* District Police Headquarters\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* National Commission for Minorities\n  ℹ️ Handles complaints related to racial discrimination\n  ☎️ 011-23022651\n  🔗 https://ncm.nic.in\n\n* NALSA Legal Aid\n  ℹ️ Free legal aid for racial discrimination cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
           "role": "ai",
-          "time": "16:58",
+          "time": "13:48",
           "files": null,
           "data": {
-            "category": "religious_discrimination",
-            "confidence": 0.2,
+            "category": "racism",
+            "confidence": 0.817,
             "reason": "classified",
             "matched_categories": [
               {
-                "category": "religious_discrimination",
-                "confidence": 0.2
+                "category": "racism",
+                "confidence": 0.817
               }
             ],
             "context": {
@@ -229,59 +1400,52 @@
               "authority": null,
               "medium": null,
               "discrimination_types": [
-                "religion"
+                "race"
               ],
               "legal_framework": null,
               "location": "Ottapalam"
             },
             "legal_frameworks": [
-              "Indian Penal Code (IPC) Sections 295-298 (Religious Offences)"
+              "Indian Penal Code (IPC) Section 153-153A (Promoting Enmity)"
             ],
             "laws": [
               {
-                "act": "Constitution of India",
-                "section": "Article 15",
-                "title": "Prohibition of discrimination on grounds of religion",
-                "description": "State shall not discriminate against citizens on grounds of religion."
+                "act": "Indian Penal Code",
+                "section": "153",
+                "title": "Wantonly provoking any class by insults, &c.",
+                "description": "Acts intended or knowing to provoke breach of peace by insulting a person or class based on race/place of birth. Punishment up to 1 year imprisonment and fine up to 1000 rupees."
               },
               {
-                "act": "Constitution of India",
-                "section": "Article 25-28",
-                "title": "Right to freedom of religion",
-                "description": "Every person has right to freely profess, practice and propagate religion."
+                "act": "Indian Penal Code",
+                "section": "153A",
+                "title": "Promoting enmity between different groups on grounds of caste, race",
+                "description": "Punishment up to 3 years imprisonment and fine up to 500 rupees."
               },
               {
                 "act": "Indian Penal Code",
                 "section": "295",
-                "title": "Injuring or defiling place of worship with intent to insult religion",
-                "description": "Punishment for desecrating religious sites."
+                "title": "Injuring or defiling place of worship",
+                "description": "If symbols are defiled. Punishment up to 2 years and fine up to 1000 rupees."
               },
               {
-                "act": "Indian Penal Code",
-                "section": "295A",
-                "title": "Deliberate and malicious acts intended to outrage religious feelings",
-                "description": "Imprisonment up to 3 years and fine up to 2,000 rupees."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "298",
-                "title": "Uttering words with deliberate intent to wound religious feelings",
-                "description": "Simple imprisonment or fine for religious insults."
+                "act": "Information Technology Act, 2000",
+                "section": "66D",
+                "title": "Punishment for impersonation using computer resource",
+                "description": "If racist content posted using fake identity. Punishment up to 3 years and fine up to 1 lakh rupees."
               }
             ],
             "steps": [
-              "Document instances of religious discrimination with specific dates and details",
-              "Gather evidence of discriminatory behavior or statements",
-              "File complaint with institution/organization administration",
-              "Request written response within specific timeframe",
-              "File complaint with District Commission for Minorities",
-              "Approach State Minorities Commission if needed",
-              "File police complaint if violence or threat involved",
-              "Request protection against retaliation",
-              "Seek support from religious/community organizations",
-              "File RTI for institutional policies on minority rights",
-              "Contact legal aid organization for representation",
-              "File civil case if reputation or property damaged"
+              "File detailed police complaint with specific racist statements/incidents",
+              "Provide evidence: screenshots, messages, videos, recordings",
+              "Get witness statements",
+              "Request police to register case under IPC Section 153A",
+              "For online racism: Report to cyber police cell with URLs/screenshots",
+              "File complaint with Human Rights Commission",
+              "Contact National Commission for Minorities if applicable",
+              "Collect evidence of psychological impact (mental health records)",
+              "Apply for restraining order/injunction",
+              "Request police protection if threatened",
+              "Escalate to senior police officer if local police unresponsive"
             ],
             "resources": [
               {
@@ -291,962 +1455,14 @@
                 "link": "https://www.keralapolice.gov.in"
               },
               {
-                "name": "National Commission for Minorities Helpline",
-                "description": "For religious discrimination and communal violence complaints",
+                "name": "National Commission for Minorities",
+                "description": "Handles complaints related to racial discrimination",
                 "contact": "011-23022651",
                 "link": "https://ncm.nic.in"
               },
               {
-                "name": "Religious Freedom Legal Support",
-                "description": "Organizations providing legal support for religious discrimination cases",
-                "link": "https://ncm.nic.in"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830097857,
-          "text": "male",
-          "role": "user",
-          "time": "16:58",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830097868,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** GENDER DISCRIMINATION\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Equality Code - Constitution Article 14-15\n* Gender Discrimination in Education & Employment Laws\n\n**Key Legal Provisions:**\n* **Section Article 14** (Constitution of India): Right to equality\n* **Section Article 15** (Constitution of India): Prohibition of discrimination on grounds of sex\n* **Section Sections 2-5** (Equal Remuneration Act, 1976): Equal pay for equal work\n* **Section Protection of maternity** (Maternity Benefit Act, 1961): Protection during pregnancy and child birth\n* **Section Comprehensive coverage** (Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013): Prevention of sexual harassment at workplace\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Document instances of gender discrimination with dates, witnesses, impact\n2. Approach internal complaints committee (ICC) if in workplace/college\n3. File formal written complaint with HR or administration\n4. Request written acknowledgement of complaint filing\n5. Request time-bound investigation\n6. File complaint with District Commission for Women if no action\n7. Approach State Women's Commission for support\n8. File case under Equal Remuneration Act if wage discrimination\n9. Seek legal representation from women's legal aid\n10. File RTI for relevant policies and past complaints\n11. Contact women's rights organizations for support\n12. Approach higher authorities if institution unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Women's Police Station\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* National Commission for Women\n  ℹ️ Handles gender discrimination complaints\n  ☎️ 7827170170\n  🔗 https://ncw.nic.in\n\n* Gender Equality Legal Cell\n  ℹ️ Free legal aid for gender discrimination cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "16:58",
-          "files": null,
-          "data": {
-            "category": "gender_discrimination",
-            "confidence": 0.2,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "gender_discrimination",
-                "confidence": 0.2
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": null,
-              "discrimination_types": [
-                "gender"
-              ],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Equality Code - Constitution Article 14-15",
-              "Gender Discrimination in Education & Employment Laws"
-            ],
-            "laws": [
-              {
-                "act": "Constitution of India",
-                "section": "Article 14",
-                "title": "Right to equality",
-                "description": "Equal protection under law regardless of gender."
-              },
-              {
-                "act": "Constitution of India",
-                "section": "Article 15",
-                "title": "Prohibition of discrimination on grounds of sex",
-                "description": "State shall not discriminate on grounds of sex."
-              },
-              {
-                "act": "Equal Remuneration Act, 1976",
-                "section": "Sections 2-5",
-                "title": "Equal pay for equal work",
-                "description": "Employers cannot discriminate in wages based on sex for same work."
-              },
-              {
-                "act": "Maternity Benefit Act, 1961",
-                "section": "Protection of maternity",
-                "title": "Protection during pregnancy and child birth",
-                "description": "Employees cannot be dismissed or demoted on grounds of pregnancy."
-              },
-              {
-                "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
-                "section": "Comprehensive coverage",
-                "title": "Prevention of sexual harassment at workplace",
-                "description": "Creates mechanism for prevention, prohibition and redressal of sexual harassment of women at workplace."
-              }
-            ],
-            "steps": [
-              "Document instances of gender discrimination with dates, witnesses, impact",
-              "Approach internal complaints committee (ICC) if in workplace/college",
-              "File formal written complaint with HR or administration",
-              "Request written acknowledgement of complaint filing",
-              "Request time-bound investigation",
-              "File complaint with District Commission for Women if no action",
-              "Approach State Women's Commission for support",
-              "File case under Equal Remuneration Act if wage discrimination",
-              "Seek legal representation from women's legal aid",
-              "File RTI for relevant policies and past complaints",
-              "Contact women's rights organizations for support",
-              "Approach higher authorities if institution unresponsive"
-            ],
-            "resources": [
-              {
-                "name": "Women's Police Station",
-                "location": "District headquarters",
-                "contact": "112",
-                "link": "https://www.keralapolice.gov.in"
-              },
-              {
-                "name": "National Commission for Women",
-                "description": "Handles gender discrimination complaints",
-                "contact": "7827170170",
-                "link": "https://ncw.nic.in"
-              },
-              {
-                "name": "Gender Equality Legal Cell",
-                "description": "Free legal aid for gender discrimination cases",
-                "contact": "1800-180-7779",
-                "link": "https://nalsa.gov.in"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830126285,
-          "text": "they didnt allow in girl's toilet becuase i am a male",
-          "role": "user",
-          "time": "16:58",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830126297,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** GENDER DISCRIMINATION\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Equality Code - Constitution Article 14-15\n* Gender Discrimination in Education & Employment Laws\n\n**Key Legal Provisions:**\n* **Section Article 14** (Constitution of India): Right to equality\n* **Section Article 15** (Constitution of India): Prohibition of discrimination on grounds of sex\n* **Section Sections 2-5** (Equal Remuneration Act, 1976): Equal pay for equal work\n* **Section Protection of maternity** (Maternity Benefit Act, 1961): Protection during pregnancy and child birth\n* **Section Comprehensive coverage** (Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013): Prevention of sexual harassment at workplace\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Document instances of gender discrimination with dates, witnesses, impact\n2. Approach internal complaints committee (ICC) if in workplace/college\n3. File formal written complaint with HR or administration\n4. Request written acknowledgement of complaint filing\n5. Request time-bound investigation\n6. File complaint with District Commission for Women if no action\n7. Approach State Women's Commission for support\n8. File case under Equal Remuneration Act if wage discrimination\n9. Seek legal representation from women's legal aid\n10. File RTI for relevant policies and past complaints\n11. Contact women's rights organizations for support\n12. Approach higher authorities if institution unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Women's Police Station\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* National Commission for Women\n  ℹ️ Handles gender discrimination complaints\n  ☎️ 7827170170\n  🔗 https://ncw.nic.in\n\n* Gender Equality Legal Cell\n  ℹ️ Free legal aid for gender discrimination cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "16:58",
-          "files": null,
-          "data": {
-            "category": "gender_discrimination",
-            "confidence": 0.2,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "gender_discrimination",
-                "confidence": 0.2
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": null,
-              "discrimination_types": [
-                "gender"
-              ],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Equality Code - Constitution Article 14-15",
-              "Gender Discrimination in Education & Employment Laws"
-            ],
-            "laws": [
-              {
-                "act": "Constitution of India",
-                "section": "Article 14",
-                "title": "Right to equality",
-                "description": "Equal protection under law regardless of gender."
-              },
-              {
-                "act": "Constitution of India",
-                "section": "Article 15",
-                "title": "Prohibition of discrimination on grounds of sex",
-                "description": "State shall not discriminate on grounds of sex."
-              },
-              {
-                "act": "Equal Remuneration Act, 1976",
-                "section": "Sections 2-5",
-                "title": "Equal pay for equal work",
-                "description": "Employers cannot discriminate in wages based on sex for same work."
-              },
-              {
-                "act": "Maternity Benefit Act, 1961",
-                "section": "Protection of maternity",
-                "title": "Protection during pregnancy and child birth",
-                "description": "Employees cannot be dismissed or demoted on grounds of pregnancy."
-              },
-              {
-                "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
-                "section": "Comprehensive coverage",
-                "title": "Prevention of sexual harassment at workplace",
-                "description": "Creates mechanism for prevention, prohibition and redressal of sexual harassment of women at workplace."
-              }
-            ],
-            "steps": [
-              "Document instances of gender discrimination with dates, witnesses, impact",
-              "Approach internal complaints committee (ICC) if in workplace/college",
-              "File formal written complaint with HR or administration",
-              "Request written acknowledgement of complaint filing",
-              "Request time-bound investigation",
-              "File complaint with District Commission for Women if no action",
-              "Approach State Women's Commission for support",
-              "File case under Equal Remuneration Act if wage discrimination",
-              "Seek legal representation from women's legal aid",
-              "File RTI for relevant policies and past complaints",
-              "Contact women's rights organizations for support",
-              "Approach higher authorities if institution unresponsive"
-            ],
-            "resources": [
-              {
-                "name": "Women's Police Station",
-                "location": "District headquarters",
-                "contact": "112",
-                "link": "https://www.keralapolice.gov.in"
-              },
-              {
-                "name": "National Commission for Women",
-                "description": "Handles gender discrimination complaints",
-                "contact": "7827170170",
-                "link": "https://ncw.nic.in"
-              },
-              {
-                "name": "Gender Equality Legal Cell",
-                "description": "Free legal aid for gender discrimination cases",
-                "contact": "1800-180-7779",
-                "link": "https://nalsa.gov.in"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830148786,
-          "text": "they didnt allow  me in girl's toilet becuase i am a male",
-          "role": "user",
-          "time": "16:59",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830149097,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** GENDER DISCRIMINATION\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Equality Code - Constitution Article 14-15\n* Gender Discrimination in Education & Employment Laws\n\n**Key Legal Provisions:**\n* **Section Article 14** (Constitution of India): Right to equality\n* **Section Article 15** (Constitution of India): Prohibition of discrimination on grounds of sex\n* **Section Sections 2-5** (Equal Remuneration Act, 1976): Equal pay for equal work\n* **Section Protection of maternity** (Maternity Benefit Act, 1961): Protection during pregnancy and child birth\n* **Section Comprehensive coverage** (Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013): Prevention of sexual harassment at workplace\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Document instances of gender discrimination with dates, witnesses, impact\n2. Approach internal complaints committee (ICC) if in workplace/college\n3. File formal written complaint with HR or administration\n4. Request written acknowledgement of complaint filing\n5. Request time-bound investigation\n6. File complaint with District Commission for Women if no action\n7. Approach State Women's Commission for support\n8. File case under Equal Remuneration Act if wage discrimination\n9. Seek legal representation from women's legal aid\n10. File RTI for relevant policies and past complaints\n11. Contact women's rights organizations for support\n12. Approach higher authorities if institution unresponsive\n\n#### 📞 CONTACT & SUPPORT\n* Women's Police Station\n  📍 District headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* National Commission for Women\n  ℹ️ Handles gender discrimination complaints\n  ☎️ 7827170170\n  🔗 https://ncw.nic.in\n\n* Gender Equality Legal Cell\n  ℹ️ Free legal aid for gender discrimination cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "16:59",
-          "files": null,
-          "data": {
-            "category": "gender_discrimination",
-            "confidence": 0.2,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "gender_discrimination",
-                "confidence": 0.2
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": null,
-              "discrimination_types": [
-                "gender"
-              ],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Equality Code - Constitution Article 14-15",
-              "Gender Discrimination in Education & Employment Laws"
-            ],
-            "laws": [
-              {
-                "act": "Constitution of India",
-                "section": "Article 14",
-                "title": "Right to equality",
-                "description": "Equal protection under law regardless of gender."
-              },
-              {
-                "act": "Constitution of India",
-                "section": "Article 15",
-                "title": "Prohibition of discrimination on grounds of sex",
-                "description": "State shall not discriminate on grounds of sex."
-              },
-              {
-                "act": "Equal Remuneration Act, 1976",
-                "section": "Sections 2-5",
-                "title": "Equal pay for equal work",
-                "description": "Employers cannot discriminate in wages based on sex for same work."
-              },
-              {
-                "act": "Maternity Benefit Act, 1961",
-                "section": "Protection of maternity",
-                "title": "Protection during pregnancy and child birth",
-                "description": "Employees cannot be dismissed or demoted on grounds of pregnancy."
-              },
-              {
-                "act": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
-                "section": "Comprehensive coverage",
-                "title": "Prevention of sexual harassment at workplace",
-                "description": "Creates mechanism for prevention, prohibition and redressal of sexual harassment of women at workplace."
-              }
-            ],
-            "steps": [
-              "Document instances of gender discrimination with dates, witnesses, impact",
-              "Approach internal complaints committee (ICC) if in workplace/college",
-              "File formal written complaint with HR or administration",
-              "Request written acknowledgement of complaint filing",
-              "Request time-bound investigation",
-              "File complaint with District Commission for Women if no action",
-              "Approach State Women's Commission for support",
-              "File case under Equal Remuneration Act if wage discrimination",
-              "Seek legal representation from women's legal aid",
-              "File RTI for relevant policies and past complaints",
-              "Contact women's rights organizations for support",
-              "Approach higher authorities if institution unresponsive"
-            ],
-            "resources": [
-              {
-                "name": "Women's Police Station",
-                "location": "District headquarters",
-                "contact": "112",
-                "link": "https://www.keralapolice.gov.in"
-              },
-              {
-                "name": "National Commission for Women",
-                "description": "Handles gender discrimination complaints",
-                "contact": "7827170170",
-                "link": "https://ncw.nic.in"
-              },
-              {
-                "name": "Gender Equality Legal Cell",
-                "description": "Free legal aid for gender discrimination cases",
-                "contact": "1800-180-7779",
-                "link": "https://nalsa.gov.in"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830191186,
-          "text": "my uncle touched me badly",
-          "role": "user",
-          "time": "16:59",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830191199,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** SEXUAL ASSAULT\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Indian Penal Code (IPC) Sections 375-376 (Rape & Sexual Assault)\n\n**Key Legal Provisions:**\n* **Section 375** (Indian Penal Code): Rape\n* **Section 376** (Indian Penal Code): Punishment for rape\n* **Section 376A** (Indian Penal Code): Rape by husband on wife during separation\n* **Section 3** (Protection of Children from Sexual Offences Act, 2012): Punishment for penetrative sexual assault on a child\n* **Section 5** (Protection of Children from Sexual Offences Act, 2012): Punishment for aggravated penetrative sexual assault\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Go to nearest police station or emergency services immediately\n2. Report to female police officer if available (women can request this)\n3. File FIR and get copy within 30 minutes\n4. Do NOT bathe or change clothes before medical examination\n5. Get medical examination at government hospital within 24 hours\n6. Collect detailed medical report documenting injury, semen, DNA\n7. Obtain photographs of all injuries\n8. Provide complete statement to investigating officer\n9. Inform police about any CCTV footage or witnesses\n10. Request police to preserve all physical evidence\n11. Apply for victim compensation under Victim Compensation Scheme\n12. Request counseling support from NGOs\n13. File anticipatory bail application if threatened by accused\n14. Intimate court about threats or pressure to withdraw complaint\n\n#### 📞 CONTACT & SUPPORT\n* Women's Police Station / Special Cell\n  📍 District police headquarters\n  ☎️ 112\n  🔗 https://www.keralapolice.gov.in\n\n* Cyber Crime Cell (for online evidence)\n  📍 District headquarters\n  ☎️ 1930\n\n* Women's Helpline\n  ℹ️ 24x7 support for sexual assault victims\n  ☎️ 181\n  🔗 https://wcd.nic.in\n\n* RAINN (Rape, Abuse & Incest National Network equivalent)\n  ℹ️ Confidential support for survivors\n  ☎️ 9999911007\n  🔗 https://www.aasra.info\n\n* National Commission for Women\n  ℹ️ Handles sexual assault complaints and investigations\n  ☎️ 011-24363497\n  🔗 https://ncw.nic.in\n\n* Specialized Sexual Assault Units\n  ℹ️ Dedicated units in district police for sexual crime investigations\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "16:59",
-          "files": null,
-          "data": {
-            "category": "sexual_assault",
-            "confidence": 0.302,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "sexual_assault",
-                "confidence": 0.302
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": null,
-              "discrimination_types": [],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Indian Penal Code (IPC) Sections 375-376 (Rape & Sexual Assault)"
-            ],
-            "laws": [
-              {
-                "act": "Indian Penal Code",
-                "section": "375",
-                "title": "Rape",
-                "description": "A man is said to commit 'rape' if he penetrates his penis into the vagina, mouth, anus or urethra of a woman or makes her do so, by coercion, abuse of authority or when she is incapable of giving consent."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "376",
-                "title": "Punishment for rape",
-                "description": "Rigorous imprisonment of not less than 7 years but which may be for life, and also liable to fine and/or death penalty in case of aggravated rape."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "376A",
-                "title": "Rape by husband on wife during separation",
-                "description": "When a man commits rape on his wife who is living separate from him, he shall be punished with imprisonment of not less than 2 years."
-              },
-              {
-                "act": "Protection of Children from Sexual Offences Act, 2012",
-                "section": "3",
-                "title": "Punishment for penetrative sexual assault on a child",
-                "description": "For a child below 16 years: Rigorous imprisonment for not less than 7 years and fine up to 1 lakh rupees. For 16-18 years: Rigorous imprisonment for not less than 5 years."
-              },
-              {
-                "act": "Protection of Children from Sexual Offences Act, 2012",
-                "section": "5",
-                "title": "Punishment for aggravated penetrative sexual assault",
-                "description": "Rigorous imprisonment for not less than 10 years or life imprisonment and fine up to 1 lakh rupees."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "228A",
-                "title": "Disclosure of identity of victim of rape",
-                "description": "No information shall be published in any form which discloses or tends to disclose the identity of a victim of rape."
-              }
-            ],
-            "steps": [
-              "Go to nearest police station or emergency services immediately",
-              "Report to female police officer if available (women can request this)",
-              "File FIR and get copy within 30 minutes",
-              "Do NOT bathe or change clothes before medical examination",
-              "Get medical examination at government hospital within 24 hours",
-              "Collect detailed medical report documenting injury, semen, DNA",
-              "Obtain photographs of all injuries",
-              "Provide complete statement to investigating officer",
-              "Inform police about any CCTV footage or witnesses",
-              "Request police to preserve all physical evidence",
-              "Apply for victim compensation under Victim Compensation Scheme",
-              "Request counseling support from NGOs",
-              "File anticipatory bail application if threatened by accused",
-              "Intimate court about threats or pressure to withdraw complaint"
-            ],
-            "resources": [
-              {
-                "name": "Women's Police Station / Special Cell",
-                "location": "District police headquarters",
-                "contact": "112",
-                "link": "https://www.keralapolice.gov.in"
-              },
-              {
-                "name": "Cyber Crime Cell (for online evidence)",
-                "location": "District headquarters",
-                "contact": "1930"
-              },
-              {
-                "name": "Women's Helpline",
-                "description": "24x7 support for sexual assault victims",
-                "contact": "181",
-                "link": "https://wcd.nic.in"
-              },
-              {
-                "name": "RAINN (Rape, Abuse & Incest National Network equivalent)",
-                "description": "Confidential support for survivors",
-                "contact": "9999911007",
-                "link": "https://www.aasra.info"
-              },
-              {
-                "name": "National Commission for Women",
-                "description": "Handles sexual assault complaints and investigations",
-                "contact": "011-24363497",
-                "link": "https://ncw.nic.in"
-              },
-              {
-                "name": "Specialized Sexual Assault Units",
-                "description": "Dedicated units in district police for sexual crime investigations"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830202165,
-          "text": "he defamed me in whatsapp",
-          "role": "user",
-          "time": "17:00",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830202181,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** CYBER BULLYING\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section 499** (Indian Penal Code): Defamation\n* **Section 503-506** (Indian Penal Code): Criminal intimidation and threats\n* **Section 66E** (Information Technology Act, 2000): Violation of privacy\n* **Section 509** (Indian Penal Code): Word, gesture or act intended to insult the modesty of a woman\n* **Section 67** (Information Technology Act, 2000): Publishing or transmitting obscene material in electronic form\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Collect and preserve screenshots, URLs, timestamps and message headers of abusive content\n2. File complaint with local police cybercrime cell or file online on state police cyber portals\n3. Provide links to social media posts and request takedown from the platform\n4. File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable\n5. Request police to obtain subscriber information and preserve evidence from the platform/ISP\n6. Request interim protection orders or blocking orders against harassers\n7. Report abusive accounts to the social media platform and follow up for escalation\n8. Seek civil remedies for defamation or privacy violations (send notice to platform/accused)\n9. Obtain legal advice for takedown notices and cease-and-desist communications\n10. Keep record of all communications with police and platform; seek victim support services if needed\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report cyberbullying incidents\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* iCall Helpline\n  ℹ️ Psychological support for cyberbullying victims\n  ☎️ 9999666555\n  🔗 https://www.icallhelpline.org\n\n* Cyberbullying Legal Support\n  ℹ️ Legal aid for cyberbullying cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "17:00",
-          "files": null,
-          "data": {
-            "category": "cyber_bullying",
-            "confidence": 0.2,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "cyber_bullying",
-                "confidence": 0.2
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": "online",
-              "discrimination_types": [],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Information Technology (IT) Act, 2000 (Cyber Crime)"
-            ],
-            "laws": [
-              {
-                "act": "Indian Penal Code",
-                "section": "499",
-                "title": "Defamation",
-                "description": "Making or publishing any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "503-506",
-                "title": "Criminal intimidation and threats",
-                "description": "Threats or intimidation causing fear; online threats and harassment may attract punishment under these provisions."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "66E",
-                "title": "Violation of privacy",
-                "description": "Punishment for capturing, publishing or transmitting the image of a private area of any person without his or her consent."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "509",
-                "title": "Word, gesture or act intended to insult the modesty of a woman",
-                "description": "Insulting the modesty of a person by words, gestures or acts, which may apply when online messages target a person's dignity."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "67",
-                "title": "Publishing or transmitting obscene material in electronic form",
-                "description": "Punishment for publishing obscene content online which may be used to shame or harass victims."
-              }
-            ],
-            "steps": [
-              "Collect and preserve screenshots, URLs, timestamps and message headers of abusive content",
-              "File complaint with local police cybercrime cell or file online on state police cyber portals",
-              "Provide links to social media posts and request takedown from the platform",
-              "File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable",
-              "Request police to obtain subscriber information and preserve evidence from the platform/ISP",
-              "Request interim protection orders or blocking orders against harassers",
-              "Report abusive accounts to the social media platform and follow up for escalation",
-              "Seek civil remedies for defamation or privacy violations (send notice to platform/accused)",
-              "Obtain legal advice for takedown notices and cease-and-desist communications",
-              "Keep record of all communications with police and platform; seek victim support services if needed"
-            ],
-            "resources": [
-              {
-                "name": "Cyber Crime Cell",
-                "location": "District headquarters",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "National Cyber Crime Reporting Portal",
-                "description": "Report cyberbullying incidents",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "iCall Helpline",
-                "description": "Psychological support for cyberbullying victims",
-                "contact": "9999666555",
-                "link": "https://www.icallhelpline.org"
-              },
-              {
-                "name": "Cyberbullying Legal Support",
-                "description": "Legal aid for cyberbullying cases",
-                "contact": "1800-180-7779",
-                "link": "https://nalsa.gov.in"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830224035,
-          "text": "someone created a fake id of mine in instagram",
-          "role": "user",
-          "time": "17:00",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830224351,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** CYBER BULLYING\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section 499** (Indian Penal Code): Defamation\n* **Section 503-506** (Indian Penal Code): Criminal intimidation and threats\n* **Section 66E** (Information Technology Act, 2000): Violation of privacy\n* **Section 509** (Indian Penal Code): Word, gesture or act intended to insult the modesty of a woman\n* **Section 67** (Information Technology Act, 2000): Publishing or transmitting obscene material in electronic form\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Collect and preserve screenshots, URLs, timestamps and message headers of abusive content\n2. File complaint with local police cybercrime cell or file online on state police cyber portals\n3. Provide links to social media posts and request takedown from the platform\n4. File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable\n5. Request police to obtain subscriber information and preserve evidence from the platform/ISP\n6. Request interim protection orders or blocking orders against harassers\n7. Report abusive accounts to the social media platform and follow up for escalation\n8. Seek civil remedies for defamation or privacy violations (send notice to platform/accused)\n9. Obtain legal advice for takedown notices and cease-and-desist communications\n10. Keep record of all communications with police and platform; seek victim support services if needed\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report cyberbullying incidents\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* iCall Helpline\n  ℹ️ Psychological support for cyberbullying victims\n  ☎️ 9999666555\n  🔗 https://www.icallhelpline.org\n\n* Cyberbullying Legal Support\n  ℹ️ Legal aid for cyberbullying cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "17:00",
-          "files": null,
-          "data": {
-            "category": "cyber_bullying",
-            "confidence": 0.2,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "cyber_bullying",
-                "confidence": 0.2
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": "online",
-              "discrimination_types": [],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Information Technology (IT) Act, 2000 (Cyber Crime)"
-            ],
-            "laws": [
-              {
-                "act": "Indian Penal Code",
-                "section": "499",
-                "title": "Defamation",
-                "description": "Making or publishing any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "503-506",
-                "title": "Criminal intimidation and threats",
-                "description": "Threats or intimidation causing fear; online threats and harassment may attract punishment under these provisions."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "66E",
-                "title": "Violation of privacy",
-                "description": "Punishment for capturing, publishing or transmitting the image of a private area of any person without his or her consent."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "509",
-                "title": "Word, gesture or act intended to insult the modesty of a woman",
-                "description": "Insulting the modesty of a person by words, gestures or acts, which may apply when online messages target a person's dignity."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "67",
-                "title": "Publishing or transmitting obscene material in electronic form",
-                "description": "Punishment for publishing obscene content online which may be used to shame or harass victims."
-              }
-            ],
-            "steps": [
-              "Collect and preserve screenshots, URLs, timestamps and message headers of abusive content",
-              "File complaint with local police cybercrime cell or file online on state police cyber portals",
-              "Provide links to social media posts and request takedown from the platform",
-              "File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable",
-              "Request police to obtain subscriber information and preserve evidence from the platform/ISP",
-              "Request interim protection orders or blocking orders against harassers",
-              "Report abusive accounts to the social media platform and follow up for escalation",
-              "Seek civil remedies for defamation or privacy violations (send notice to platform/accused)",
-              "Obtain legal advice for takedown notices and cease-and-desist communications",
-              "Keep record of all communications with police and platform; seek victim support services if needed"
-            ],
-            "resources": [
-              {
-                "name": "Cyber Crime Cell",
-                "location": "District headquarters",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "National Cyber Crime Reporting Portal",
-                "description": "Report cyberbullying incidents",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "iCall Helpline",
-                "description": "Psychological support for cyberbullying victims",
-                "contact": "9999666555",
-                "link": "https://www.icallhelpline.org"
-              },
-              {
-                "name": "Cyberbullying Legal Support",
-                "description": "Legal aid for cyberbullying cases",
-                "contact": "1800-180-7779",
-                "link": "https://nalsa.gov.in"
-              },
-              {
-                "name": "Ottapalam PS",
-                "location": "Ottapalam, Palakkad – 679101",
-                "contact": "0466-2244325",
-                "link": "https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA"
-              },
-              {
-                "name": "PK Das Institute of Medical Sciences",
-                "description": "Vaniamkulam, Ottapalam – 679522",
-                "contact": "0466-2344500"
-              },
-              {
-                "name": "Adv. Nikhil Raj",
-                "description": null,
-                "contact": "98901 23458"
-              }
-            ],
-            "case_references": [],
-            "warnings": []
-          }
-        },
-        {
-          "id": 1787830235148,
-          "text": "fake account",
-          "role": "user",
-          "time": "17:00",
-          "files": [],
-          "data": null
-        },
-        {
-          "id": 1787830235171,
-          "text": "### 📋 LEGAL PRELIMINARY REPORT\n\n#### 🏷️ CASE SUMMARY\n* **Categories:** IMPERSONATION DOXXING, CYBER BULLYING\n\n#### ⚖️ STATUTORY FRAMEWORK\n**Governing Acts:**\n* Information Technology (IT) Act, 2000 (Cyber Crime)\n\n**Key Legal Provisions:**\n* **Section 66C** (Information Technology Act, 2000): Identity theft\n* **Section 66D** (Information Technology Act, 2000): Cheating by personation by using computer resource\n* **Section 499** (Indian Penal Code): Defamation\n* **Section 500** (Indian Penal Code): Punishment for defamation\n* **Section 406** (Indian Penal Code): Punishment for criminal breach of trust\n\n#### 📝 ACTIONABLE PROCEDURES\n1. Screenshot and document fake profile/account with all posts and comments\n2. Report fake account to social media platform immediately with evidence\n3. Request platform to remove profile and block impersonator\n4. File police complaint under IT Act 66C/66D at cyber crime cell\n5. Provide all screenshots, profile links, and evidence of impersonation\n6. Get case reference number from police\n7. File defamation case in civil court if reputation damaged\n8. Send legal notice to impersonator demanding removal of fake profile\n9. Request platform to disclose IP address and user information to police\n10. Monitor for continued impersonation activity\n11. Claim damages in civil court for mental harassment and reputation loss\n12. Register complaint on National Cyber Crime Reporting Portal (cybercrime.gov.in)\n13. Collect and preserve screenshots, URLs, timestamps and message headers of abusive content\n14. File complaint with local police cybercrime cell or file online on state police cyber portals\n15. Provide links to social media posts and request takedown from the platform\n16. File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable\n17. Request police to obtain subscriber information and preserve evidence from the platform/ISP\n18. Request interim protection orders or blocking orders against harassers\n19. Report abusive accounts to the social media platform and follow up for escalation\n20. Seek civil remedies for defamation or privacy violations (send notice to platform/accused)\n21. Obtain legal advice for takedown notices and cease-and-desist communications\n22. Keep record of all communications with police and platform; seek victim support services if needed\n\n#### 📞 CONTACT & SUPPORT\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report identity theft and doxxing\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* Cyber Crime Legal Support\n  ℹ️ Legal aid under IT Act 2000 (Sections 66C, 66D)\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Cyber Crime Cell\n  📍 District headquarters\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* National Cyber Crime Reporting Portal\n  ℹ️ Report cyberbullying incidents\n  ☎️ 1930\n  🔗 https://cybercrime.gov.in\n\n* iCall Helpline\n  ℹ️ Psychological support for cyberbullying victims\n  ☎️ 9999666555\n  🔗 https://www.icallhelpline.org\n\n* Cyberbullying Legal Support\n  ℹ️ Legal aid for cyberbullying cases\n  ☎️ 1800-180-7779\n  🔗 https://nalsa.gov.in\n\n* Ottapalam PS\n  📍 Ottapalam, Palakkad – 679101\n  ☎️ 0466-2244325\n  🔗 https://maps.app.goo.gl/ZhKSyLfDPfZQkVEfA\n\n* PK Das Institute of Medical Sciences\n  ℹ️ Vaniamkulam, Ottapalam – 679522\n  ☎️ 0466-2344500\n\n* Adv. Nikhil Raj\n  ☎️ 98901 23458\n\n\n---\n**PROVISIONAL NEXT STEPS**: You are advised to consult with a registered legal practitioner or visit the nearest police station for formal proceedings.",
-          "role": "ai",
-          "time": "17:00",
-          "files": null,
-          "data": {
-            "category": "impersonation_doxxing",
-            "confidence": 0.266,
-            "reason": "classified",
-            "matched_categories": [
-              {
-                "category": "impersonation_doxxing",
-                "confidence": 0.266
-              },
-              {
-                "category": "cyber_bullying",
-                "confidence": 0.2
-              }
-            ],
-            "context": {
-              "age_indicator": null,
-              "authority": null,
-              "medium": "online",
-              "discrimination_types": [],
-              "legal_framework": null,
-              "location": "Ottapalam"
-            },
-            "legal_frameworks": [
-              "Information Technology (IT) Act, 2000 (Cyber Crime)"
-            ],
-            "laws": [
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "66C",
-                "title": "Identity theft",
-                "description": "Whoever fraudulently or dishonestly makes use of the electronic signature, password or any other unique identification feature of any other person, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to rupees one lakh."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "66D",
-                "title": "Cheating by personation by using computer resource",
-                "description": "Whoever by means of computer resource or communications device cheats by personation, shall be punished with imprisonment of either description for a term which may extend to three years and shall also be liable to fine which may extend to rupees one lakh."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "499",
-                "title": "Defamation",
-                "description": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm his reputation or knowing it to be likely to harm his reputation, commits defamation."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "500",
-                "title": "Punishment for defamation",
-                "description": "Whoever defames another shall be punished with simple imprisonment for a term which may extend to two years, or with fine which may extend to five hundred rupees, or with both."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "406",
-                "title": "Punishment for criminal breach of trust",
-                "description": "Whoever, being in any manner entrusted with property, or with any dominion over property in his capacity of a public servant or by virtue of any law for the time being in force, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "67",
-                "title": "Punishment for publishing obscene material in electronic form",
-                "description": "Applies if personal images are shared without consent along with impersonation."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "503-506",
-                "title": "Criminal intimidation and threats",
-                "description": "Threats or intimidation causing fear; online threats and harassment may attract punishment under these provisions."
-              },
-              {
-                "act": "Information Technology Act, 2000",
-                "section": "66E",
-                "title": "Violation of privacy",
-                "description": "Punishment for capturing, publishing or transmitting the image of a private area of any person without his or her consent."
-              },
-              {
-                "act": "Indian Penal Code",
-                "section": "509",
-                "title": "Word, gesture or act intended to insult the modesty of a woman",
-                "description": "Insulting the modesty of a person by words, gestures or acts, which may apply when online messages target a person's dignity."
-              }
-            ],
-            "steps": [
-              "Screenshot and document fake profile/account with all posts and comments",
-              "Report fake account to social media platform immediately with evidence",
-              "Request platform to remove profile and block impersonator",
-              "File police complaint under IT Act 66C/66D at cyber crime cell",
-              "Provide all screenshots, profile links, and evidence of impersonation",
-              "Get case reference number from police",
-              "File defamation case in civil court if reputation damaged",
-              "Send legal notice to impersonator demanding removal of fake profile",
-              "Request platform to disclose IP address and user information to police",
-              "Monitor for continued impersonation activity",
-              "Claim damages in civil court for mental harassment and reputation loss",
-              "Register complaint on National Cyber Crime Reporting Portal (cybercrime.gov.in)",
-              "Collect and preserve screenshots, URLs, timestamps and message headers of abusive content",
-              "File complaint with local police cybercrime cell or file online on state police cyber portals",
-              "Provide links to social media posts and request takedown from the platform",
-              "File FIR under relevant IPC sections (e.g., 499, 503, 506, 509) and IT Act provisions as applicable",
-              "Request police to obtain subscriber information and preserve evidence from the platform/ISP",
-              "Request interim protection orders or blocking orders against harassers",
-              "Report abusive accounts to the social media platform and follow up for escalation",
-              "Seek civil remedies for defamation or privacy violations (send notice to platform/accused)",
-              "Obtain legal advice for takedown notices and cease-and-desist communications",
-              "Keep record of all communications with police and platform; seek victim support services if needed"
-            ],
-            "resources": [
-              {
-                "name": "Cyber Crime Cell",
-                "location": "District headquarters",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "National Cyber Crime Reporting Portal",
-                "description": "Report identity theft and doxxing",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "Cyber Crime Legal Support",
-                "description": "Legal aid under IT Act 2000 (Sections 66C, 66D)",
-                "contact": "1800-180-7779",
-                "link": "https://nalsa.gov.in"
-              },
-              {
-                "name": "Cyber Crime Cell",
-                "location": "District headquarters",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "National Cyber Crime Reporting Portal",
-                "description": "Report cyberbullying incidents",
-                "contact": "1930",
-                "link": "https://cybercrime.gov.in"
-              },
-              {
-                "name": "iCall Helpline",
-                "description": "Psychological support for cyberbullying victims",
-                "contact": "9999666555",
-                "link": "https://www.icallhelpline.org"
-              },
-              {
-                "name": "Cyberbullying Legal Support",
-                "description": "Legal aid for cyberbullying cases",
+                "name": "NALSA Legal Aid",
+                "description": "Free legal aid for racial discrimination cases",
                 "contact": "1800-180-7779",
                 "link": "https://nalsa.gov.in"
               },
@@ -1272,8 +1488,8 @@
           }
         }
       ],
-      "timestamp": "2026-08-27T11:27:46.825Z"
+      "timestamp": "2026-08-28T07:37:57.423Z"
     }
   ],
-  "activeConsultationId": "1787830066825"
+  "activeConsultationId": "1787902677423"
 }

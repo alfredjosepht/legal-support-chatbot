@@ -17,7 +17,7 @@
     "mode":"default"
   },
   "labels":{
-    "textcat":[
+    "textcat_multilabel":[
       "administrative_violation",
       "blackmail_extortion",
       "caste_discrimination",
@@ -42,10 +42,10 @@
     ]
   },
   "pipeline":[
-    "textcat"
+    "textcat_multilabel"
   ],
   "components":[
-    "textcat"
+    "textcat_multilabel"
   ],
   "disabled":[
 

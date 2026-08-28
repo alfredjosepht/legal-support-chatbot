@@ -1,0 +1,26 @@
+{
+  "labels":[
+    "administrative_violation",
+    "blackmail_extortion",
+    "caste_discrimination",
+    "cyber_bullying",
+    "cyber_harassment",
+    "cyber_sexual_crime",
+    "defamation_privacy_fraud",
+    "gender_discrimination",
+    "general_discrimination",
+    "impersonation_doxxing",
+    "institutional_misconduct",
+    "online_hate_speech",
+    "physical_assault",
+    "racism",
+    "ragging",
+    "religious_discrimination",
+    "sexual_assault",
+    "sexual_harassment",
+    "stalking",
+    "threats",
+    "verbal_abuse"
+  ],
+  "threshold":0.5
+}

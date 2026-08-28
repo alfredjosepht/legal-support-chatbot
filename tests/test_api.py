@@ -63,7 +63,7 @@ def test_chat_categories():
 
     # Bullying test
     res = client.post("/chat", json={"message": "he bullied me"}).json()
-    assert res["category"] == "cyber_bullying"
+    assert res["category"] == "ragging"
 
     # Assault test
     res = client.post("/chat", json={"message": "someone punched me"}).json()
