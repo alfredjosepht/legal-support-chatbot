@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from nlp.postprocess import postprocess_categories, get_legal_framework
 from nlp.complaint_detector import predict_complaint
+from nlp.llm_client import generate_legal_summary
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -142,6 +143,7 @@ class ChatResponse(BaseModel):
     is_complaint: bool | None = True
     message: str | None = None
     status: str | None = None
+    answer_text: str | None = None
 
 
 
@@ -217,7 +219,9 @@ def chat(user_input: ChatRequest):
             "confidence": 0.0,
             "reason": "empty_input",
             "is_complaint": False,
+            "status": "not_complaint",
             "message": "Please describe the legal issue or incident you want help with.",
+            "answer_text": "Please describe the legal issue or incident you want help with.",
             "matched_categories": [],
             "context": {},
             "legal_frameworks": [],
@@ -240,6 +244,7 @@ def chat(user_input: ChatRequest):
             "is_complaint": False,
             "status": "not_complaint",
             "message": "Please describe the legal issue or incident you want help with.",
+            "answer_text": "Please describe the legal issue or incident you want help with.",
             "matched_categories": [],
             "context": {
                 "age_indicator": None,
@@ -360,11 +365,13 @@ def chat(user_input: ChatRequest):
             if res_list and isinstance(res_list, list):
                 all_resources.extend(res_list)
 
-    return {
+    report_payload = {
+        "user_query": text,
         "category": category,
         "confidence": confidence,
         "reason": reason,
         "is_complaint": True,
+        "status": "complaint",
         "matched_categories": matched_categories,
         "context": {
             "age_indicator": context.get('age_indicator'),
@@ -381,4 +388,10 @@ def chat(user_input: ChatRequest):
         "case_references": all_case_references,
         "warnings": warnings
     }
+
+    # Stage 3: Local LLM Response Formatting Layer (Ollama + Qwen)
+    answer_text = generate_legal_summary(report_payload)
+    report_payload["answer_text"] = answer_text
+
+    return report_payload
 

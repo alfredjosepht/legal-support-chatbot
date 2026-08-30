@@ -37,3 +37,6 @@ frontend/build/
 # Logs & temp
 *.log
 /tmp/
+
+# User data
+data/consultations/
