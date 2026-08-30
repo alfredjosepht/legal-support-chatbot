@@ -70,5 +70,11 @@
   },
   "test_user_1787902420": {
     "password": "9314ad8e9256352712a456379b8e26cf$81ad70f21158779c1a7c9944bd8e50ec7a237be887ebb009f09e967356d4d075"
+  },
+  "test_user_1788072820": {
+    "password": "b8fe94efec3bac259ad7d31b438156ef$f93c08c32499e01612356bd9ee96407356af1022a76d4057d8beb1878c6aa8cd"
+  },
+  "testusertestuser": {
+    "password": "f8784ff1429b7b28cb15f4cf47295bab$e78f238b5e4e5d3ffe46ec40a972bb76b6e2546dcac2dfc2882affc53da7ed6d"
   }
 }

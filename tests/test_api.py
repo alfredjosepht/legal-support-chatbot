@@ -66,8 +66,9 @@ def test_chat_categories():
     assert res["category"] == "ragging"
 
     # Assault test
-    res = client.post("/chat", json={"message": "someone punched me"}).json()
+    res = client.post("/chat", json={"message": "my senior punched me"}).json()
     assert res["category"] == "physical_assault"
+    assert res["is_complaint"] is True
 
     print("[PASS] test_chat_categories")
 
@@ -102,10 +103,32 @@ def test_consultations():
     print("[PASS] test_consultations")
 
 
+def test_complaint_gate():
+    # Non-complaints
+    for greeting in ["hello", "good morning", "thanks", "what is the time", "tell me a joke"]:
+        res = client.post("/chat", json={"message": greeting}).json()
+        assert res["category"] == "not_complaint", f"Expected not_complaint for '{greeting}', got {res['category']}"
+        assert res.get("is_complaint") is False
+        assert len(res["laws"]) == 0
+        assert len(res["steps"]) == 0
+        assert len(res["resources"]) == 0
+        assert "message" in res and res["message"] is not None
+
+    # Valid complaints
+    for complaint in ["my senior punched me", "someone leaked my photo", "he is blackmailing me"]:
+        res = client.post("/chat", json={"message": complaint}).json()
+        assert res["category"] != "not_complaint", f"Expected complaint classification for '{complaint}'"
+        assert res.get("is_complaint") is True
+        assert len(res["laws"]) > 0 or len(res["steps"]) > 0
+
+    print("[PASS] test_complaint_gate")
+
+
 if __name__ == "__main__":
     test_root()
     test_locations()
     test_chat_empty()
+    test_complaint_gate()
     test_chat_valid()
     test_chat_categories()
     test_signup_and_login()

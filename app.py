@@ -8,6 +8,7 @@ import json
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from nlp.postprocess import postprocess_categories, get_legal_framework
+from nlp.complaint_detector import predict_complaint
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -138,6 +139,9 @@ class ChatResponse(BaseModel):
     resources: list
     case_references: list
     warnings: list                 # NEW: safety flags or additional notes
+    is_complaint: bool | None = True
+    message: str | None = None
+    status: str | None = None
 
 
 
@@ -212,6 +216,8 @@ def chat(user_input: ChatRequest):
             "category": "unknown",
             "confidence": 0.0,
             "reason": "empty_input",
+            "is_complaint": False,
+            "message": "Please describe the legal issue or incident you want help with.",
             "matched_categories": [],
             "context": {},
             "legal_frameworks": [],
@@ -222,6 +228,36 @@ def chat(user_input: ChatRequest):
             "warnings": []
         }
 
+    location = user_input.location or None
+
+    # Stage 1: Binary Complaint Detection Gate (Logistic Regression + TF-IDF)
+    complaint_eval = predict_complaint(text)
+    if not complaint_eval.get("is_complaint", False):
+        return {
+            "category": "not_complaint",
+            "confidence": complaint_eval["confidence"],
+            "reason": "not_complaint",
+            "is_complaint": False,
+            "status": "not_complaint",
+            "message": "Please describe the legal issue or incident you want help with.",
+            "matched_categories": [],
+            "context": {
+                "age_indicator": None,
+                "authority": None,
+                "medium": None,
+                "discrimination_types": [],
+                "legal_framework": None,
+                "location": location
+            },
+            "legal_frameworks": [],
+            "laws": [],
+            "steps": [],
+            "resources": [],
+            "case_references": [],
+            "warnings": []
+        }
+
+    # Stage 2: spaCy Multi-Class Crime Classification & Legal Mapping (Complaints only)
     doc = nlp(text)
 
     # Apply postprocessing with context extraction and age-based rules
@@ -328,6 +364,7 @@ def chat(user_input: ChatRequest):
         "category": category,
         "confidence": confidence,
         "reason": reason,
+        "is_complaint": True,
         "matched_categories": matched_categories,
         "context": {
             "age_indicator": context.get('age_indicator'),
