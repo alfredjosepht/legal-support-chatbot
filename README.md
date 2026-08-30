@@ -182,6 +182,7 @@ legal-support-chatbot/
 ├── README.md                          # Comprehensive project documentation
 ├── app.py                             # FastAPI backend API router & pipeline coordinator
 ├── requirements.txt                   # Python backend dependencies
+├── setup.sh                           # One-time environment setup script (Linux / macOS)
 ├── start.ps1                          # PowerShell startup script (Windows)
 ├── start.bat                          # Batch startup script (Windows)
 ├── start.sh                           # Shell startup script (Linux / macOS)
@@ -228,6 +229,8 @@ legal-support-chatbot/
 │   ├── create_complaint_dataset.py   # Generates Stage 1 binary training dataset
 │   └── generate_dataset.py           # Generates Stage 2 20-category multi-class dataset
 │
+├── scratch/                          # Developer scratch scripts (not for production)
+│
 └── tests/                            # Automated Testing Suite
     ├── test_complaint_detector.py    # Unit tests for Stage 1 gate (20 test cases)
     ├── test_postprocess.py           # Unit tests for context extraction (7 test cases)
@@ -256,7 +259,7 @@ legal-support-chatbot/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/legal-support-chatbot.git
+git clone https://github.com/<your-username>/legal-support-chatbot.git
 cd legal-support-chatbot
 ```
 

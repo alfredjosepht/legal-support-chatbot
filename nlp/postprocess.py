@@ -123,7 +123,9 @@ IMPERSONATION_KEYWORDS = [
     "pretending to be me", "pretend to be me", "catfish", "catfishing", "doxx", "doxxing",
     "leaked my number", "leaked my phone", "leaked my address", "posted my address",
     "shared my contact", "shared my phone", "shared my address", "identity theft",
-    "stole my photos", "stole my picture", "cloned my profile", "cloned my account"
+    "stole my photos", "stole my picture", "cloned my profile", "cloned my account",
+    "leaked my photo", "leaked my photos", "leaked my picture", "leaked my pictures",
+    "leaked photo", "leaked picture", "leaked video"
 ]
 
 DEFAMATION_KEYWORDS = [
@@ -176,6 +178,18 @@ BLACKMAIL_KEYWORDS = [
     "if i dont pay", "if i don't pay", "if you dont pay", "if you don't pay",
     "leak my chats", "leak my messages", "pay her or", "pay him or",
     "pay or", "or she will leak", "or he will leak", "if i don't", "if i dont"
+]
+
+SEVERE_SEXUAL_ASSAULT_KEYWORDS = [
+    "rape", "raped", "raping", "gangrape", "gang rape", "penetrat", "penetrated", "penetration", "forced sex",
+    "sexually assaulted", "sexual assault"
+]
+
+SEXUAL_HARASSMENT_KEYWORDS = [
+    "touch", "touched", "touching", "grop", "groped", "groping", "molest", "molested", "molesting",
+    "harass", "harassment", "harassed", "sexual comment", "sexual comments", "sexual joke", "sexual jokes",
+    "sexual advance", "sexual advances", "sexual remarks", "lewd", "gesture", "gestures", "stare", "staring",
+    "catcall", "catcalling", "wink", "hug", "kiss", "kissing", "flashing", "exposed himself"
 ]
 
 AGE_KEYWORDS_MINOR = [
@@ -341,59 +355,47 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
             final_cats['cyber_sexual_crime'] = raw_cats['cyber_sexual_crime']
             context['legal_framework'] = 'POCSO'
 
-    # ========== RULE: Authority / College context favors Ragging ==========
-    if authority == 'senior_student' or any(kw in text_lower for kw in COLLEGE_KEYWORDS) or 'ragg' in text_lower:
-        has_ragging_keywords = 'ragg' in text_lower or any(kw in text_lower for kw in 
-                                                           ['senior', 'juniors', 'initiation', 'ritualistic'])
-        has_admin_keywords = any(kw in text_lower for kw in ['certificate', 'documents', 'TC', 'migration', 
-                                                              'hold', 'held', 'withhold', 'deny', 'refuse', 'fees', 
-                                                              'bond', 'undertaking', 'admin', 'office', 'paper', 'exam', 
-                                                              'marks', 'grade', 'assignment', 'degree', 'result'])
-        has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
+    has_severe_assault = any(_has_kw(text_lower, kw) for kw in SEVERE_SEXUAL_ASSAULT_KEYWORDS)
+    has_sexual_harass = (
+        any(_has_kw(text_lower, kw) for kw in SEXUAL_HARASSMENT_KEYWORDS)
+        or (authority in ['faculty', 'administration'] and any(_has_kw(text_lower, kw) for kw in ['touch', 'touched', 'touching', 'harass', 'harassment', 'comment', 'comments', 'sexual']))
+    )
 
-        if has_ragging_keywords and 'ragging' in raw_cats:
-            boosted = max(raw_cats.get('ragging', 0), 0.22)
-            final_cats['ragging'] = boosted
+    # ========== RULE: Authority / College context ==========
+    has_explicit_ragging = 'ragg' in text_lower or any(_has_kw(text_lower, kw) for kw in ['senior', 'juniors', 'batchmate', 'classmate', 'peer', 'initiation', 'ritualistic'])
+    has_admin_keywords = any(kw in text_lower for kw in ['certificate', 'documents', 'TC', 'migration', 
+                                                          'hold', 'held', 'withhold', 'deny', 'refuse', 'fees', 
+                                                          'bond', 'undertaking', 'admin', 'office', 'paper', 'exam', 
+                                                          'marks', 'grade', 'assignment', 'degree', 'result'])
 
-            if not has_sexual_keywords:
-                if 'sexual_assault' in raw_cats:
-                    raw_cats['sexual_assault'] = 0.0
-                if 'sexual_harassment' in raw_cats:
-                    raw_cats['sexual_harassment'] = 0.0
+    if authority in ['faculty', 'administration']:
+        # Faculty / Admin cannot commit ragging (ragging is strictly student-on-student)
+        if not has_explicit_ragging:
+            raw_cats['ragging'] = 0.0
+            if 'ragging' in final_cats:
+                del final_cats['ragging']
+        if has_sexual_harass or has_severe_assault:
+            final_cats['institutional_misconduct'] = max(raw_cats.get('institutional_misconduct', 0), 0.25)
+    elif (authority == 'senior_student' or any(kw in text_lower for kw in COLLEGE_KEYWORDS) or 'ragg' in text_lower) and has_explicit_ragging:
+        if 'ragging' in raw_cats:
+            final_cats['ragging'] = max(raw_cats.get('ragging', 0), 0.25)
 
-        elif has_admin_keywords and 'administrative_violation' in raw_cats:
-            boosted = max(raw_cats.get('administrative_violation', 0), 0.20)
-            final_cats['administrative_violation'] = boosted
-        elif has_admin_keywords and 'institutional_misconduct' in raw_cats:
-            boosted = max(raw_cats.get('institutional_misconduct', 0), 0.20)
-            final_cats['institutional_misconduct'] = boosted
-        elif 'ragging' in raw_cats and not has_sexual_keywords:
-            if authority in ['faculty', 'administration']:
-                if 'institutional_misconduct' in raw_cats:
-                    boosted = max(raw_cats.get('institutional_misconduct', 0), 0.20)
-                    final_cats['institutional_misconduct'] = boosted
-            else:
-                boosted = max(raw_cats.get('ragging', 0), 0.22)
-                final_cats['ragging'] = boosted
-    
-    if age_indicator == 'adult':
-        has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'sexual', 'assault', 'harass', 'touch', 'molest'])
-        if has_sexual_keywords:
-            if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.12:
-                final_cats['sexual_harassment'] = max(raw_cats['sexual_harassment'], 0.30)
-            if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.09:
-                final_cats['sexual_assault'] = max(raw_cats['sexual_assault'], 0.30)
-    
-    # ========== RULE: Sexual Crimes (General - Age Unknown) ==========
-    if age_indicator is None:
-        has_sexual_keywords = any(kw in text_lower for kw in ['rape', 'raped', 'sexual', 'assault', 'harass', 'touch', 'touched', 'molest'])
-        if has_sexual_keywords:
-            if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] >= 0.07:
-                final_cats['sexual_assault'] = max(raw_cats['sexual_assault'], 0.30)
-            if authority in ['faculty', 'administration'] or any(kw in text_lower for kw in ['touch', 'touched', 'harass', 'comment', 'comments']):
-                final_cats['sexual_harassment'] = max(raw_cats.get('sexual_harassment', 0), 0.30)
-            elif 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.10:
-                final_cats['sexual_harassment'] = max(raw_cats['sexual_harassment'], 0.30)
+    if has_admin_keywords and 'administrative_violation' in raw_cats:
+        final_cats['administrative_violation'] = max(raw_cats.get('administrative_violation', 0), 0.25)
+    if has_admin_keywords and 'institutional_misconduct' in raw_cats:
+        final_cats['institutional_misconduct'] = max(raw_cats.get('institutional_misconduct', 0), 0.25)
+
+    # ========== RULE: Sexual Crimes Separation (Assault vs Harassment) ==========
+    if has_severe_assault:
+        final_cats['sexual_assault'] = max(raw_cats.get('sexual_assault', 0), 0.35)
+    elif has_sexual_harass:
+        final_cats['sexual_harassment'] = max(raw_cats.get('sexual_harassment', 0), 0.30)
+        # Suppress false positive sexual_assault when it is harassment/touching without severe penetrative assault
+        raw_cats['sexual_assault'] = 0.0
+        if 'sexual_assault' in final_cats:
+            del final_cats['sexual_assault']
+    elif 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] >= 0.25:
+        final_cats['sexual_harassment'] = raw_cats['sexual_harassment']
     
     # ========== RULE: Context Validation (Online/Offline) ==========
     has_bullying_terms = any(_has_kw(text_lower, term) for term in ['bullying', 'bullied', 'bully', 'cyberbullying', 'cyberbullied', 'cyberbully'])
@@ -422,18 +424,18 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
                 or any(kw in text_lower for kw in ['message', 'messages', 'comment', 'comments', 'nasty', 'harass', 'stalking', 'insulting', 'humiliate', 'abusive'])
             )
             if has_harass_signals:
-                final_cats['cyber_harassment'] = max(raw_cats.get('cyber_harassment', 0), 0.20)
+                final_cats['cyber_harassment'] = max(raw_cats.get('cyber_harassment', 0), 0.25)
     
     # Keyword-based hate speech detection (lower threshold when online + hate keywords)
     has_hate_speech_kws = any(kw in text_lower for kw in HATE_SPEECH_KEYWORDS)
     if 'online_hate_speech' in raw_cats:
         if medium in ['online', 'mixed']:
             if raw_cats['online_hate_speech'] >= 0.10 or has_hate_speech_kws:
-                final_cats['online_hate_speech'] = max(raw_cats.get('online_hate_speech', 0), 0.20)
+                final_cats['online_hate_speech'] = max(raw_cats.get('online_hate_speech', 0), 0.25)
         elif has_hate_speech_kws and is_online:
-            final_cats['online_hate_speech'] = max(raw_cats.get('online_hate_speech', 0), 0.20)
+            final_cats['online_hate_speech'] = max(raw_cats.get('online_hate_speech', 0), 0.25)
     elif has_hate_speech_kws and is_online:
-        final_cats['online_hate_speech'] = max(raw_cats.get('online_hate_speech', 0), 0.20)
+        final_cats['online_hate_speech'] = max(raw_cats.get('online_hate_speech', 0), 0.25)
     
     if 'cyber_sexual_crime' in raw_cats or has_cyber_sexual:
         if is_online or has_cyber_sexual:
@@ -449,7 +451,7 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
 
     # Non-consensual photo / video taking (Privacy violation) & Defamation
     has_unauthorized_photo = (
-        any(_has_kw(text_lower, kw) for kw in ['without my permission', 'without permission', 'without consent', 'without my consent'])
+        any(_has_kw(text_lower, kw) for kw in ['without my permission', 'without permission', 'without consent', 'without my consent', 'leaked', 'leak', 'leaking', 'stole', 'stolen'])
         and any(_has_kw(text_lower, kw) for kw in ['photo', 'photos', 'picture', 'pictures', 'pic', 'pics', 'image', 'images', 'video', 'videos'])
     )
     has_defamation = any(_has_kw(text_lower, kw) for kw in DEFAMATION_KEYWORDS)
@@ -482,10 +484,7 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
             or (has_bullying_keywords and raw_cats.get('cyber_bullying', 0) >= 0.10)
         ):
             if is_online or has_explicit_cyber or has_online_context or has_cyber_keywords:
-                if has_cyber_keywords or has_bullying_keywords:
-                    boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.20)
-                else:
-                    boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.15)
+                boosted_cyber = max(raw_cats.get('cyber_bullying', 0), 0.25)
 
                 if not has_unauthorized_photo or has_bullying_terms:
                     final_cats['cyber_bullying'] = boosted_cyber
@@ -506,7 +505,7 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
     if 'physical_assault' in raw_cats or any(_has_kw(text_lower, kw) for kw in PHYSICAL_KEYWORDS) or 'rape' in text_lower or 'raped' in text_lower:
         if any(_has_kw(text_lower, kw) for kw in PHYSICAL_KEYWORDS) or 'rape' in text_lower or 'raped' in text_lower:
             final_cats['physical_assault'] = max(raw_cats.get('physical_assault', 0), 0.35)
-        elif raw_cats.get('physical_assault', 0) >= 0.20:
+        elif raw_cats.get('physical_assault', 0) >= 0.25:
             final_cats['physical_assault'] = raw_cats['physical_assault']
 
     # ========== RULE: Sexual Assault priority over Physical Assault ==========
@@ -524,8 +523,10 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
     has_ragging_kw = 'ragg' in text_lower or any(_has_kw(text_lower, kw) for kw in ['senior', 'juniors', 'initiation', 'ritualistic'])
     has_college_kw = any(_has_kw(text_lower, kw) for kw in COLLEGE_KEYWORDS)
     if 'ragging' in raw_cats and (has_ragging_kw or has_college_kw or has_bullying_terms or raw_cats['ragging'] >= 0.35):
-        if raw_cats['ragging'] >= 0.18:
+        if raw_cats['ragging'] >= 0.25:
             final_cats['ragging'] = raw_cats['ragging']
+        elif has_ragging_kw or has_college_kw:
+            final_cats['ragging'] = max(raw_cats['ragging'], 0.25)
     
     # ========== RULE: Stalking - Requires Persistence ==========
     has_stalk_kws = any(kw in text_lower for kw in STALKING_KEYWORDS)
@@ -542,18 +543,17 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
     
     # ========== RULE: Threat Validation ==========
     if any(kw in text_lower for kw in THREAT_KEYWORDS):
-        # Boost to at least 0.20 when explicit threat keywords are present — remove hard score gate
-        boosted = max(raw_cats.get('threats', 0), 0.20)
+        boosted = max(raw_cats.get('threats', 0), 0.25)
         final_cats['threats'] = boosted
                 
     # ========== RULE: Verbal Abuse Validation ==========
     if any(kw in text_lower for kw in VERBAL_ABUSE_KEYWORDS):
-        boosted = max(raw_cats.get('verbal_abuse', 0), 0.20)
+        boosted = max(raw_cats.get('verbal_abuse', 0), 0.25)
         final_cats['verbal_abuse'] = boosted
         
     # ========== RULE: Blackmail & Extortion Validation ==========
     if any(kw in text_lower for kw in BLACKMAIL_KEYWORDS):
-        boosted = max(raw_cats.get('blackmail_extortion', 0), 0.20)
+        boosted = max(raw_cats.get('blackmail_extortion', 0), 0.25)
         final_cats['blackmail_extortion'] = boosted
         if 'physical_assault' in raw_cats and raw_cats['physical_assault'] < 0.20:
             raw_cats['physical_assault'] = 0.0
@@ -570,7 +570,7 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
     for dt in discrimination_types:
         cat_name = disc_type_to_cat.get(dt)
         if cat_name in raw_cats:
-            boosted = max(raw_cats.get(cat_name, 0), 0.20)
+            boosted = max(raw_cats.get(cat_name, 0), 0.25)
             final_cats[cat_name] = boosted
             explicit_disc_cats.append(cat_name)
     
@@ -581,6 +581,19 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
                     raw_cats[disc_cat] = 0.0
                 if disc_cat in final_cats:
                     del final_cats[disc_cat]
+        # Prune non-discrimination crime categories that lack required keywords
+        if not any(_has_kw(text_lower, kw) for kw in PHYSICAL_KEYWORDS):
+            raw_cats['physical_assault'] = 0.0
+            if 'physical_assault' in final_cats:
+                del final_cats['physical_assault']
+        if not any(kw in text_lower for kw in BLACKMAIL_KEYWORDS):
+            raw_cats['blackmail_extortion'] = 0.0
+            if 'blackmail_extortion' in final_cats:
+                del final_cats['blackmail_extortion']
+        if not has_cyber_sexual:
+            raw_cats['cyber_sexual_crime'] = 0.0
+            if 'cyber_sexual_crime' in final_cats:
+                del final_cats['cyber_sexual_crime']
 
     # ========== RULE: Discrimination with Authority ==========
     discrimination_categories = [
@@ -592,7 +605,7 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
         disc_type_needed = disc_cat.replace('_discrimination', '')
         has_explicit = (disc_type_needed in discrimination_types) or (disc_cat == 'racism' and 'race' in discrimination_types)
         if has_explicit and disc_cat in raw_cats:
-            final_cats[disc_cat] = max(raw_cats[disc_cat], 0.20)
+            final_cats[disc_cat] = max(raw_cats[disc_cat], 0.25)
             if authority in ['faculty', 'administration', 'hostel_warden']:
                 if 'institutional_misconduct' in raw_cats:
                     final_cats['institutional_misconduct'] = max(
@@ -609,12 +622,12 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
         final_cats['general_discrimination'] = raw_cats['general_discrimination']
     
     # ========== RULE: Institutional Context Upgrade & Pruning ==========
-    has_admin_terms = any(_has_kw(text_lower, kw) for kw in ['certificate', 'tc', 'transfer certificate', 'migration', 'marksheet', 'original documents', 'caution deposit', 'bond', 'hall ticket', 'security deposit', 'undertaking', 'affiliation', 'admission cancelled'])
+    has_admin_terms = any(_has_kw(text_lower, kw) for kw in ['certificate', 'tc', 'transfer certificate', 'migration', 'marksheet', 'original documents', 'caution deposit', 'bond', 'hall ticket', 'security deposit', 'undertaking', 'affiliation', 'admission cancelled', 'internal marks', 'marks', 'grade', 'grades', 'attendance', 'fees', 'fine', 'penalty'])
     has_inst_terms = any(_has_kw(text_lower, kw) for kw in ['inquiry', 'complaint', 'retaliat', 'internal committee', 'icc', 'anti-ragging squad', 'victimization', 'kangaroo court', 'ombudsperson', 'whistleblower', 'biased committee'])
     
     if has_admin_terms:
         if 'administrative_violation' in raw_cats:
-            final_cats['administrative_violation'] = max(raw_cats['administrative_violation'], 0.22)
+            final_cats['administrative_violation'] = max(raw_cats['administrative_violation'], 0.25)
             if raw_cats.get('institutional_misconduct', 0) >= 0.10:
                 final_cats['institutional_misconduct'] = max(final_cats.get('institutional_misconduct', 0), raw_cats['institutional_misconduct'], 0.30)
             elif 'institutional_misconduct' in final_cats and not has_inst_terms:
@@ -633,26 +646,47 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
             final_cats['institutional_misconduct'] = max(final_cats.get('institutional_misconduct', 0), raw_cats['institutional_misconduct'], 0.25)
 
     if 'administrative_violation' in raw_cats and 'administrative_violation' not in final_cats:
-        if raw_cats['administrative_violation'] >= 0.15:
+        if raw_cats['administrative_violation'] >= 0.25:
             final_cats['administrative_violation'] = raw_cats['administrative_violation']
     
     # ========== RULE: False Positive Suppression ==========
-    has_sexual_keywords = any(_has_kw(text_lower, kw) for kw in [
+    has_severe_assault = any(_has_kw(text_lower, kw) for kw in SEVERE_SEXUAL_ASSAULT_KEYWORDS)
+    has_sexual_harass = any(_has_kw(text_lower, kw) for kw in SEXUAL_HARASSMENT_KEYWORDS)
+    has_any_sexual = has_severe_assault or has_sexual_harass or any(_has_kw(text_lower, kw) for kw in [
         'rape', 'raped', 'sexual', 'assault', 'harass', 'harassment', 'touch', 'touched',
         'molest', 'molested', 'groped', 'penetrated', 'stare', 'staring', 'catcall', 'catcalling',
         'sexual comment', 'sexual comments', 'sexual joke', 'sexual jokes', 'sexual advance',
         'sexual advances', 'kiss', 'hug', 'wink', 'lewd', 'obscene'
     ])
-    if not has_sexual_keywords:
-        if 'sexual_assault' in raw_cats and raw_cats['sexual_assault'] < 0.25:
-            raw_cats['sexual_assault'] = 0.0
-        # Also remove from final_cats if it was added without sexual context
-        if 'sexual_assault' in final_cats and raw_cats.get('sexual_assault', 0) == 0.0:
+
+    if not has_severe_assault:
+        raw_cats['sexual_assault'] = 0.0
+        if 'sexual_assault' in final_cats:
             del final_cats['sexual_assault']
-        if 'sexual_harassment' in raw_cats and raw_cats['sexual_harassment'] < 0.20:
+    
+    if not has_any_sexual:
+        if 'sexual_harassment' in raw_cats:
             raw_cats['sexual_harassment'] = 0.0
-        if 'sexual_harassment' in final_cats and raw_cats.get('sexual_harassment', 0) == 0.0:
+        if 'sexual_harassment' in final_cats:
             del final_cats['sexual_harassment']
+    
+    has_blackmail_terms = any(kw in text_lower for kw in BLACKMAIL_KEYWORDS)
+    if not has_blackmail_terms:
+        raw_cats['blackmail_extortion'] = 0.0
+        if 'blackmail_extortion' in final_cats:
+            del final_cats['blackmail_extortion']
+    elif 'blackmail_extortion' not in final_cats:
+        final_cats['blackmail_extortion'] = max(raw_cats.get('blackmail_extortion', 0), 0.25)
+    
+    if authority in ['faculty', 'administration'] and not has_explicit_ragging:
+        raw_cats['ragging'] = 0.0
+        if 'ragging' in final_cats:
+            del final_cats['ragging']
+    elif not has_explicit_ragging and not ('ragg' in text_lower or any(_has_kw(text_lower, kw) for kw in ['senior', 'juniors'])):
+        if 'ragging' in raw_cats and raw_cats['ragging'] < 0.35:
+            raw_cats['ragging'] = 0.0
+            if 'ragging' in final_cats:
+                del final_cats['ragging']
     
     if not has_cyber_sexual:
         if 'cyber_sexual_crime' in raw_cats and raw_cats['cyber_sexual_crime'] < 0.40:
@@ -667,47 +701,48 @@ def postprocess_categories(text: str, raw_cats: dict[str, float]) -> tuple[dict[
                 if non_sexual in final_cats:
                     del final_cats[non_sexual]
             
-    has_ragging_keywords = 'ragg' in text_lower or any(_has_kw(text_lower, kw) for kw in ['senior', 'juniors', 'initiation', 'ritualistic'])
-    has_college_keywords = any(_has_kw(text_lower, kw) for kw in COLLEGE_KEYWORDS)
-    if not has_ragging_keywords and not has_college_keywords:
-        if 'ragging' in raw_cats and raw_cats['ragging'] < 0.25:
-            raw_cats['ragging'] = 0.0
-    
     # ========== RULE: Standard Thresholds ==========
     standard_threshold_cats = [
         'defamation_privacy_fraud', 'sexual_harassment'
     ]
     for cat in standard_threshold_cats:
         if cat not in final_cats and cat in raw_cats:
-            if raw_cats[cat] >= 0.15:
+            if raw_cats[cat] >= 0.25:
                 final_cats[cat] = raw_cats[cat]
-    
-    if 'blackmail_extortion' in raw_cats and 'blackmail_extortion' not in final_cats:
-        has_blackmail_terms = any(kw in text_lower for kw in BLACKMAIL_KEYWORDS)
-        if (has_blackmail_terms and raw_cats['blackmail_extortion'] >= 0.15) or raw_cats['blackmail_extortion'] >= 0.30:
-            final_cats['blackmail_extortion'] = raw_cats['blackmail_extortion']
 
     # ========== RULE: Tracking Keywords → Stalking / Cyber-Harassment ==========
     has_tracking_kws = any(kw in text_lower for kw in TRACKING_KEYWORDS)
     if has_tracking_kws:
-        final_cats['stalking'] = max(raw_cats.get('stalking', 0), 0.20)
+        final_cats['stalking'] = max(raw_cats.get('stalking', 0), 0.25)
         if is_online or medium is None:
-            final_cats['cyber_harassment'] = max(raw_cats.get('cyber_harassment', 0), 0.20)
+            final_cats['cyber_harassment'] = max(raw_cats.get('cyber_harassment', 0), 0.25)
 
     # ========== RULE: Defamation + Online → also Cyber-Harassment ==========
     if has_defamation and is_online:
         final_cats['defamation_privacy_fraud'] = max(raw_cats.get('defamation_privacy_fraud', 0), 0.25)
         # Online defamation (e.g. lies on facebook) also constitutes cyber_harassment
         if raw_cats.get('cyber_harassment', 0) >= 0.05 or 'cyber_harassment' not in final_cats:
-            final_cats['cyber_harassment'] = max(raw_cats.get('cyber_harassment', 0), 0.18)
+            final_cats['cyber_harassment'] = max(raw_cats.get('cyber_harassment', 0), 0.25)
 
     # ========== RULE: General Categories (Fallback) ==========
+    excluded_fallbacks = set()
+    if not has_blackmail_terms:
+        excluded_fallbacks.add('blackmail_extortion')
+    if not has_severe_assault:
+        excluded_fallbacks.add('sexual_assault')
+    if not has_any_sexual:
+        excluded_fallbacks.add('sexual_harassment')
+    if not has_cyber_sexual and not is_online:
+        excluded_fallbacks.add('cyber_sexual_crime')
+    if authority in ['faculty', 'administration'] and not has_explicit_ragging:
+        excluded_fallbacks.add('ragging')
+
     for cat, score in raw_cats.items():
-        if cat not in final_cats and score >= 0.25:
+        if cat not in final_cats and score >= 0.25 and cat not in excluded_fallbacks:
             final_cats[cat] = score
     
-    # Filter out weak categories (below 0.18)
-    final_cats = {k: v for k, v in final_cats.items() if v >= 0.18}
+    # Filter out weak categories (below 0.25)
+    final_cats = {k: v for k, v in final_cats.items() if v >= 0.25}
 
     final_cats = dict(sorted(final_cats.items(), key=lambda x: x[1], reverse=True))
     return final_cats, context

@@ -14,7 +14,7 @@ from nlp.llm_client import generate_legal_summary
 BASE_DIR = Path(__file__).resolve().parent
 
 # Updated with complete law mappings for all 20 crime types
-CONFIDENCE_THRESHOLD = 0.05  # Lowered to catch all crime types with improved training data. Model retrained.
+CONFIDENCE_THRESHOLD = 0.25  # Balanced threshold for high accuracy
 app = FastAPI(title="Legal Support Chatbot")
 app.add_middleware(
     CORSMiddleware,

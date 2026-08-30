@@ -43,7 +43,8 @@ samples = [
     ("a person is constantly stalking me and sending me messages ",["cyber_harassment","stalking"]),
     ("a person is hating on my community on instagram","online_hate_speech"),
     ("my friends in school are insulting me in my dms",["cyber_bullying","verbal_abuse"]),
-    ("she is threatening me that she would leak my chats if i dont pay her",["blackmail_extortion","threats"])
+    ("she is threatening me that she would leak my chats if i dont pay her",["blackmail_extortion","threats"]),
+    ("my boyfriend has my nude photos",["cyber_sexual_crime"])
 ]
 
 passed = 0
