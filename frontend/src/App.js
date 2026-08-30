@@ -300,6 +300,10 @@ function App() {
   };
 
   const formatBackendResponse = (data) => {
+    if (data.is_complaint === false || data.category === 'not_complaint') {
+      return data.message || "Please describe the legal issue or incident you want help with.";
+    }
+
     const { category, matched_categories, legal_frameworks, laws, steps, resources, warnings, context } = data;
 
     let response = `### 📋 LEGAL PRELIMINARY REPORT\n\n`;
@@ -509,7 +513,7 @@ function App() {
           </div>
           <div className="msg-info">
             {msg.role === 'ai' ? 'Judi' : 'You'} • {msg.time}
-            {msg.data && msg.role === 'ai' && (
+            {msg.data && msg.role === 'ai' && msg.data.is_complaint !== false && msg.data.category !== 'not_complaint' && ((msg.data.laws && msg.data.laws.length > 0) || (msg.data.steps && msg.data.steps.length > 0)) && (
               <button
                 className="expand-btn"
                 onClick={() => toggleMessageExpand(msg.id)}
