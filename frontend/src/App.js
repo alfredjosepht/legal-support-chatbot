@@ -301,7 +301,11 @@ function App() {
 
   const formatBackendResponse = (data) => {
     if (data.is_complaint === false || data.category === 'not_complaint') {
-      return data.message || "Please describe the legal issue or incident you want help with.";
+      return data.answer_text || data.message || "Please describe the legal issue or incident you want help with.";
+    }
+
+    if (data.answer_text && typeof data.answer_text === 'string' && data.answer_text.trim().length > 0) {
+      return data.answer_text.trim();
     }
 
     const { category, matched_categories, legal_frameworks, laws, steps, resources, warnings, context } = data;
@@ -449,9 +453,9 @@ function App() {
   };
 
   const renderMessage = (msg) => {
-    const renderTextWithLinks = (text) => {
+    const renderInlineFormatting = (text) => {
+      if (!text) return text;
       const urlRegex = /(https?:\/\/[^\s]+)/g;
-      if (!urlRegex.test(text)) return text;
       const parts = text.split(urlRegex);
       return parts.map((part, index) => {
         if (part.match(urlRegex)) {
@@ -460,6 +464,15 @@ function App() {
               {part}
             </a>
           );
+        }
+        const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
+        if (boldParts.length > 1) {
+          return boldParts.map((bPart, bIdx) => {
+            if (bPart.startsWith('**') && bPart.endsWith('**')) {
+              return <strong key={`${index}-${bIdx}`}>{bPart.slice(2, -2)}</strong>;
+            }
+            return bPart;
+          });
         }
         return part;
       });
@@ -482,23 +495,26 @@ function App() {
             {msg.text && (
               <div className="text structured-response">
                 {msg.text.split('\n').map((line, i) => {
+                  if (line.startsWith('## ')) {
+                    return <h3 key={i} className="res-h3">{renderInlineFormatting(line.replace('## ', ''))}</h3>;
+                  }
                   if (line.startsWith('### ')) {
-                    return <h3 key={i} className="res-h3">{renderTextWithLinks(line.replace('### ', ''))}</h3>;
+                    return <h3 key={i} className="res-h3">{renderInlineFormatting(line.replace('### ', ''))}</h3>;
                   }
                   if (line.startsWith('#### ')) {
-                    return <h4 key={i} className="res-h4">{renderTextWithLinks(line.replace('#### ', ''))}</h4>;
+                    return <h4 key={i} className="res-h4">{renderInlineFormatting(line.replace('#### ', ''))}</h4>;
                   }
                   if (line.startsWith('> ')) {
-                    return <blockquote key={i} className="res-quote">{renderTextWithLinks(line.replace('> ', ''))}</blockquote>;
+                    return <blockquote key={i} className="res-quote">{renderInlineFormatting(line.replace('> ', ''))}</blockquote>;
                   }
-                  if (line.startsWith('* ')) {
-                    return <div key={i} className="res-list-item"><span>•</span> {renderTextWithLinks(line.replace('* ', ''))}</div>;
+                  if (line.startsWith('* ') || line.startsWith('- ')) {
+                    return <div key={i} className="res-list-item"><span>•</span> {renderInlineFormatting(line.replace(/^[\*\-]\s+/, ''))}</div>;
                   }
                   if (line.startsWith('  ')) {
-                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{renderTextWithLinks(line.trim())}</div>;
+                    return <div key={i} style={{ paddingLeft: '20px', marginBottom: '4px' }}>{renderInlineFormatting(line.trim())}</div>;
                   }
                   if (/^\d+\. /.test(line)) {
-                    return <div key={i} className="res-step-item">{renderTextWithLinks(line)}</div>;
+                    return <div key={i} className="res-step-item">{renderInlineFormatting(line)}</div>;
                   }
                   if (line === '---') {
                     return <hr key={i} className="res-divider" />;
@@ -506,7 +522,7 @@ function App() {
                   if (line.trim() === '') {
                     return <div key={i} style={{ marginBottom: '8px' }}></div>;
                   }
-                  return <p key={i} style={{ marginBottom: '8px' }}>{renderTextWithLinks(line)}</p>;
+                  return <p key={i} style={{ marginBottom: '8px' }}>{renderInlineFormatting(line)}</p>;
                 })}
               </div>
             )}
