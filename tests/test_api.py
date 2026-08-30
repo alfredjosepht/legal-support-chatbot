@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
-"""Basic API endpoint tests using FastAPI TestClient."""
-
+import os
 import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
+os.environ["OLLAMA_TIMEOUT"] = "2"
 
 from fastapi.testclient import TestClient
 from app import app
@@ -50,6 +49,7 @@ def test_chat_valid():
     assert "laws" in data
     assert "steps" in data
     assert "resources" in data
+    assert "answer_text" in data
     print("[PASS] test_chat_valid")
 
 
@@ -60,6 +60,7 @@ def test_chat_categories():
     matched = [m["category"] for m in res["matched_categories"]]
     assert "sexual_assault" in matched
     assert "cyber_bullying" not in matched
+    assert "answer_text" in res
 
     # Bullying test
     res = client.post("/chat", json={"message": "he bullied me"}).json()
@@ -112,6 +113,7 @@ def test_complaint_gate():
         assert len(res["laws"]) == 0
         assert len(res["steps"]) == 0
         assert len(res["resources"]) == 0
+        assert res.get("answer_text") is not None
         assert "message" in res and res["message"] is not None
 
     # Valid complaints
@@ -120,6 +122,7 @@ def test_complaint_gate():
         assert res["category"] != "not_complaint", f"Expected complaint classification for '{complaint}'"
         assert res.get("is_complaint") is True
         assert len(res["laws"]) > 0 or len(res["steps"]) > 0
+        assert "answer_text" in res
 
     print("[PASS] test_complaint_gate")
 
