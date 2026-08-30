@@ -27,7 +27,7 @@ samples = [
     ("my professor touched me","sexual_harassment"),
     ("my professor made sexual comments about me","sexual_harassment"),
     ("someone is stalking me","stalking"),
-    ("the college withheld my tc","institutional_misconduct"),
+    ("the college withheld my tc","administrative_violation"),
     ("my ex threatens to leak my naked photos", ["cyber_sexual_crime", "threats"]),
     ("someone created a fake id of mine","impersonation_doxxing"),
     ("my friend spread false rumors about me","defamation_privacy_fraud"),
