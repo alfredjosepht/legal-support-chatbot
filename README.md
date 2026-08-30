@@ -1,524 +1,392 @@
-# 📋 Legal Support Chatbot for Students
+# ⚖️ Judi — Legal Support Chatbot for Students
 
-A comprehensive AI-powered legal support system that helps students identify and understand their legal rights when facing various crimes and violations in educational institutions.
+A comprehensive, two-stage AI-powered legal advisory and support system designed to help students, youth, and victims in India identify, understand, and act upon their legal rights when facing crimes, abuse, institutional misconduct, and civil rights violations.
+
+---
 
 ## ✨ Features
 
-- **20+ Crime Categories**: Physical assault, sexual harassment, discrimination, cyber crimes, ragging, and more
-- **POCSO Auto-Detection**: Automatically applies Protection of Children from Sexual Offences Act for minors (age < 18)
-- **50+ Indian Laws**: Comprehensive database of applicable Indian Penal Code sections and special acts
-- **Procedural Guidance**: 8-22 step-by-step procedures for filing cases
-- **Resource Directory**: Police stations, NGOs, legal aid organizations, helplines
-- **Context Awareness**: Identifies perpetrator type, medium of crime, discrimination basis
-- **Expandable Details**: View full law descriptions and complete procedural steps in browser
-- **Multi-language Support**: Currently English, expandable to regional languages
-- **Mobile Responsive**: Works on desktop, tablet, and mobile devices
-- **Dark Mode**: Theme switcher for better accessibility
+- **🧠 Two-Stage NLP Intelligence Pipeline**:
+  - **Stage 1 (Complaint Gate)**: Logistic Regression with TF-IDF vectorization filters greetings, small talk, and general queries (99.7% accuracy).
+  - **Stage 2 (Crime Classifier)**: spaCy multi-class CNN categorizes valid legal incidents into 20+ specialized crime classifications.
+- **🛡️ POCSO Auto-Detection**: Automatically applies the *Protection of Children from Sexual Offences (POCSO) Act, 2012* for minors (age < 18) with strict privacy safeguards and specialized resources.
+- **📜 50+ Indian Statutory Provisions**: Maps incidents directly to applicable sections of the Indian Penal Code (IPC), IT Act, UGC Anti-Ragging Regulations, POCSO Act, SC/ST Prevention of Atrocities Act, and the Constitution of India.
+- **📝 Actionable Step-by-Step Filing Procedures**: Provides 8–22 concrete procedural steps for lodging First Information Reports (FIR), medical documentation, institutional complaints, and legal aid petitions.
+- **📍 Location-Aware Resource Directory**: Dynamically filters local police stations, legal aid boards (NALSA/SLSA), cyber crime cells, and 24/7 helplines by state/district (e.g., National, Kerala, Mumbai, Delhi, Bangalore).
+- **👤 User Authentication & History Persistence**: Secure account registration and login with salted SHA-256 password hashing. Chat consultations are synced across both browser storage and backend storage.
+- **💻 Modern Responsive React Interface**: Dark/Light mode theme switcher, expandable legal provision cards, document attachment previews, and mobile-responsive drawer sidebar.
 
-## 🎯 Supported Crime Categories
+---
 
-### Violence & Physical Crimes
-- Physical Assault
-- Sexual Assault
-- Sexual Harassment
-- Ragging
+## 🎯 Supported Crime & Violation Categories
 
-### Online & Cyber Crimes
-- Cyber Harassment
-- Cyber Sexual Crime
-- Impersonation & Doxxing
-- Online Hate Speech
+### 1. Violence & Physical Crimes
+- **Physical Assault** (IPC 323, 324, 325, 336)
+- **Sexual Assault** (IPC 375, 376, 354, POCSO Act)
+- **Sexual Harassment** (IPC 354A, 354D, POSH Act)
+- **Ragging** (Anti-Ragging Act, UGC Regulations 2009)
 
-### Discrimination & Threats
-- Caste Discrimination
-- Gender Discrimination
-- Racism
-- Religious Discrimination
-- General Discrimination
-- Threats
-- Stalking
+### 2. Online & Cyber Crimes
+- **Cyber Harassment** (IT Act 66E, 67, IPC 354D)
+- **Cyber Sexual Crime** (IT Act 67A, 67B, POCSO Act)
+- **Impersonation & Doxxing** (IT Act 66C, 66D, IPC 419)
+- **Online Hate Speech** (IPC 153A, 295A, 505)
 
-### Exploitation & Abuse
-- Blackmail & Extortion
-- Defamation & Privacy Fraud
-- Verbal Abuse
-- Institutional Misconduct
-- Administrative Violations
+### 3. Discrimination & Harassment
+- **Caste Discrimination** (SC/ST Prevention of Atrocities Act, Art. 15)
+- **Gender Discrimination** (Articles 14, 15, 16, UGC Guidelines)
+- **Racism & Regional Bias** (IPC 153A, Article 15)
+- **Religious Discrimination** (Articles 15, 25, IPC 295A)
+- **General Discrimination** (Equal Opportunities Act, Rights of Persons with Disabilities)
+- **Threats & Criminal Intimidation** (IPC 503, 506)
+- **Stalking** (IPC 354D)
 
-## 📊 System Performance
+### 4. Exploitation & Institutional Violations
+- **Blackmail & Extortion** (IPC 383, 384, 506)
+- **Defamation & Privacy Violations** (IPC 499, 500, IT Act 66E)
+- **Verbal Abuse & Insult** (IPC 504)
+- **Institutional Misconduct** (UGC Grievance Redressal Regulations)
+- **Administrative Violations** (Unlawful withholding of certificates/TC, illegal bonds)
 
-- **Accuracy**: 78% on diverse test cases
-- **Training Data**: 1,557 examples across 20 categories
-- **Response Time**: <500ms per query
-- **Uptime**: 99.9% production-ready
+---
+
+## 🧠 Two-Stage Architecture & Pipeline
+
+```
+                       User Input Query
+                              │
+                              ▼
+        ┌───────────────────────────────────────────┐
+        │   Stage 1: Binary Complaint Gate         │
+        │   (Logistic Regression + TF-IDF)          │
+        └─────────────────────┬─────────────────────┘
+                              │
+              ┌───────────────┴───────────────┐
+              ▼                               ▼
+       [not_complaint]                   [complaint]
+     (Greetings, FAQs,              (Crimes, Violations,
+        Small Talk)                      Incidents)
+              │                               │
+              ▼                               ▼
+  ┌───────────────────────┐       ┌───────────────────────────┐
+  │ Friendly guidance     │       │ Stage 2: spaCy Multi-     │
+  │ message returned      │       │ Class Text Categorizer    │
+  │ (Skips legal engine)  │       └─────────────┬─────────────┘
+  └───────────────────────┘                     │
+                                                ▼
+                                  ┌───────────────────────────┐
+                                  │ Rule-based Postprocessor  │
+                                  │ & Context Extractor       │
+                                  │ (POCSO / Age / Authority) │
+                                  └─────────────┬─────────────┘
+                                                │
+                                                ▼
+                                  ┌───────────────────────────┐
+                                  │ Statutory Knowledge Base  │
+                                  │ (50+ Laws, Filing Steps,  │
+                                  │ & Localized Contacts)     │
+                                  └─────────────┬─────────────┘
+                                                │
+                                                ▼
+                                  ┌───────────────────────────┐
+                                  │ Structured Preliminary    │
+                                  │ Legal Advisory Report     │
+                                  └───────────────────────────┘
+```
+
+---
+
+## 📁 Project Structure
+
+```
+legal-support-chatbot/
+├── README.md                          # Project documentation
+├── app.py                             # FastAPI backend application & API routing
+├── requirements.txt                   # Python backend dependencies
+├── start.ps1                          # PowerShell startup script (Windows)
+├── start.bat                          # Batch startup script (Windows)
+├── start.sh                           # Shell startup script (Linux / macOS)
+│
+├── frontend/                          # React web application
+│   ├── package.json                   # Node dependencies & scripts
+│   ├── public/
+│   │   └── index.html                 # HTML entry point
+│   └── src/
+│       ├── App.js                     # Main chat interface, state & consultation manager
+│       ├── App.css                    # Modern theme, animations, and responsive layout
+│       └── index.js                   # React DOM root
+│
+├── nlp/                              # NLP classification engines
+│   ├── complaint_detector.py         # Stage 1: Logistic Regression inference helper
+│   ├── train_complaint_detector.py   # Stage 1: Logistic Regression training script
+│   ├── train_classifier.py           # Stage 2: spaCy CNN model training script
+│   └── postprocess.py                # Rule-based context extraction & statutory refinement
+│
+├── models/                           # Serialized machine learning models
+│   ├── complaint_detector/           # Stage 1 artifacts
+│   │   ├── logreg_model.joblib       # Trained Logistic Regression classifier
+│   │   └── tfidf_vectorizer.joblib   # Fitted TF-IDF feature extractor
+│   └── legal_textcat/               # Stage 2 artifacts
+│       ├── meta.json
+│       ├── textcat/
+│       ├── tokenizer
+│       └── vocab/
+│
+├── data/                             # Knowledge base, mappings, and datasets
+│   ├── complaint_dataset.csv         # 3,189 binary samples for Stage 1 gate
+│   ├── dataset.csv                   # 1,750 multi-class crime samples for Stage 2
+│   ├── law_mapping_enhanced.json     # 50+ Indian legal provisions and procedures
+│   ├── resources.json                # National emergency helplines and legal aid
+│   ├── local_numbers.json            # State- and district-level contact directories
+│   ├── case_laws.json                # Landmark case law citations
+│   ├── users.json                    # User account database (salted SHA-256)
+│   └── consultations/                # Saved user consultation session history
+│
+├── scripts/                          # Dataset generation utilities
+│   ├── create_complaint_dataset.py   # Generates binary complaint dataset
+│   └── generate_dataset.py           # Generates 20-category synthetic multi-class data
+│
+└── tests/                            # Automated test suite
+    ├── test_complaint_detector.py    # Unit tests for Stage 1 gate
+    ├── test_api.py                   # Integration tests for FastAPI endpoints
+    └── test_query.py                 # Multi-class integration tests for Stage 2
+```
+
+---
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### 1. Prerequisites
+- **Python 3.8+** (Python 3.10 or 3.11 recommended)
+- **Node.js 16+** and **npm**
 
-- **Python 3.8+**
-- **Node.js 14+** (for frontend)
-- **npm** (comes with Node.js)
+---
 
-### Installation
+### 2. Installation
 
-1. **Clone the repository**
+#### A. Clone repository
 ```bash
 git clone https://github.com/yourusername/legal-support-chatbot.git
 cd legal-support-chatbot
 ```
 
-2. **Backend Setup**
+#### B. Install Backend Dependencies
 ```bash
-# Install Python dependencies
 pip install -r requirements.txt
-
-# This includes:
-# - fastapi (web framework)
-# - spacy (NLP)
-# - uvicorn (ASGI server)
-# - pydantic (data validation)
 ```
+*Dependencies include: `fastapi`, `uvicorn`, `spacy`, `scikit-learn`, `joblib`, `pydantic`, `pandas`, `requests`.*
 
-3. **Frontend Setup**
+#### C. Install Frontend Dependencies
 ```bash
 cd frontend
 npm install
 cd ..
 ```
 
-## 🏃 Running the System
+---
 
-### Terminal 1 - Start Backend
+### 3. Running the System
 
+#### Option 1: Automatic Startup Scripts
+
+- **Windows (PowerShell)**:
+  ```powershell
+  .\start.ps1
+  ```
+- **Windows (Command Prompt)**:
+  ```cmd
+  start.bat
+  ```
+- **Linux / macOS**:
+  ```bash
+  chmod +x start.sh
+  ./start.sh
+  ```
+
+#### Option 2: Manual Terminal Startup
+
+**Terminal 1 — Backend (FastAPI on port 8000)**:
 ```bash
-cd /home/alfredjoseph/legal-support-chatbot
-
-# Start FastAPI backend on port 8000
 python -m uvicorn app:app --reload --port 8000
 ```
 
-Expected output:
-```
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Application startup complete
-```
-
-### Terminal 2 - Start Frontend
-
+**Terminal 2 — Frontend (React on port 3001)**:
 ```bash
-cd /home/alfredjoseph/legal-support-chatbot/frontend
-
-# Start React frontend on port 3001
+cd frontend
 PORT=3001 npm start
 ```
 
-Expected output:
-```
-webpack compiled successfully
-Compiled successfully!
-
-You can now view the app in the browser.
-Local:            http://localhost:3001
-```
-
-### Access the Application
-
-Open your browser and visit:
+Open your browser and navigate to:
 ```
 http://localhost:3001
 ```
 
-## 💡 How to Use
-
-1. **Type Your Issue**
-   - Enter what happened in the text box
-   - Example: "my senior punched me"
-   - Example: "I am 16 and my uncle touched me inappropriately"
-
-2. **Get Classification**
-   - System instantly classifies your issue
-   - Shows confidence level
-   - Displays applicable legal frameworks
-
-3. **View Laws & Steps**
-   - See first 5 applicable laws summarized
-   - See first 8 procedural steps
-   - Get support resources
-
-4. **Expand for Details**
-   - Click "Show Full Details" button
-   - View ALL applicable laws with descriptions
-   - See ALL procedural steps
-   - Check relevant case law references
-
-5. **Take Action**
-   - Follow the procedural steps
-   - Contact resources provided
-   - Seek legal representation
-
-## 🧪 Testing
-
-### Run Test Suite
-
-```bash
-python3 << 'EOF'
-import requests
-
-test_cases = [
-    ("my senior punched me", "physical_assault"),
-    ("I am 16 and my uncle touched me", "sexual_assault"),
-    ("my professor makes sexual comments", "sexual_harassment"),
-    ("I face discrimination because of my caste", "caste_discrimination"),
-    ("someone is blackmailing me with photos", "blackmail_extortion"),
-]
-
-print("Testing NLP System:\n")
-for query, expected in test_cases:
-    response = requests.post('http://localhost:8000/chat', 
-                            json={"message": query})
-    result = response.json()
-    status = "✅" if result['category'] == expected else "❌"
-    print(f"{status} {query[:40]:<40} → {result['category']}")
-EOF
-```
-
-### Test Individual Endpoints
-
-```bash
-# Health check
-curl http://localhost:8000/
-
-# Sample chat query
-curl -X POST http://localhost:8000/chat \
-  -H "Content-Type: application/json" \
-  -d '{"message":"my senior punched me"}'
-```
-
-## 📁 Project Structure
-
-```
-legal-support-chatbot/
-├── README.md                          # This file
-├── app.py                             # FastAPI backend application
-├── requirements.txt                   # Python dependencies
-│
-├── frontend/                          # React frontend
-│   ├── package.json
-│   ├── src/
-│   │   ├── App.js                    # Main React component
-│   │   ├── App.css                   # Styling
-│   │   └── index.js
-│   └── public/
-│       └── index.html
-│
-├── nlp/                              # NLP models and utilities
-│   ├── train_classifier.py           # Training script
-│   ├── test_classifier.py            # Testing script
-│   └── postprocess_v2.py             # Post-processing & rules
-│
-├── models/                           # Trained NLP models
-│   └── legal_textcat/               # spaCy text classifier
-│       ├── meta.json
-│       ├── tokenizer
-│       ├── textcat/
-│       └── vocab/
-│
-└── data/                             # Datasets and mappings
-    ├── dataset.csv                   # 1,557 training examples
-    ├── law_mapping_enhanced.json     # 50+ Indian laws
-    ├── legal_steps.json              # Procedural steps
-    ├── resources.json                # Support resources
-    └── case_laws.json               # Case law references
-```
+---
 
 ## 🔧 API Reference
 
-### Endpoints
+### 1. Main Chat Endpoint: `POST /chat`
 
-#### GET /
-Health check endpoint
-```bash
-curl http://localhost:8000/
-# Returns: {"status":"Backend running"}
-```
+Processes the user's message through the two-stage pipeline.
 
-#### POST /chat
-Main chat endpoint
-```bash
-curl -X POST http://localhost:8000/chat \
-  -H "Content-Type: application/json" \
-  -d '{"message":"my senior punched me"}'
-```
+- **Request**:
+  ```json
+  {
+    "message": "my senior punched me in the hostel",
+    "location": "Kerala"
+  }
+  ```
 
-**Request**:
-```json
-{
-  "message": "string - user's legal issue"
-}
-```
+- **Complaint Response (`200 OK`)**:
+  ```json
+  {
+    "category": "physical_assault",
+    "confidence": 0.35,
+    "reason": "classified",
+    "is_complaint": true,
+    "matched_categories": [
+      { "category": "physical_assault", "confidence": 0.35 },
+      { "category": "ragging", "confidence": 0.22 }
+    ],
+    "context": {
+      "age_indicator": null,
+      "authority": "senior_student",
+      "medium": "offline",
+      "discrimination_types": [],
+      "legal_framework": null,
+      "location": "Kerala"
+    },
+    "legal_frameworks": [
+      "Indian Penal Code (IPC)",
+      "Anti-Ragging Act & National Anti-Ragging Rules"
+    ],
+    "laws": [
+      {
+        "act": "Indian Penal Code",
+        "section": "323",
+        "title": "Voluntarily causing hurt",
+        "description": "Whoever voluntarily causes hurt shall be punished with imprisonment up to 1 year, or with fine up to 1000 rupees, or both."
+      }
+    ],
+    "steps": [
+      "File First Information Report (FIR) at nearest police station",
+      "Get medical examination done immediately (within 24 hours ideally)"
+    ],
+    "resources": [
+      {
+        "name": "Local Police Station",
+        "location": "Nearest police station in your jurisdiction",
+        "contact": "112",
+        "link": "https://www.keralapolice.gov.in"
+      }
+    ],
+    "case_references": [],
+    "warnings": []
+  }
+  ```
 
-**Response**:
-```json
-{
-  "category": "physical_assault",
-  "confidence": 0.28,
-  "reason": "classified",
-  "matched_categories": [
-    {"category": "physical_assault", "confidence": 0.28}
-  ],
-  "context": {
-    "age_indicator": null,
-    "authority": "senior_student",
-    "medium": "offline",
-    "discrimination_types": [],
-    "legal_framework": null
-  },
-  "legal_frameworks": ["Indian Penal Code (IPC)"],
-  "laws": [
-    {
-      "act": "Indian Penal Code",
-      "section": "323",
-      "title": "Voluntarily causing hurt",
-      "description": "..."
-    }
-  ],
-  "steps": ["File FIR at police station", "..."],
-  "resources": ["Police Station: XYZ", "..."],
-  "case_references": ["Case 1", "..."],
-  "warnings": []
-}
-```
-
-## 📚 Training Data
-
-The system is trained on **1,557 examples** covering 20 crime categories.
-
-### Data Distribution
-
-| Category | Examples |
-|----------|----------|
-| physical_assault | 95 |
-| sexual_assault | 75 |
-| sexual_harassment | 78 |
-| ragging | 74 |
-| caste_discrimination | 72 |
-| gender_discrimination | 70 |
-| racism | 70 |
-| religious_discrimination | 70 |
-| general_discrimination | 67 |
-| threats | 75 |
-| cyber_harassment | 70 |
-| cyber_sexual_crime | 73 |
-| blackmail_extortion | 73 |
-| impersonation_doxxing | 70 |
-| online_hate_speech | 69 |
-| stalking | 69 |
-| defamation_privacy_fraud | 69 |
-| verbal_abuse | 73 |
-| institutional_misconduct | 69 |
-| administrative_violation | 68 |
-
-## 🧠 NLP Model Details
-
-- **Algorithm**: spaCy Text Categorizer (CNN with dropout)
-- **Framework**: spaCy 3.8.11
-- **Training**: 15 epochs with SGD optimizer
-- **Loss**: 0.0385 (final)
-- **Confidence Threshold**: 0.05 (5%)
-- **Accuracy**: 78% on diverse test cases
-
-### Retraining the Model
-
-If you add more training data:
-
-```bash
-# Update dataset.csv with new examples
-python nlp/train_classifier.py
-
-# This will:
-# 1. Load data/dataset.csv
-# 2. Train for 15 epochs
-# 3. Save model to models/legal_textcat/
-# 4. Print loss metrics
-```
-
-## 🔐 Special Features
-
-### POCSO Auto-Detection
-
-When a minor (age < 18) reports sexual crime:
-- Automatically applies POCSO framework
-- Shows additional protections for minors
-- Provides minor-specific resources
-- Displays warning: "POCSO Framework Applicable"
-
-**Triggers on**:
-- Age indicator: "I am 16", "age 14", etc.
-- Sexual crime categories: sexual_assault, cyber_sexual_crime
-
-### Context Extraction
-
-The system automatically extracts:
-- **Age**: "I am 16 and..." → age_indicator: 16
-- **Authority**: "My senior...", "My uncle..." → perpetrator type
-- **Medium**: "Online", "In college" → offline/online
-- **Discrimination**: "Based on my caste" → caste_discrimination
-
-## 🐛 Troubleshooting
-
-### Backend won't start
-
-**Problem**: Port 8000 already in use
-```bash
-# Kill process using port 8000
-fuser -k 8000/tcp
-# Restart backend
-python -m uvicorn app:app --reload --port 8000
-```
-
-**Problem**: Module not found errors
-```bash
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Frontend won't start
-
-**Problem**: Port 3001 already in use
-```bash
-# Start on different port
-PORT=3002 npm start
-```
-
-**Problem**: npm not found
-```bash
-# Install Node.js from https://nodejs.org/
-# Then reinstall dependencies
-cd frontend
-npm install
-```
-
-### Cannot connect frontend to backend
-
-**Problem**: CORS errors
-- Backend already has CORS enabled
-- Clear browser cache: Ctrl+Shift+Delete
-- Restart both services
-
-**Problem**: Backend not responding
-- Check if running: curl http://localhost:8000/
-- Check logs: tail -50 /tmp/backend.log
-- Restart: pkill -f uvicorn; python -m uvicorn app:app --port 8000
-
-## 📈 Performance Tips
-
-1. **First load is slow**: React app compiles on first npm start (~30 seconds)
-2. **NLP inference**: First query takes ~2 seconds (model loading), subsequent queries <500ms
-3. **Use production mode**: For deployment, use `npm run build` and serve with nginx
-
-## 🚀 Production Deployment
-
-### Using Gunicorn (Backend)
-
-```bash
-pip install gunicorn
-gunicorn app:app -w 4 -b 0.0.0.0:8000
-```
-
-### Using Docker
-
-```bash
-# Build and run backend
-docker build -t legal-chatbot-backend .
-docker run -p 8000:8000 legal-chatbot-backend
-
-# Build and run frontend
-cd frontend
-docker build -t legal-chatbot-frontend .
-docker run -p 3001:3001 legal-chatbot-frontend
-```
-
-### Using Nginx Reverse Proxy
-
-```nginx
-server {
-    listen 80;
-    server_name yourdomain.com;
-
-    location /api/ {
-        proxy_pass http://localhost:8000/;
-    }
-
-    location / {
-        proxy_pass http://localhost:3001/;
-    }
-}
-```
-
-## 📝 Contributing
-
-To add more training examples:
-
-1. Edit `data/dataset.csv`
-2. Add rows: `text,label` (text is the query, label is the category)
-3. Run training: `python nlp/train_classifier.py`
-4. Test: `python nlp/test_classifier.py`
-
-To add new laws:
-
-1. Edit `data/law_mapping_enhanced.json`
-2. Add entries with: act, section, title, description, filing_procedure
-3. Restart backend
-
-## 📞 Support Resources Included
-
-The system provides:
-- 🚔 Police station contact information
-- 📞 Helpline numbers (POCSO, NCW, SC/ST)
-- 🏛️ Legal aid organizations
-- 🤝 NGOs and support groups
-- 📚 Case law references
-- ⚖️ Constitutional provisions
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 👨‍💻 Authors
-
-- Developed for student legal support
-- Created with Python, React, and spaCy
-
-## 🙋 FAQ
-
-**Q: Is this legal advice?**
-A: No. This system provides guidance and information only. Always consult a qualified lawyer.
-
-**Q: What if my case isn't recognized?**
-A: The system recognizes 20 major crime categories. If your case isn't classified, it still shows general legal guidance. You can also contact legal aid organizations directly.
-
-**Q: How accurate is the classification?**
-A: 78% accuracy on diverse test cases. Always verify with legal professionals.
-
-**Q: Can I use this offline?**
-A: After initial load, the app works offline (frontend only). Backend API requires internet.
-
-**Q: How often is the laws database updated?**
-A: Database reflects Indian laws as of January 2026. Update `law_mapping_enhanced.json` for recent changes.
-
-**Q: Does it work for all Indian states?**
-A: Yes, uses central laws (IPC, special acts). State-specific laws can be added to `law_mapping_enhanced.json`.
-
-## 🔗 Useful Links
-
-- [Indian Penal Code](https://www.indiacode.nic.in/)
-- [POCSO Act](https://www.indiacode.nic.in/Show/IDA/)
-- [National Commission for Women](https://ncw.nic.in/)
-- [Legal Services Authority](https://nalsa.gov.in/)
+- **Non-Complaint Response (`200 OK`)**:
+  ```json
+  {
+    "category": "not_complaint",
+    "confidence": 0.95,
+    "reason": "not_complaint",
+    "is_complaint": false,
+    "status": "not_complaint",
+    "message": "Please describe the legal issue or incident you want help with.",
+    "matched_categories": [],
+    "context": { "location": "National" },
+    "legal_frameworks": [],
+    "laws": [],
+    "steps": [],
+    "resources": [],
+    "case_references": [],
+    "warnings": []
+  }
+  ```
 
 ---
 
-**Last Updated**: January 29, 2026  
-**Version**: 1.0  
-**Status**: Production Ready ✅
+### 2. User Authentication Endpoints
+
+- **`POST /signup`**:
+  ```json
+  { "username": "student1", "password": "securepassword123" }
+  ```
+- **`POST /login`**:
+  ```json
+  { "username": "student1", "password": "securepassword123" }
+  ```
+
+---
+
+### 3. Consultation History & Metadata
+
+- **`GET /locations`**: Returns list of supported states and districts for localized contacts.
+- **`GET /consultations/{username}`**: Retrieves saved consultation sessions for a user.
+- **`POST /consultations/{username}`**: Saves and syncs consultation chat history.
+
+---
+
+## 🧪 Testing
+
+Run the automated test suite from the repository root:
+
+```bash
+# 1. Test Stage 1 Complaint Gate
+python tests/test_complaint_detector.py
+
+# 2. Test FastAPI Endpoints (Gate, Auth, Locations, History)
+python tests/test_api.py
+
+# 3. Test Stage 2 Multi-Class Categorizer & Postprocessor
+python tests/test_query.py
+```
+
+---
+
+## 🧠 Retraining the AI Models
+
+### Retrain Stage 1 (Complaint Detector Gate)
+```bash
+# 1. Generate/refresh the binary dataset
+python scripts/create_complaint_dataset.py
+
+# 2. Fit TF-IDF & Logistic Regression model
+python nlp/train_complaint_detector.py
+```
+*Artifacts are saved to `models/complaint_detector/`.*
+
+### Retrain Stage 2 (Multi-Class Crime Classifier)
+```bash
+# 1. (Optional) Rebuild synthetic multi-class training data
+python scripts/generate_dataset.py
+
+# 2. Train spaCy Text Categorizer
+python nlp/train_classifier.py
+```
+*Artifacts are saved to `models/legal_textcat/`.*
+
+---
+
+## 🐛 Troubleshooting
+
+| Problem | Cause | Solution |
+| :--- | :--- | :--- |
+| **Port 8000 already in use** | An existing backend process is running | `netstat -ano \| findstr :8000` (Windows) or `fuser -k 8000/tcp` (Linux) to find and kill the process. |
+| **Port 3001 in use** | Another frontend instance is active | Run with `PORT=3002 npm start` in `frontend/`. |
+| **Missing joblib / sklearn** | Python dependencies not updated | Run `pip install -r requirements.txt`. |
+| **CORS errors in browser** | Frontend cannot reach port 8000 | Ensure backend is active and reachable at `http://localhost:8000`. |
+| **Model files missing** | Models have not been trained | Run `python nlp/train_complaint_detector.py` and `python nlp/train_classifier.py`. |
+
+---
+
+## ⚠️ Legal Disclaimer
+
+> **IMPORTANT**: Judi is an automated educational and preliminary legal assistance tool. It does **not** constitute formal legal representation or binding legal advice. Users facing active threats or emergency situations should immediately contact emergency authorities (dial **112**) or consult a licensed advocate / legal aid authority.
+
+---
+
+## 📄 License
+
+This project is open source and distributed under the **MIT License**.
