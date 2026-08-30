@@ -280,6 +280,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Step 3b: Download the spaCy Language Model
+
+The Stage 2 crime classifier uses `en_core_web_md` as a **vector source** for its `tok2vec` component. This is a spaCy model and must be downloaded separately:
+
+```bash
+python -m spacy download en_core_web_md
+```
+
+> **Note**: This is a one-time download (~50 MB). Without it, `nlp/train_classifier.py` will fail with a `OSError: [E050] Can't find model 'en_core_web_md'` error.
+
 ### Step 4: Install Frontend Dependencies
 ```bash
 cd frontend
